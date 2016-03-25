@@ -1,0 +1,29 @@
+---
+title: "Scientific Journal Color Palettes for ggplot2"
+author: "Nan Xiao <<nanx@uchicago.edu>> <br>
+         Miaozhu Li <<miaozhu.li@duke.edu>>"
+date: "`r Sys.Date()`"
+bibliography: ggsci.bib
+output:
+  rmarkdown::html_vignette:
+    toc: true
+    number_sections: true
+    css: ggsci.css
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Scientific Journal Color Palettes for ggplot2}
+---
+
+# Introduction
+
+placeholder
+
+```{r}
+library("ggsci")
+```
+
+# Acknowledgements
+
+placeholder
+
+# References
