@@ -3,9 +3,9 @@
 \docType{package}
 \name{ggsci-package}
 \alias{ggsci-package}
-\title{Scientific Journal Color Palettes for ggplot2}
+\title{Scientific Journal Color Palettes}
 \description{
-Scientific Journal Color Palettes for ggplot2
+Scientific Journal Color Palettes
 }
 \details{
 The vignette can be opened with \code{vignette('ggsci')}.

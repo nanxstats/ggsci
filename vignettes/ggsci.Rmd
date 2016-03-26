@@ -22,8 +22,52 @@ placeholder
 library("ggsci")
 ```
 
+# Available Palettes
+
++--------------+-------------------------------------------------+
+| Value        | Color Palette Related Journals                  |
++==============+=================================================+
+| `"JCO"`      | _Journal of Clinical Oncology_                  |
++--------------+-------------------------------------------------+
+| `"Lancet"`   | Lancet journals, such as _Lancet Oncology_      |
++--------------+-------------------------------------------------+
+| `"NPG"`      | NPG journals, such as _Nature Reviews Cancer_   |
++--------------+-------------------------------------------------+
+| `"AAAS"`     | AAAS Journals, such as _Science_                |
++--------------+-------------------------------------------------+
+| `"Simpsons"` | The Simpsons                                    |
++--------------+-------------------------------------------------+
+| `"Schwifty"` | Rick and Morty                                  |
++--------------+-------------------------------------------------+
+
+## Journal Color Palettes
+
+## Sci-Fi Color Palettes
+
+To fully reveal the potential of the package name `ggsci`, we also included
+several built-in color palettes inspired by sci-fi and comedy shows.
+
+# For ggplot2 graphics
+
+As functions:
+
+  * `scale_color_npg()`
+  * `scale_fill_npg()`
+  * `scale_color_gradient_npg()`
+
+Remember to set aliases:
+
+  * `scale_colour_npg = scale_color_npg`
+  * `scale_colour_gradient_npg() = scale_color_gradient_npg()`
+
+# For non-ggplot2 graphics
+
+To use in base graphics or lattice graphics, use `ggsci_npg_discrete`.
+
+Color palettes also available as direct output functions, like in viridis.
+
 # Acknowledgements
 
-placeholder
+Note some of the palettes might not be the best choice on aspects like color-blind safe, photocopy safe, or print friendly. If you have such considerations, you might want to check out the well-designed [ColorBrewer](http://colorbrewer2.org) palette and [viridis](https://cran.r-project.org/package=viridis) palette.
 
 # References
