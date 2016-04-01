@@ -1,9 +1,8 @@
 ---
-title: "Scientific Journal Color Palettes for ggplot2"
+title: "Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2"
 author: "Nan Xiao <<nanx@uchicago.edu>> <br>
          Miaozhu Li <<miaozhu.li@duke.edu>>"
 date: "`r Sys.Date()`"
-bibliography: ggsci.bib
 output:
   rmarkdown::html_vignette:
     toc: true
@@ -11,63 +10,204 @@ output:
     css: ggsci.css
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Scientific Journal Color Palettes for ggplot2}
+  %\VignetteIndexEntry{Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2}
 ---
 
 # Introduction
 
-placeholder
+> My eyes were finally opened and I understood nature. I learned at the same time to love it.
+>
+> --- Claude Monet
 
-```{r}
-library("ggsci")
-```
+The `ggsci` package offers a collection of high-quality color palettes
+inspired by colors used in scientific journals and science fiction TV shows.
 
 # Available Palettes
 
-+--------------+-------------------------------------------------+
-| Value        | Color Palette Related Journals                  |
-+==============+=================================================+
-| `"JCO"`      | _Journal of Clinical Oncology_                  |
-+--------------+-------------------------------------------------+
-| `"Lancet"`   | Lancet journals, such as _Lancet Oncology_      |
-+--------------+-------------------------------------------------+
-| `"NPG"`      | NPG journals, such as _Nature Reviews Cancer_   |
-+--------------+-------------------------------------------------+
-| `"AAAS"`     | AAAS Journals, such as _Science_                |
-+--------------+-------------------------------------------------+
-| `"Simpsons"` | The Simpsons                                    |
-+--------------+-------------------------------------------------+
-| `"Schwifty"` | Rick and Morty                                  |
-+--------------+-------------------------------------------------+
+The color palettes in `ggsci` are available as `ggplot2` scales.
+For discrete palettes, the scales are named as:
 
-## Journal Color Palettes
+  * `scale_color_palname()`
+  * `scale_fill_palname()`
 
-## Sci-Fi Color Palettes
+We also provided aliases, such as `scale_colour_palname()` for `scale_color_palname()`.
+All available palettes are listed in the table below:
 
-To fully reveal the potential of the package name `ggsci`, we also included
-several built-in color palettes inspired by sci-fi and comedy shows.
++----------------+------------------------------+-----------------+----------------------+
+| Name           | Scales                       | Palette Types   | Palette Generator    |
++================+==============================+=================+======================+
+| NPG            | `scale_color_npg()`          | `"nrc"`         | `pal_npg()`          |
+|                | `scale_fill_npg()`           |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| AAAS           | `scale_color_aaas()`         | `"default"`     | `pal_aaas()`         |
+|                | `scale_fill_aaas()`          |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| Lancet         | `scale_color_lancet()`       | `"lanonc"`      | `pal_lancet()`       |
+|                | `scale_fill_lancet()`        |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| JCO            | `scale_color_jco()`          | `"default"`     | `pal_jco()`          |
+|                | `scale_fill_jco()`           |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| UCSCGB         | `scale_color_ucscgb()`       | `"default"`     | `pal_ucscgb()`       |
+|                | `scale_fill_ucscgb()`        |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| UChicago       | `scale_color_uchicago()`     | `"default"`     | `pal_uchicago()`     |
+|                | `scale_fill_uchicago()`      | `"light"`       |                      |
+|                |                              | `"dark"`        |                      |
++----------------+------------------------------+-----------------+----------------------+
+| The Simpsons   | `scale_color_simpsons()`     | `"springfield"` | `pal_simpsons()`     |
+|                | `scale_fill_simpsons()`      |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
+| Rick and Morty | `scale_color_rickandmorty()` | `"schwifty"`    | `pal_rickandmorty()` |
+|                | `scale_fill_rickandmorty()`  |                 |                      |
++----------------+------------------------------+-----------------+----------------------+
 
-# For ggplot2 graphics
+Next, we use scatterplots with smooth curves, and bar plots to demonstrate the
+discrete color palettes:
 
-As functions:
+```{r}
+library("ggsci")
+library("ggplot2")
+library("gridExtra")
 
-  * `scale_color_npg()`
-  * `scale_fill_npg()`
-  * `scale_color_gradient_npg()`
+data("diamonds")
 
-Remember to set aliases:
+p1 = ggplot(subset(diamonds, carat >= 2.2),
+       aes(x = table, y = price, colour = cut)) +
+  geom_point(alpha = 0.7) +
+  geom_smooth(alpha = 0.05, size = 1, span = 1) +
+  theme_bw()
 
-  * `scale_colour_npg = scale_color_npg`
-  * `scale_colour_gradient_npg() = scale_color_gradient_npg()`
+p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70), 
+       aes(x = depth, fill = cut)) +
+  geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
+  theme_bw()
+```
 
-# For non-ggplot2 graphics
+## NPG
 
-To use in base graphics or lattice graphics, use `ggsci_npg_discrete`.
+The NPG palette is inspired by journals published by Nature Publishing Group:
 
-Color palettes also available as direct output functions, like in viridis.
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_npg = p1 + scale_color_npg()
+p2_npg = p2 + scale_fill_npg()
+grid.arrange(p1_npg, p2_npg, ncol = 2)
+```
 
-# Acknowledgements
+## AAAS
 
-Note some of the palettes might not be the best choice on aspects like color-blind safe, photocopy safe, or print friendly. If you have such considerations, you might want to check out the well-designed [ColorBrewer](http://colorbrewer2.org) palette and [viridis](https://cran.r-project.org/package=viridis) palette.
+The AAAS palette is inspired by journals published by American Association
+for the Advancement of Science:
 
-# References
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_aaas = p1 + scale_color_aaas()
+p2_aaas = p2 + scale_fill_aaas()
+grid.arrange(p1_aaas, p2_aaas, ncol = 2)
+```
+
+## Lancet
+
+The Lancet palette is inspired by Lancet journals, such as <emph>Lancet Oncology</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_lancet = p1 + scale_color_lancet()
+p2_lancet = p2 + scale_fill_lancet()
+grid.arrange(p1_lancet, p2_lancet, ncol = 2)
+```
+
+## JCO
+
+The JCO palette is inspired by the colors used in <emph>Journal of Clinical Oncology</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_jco = p1 + scale_color_jco()
+p2_jco = p2 + scale_fill_jco()
+grid.arrange(p1_jco, p2_jco, ncol = 2)
+```
+
+## UCSCGB
+
+The UCSCGB palette is from the colors used by
+[UCSC Genome Browser](https://genome.ucsc.edu) for
+representing chromosomes. This palette has been intensively
+used in visualizations produced by [Circos](http://circos.ca).
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_ucscgb = p1 + scale_color_ucscgb()
+p2_ucscgb = p2 + scale_fill_ucscgb()
+grid.arrange(p1_ucscgb, p2_ucscgb, ncol = 2)
+```
+
+## UChicago
+
+The UChicago palette is based on
+[the colors](http://communications.uchicago.edu/identity/color-palette)
+used by The University of Chicago.
+There are three palette types (`default`, `light`, `dark`) available.
+
+```{r, fig.width = 10.67, fig.height = 12, out.width = 800, out.height = 900, dpi = 150}
+p1_uchicago = p1 + scale_color_uchicago()
+p2_uchicago = p2 + scale_fill_uchicago()
+p1_uchicago_light = p1 + scale_color_uchicago("light")
+p2_uchicago_light = p2 + scale_fill_uchicago("light")
+p1_uchicago_dark  = p1 + scale_color_uchicago("dark")
+p2_uchicago_dark  = p2 + scale_fill_uchicago("dark")
+grid.arrange(p1_uchicago,       p2_uchicago,
+             p1_uchicago_light, p2_uchicago_light,
+             p1_uchicago_dark,  p2_uchicago_dark,
+             ncol = 2, nrow = 3)
+```
+
+## The Simpsons
+
+This palette is inspired by the colors used in the TV show <emph>The Simpsons</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_simpsons = p1 + scale_color_simpsons()
+p2_simpsons = p2 + scale_fill_simpsons()
+grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
+```
+
+## Rick and Morty
+
+This palette is inspired by the colors used in the TV show <emph>Rick and Morty</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_rickandmorty = p1 + scale_color_rickandmorty()
+p2_rickandmorty = p2 + scale_fill_rickandmorty()
+grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
+```
+
+# Non-ggplot2 Graphics
+
+To apply the color palettes in `ggsci` to other graphics systems
+(such as base graphics and lattice graphics), simply use the
+palette generator functions in the table above. For example:
+
+```{r, fig.width = 6.67, fig.height = 6.67, out.width = 500, out.height = 500, dpi = 150}
+mypal = pal_npg("nrc", alpha = 0.7)(9)
+mypal
+
+library("scales")
+show_col(mypal)
+```
+
+You will be able to use the generated hex color codes for such
+graphics systems accordingly. The transparent level of the
+entire palette is easily adjustable via the argument `"alpha"`
+in every generator or scale function.
+
+# Discussion
+
+Please note some of the palettes might not be the best choice for certain
+purposes, such as color-blind safe, photocopy safe, or print friendly.
+If you do have such considerations, you might want to check out
+color palettes like [ColorBrewer](http://colorbrewer2.org)
+and [viridis](https://cran.r-project.org/package=viridis).
+
+The color palettes in this package are solely created for research purposes.
+The authors are not responsible for the usage of such palettes.
+
+<hr>
+
+Project website: [ggsci.net](http://ggsci.net)

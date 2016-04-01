@@ -3,12 +3,12 @@
 \docType{package}
 \name{ggsci-package}
 \alias{ggsci-package}
-\title{Scientific Journal Color Palettes}
+\title{Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2}
 \description{
-Scientific Journal Color Palettes
+Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2
 }
 \details{
-The vignette can be opened with \code{vignette('ggsci')}.
+Opened the vignette via \code{vignette("ggsci")}.
 
 \tabular{ll}{ Package: \tab ggsci\cr
 Type: \tab Package\cr

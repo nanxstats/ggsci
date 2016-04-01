@@ -1,6 +1,14 @@
-# CHANGES IN ggsci VERSION 1.0 (2016-03-25)
+# CHANGES IN ggsci VERSION 1.0 (2016-04-01)
 
 ## NEW FEATURES
 
-* Initial version of ggsci
-* 4 color palettes
+ * First version
+ * 8 discrete color palettes:
+   * NPG
+   * AAAS
+   * Lancet
+   * JCO
+   * UCSCGB
+   * UChicago
+   * Simpsons
+   * Rick and Morty

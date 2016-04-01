@@ -16,15 +16,15 @@ body {
 
 #TOC {
   clear: both;
-  margin: 0 0 10px 10px;
-  padding: 4px;
-  width: 780px;
+  margin: 0 0 10px 0px;
+  padding: 15px;
+  width: 770px;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
 
   background-color: #f6f6f6;
-  font-size: 14px;
-  line-height: 1.3;
+  font-size: 16px;
+  line-height: 1.5;
 }
   #TOC .toctitle {
     font-weight: bold;
@@ -33,7 +33,7 @@ body {
   }
 
   #TOC ul {
-    padding-left: 40px;
+    padding-left: 50px;
     margin-left: -1.5em;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -42,7 +42,7 @@ body {
     margin-left: -2em;
   }
   #TOC li {
-    line-height: 16px;
+    line-height: 20px;
   }
 
 table {
@@ -171,6 +171,10 @@ em {
   font-style: normal;
 }
 
+emph {
+  font-style: oblique;
+}
+
 h5, h6 {
   border-bottom: 1px solid #ccc;
   font-size: 105%;
@@ -203,3 +207,9 @@ code > span.ot { color: #4d4d4c; } /* OtherToken */
 code > span.al { color: #ff0000; } /* AlertToken */
 code > span.fu { color: #4271ae; } /* Function calls */ 
 code > span.er { color: #a61717; } /* ErrorTok */
+
+/* centering images */
+img {
+    display: block;
+    margin: 0 auto;
+}
