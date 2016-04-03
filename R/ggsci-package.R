@@ -1,6 +1,6 @@
-#' Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2
+#' Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
 #'
-#' Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2
+#' Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
 #'
 #' Opened the vignette via \code{vignette("ggsci")}.
 #'

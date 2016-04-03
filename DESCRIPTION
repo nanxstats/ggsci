@@ -1,11 +1,11 @@
 Package: ggsci
 Type: Package
-Title: Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2
-Version: 1.0
-Date: 2016-04-02
+Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
+Version: 1.1
+Date: 2016-04-03
 Author: Nan Xiao <nanx@uchicago.edu>, Miaozhu Li <miaozhu.li@duke.edu>
 Maintainer: Nan Xiao <nanx@uchicago.edu>
-Description: A collection of ggplot2 color palettes inspired by scientific journals and science fiction TV shows.
+Description: A collection of 'ggplot2' color palettes inspired by scientific journals and science fiction TV shows.
 License: GPL
 LazyData: TRUE
 VignetteBuilder: knitr
