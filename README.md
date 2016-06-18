@@ -27,7 +27,7 @@ To load the package in R, simply use
 library("ggsci")
 ```
 
-and you are all set. See [the vignette](https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html) (or open with `vignette("ggsci")` in R) for a quick-start guide.
+and you are all set. See [the vignette](http://ggsci.net/doc/) (or open with `vignette("ggsci")` in R) for a quick-start guide.
 
 ## Links
 
