@@ -8,6 +8,8 @@ output:
     toc: true
     number_sections: true
     css: ggsci.css
+    includes:
+      in_header: header.html
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2}
@@ -15,7 +17,9 @@ vignette: >
 
 # Introduction
 
-> My eyes were finally opened and I understood nature. I learned at the same time to love it.
+> My eyes were finally opened and I understood nature.
+>
+> I learned at the same time to love it.
 >
 > --- Claude Monet
 
