@@ -23,7 +23,7 @@ show_col(pal_jco("default")(10))
 show_col(pal_jco("default", alpha = 0.6)(10))
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 

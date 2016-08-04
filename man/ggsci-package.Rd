@@ -15,7 +15,7 @@ Type: \tab Package\cr
 License: \tab GPL\cr }
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}>
+Nan Xiao <\email{me@nanx.me}>
         Miaozhu Li <\email{miaozhu.li@duke.edu}>
 }
 

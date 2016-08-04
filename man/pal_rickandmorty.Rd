@@ -23,7 +23,7 @@ show_col(pal_rickandmorty("schwifty")(12))
 show_col(pal_rickandmorty("schwifty", alpha = 0.6)(12))
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 

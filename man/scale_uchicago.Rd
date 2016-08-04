@@ -54,7 +54,7 @@ p1 + scale_color_uchicago(palette = "dark")
 p2 + scale_fill_uchicago(palette = "dark")
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 \references{

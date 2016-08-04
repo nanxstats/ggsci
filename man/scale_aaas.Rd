@@ -41,7 +41,7 @@ ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
   theme_bw() + scale_fill_aaas()
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 

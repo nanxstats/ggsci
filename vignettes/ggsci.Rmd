@@ -1,7 +1,7 @@
 ---
 title: "Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2"
-author: "Nan Xiao <<nanx@uchicago.edu>> <br>
-         Miaozhu Li <<miaozhu.li@duke.edu>>"
+author: "Nan Xiao <<http://nanx.me>> <br>
+         Miaozhu Li <<http://miaozhu.li>>"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:

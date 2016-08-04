@@ -23,7 +23,7 @@ show_col(pal_ucscgb("default")(26))
 show_col(pal_ucscgb("default", alpha = 0.6)(26))
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 

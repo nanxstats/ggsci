@@ -14,7 +14,7 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{nanx@@uchicago.edu}> |
+#' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{http://nanx.me}{http://nanx.me}>
 #'
 #' @examples
@@ -48,7 +48,7 @@ pal_npg = function (palette = c('nrc'), alpha = 1) {
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{nanx@@uchicago.edu}> |
+#' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{http://nanx.me}{http://nanx.me}>
 #'
 #' @rdname scale_npg

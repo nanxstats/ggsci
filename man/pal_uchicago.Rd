@@ -26,7 +26,7 @@ show_col(pal_uchicago("light")(9))
 show_col(pal_uchicago("dark")(9))
 }
 \author{
-Nan Xiao <\email{nanx@uchicago.edu}> |
+Nan Xiao <\email{me@nanx.me}> |
 <\href{http://nanx.me}{http://nanx.me}>
 }
 \references{
