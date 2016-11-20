@@ -12,3 +12,13 @@
    * UChicago
    * Simpsons
    * Rick and Morty
+
+# CHANGES IN ggsci VERSION 2.0 (2016-11-20)
+
+## NEW FEATURES
+
+ * Two new discrete color palettes:
+   * D3 color palette
+   * Futurama color palette
+ * The first continuous color palette:
+   * GSEA GenePattern color palette

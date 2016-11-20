@@ -66,7 +66,7 @@ pal_uchicago = function (palette = c('default', 'light', 'dark'), alpha = 1) {
 #' p1 = ggplot(subset(diamonds, carat >= 2.2),
 #'             aes(x = table, y = price, colour = cut)) +
 #'   geom_point(alpha = 0.7) +
-#'   geom_smooth(alpha = 0.1, size = 1, span = 1) +
+#'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
 #'   theme_bw()
 #'
 #' p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),

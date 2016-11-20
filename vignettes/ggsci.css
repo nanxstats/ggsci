@@ -5,7 +5,7 @@ body {
   overflow: visible;
   padding-left: 2em;
   padding-right: 2em;
-  font-family: Merriweather, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: Lato, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 16px;
   line-height: 1.35;
 }
@@ -29,29 +29,31 @@ h4.date {
   width: 770px;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
-
   background-color: #f6f6f6;
   font-size: 16px;
   line-height: 1.5;
 }
-  #TOC .toctitle {
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 5px;
-  }
 
-  #TOC ul {
-    padding-left: 50px;
-    margin-left: -1.5em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  #TOC ul ul {
-    margin-left: -2em;
-  }
-  #TOC li {
-    line-height: 20px;
-  }
+#TOC .toctitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#TOC ul {
+  padding-left: 50px;
+  margin-left: -1.5em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#TOC ul ul {
+  margin-left: -2em;
+}
+
+#TOC li {
+  line-height: 20px;
+}
 
 table {
   margin: 1em auto;
@@ -60,22 +62,29 @@ table {
   border-style: outset;
   border-collapse: collapse;
 }
+
 table th {
   border-width: 2px;
   padding: 5px;
   border-style: inset;
 }
+
 table td {
   border-width: 1px;
   border-style: inset;
   line-height: 18px;
   padding: 5px 5px;
 }
-table, table th, table td {
+
+table,
+table th,
+table td {
   border-left-style: none;
   border-right-style: none;
 }
-table thead, table tr.even {
+
+table thead,
+table tr.even {
   background-color: #f7f7f7;
 }
 
@@ -98,35 +107,43 @@ hr {
 dl {
   margin-left: 0;
 }
-  dl dd {
-    margin-bottom: 13px;
-    margin-left: 13px;
-  }
-  dl dt {
-    font-weight: bold;
-  }
+
+dl dd {
+  margin-bottom: 13px;
+  margin-left: 13px;
+}
+
+dl dt {
+  font-weight: bold;
+}
 
 ul {
   margin-top: 0;
 }
-  ul li {
-    list-style: circle outside;
-  }
-  ul ul {
-    margin-bottom: 0;
-  }
 
-pre, code {
+ul li {
+  list-style: circle outside;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+pre,
+code {
   background-color: #f7f7f7;
   border-radius: 5px;
   color: #333;
-  white-space: pre-wrap;    /* Wrap long lines */
+  white-space: pre-wrap;
+  /* Wrap long lines */
 }
+
 pre {
   border-radius: 5px;
   margin: 5px 0px 10px 0px;
   padding: 10px;
 }
+
 pre:not([class]) {
   background-color: #f7f7f7;
 }
@@ -135,13 +152,16 @@ code {
   font-family: Menlo, Monaco, "Lucida Console", Consolas, "Courier New", monospace;
   font-size: 85%;
 }
-p > code, li > code {
+
+p>code,
+li>code {
   padding: 2px 0px;
 }
 
 div.figure {
   text-align: center;
 }
+
 img {
   background-color: #FFFFFF;
   padding: 2px;
@@ -184,7 +204,8 @@ emph {
   font-style: oblique;
 }
 
-h5, h6 {
+h5,
+h6 {
   border-bottom: 1px solid #ccc;
   font-size: 105%;
 }
@@ -193,32 +214,112 @@ a {
   color: #123d79;
   text-decoration: none;
 }
-  a:hover {
-    color: #007CC3; }
-  a:visited {
-    color: #581858; }
-  a:visited:hover {
-    color: #007CC3; }
+
+a:hover {
+  color: #007CC3;
+}
+
+a:visited {
+  color: #581858;
+}
+
+a:visited:hover {
+  color: #007CC3;
+}
+
 
 /* code highlight theme: highlight.js - tomorrow
    http://jmblog.github.io/color-themes-for-highlightjs/tomorrow/
 */
 
-code > span.kw { color: #4271ae; } /* Keyword */
-code > span.dt { color: #c82829; } /* DataType */
-code > span.dv { color: #f5871f; } /* DecVal (decimal values) */
-code > span.bn { color: #718c00; } /* BaseN */
-code > span.fl { color: #718c00; } /* Float */
-code > span.ch { color: #718c00; } /* Char */
-code > span.st { color: #718c00; } /* String */
-code > span.co { color: #8e908c; } /* Comment */
-code > span.ot { color: #4d4d4c; } /* OtherToken */
-code > span.al { color: #ff0000; } /* AlertToken */
-code > span.fu { color: #4271ae; } /* Function calls */ 
-code > span.er { color: #a61717; } /* ErrorTok */
+code>span.kw {
+  color: #4271ae;
+}
+
+
+/* Keyword */
+
+code>span.dt {
+  color: #c82829;
+}
+
+
+/* DataType */
+
+code>span.dv {
+  color: #f5871f;
+}
+
+
+/* DecVal (decimal values) */
+
+code>span.bn {
+  color: #718c00;
+}
+
+
+/* BaseN */
+
+code>span.fl {
+  color: #718c00;
+}
+
+
+/* Float */
+
+code>span.ch {
+  color: #718c00;
+}
+
+
+/* Char */
+
+code>span.st {
+  color: #718c00;
+}
+
+
+/* String */
+
+code>span.co {
+  color: #8e908c;
+}
+
+
+/* Comment */
+
+code>span.ot {
+  color: #4d4d4c;
+}
+
+
+/* OtherToken */
+
+code>span.al {
+  color: #ff0000;
+}
+
+
+/* AlertToken */
+
+code>span.fu {
+  color: #4271ae;
+}
+
+
+/* Function calls */
+
+code>span.er {
+  color: #a61717;
+}
+
+
+/* ErrorTok */
+
 
 /* centering images */
+
 img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }

@@ -12,5 +12,4 @@
 #' @docType package
 #' @author Nan Xiao <\email{me@@nanx.me}>
 #'         Miaozhu Li <\email{miaozhu.li@@duke.edu}>
-#'
 NULL

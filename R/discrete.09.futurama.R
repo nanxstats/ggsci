@@ -1,15 +1,14 @@
-#' Lancet Journal Color Palettes
+#' The Futurama Color Palettes
 #'
-#' Color palettes inspired by Lancet journals,
-#' such as \emph{Lancet Oncology}.
+#' Color palettes inspired by the colors used in \emph{Futurama}.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"lanonc"}
-#' (9-color palette inspired by \emph{Lancet Oncology}).
+#' Currently there is one available option: \code{"planetexpress"}
+#' (12-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
 #' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
 #'
-#' @export pal_lancet
+#' @export pal_futurama
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
@@ -19,15 +18,15 @@
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_lancet("lanonc")(9))
-#' show_col(pal_lancet("lanonc", alpha = 0.6)(9))
-pal_lancet = function (palette = c('lanonc'), alpha = 1) {
+#' show_col(pal_futurama("planetexpress")(12))
+#' show_col(pal_futurama("planetexpress", alpha = 0.6)(12))
+pal_futurama = function (palette = c('planetexpress'), alpha = 1) {
 
   palette = match.arg(palette)
 
   if (alpha > 1L | alpha <= 0L) stop('alpha must be in (0, 1]')
 
-  raw_cols = ggsci_db$'lancet'[[palette]]
+  raw_cols = ggsci_db$'futurama'[[palette]]
   raw_cols_rgb = col2rgb(raw_cols)
   alpha_cols = rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
                    alpha = alpha * 255L, names = names(raw_cols),
@@ -37,21 +36,21 @@ pal_lancet = function (palette = c('lanonc'), alpha = 1) {
 
 }
 
-#' Lancet Journal Color Scales
+#' The Futurama Color Scales
 #'
-#' See \code{\link{pal_lancet}} for details.
+#' See \code{\link{pal_futurama}} for details.
 #'
-#' @inheritParams pal_lancet
+#' @inheritParams pal_futurama
 #' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
 #'
-#' @export scale_color_lancet
+#' @export scale_color_futurama
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{http://nanx.me}{http://nanx.me}>
 #'
-#' @rdname scale_lancet
+#' @rdname scale_futurama
 #'
 #' @examples
 #' library("ggplot2")
@@ -60,30 +59,30 @@ pal_lancet = function (palette = c('lanonc'), alpha = 1) {
 #' ggplot(subset(diamonds, carat >= 2.2),
 #'        aes(x = table, y = price, colour = cut)) +
 #'   geom_point(alpha = 0.7) +
-#'   geom_smooth(alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_lancet()
+#'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
+#'   theme_bw() + scale_color_futurama()
 #'
 #' ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'        aes(x = depth, fill = cut)) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_lancet()
-scale_color_lancet = function (palette = c('lanonc'), alpha = 1, ...) {
+#'   theme_bw() + scale_fill_futurama()
+scale_color_futurama = function (palette = c('planetexpress'), alpha = 1, ...) {
 
   palette = match.arg(palette)
-  discrete_scale('colour', 'lancet', pal_lancet(palette, alpha), ...)
+  discrete_scale('colour', 'futurama', pal_futurama(palette, alpha), ...)
 
 }
 
-#' @export scale_colour_lancet
-#' @rdname scale_lancet
-scale_colour_lancet = scale_color_lancet
+#' @export scale_colour_futurama
+#' @rdname scale_futurama
+scale_colour_futurama = scale_color_futurama
 
-#' @export scale_fill_lancet
+#' @export scale_fill_futurama
 #' @importFrom ggplot2 discrete_scale
-#' @rdname scale_lancet
-scale_fill_lancet = function (palette = c('lanonc'), alpha = 1, ...) {
+#' @rdname scale_futurama
+scale_fill_futurama = function (palette = c('planetexpress'), alpha = 1, ...) {
 
   palette = match.arg(palette)
-  discrete_scale('fill', 'lancet', pal_lancet(palette, alpha), ...)
+  discrete_scale('fill', 'futurama', pal_futurama(palette, alpha), ...)
 
 }

@@ -4,7 +4,7 @@
 [![CRAN Version](http://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
 [![Downloads from the RStudio CRAN mirror](http://cranlogs.r-pkg.org/badges/ggsci)](http://cranlogs.r-pkg.org/badges/ggsci)
 
-`ggsci` offers a collection of `ggplot2` color palettes inspired by scientific journals and science fiction TV shows.
+`ggsci` offers a collection of `ggplot2` color palettes inspired by scientific journals, data visualization libraries, and science fiction TV shows.
 
 ## Installation
 

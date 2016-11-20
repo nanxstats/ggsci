@@ -23,51 +23,63 @@ vignette: >
 >
 > --- Claude Monet
 
-The `ggsci` package offers a collection of high-quality color palettes
-inspired by colors used in scientific journals and science fiction TV shows.
-
-# Available Palettes
-
-The color palettes in `ggsci` are available as `ggplot2` scales.
-For discrete palettes, the scales are named as:
+`ggsci` offers a collection of high-quality color palettes inspired by
+colors used in scientific journals, data visualization libraries,
+and science fiction TV shows. The color palettes in `ggsci` are
+available as `ggplot2` scales. For all the color palettes,
+the corresponding scales are named as:
 
   * `scale_color_palname()`
   * `scale_fill_palname()`
 
-We also provided aliases, such as `scale_colour_palname()` for `scale_color_palname()`.
-All available palettes are listed in the table below:
+We also provided aliases, such as `scale_colour_palname()` for
+`scale_color_palname()`. All available color palettes are
+summarized in the table below.
 
-+----------------+------------------------------+-----------------+----------------------+
-| Name           | Scales                       | Palette Types   | Palette Generator    |
-+================+==============================+=================+======================+
-| NPG            | `scale_color_npg()`          | `"nrc"`         | `pal_npg()`          |
-|                | `scale_fill_npg()`           |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| AAAS           | `scale_color_aaas()`         | `"default"`     | `pal_aaas()`         |
-|                | `scale_fill_aaas()`          |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| Lancet         | `scale_color_lancet()`       | `"lanonc"`      | `pal_lancet()`       |
-|                | `scale_fill_lancet()`        |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| JCO            | `scale_color_jco()`          | `"default"`     | `pal_jco()`          |
-|                | `scale_fill_jco()`           |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| UCSCGB         | `scale_color_ucscgb()`       | `"default"`     | `pal_ucscgb()`       |
-|                | `scale_fill_ucscgb()`        |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| UChicago       | `scale_color_uchicago()`     | `"default"`     | `pal_uchicago()`     |
-|                | `scale_fill_uchicago()`      | `"light"`       |                      |
-|                |                              | `"dark"`        |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| The Simpsons   | `scale_color_simpsons()`     | `"springfield"` | `pal_simpsons()`     |
-|                | `scale_fill_simpsons()`      |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
-| Rick and Morty | `scale_color_rickandmorty()` | `"schwifty"`    | `pal_rickandmorty()` |
-|                | `scale_fill_rickandmorty()`  |                 |                      |
-+----------------+------------------------------+-----------------+----------------------+
++----------------+------------------------------+-------------------+----------------------+
+| Name           | Scales                       | Palette Types     | Palette Generator    |
++================+==============================+===================+======================+
+| NPG            | `scale_color_npg()`          | `"nrc"`           | `pal_npg()`          |
+|                | `scale_fill_npg()`           |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| AAAS           | `scale_color_aaas()`         | `"default"`       | `pal_aaas()`         |
+|                | `scale_fill_aaas()`          |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| Lancet         | `scale_color_lancet()`       | `"lanonc"`        | `pal_lancet()`       |
+|                | `scale_fill_lancet()`        |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| JCO            | `scale_color_jco()`          | `"default"`       | `pal_jco()`          |
+|                | `scale_fill_jco()`           |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| UCSCGB         | `scale_color_ucscgb()`       | `"default"`       | `pal_ucscgb()`       |
+|                | `scale_fill_ucscgb()`        |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| D3             | `scale_color_d3()`<br>       | `"category10"`    | `pal_d3()`           |
+|                | `scale_fill_d3()`            | `"category20"`    |                      |
+|                |                              | `"category20b"`   |                      |
+|                |                              | `"category20c"`   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| UChicago       | `scale_color_uchicago()`     | `"default"`<br>   | `pal_uchicago()`     |
+|                | `scale_fill_uchicago()`      | `"light"`<br>     |                      |
+|                |                              | `"dark"`          |                      |
++----------------+------------------------------+-------------------+----------------------+
+| The Simpsons   | `scale_color_simpsons()`     | `"springfield"`   | `pal_simpsons()`     |
+|                | `scale_fill_simpsons()`      |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| Futurama       | `scale_color_futurama()`     | `"planetexpress"` | `pal_futurama()`     |
+|                | `scale_fill_futurama()`      |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| Rick and Morty | `scale_color_rickandmorty()` | `"schwifty"`      | `pal_rickandmorty()` |
+|                | `scale_fill_rickandmorty()`  |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| GSEA           | `scale_color_gsea()`         | `"default"`       | `pal_gsea()`         |
+|                | `scale_fill_gsea()`          |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
 
-Next, we use scatterplots with smooth curves, and bar plots to demonstrate the
-discrete color palettes:
+# Discrete Color Palettes
+
+We will use scatterplots with smooth curves, and bar plots to demonstrate
+the discrete color palettes in `ggsci`.
 
 ```{r}
 library("ggsci")
@@ -79,7 +91,7 @@ data("diamonds")
 p1 = ggplot(subset(diamonds, carat >= 2.2),
        aes(x = table, y = price, colour = cut)) +
   geom_point(alpha = 0.7) +
-  geom_smooth(alpha = 0.05, size = 1, span = 1) +
+  geom_smooth(method = "loess", alpha = 0.05, size = 1, span = 1) +
   theme_bw()
 
 p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70), 
@@ -90,7 +102,7 @@ p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 
 ## NPG
 
-The NPG palette is inspired by journals published by Nature Publishing Group:
+The NPG palette is inspired by the plots in journals published by Nature Publishing Group:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_npg = p1 + scale_color_npg()
@@ -100,7 +112,7 @@ grid.arrange(p1_npg, p2_npg, ncol = 2)
 
 ## AAAS
 
-The AAAS palette is inspired by journals published by American Association
+The AAAS palette is inspired by the plots in journals published by American Association
 for the Advancement of Science:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
@@ -111,7 +123,7 @@ grid.arrange(p1_aaas, p2_aaas, ncol = 2)
 
 ## Lancet
 
-The Lancet palette is inspired by Lancet journals, such as <emph>Lancet Oncology</emph>:
+The Lancet palette is inspired by the plots in Lancet journals, such as <emph>Lancet Oncology</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_lancet = p1 + scale_color_lancet()
@@ -121,7 +133,7 @@ grid.arrange(p1_lancet, p2_lancet, ncol = 2)
 
 ## JCO
 
-The JCO palette is inspired by the colors used in <emph>Journal of Clinical Oncology</emph>:
+The JCO palette is inspired by the the plots in <emph>Journal of Clinical Oncology</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_jco = p1 + scale_color_jco()
@@ -140,6 +152,31 @@ used in visualizations produced by [Circos](http://circos.ca).
 p1_ucscgb = p1 + scale_color_ucscgb()
 p2_ucscgb = p2 + scale_fill_ucscgb()
 grid.arrange(p1_ucscgb, p2_ucscgb, ncol = 2)
+```
+
+## D3
+
+The D3 palette is from the categorical colors used by
+[D3.js](https://d3js.org) (version 3.x and before).
+There are four palette types (`category10`, `category20`,
+`category20b`, `category20c`) available.
+
+```{r, fig.width = 10.67, fig.height = 16, out.width = 800, out.height = 1200, dpi = 150}
+p1_d3 = p1 + scale_color_d3()
+p2_d3 = p2 + scale_fill_d3()
+p1_d3_c10 = p1 + scale_color_d3("category10")
+p2_d3_c10 = p2 + scale_fill_d3("category10")
+p1_d3_c20 = p1 + scale_color_d3("category20")
+p2_d3_c20 = p2 + scale_fill_d3("category20")
+p1_d3_c20b = p1 + scale_color_d3("category20b")
+p2_d3_c20b = p2 + scale_fill_d3("category20b")
+p1_d3_c20c = p1 + scale_color_d3("category20c")
+p2_d3_c20c = p2 + scale_fill_d3("category20c")
+grid.arrange(p1_d3_c10,  p2_d3_c10,
+             p1_d3_c20,  p2_d3_c20,
+             p1_d3_c20b, p2_d3_c20b,
+             p1_d3_c20c, p2_d3_c20c,
+             ncol = 2, nrow = 4)
 ```
 
 ## UChicago
@@ -172,6 +209,16 @@ p2_simpsons = p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 ```
 
+## Futurama
+
+This palette is inspired by the colors used in the TV show <emph>Futurama</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_futurama = p1 + scale_color_futurama()
+p2_futurama = p2 + scale_fill_futurama()
+grid.arrange(p1_futurama, p2_futurama, ncol = 2)
+```
+
 ## Rick and Morty
 
 This palette is inspired by the colors used in the TV show <emph>Rick and Morty</emph>:
@@ -180,6 +227,34 @@ This palette is inspired by the colors used in the TV show <emph>Rick and Morty<
 p1_rickandmorty = p1 + scale_color_rickandmorty()
 p2_rickandmorty = p2 + scale_fill_rickandmorty()
 grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
+```
+
+# Continuous Color Palettes
+
+We will use a correlation matrix visualization (a special type of heatmap)
+to demonstrate the continuous color palettes in `ggsci`.
+
+```{r}
+library("reshape2")
+
+data("mtcars")
+cor = cor(mtcars)
+cor_melt = melt(cor)
+
+p3 = ggplot(cor_melt,
+            aes(x = Var1, y = Var2, fill = value)) + 
+  geom_tile(colour = "black", size = 0.3) +
+  theme_bw()
+```
+
+## GSEA
+
+The GSEA palette (continuous) is inspired by the heatmaps generated by
+[GSEA GenePattern](http://software.broadinstitute.org/cancer/software/genepattern/).
+
+```{r, fig.width = 8, fig.height = 6.67, out.width = 600, out.height = 500, dpi = 150}
+p3_gsea = p3 + scale_fill_gsea()
+p3_gsea
 ```
 
 # Non-ggplot2 Graphics
