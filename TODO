@@ -1,4 +1,8 @@
 # TODO
 
   * Star Trek uniform color palette (request from David Gerard)
+  * Two IGV chromosome color palettes
+    * chromosome: https://github.com/igvteam/igv/blob/master/src/org/broad/igv/util/ChromosomeColors.java#L59-L116 order by http://software.broadinstitute.org/software/igv/viewing_gwas
+    * alternating: #5773CC + #FFB900
+  * LocusZoom color palette: https://github.com/statgen/locuszoom/blob/master/locuszoom.app.js#L659-L665
   * Add a function for displaying all color palettes
