@@ -25,8 +25,8 @@ vignette: >
 
 `ggsci` offers a collection of high-quality color palettes inspired by
 colors used in scientific journals, data visualization libraries,
-and science fiction TV shows. The color palettes in `ggsci` are
-available as `ggplot2` scales. For all the color palettes,
+science fiction movies, and TV shows. The color palettes in `ggsci`
+are available as `ggplot2` scales. For all the color palettes,
 the corresponding scales are named as:
 
   * `scale_color_palname()`
@@ -94,7 +94,7 @@ p1 = ggplot(subset(diamonds, carat >= 2.2),
   geom_smooth(method = "loess", alpha = 0.05, size = 1, span = 1) +
   theme_bw()
 
-p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70), 
+p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
        aes(x = depth, fill = cut)) +
   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
   theme_bw()
@@ -242,7 +242,7 @@ cor = cor(mtcars)
 cor_melt = melt(cor)
 
 p3 = ggplot(cor_melt,
-            aes(x = Var1, y = Var2, fill = value)) + 
+            aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", size = 0.3) +
   theme_bw()
 ```
