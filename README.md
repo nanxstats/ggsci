@@ -1,4 +1,4 @@
-# ggsci
+# ggsci  <a href="http://ggsci.net"><img src="http://nanx.me/images/project-ggsci.png" align="right" alt="logo" height="180" width="180" /></a>
 
 [![Build Status](https://travis-ci.org/road2stat/ggsci.svg?branch=master)](https://travis-ci.org/road2stat/ggsci)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/road2stat/ggsci?branch=master&svg=true)](https://ci.appveyor.com/project/road2stat/ggsci)
