@@ -32,6 +32,6 @@ and you are all set. See [the vignette](http://ggsci.net/doc/) (or open with `vi
 
 ## Links
 
-* Project website: [http://ggsci.net](http://ggsci.net)
+* Website: [http://ggsci.net](http://ggsci.net)
 * CRAN: [https://cran.r-project.org/package=ggsci](https://cran.r-project.org/package=ggsci)
 * GitHub: [https://github.com/road2stat/ggsci](https://github.com/road2stat/ggsci)
