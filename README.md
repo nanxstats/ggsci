@@ -30,6 +30,52 @@ library("ggsci")
 
 and you are all set. See [the vignette](http://ggsci.net/doc/) (or open with `vignette("ggsci")` in R) for a quick-start guide.
 
+## Gallery
+
+### NPG
+
+<img src="http://ggsci.net/img/gallery-npg.png" width="100%" alt="npg">
+
+### AAAS
+
+<img src="http://ggsci.net/img/gallery-aaas.png" width="100%" alt="npg">
+
+### Lancet
+
+<img src="http://ggsci.net/img/gallery-lancet.png" width="100%" alt="npg">
+
+### JCO
+
+<img src="http://ggsci.net/img/gallery-jco.png" width="100%" alt="npg">
+
+### UCSCGB
+
+<img src="http://ggsci.net/img/gallery-ucscgb.png" width="100%" alt="npg">
+
+### D3
+
+<img src="http://ggsci.net/img/gallery-d3.png" width="100%" alt="npg">
+
+### UChicago
+
+<img src="http://ggsci.net/img/gallery-uchicago.png" width="100%" alt="npg">
+
+### The Simpsons
+
+<img src="http://ggsci.net/img/gallery-simpsons.png" width="100%" alt="npg">
+
+### Futurama
+
+<img src="http://ggsci.net/img/gallery-futurama.png" width="100%" alt="npg">
+
+### Rick and Morty
+
+<img src="http://ggsci.net/img/gallery-rickandmorty.png" width="100%" alt="npg">
+
+### GSEA
+
+<img src="http://ggsci.net/img/gallery-gsea.png" width="100%" alt="npg">
+
 ## Links
 
 * Website: [http://ggsci.net](http://ggsci.net)

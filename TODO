@@ -1,6 +1,7 @@
 # TODO
 
   * Star Trek uniform color palette (request from David Gerard)
+  * Tron Legacy color palette https://github.com/bcomnes/sublime-tron-color-scheme
   * Two IGV chromosome color palettes
     * chromosome: https://github.com/igvteam/igv/blob/master/src/org/broad/igv/util/ChromosomeColors.java#L59-L116 order by http://software.broadinstitute.org/software/igv/viewing_gwas
     * alternating: #5773CC + #FFB900
