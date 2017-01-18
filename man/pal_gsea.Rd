@@ -29,6 +29,6 @@ show_col(pal_gsea("default", n = 30, alpha = 0.6, reverse = TRUE)(30))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{http://nanx.me}{http://nanx.me}>
+<\href{https://nanx.me}{https://nanx.me}>
 }
 

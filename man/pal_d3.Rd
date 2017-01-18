@@ -30,7 +30,7 @@ show_col(pal_d3("category20c")(20))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{http://nanx.me}{http://nanx.me}>
+<\href{https://nanx.me}{https://nanx.me}>
 }
 \references{
 \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}

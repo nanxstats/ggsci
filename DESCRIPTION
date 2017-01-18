@@ -10,7 +10,7 @@ Description: A collection of 'ggplot2' color palettes inspired by
 License: GPL-3 | file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
-URL: http://ggsci.net, https://github.com/road2stat/ggsci
+URL: https://ggsci.net, https://github.com/road2stat/ggsci
 BugReports: https://github.com/road2stat/ggsci/issues
 Depends:
     R (>= 3.0.2)

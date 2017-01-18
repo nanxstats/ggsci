@@ -16,7 +16,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references \url{http://communications.uchicago.edu/identity/color-palette}
 #'
@@ -53,7 +53,7 @@ pal_uchicago = function (palette = c('default', 'light', 'dark'), alpha = 1) {
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references \url{http://communications.uchicago.edu/identity/color-palette}
 #'

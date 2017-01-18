@@ -24,6 +24,6 @@ show_col(pal_jco("default", alpha = 0.6)(10))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{http://nanx.me}{http://nanx.me}>
+<\href{https://nanx.me}{https://nanx.me}>
 }
 

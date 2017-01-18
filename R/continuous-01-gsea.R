@@ -17,7 +17,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @note The 12 base colors used in this palette are derived from
 #' \href{ftp://ftp.broad.mit.edu/pub/genepattern/modules/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf}{this document}.
@@ -57,7 +57,7 @@ rgb_gsea = function (palette = c('default'), n = 12,
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @examples
 #' library("scales")
@@ -85,7 +85,7 @@ pal_gsea = function (palette = c('default'), n = 12,
 #' @importFrom ggplot2 scale_color_gradientn
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @rdname scale_gsea
 #'

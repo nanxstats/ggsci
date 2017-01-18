@@ -17,7 +17,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
 #'
@@ -56,7 +56,7 @@ pal_d3 = function (palette = c('category10', 'category20',
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{http://nanx.me}{http://nanx.me}>
+#' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
 #'
