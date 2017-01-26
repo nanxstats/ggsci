@@ -9,8 +9,9 @@
   - alternating: #5773CC + #FFB900
 - Material Design color palette: https://www.ctan.org/tex-archive/macros/latex/contrib/xcolor-material
 - LocusZoom color palette: https://github.com/statgen/locuszoom/blob/master/locuszoom.app.js#L659-L665
+- PGF color palette "exotic": http://mirrors.ctan.org/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf (p. 211)
 
-- Star Trek uniform color palette (request from David Gerard)
+- Star Trek uniform color palette (request from David Gerard @dcgerard)
 - Rick and Morty: Plumbus
 - Tron Legacy color palette (serves dark plot background) https://github.com/bcomnes/sublime-tron-color-scheme
 
