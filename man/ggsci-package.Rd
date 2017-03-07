@@ -12,7 +12,7 @@ Opened the vignette via \code{vignette("ggsci")}.
 
 \tabular{ll}{ Package: \tab ggsci\cr
 Type: \tab Package\cr
-License: \tab GPL\cr }
+License: \tab GPL-3\cr }
 }
 \author{
 Nan Xiao <\email{me@nanx.me}>

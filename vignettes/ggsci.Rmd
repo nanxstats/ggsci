@@ -45,6 +45,9 @@ summarized in the table below.
 | AAAS           | `scale_color_aaas()`         | `"default"`       | `pal_aaas()`         |
 |                | `scale_fill_aaas()`          |                   |                      |
 +----------------+------------------------------+-------------------+----------------------+
+| NEJM           | `scale_color_nejm()`         | `"default"`       | `pal_nejm()`         |
+|                | `scale_fill_nejm()`          |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
 | Lancet         | `scale_color_lancet()`       | `"lanonc"`        | `pal_lancet()`       |
 |                | `scale_fill_lancet()`        |                   |                      |
 +----------------+------------------------------+-------------------+----------------------+
@@ -59,18 +62,27 @@ summarized in the table below.
 |                |                              | `"category20b"`   |                      |
 |                |                              | `"category20c"`   |                      |
 +----------------+------------------------------+-------------------+----------------------+
+| LocusZoom      | `scale_color_locuszoom()`    | `"default"`       | `pal_locuszoom()`    |
+|                | `scale_fill_locuszoom()`     |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| IGV            | `scale_color_igv()`          | `"default"`<br>   | `pal_igv()`          |
+|                | `scale_fill_igv()`           | `"alternating"`   |                      |
++----------------+------------------------------+-------------------+----------------------+
 | UChicago       | `scale_color_uchicago()`     | `"default"`<br>   | `pal_uchicago()`     |
 |                | `scale_fill_uchicago()`      | `"light"`<br>     |                      |
 |                |                              | `"dark"`          |                      |
 +----------------+------------------------------+-------------------+----------------------+
-| The Simpsons   | `scale_color_simpsons()`     | `"springfield"`   | `pal_simpsons()`     |
-|                | `scale_fill_simpsons()`      |                   |                      |
+| Star Trek      | `scale_color_startrek()`     | `"uniform"`       | `pal_startrek()`     |
+|                | `scale_fill_startrek()`      |                   |                      |
 +----------------+------------------------------+-------------------+----------------------+
 | Futurama       | `scale_color_futurama()`     | `"planetexpress"` | `pal_futurama()`     |
 |                | `scale_fill_futurama()`      |                   |                      |
 +----------------+------------------------------+-------------------+----------------------+
 | Rick and Morty | `scale_color_rickandmorty()` | `"schwifty"`      | `pal_rickandmorty()` |
 |                | `scale_fill_rickandmorty()`  |                   |                      |
++----------------+------------------------------+-------------------+----------------------+
+| The Simpsons   | `scale_color_simpsons()`     | `"springfield"`   | `pal_simpsons()`     |
+|                | `scale_fill_simpsons()`      |                   |                      |
 +----------------+------------------------------+-------------------+----------------------+
 | GSEA           | `scale_color_gsea()`         | `"default"`       | `pal_gsea()`         |
 |                | `scale_fill_gsea()`          |                   |                      |
@@ -119,6 +131,16 @@ for the Advancement of Science:
 p1_aaas = p1 + scale_color_aaas()
 p2_aaas = p2 + scale_fill_aaas()
 grid.arrange(p1_aaas, p2_aaas, ncol = 2)
+```
+
+## NEJM
+
+The NEJM palette is inspired by the plots in <emph>The New England Journal of Medicine</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_nejm = p1 + scale_color_nejm()
+p2_nejm = p2 + scale_fill_nejm()
+grid.arrange(p1_nejm, p2_nejm, ncol = 2)
 ```
 
 ## Lancet
@@ -179,6 +201,36 @@ grid.arrange(p1_d3_c10,  p2_d3_c10,
              ncol = 2, nrow = 4)
 ```
 
+## LocusZoom
+
+The LocusZoom palette is based on the colors used by
+[LocusZoom](http://locuszoom.org/).
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_locuszoom = p1 + scale_color_locuszoom()
+p2_locuszoom = p2 + scale_fill_locuszoom()
+grid.arrange(p1_locuszoom, p2_locuszoom, ncol = 2)
+```
+
+## IGV
+
+The IGV palette is from the colors used by
+[Integrative Genomics Viewer](http://software.broadinstitute.org/software/igv/)
+for representing chromosomes. There are two palette types
+(`default`, `alternating`) available.
+
+```{r, fig.width = 10.67, fig.height = 8, out.width = 800, out.height = 600, dpi = 150}
+p1_igv_default = p1 + scale_color_igv()
+p2_igv_default = p2 + scale_fill_igv()
+p1_igv_alternate = p1 + scale_colour_manual(
+  values = rep(pal_igv("alternating")(2), times = 3))
+p2_igv_alternate = p2 + scale_fill_manual(
+  values = rep(pal_igv("alternating")(2), times = 3))
+grid.arrange(p1_igv_default,   p2_igv_default,
+             p1_igv_alternate, p2_igv_alternate,
+             ncol = 2, nrow = 2)
+```
+
 ## UChicago
 
 The UChicago palette is based on
@@ -199,14 +251,14 @@ grid.arrange(p1_uchicago,       p2_uchicago,
              ncol = 2, nrow = 3)
 ```
 
-## The Simpsons
+## Star Trek
 
-This palette is inspired by the colors used in the TV show <emph>The Simpsons</emph>:
+This palette is inspired by the (uniform) colors in <emph>Star Trek</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
-p1_simpsons = p1 + scale_color_simpsons()
-p2_simpsons = p2 + scale_fill_simpsons()
-grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
+p1_startrek = p1 + scale_color_startrek()
+p2_startrek = p2 + scale_fill_startrek()
+grid.arrange(p1_startrek, p2_startrek, ncol = 2)
 ```
 
 ## Futurama
@@ -227,6 +279,16 @@ This palette is inspired by the colors used in the TV show <emph>Rick and Morty<
 p1_rickandmorty = p1 + scale_color_rickandmorty()
 p2_rickandmorty = p2 + scale_fill_rickandmorty()
 grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
+```
+
+## The Simpsons
+
+This palette is inspired by the colors used in the TV show <emph>The Simpsons</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_simpsons = p1 + scale_color_simpsons()
+p2_simpsons = p2 + scale_fill_simpsons()
+grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 ```
 
 # Continuous Color Palettes

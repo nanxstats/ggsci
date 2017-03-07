@@ -1,7 +1,7 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 2.0
+Version: 2.4
 Author: Nan Xiao <me@nanx.me>, Miaozhu Li <miaozhu.li@duke.edu>
 Maintainer: Nan Xiao <me@nanx.me>
 Description: A collection of 'ggplot2' color palettes inspired by

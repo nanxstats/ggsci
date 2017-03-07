@@ -6,7 +6,7 @@
 #'
 #' \tabular{ll}{ Package: \tab ggsci\cr
 #' Type: \tab Package\cr
-#' License: \tab GPL\cr }
+#' License: \tab GPL-3\cr }
 #'
 #' @name ggsci-package
 #' @docType package
