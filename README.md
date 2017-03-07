@@ -34,6 +34,10 @@ See [the vignette](https://ggsci.net/doc/) (or open with `vignette("ggsci")` in 
 
 <img src="https://ggsci.net/img/gallery-aaas.png" width="100%" alt="aaas">
 
+### NEJM
+
+<img src="https://ggsci.net/img/gallery-nejm.png" width="100%" alt="nejm">
+
 ### Lancet
 
 <img src="https://ggsci.net/img/gallery-lancet.png" width="100%" alt="lancet">
@@ -50,13 +54,21 @@ See [the vignette](https://ggsci.net/doc/) (or open with `vignette("ggsci")` in 
 
 <img src="https://ggsci.net/img/gallery-d3.png" width="100%" alt="d3">
 
+### LocusZoom
+
+<img src="https://ggsci.net/img/gallery-locuszoom.png" width="100%" alt="locuszoom">
+
+### IGV
+
+<img src="https://ggsci.net/img/gallery-igv.png" width="100%" alt="igv">
+
 ### UChicago
 
 <img src="https://ggsci.net/img/gallery-uchicago.png" width="100%" alt="uchicago">
 
-### The Simpsons
+### Star Trek
 
-<img src="https://ggsci.net/img/gallery-simpsons.png" width="100%" alt="simpsons">
+<img src="https://ggsci.net/img/gallery-startrek.png" width="100%" alt="startrek">
 
 ### Futurama
 
@@ -65,6 +77,10 @@ See [the vignette](https://ggsci.net/doc/) (or open with `vignette("ggsci")` in 
 ### Rick and Morty
 
 <img src="https://ggsci.net/img/gallery-rickandmorty.png" width="100%" alt="rickandmorty">
+
+### The Simpsons
+
+<img src="https://ggsci.net/img/gallery-simpsons.png" width="100%" alt="simpsons">
 
 ### GSEA
 
