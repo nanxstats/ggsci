@@ -114,7 +114,8 @@ p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 
 ## NPG
 
-The NPG palette is inspired by the plots in journals published by Nature Publishing Group:
+The NPG palette is inspired by the plots in journals published by
+Nature Publishing Group:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_npg = p1 + scale_color_npg()
@@ -124,8 +125,8 @@ grid.arrange(p1_npg, p2_npg, ncol = 2)
 
 ## AAAS
 
-The AAAS palette is inspired by the plots in journals published by American Association
-for the Advancement of Science:
+The AAAS palette is inspired by the plots in journals published by
+American Association for the Advancement of Science:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_aaas = p1 + scale_color_aaas()
@@ -135,7 +136,8 @@ grid.arrange(p1_aaas, p2_aaas, ncol = 2)
 
 ## NEJM
 
-The NEJM palette is inspired by the plots in <emph>The New England Journal of Medicine</emph>:
+The NEJM palette is inspired by the plots in
+<emph>The New England Journal of Medicine</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_nejm = p1 + scale_color_nejm()
@@ -145,7 +147,8 @@ grid.arrange(p1_nejm, p2_nejm, ncol = 2)
 
 ## Lancet
 
-The Lancet palette is inspired by the plots in Lancet journals, such as <emph>Lancet Oncology</emph>:
+The Lancet palette is inspired by the plots in Lancet journals, such as
+<emph>Lancet Oncology</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_lancet = p1 + scale_color_lancet()
@@ -155,7 +158,8 @@ grid.arrange(p1_lancet, p2_lancet, ncol = 2)
 
 ## JCO
 
-The JCO palette is inspired by the the plots in <emph>Journal of Clinical Oncology</emph>:
+The JCO palette is inspired by the the plots in
+<emph>Journal of Clinical Oncology</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_jco = p1 + scale_color_jco()
@@ -183,22 +187,10 @@ The D3 palette is from the categorical colors used by
 There are four palette types (`category10`, `category20`,
 `category20b`, `category20c`) available.
 
-```{r, fig.width = 10.67, fig.height = 16, out.width = 800, out.height = 1200, dpi = 150}
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_d3 = p1 + scale_color_d3()
 p2_d3 = p2 + scale_fill_d3()
-p1_d3_c10 = p1 + scale_color_d3("category10")
-p2_d3_c10 = p2 + scale_fill_d3("category10")
-p1_d3_c20 = p1 + scale_color_d3("category20")
-p2_d3_c20 = p2 + scale_fill_d3("category20")
-p1_d3_c20b = p1 + scale_color_d3("category20b")
-p2_d3_c20b = p2 + scale_fill_d3("category20b")
-p1_d3_c20c = p1 + scale_color_d3("category20c")
-p2_d3_c20c = p2 + scale_fill_d3("category20c")
-grid.arrange(p1_d3_c10,  p2_d3_c10,
-             p1_d3_c20,  p2_d3_c20,
-             p1_d3_c20b, p2_d3_c20b,
-             p1_d3_c20c, p2_d3_c20c,
-             ncol = 2, nrow = 4)
+grid.arrange(p1_d3, p2_d3, ncol = 2)
 ```
 
 ## LocusZoom
@@ -219,36 +211,23 @@ The IGV palette is from the colors used by
 for representing chromosomes. There are two palette types
 (`default`, `alternating`) available.
 
-```{r, fig.width = 10.67, fig.height = 8, out.width = 800, out.height = 600, dpi = 150}
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_igv_default = p1 + scale_color_igv()
 p2_igv_default = p2 + scale_fill_igv()
-p1_igv_alternate = p1 + scale_colour_manual(
-  values = rep(pal_igv("alternating")(2), times = 3))
-p2_igv_alternate = p2 + scale_fill_manual(
-  values = rep(pal_igv("alternating")(2), times = 3))
-grid.arrange(p1_igv_default,   p2_igv_default,
-             p1_igv_alternate, p2_igv_alternate,
-             ncol = 2, nrow = 2)
+grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 ```
 
 ## UChicago
 
 The UChicago palette is based on
 [the colors](http://communications.uchicago.edu/identity/color-palette)
-used by The University of Chicago.
-There are three palette types (`default`, `light`, `dark`) available.
+used by The University of Chicago. There are three palette types
+(`default`, `light`, `dark`) available.
 
-```{r, fig.width = 10.67, fig.height = 12, out.width = 800, out.height = 900, dpi = 150}
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_uchicago = p1 + scale_color_uchicago()
 p2_uchicago = p2 + scale_fill_uchicago()
-p1_uchicago_light = p1 + scale_color_uchicago("light")
-p2_uchicago_light = p2 + scale_fill_uchicago("light")
-p1_uchicago_dark  = p1 + scale_color_uchicago("dark")
-p2_uchicago_dark  = p2 + scale_fill_uchicago("dark")
-grid.arrange(p1_uchicago,       p2_uchicago,
-             p1_uchicago_light, p2_uchicago_light,
-             p1_uchicago_dark,  p2_uchicago_dark,
-             ncol = 2, nrow = 3)
+grid.arrange(p1_uchicago, p2_uchicago, ncol = 2)
 ```
 
 ## Star Trek
@@ -283,7 +262,8 @@ grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
 
 ## The Simpsons
 
-This palette is inspired by the colors used in the TV show <emph>The Simpsons</emph>:
+This palette is inspired by the colors used in the TV show
+<emph>The Simpsons</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_simpsons = p1 + scale_color_simpsons()
@@ -300,7 +280,7 @@ to demonstrate the continuous color palettes in `ggsci`.
 library("reshape2")
 
 data("mtcars")
-cor = cor(mtcars)
+cor = cor(unname(cbind(mtcars, mtcars, mtcars, mtcars)))
 cor_melt = melt(cor)
 
 p3 = ggplot(cor_melt,
