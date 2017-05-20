@@ -2,7 +2,9 @@ Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
 Version: 2.4.9000
-Author: Nan Xiao <me@nanx.me>, Miaozhu Li <miaozhu.li@duke.edu>
+Authors@R: c(
+    person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre")),
+    person("Miaozhu", "Li", email = "miaozhu.li@duke.edu", role = "ctb"))
 Maintainer: Nan Xiao <me@nanx.me>
 Description: A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
