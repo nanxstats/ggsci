@@ -22,7 +22,7 @@ Or try the development version on GitHub:
 devtools::install_github("road2stat/ggsci")
 ```
 
-See [the vignette](https://ggsci.net/doc/) (or open with `vignette("ggsci")` in R) for a quick-start guide.
+[Browse the vignette](https://ggsci.net/articles/ggsci.html) (or open with `vignette("ggsci")` in R) for a quick-start guide.
 
 ## Gallery
 
