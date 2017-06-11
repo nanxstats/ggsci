@@ -20,8 +20,8 @@ Color palette inspired by plots in
 }
 \examples{
 library("scales")
-show_col(pal_jama("default")(10))
-show_col(pal_jama("default", alpha = 0.6)(10))
+show_col(pal_jama("default")(7))
+show_col(pal_jama("default", alpha = 0.6)(7))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |

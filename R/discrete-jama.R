@@ -19,8 +19,8 @@
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_jama("default")(10))
-#' show_col(pal_jama("default", alpha = 0.6)(10))
+#' show_col(pal_jama("default")(7))
+#' show_col(pal_jama("default", alpha = 0.6)(7))
 pal_jama = function (palette = c('default'), alpha = 1) {
 
   palette = match.arg(palette)
