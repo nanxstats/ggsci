@@ -8,12 +8,12 @@ ggsci_db = vector('list')
 # Discrete Color Palettes
 
 # Color palette inspired by plots in Nature Reviews Cancer
-ggsci_db$'npg'$'nrc' =
-  c('Cinnabar'     = '#E64B35', 'Shakespeare'    = '#4DBBD5',
-    'PersianGreen' = '#00A087', 'Chambray'       = '#3C5488',
-    'Apricot'      = '#F39B7F', 'WildBlueYonder' = '#8491B4',
-    'MonteCarlo'   = '#91D1C2', 'Monza'          = '#DC0000',
-    'RomanCoffee'  = '#7E6148', 'Sandrift'       = '#B09C85')
+ggsci_db$'npg'$'nrc' = c(
+  'Cinnabar'     = '#E64B35', 'Shakespeare'    = '#4DBBD5',
+  'PersianGreen' = '#00A087', 'Chambray'       = '#3C5488',
+  'Apricot'      = '#F39B7F', 'WildBlueYonder' = '#8491B4',
+  'MonteCarlo'   = '#91D1C2', 'Monza'          = '#DC0000',
+  'RomanCoffee'  = '#7E6148', 'Sandrift'       = '#B09C85')
 
 # Color palette inspired by plots in Science from AAAS
 ggsci_db$'aaas'$'default' =
@@ -23,6 +23,13 @@ ggsci_db$'aaas'$'default' =
     'ButterflyBush' = '#5F559B', 'FreshEggplant' = '#A20056',
     'Stack'         = '#808180', 'CodGray'       = '#1B1919')
 
+# Color palette inspired by plots in The New England Journal of Medicine
+ggsci_db$'nejm'$'default' =
+  c('TallPoppy'      = '#BC3C29', 'DeepCerulean' = '#0072B5',
+    'Zest'           = '#E18727', 'Eucalyptus'   = '#20854E',
+    'WildBlueYonder' = '#7876B1', 'Gothic'       = '#6F99AD',
+    'Salomie'        = '#FFDC91', 'FrenchRose'   = '#EE4C97')
+
 # Color palette inspired by plots in Lancet Oncology
 ggsci_db$'lancet'$'lanonc' =
   c('CongressBlue' = '#00468B', 'Red'       = '#ED0000',
@@ -31,6 +38,13 @@ ggsci_db$'lancet'$'lanonc' =
     'Carmine'      = '#AD002A', 'Edward'    = '#ADB6B6',
     'CodGray'      = '#1B1919')
 
+# Color palette inspired by plots in The Journal of the American Medical Association
+ggsci_db$'jama'$'default' =
+  c('Limed Spruce' = '#374E55', 'Anzac'         = '#DF8F44',
+    'Cerulean'     = '#00A1D5', 'Apple Blossom' = '#B24745',
+    'Acapulco'     = '#79AF97', 'Kimberly'      = '#6A6599',
+    'Makara'       = '#80796B')
+
 # Color palette inspired by plots in Journal of Clinical Oncology
 ggsci_db$'jco'$'default' =
   c('Lochmara' = '#0073C2', 'Corn'         = '#EFC000',
@@ -38,13 +52,6 @@ ggsci_db$'jco'$'default' =
     'Danube'   = '#7AA6DC', 'RegalBlue'    = '#003C67',
     'Olive'    = '#8F7700', 'MineShaft'    = '#3B3B3B',
     'WellRead' = '#A73030', 'KashmirBlue'  = '#4A6990')
-
-# Color palette inspired by plots in The New England Journal of Medicine
-ggsci_db$'nejm'$'default' =
-  c('TallPoppy'      = '#BC3C29', 'DeepCerulean' = '#0072B5',
-    'Zest'           = '#E18727', 'Eucalyptus'   = '#20854E',
-    'WildBlueYonder' = '#7876B1', 'Gothic'       = '#6F99AD',
-    'Salomie'        = '#FFDC91', 'FrenchRose'   = '#EE4C97')
 
 # Color palette inspired by UCSC Genome Browser Chromosome Colors
 ggsci_db$'ucscgb'$'default' =
@@ -213,6 +220,7 @@ save(ggsci_db, file = 'R/sysdata.rda')
 # barplot(rep(1, 10), col = ggsci_db$'aaas'$'default')
 # barplot(rep(1, 8),  col = ggsci_db$'nejm'$'default')
 # barplot(rep(1, 9),  col = ggsci_db$'lancet'$'lanonc')
+# barplot(rep(1, 7),  col = ggsci_db$'jama'$'default')
 # barplot(rep(1, 10), col = ggsci_db$'jco'$'default')
 # barplot(rep(1, 26), col = ggsci_db$'ucscgb'$'default')
 # barplot(rep(1, 10), col = ggsci_db$'d3'$'category10')
