@@ -214,6 +214,140 @@ ggsci_db$'gsea'$'default' = c(
   'BrinkPink'   = '#FF7080', 'Persimmon'      = '#FF5A5A',
   'Flamingo'    = '#EF4040', 'GuardsmanRed'   = '#D60C00')
 
+# Material Design color palettes
+ggsci_db$'material'$'red' = c(
+  'Red50'  = '#FFEBEE', 'Red100' = '#FFCDD2',
+  'Red200' = '#EF9A9A', 'Red300' = '#E57373',
+  'Red400' = '#EF5350', 'Red500' = '#F44336',
+  'Red600' = '#E53935', 'Red700' = '#D32F2F',
+  'Red800' = '#C62828', 'Red900' = '#B71C1C')
+
+ggsci_db$'material'$'pink' = c(
+  'Pink50'  = '#FCE4EC', 'Pink100' = '#F8BBD0',
+  'Pink200' = '#F48FB1', 'Pink300' = '#F06292',
+  'Pink400' = '#EC407A', 'Pink500' = '#E91E63',
+  'Pink600' = '#D81B60', 'Pink700' = '#C2185B',
+  'Pink800' = '#AD1457', 'Pink900' = '#880E4F')
+
+ggsci_db$'material'$'purple' = c(
+  'Purple50'  = '#F3E5F5', 'Purple100' = '#E1BEE7',
+  'Purple200' = '#CE93D8', 'Purple300' = '#BA68C8',
+  'Purple400' = '#AB47BC', 'Purple500' = '#9C27B0',
+  'Purple600' = '#8E24AA', 'Purple700' = '#7B1FA2',
+  'Purple800' = '#6A1B9A', 'Purple900' = '#4A148C')
+
+ggsci_db$'material'$'deep-purple' = c(
+  'DeepPurple50'  = '#EDE7F6', 'DeepPurple100' = '#D1C4E9',
+  'DeepPurple200' = '#B39DDB', 'DeepPurple300' = '#9575CD',
+  'DeepPurple400' = '#7E57C2', 'DeepPurple500' = '#673AB7',
+  'DeepPurple600' = '#5E35B1', 'DeepPurple700' = '#512DA8',
+  'DeepPurple800' = '#4527A0', 'DeepPurple900' = '#311B92')
+
+ggsci_db$'material'$'indigo' = c(
+  'Indigo50'  = '#E8EAF6', 'Indigo100' = '#C5CAE9',
+  'Indigo200' = '#9FA8DA', 'Indigo300' = '#7986CB',
+  'Indigo400' = '#5C6BC0', 'Indigo500' = '#3F51B5',
+  'Indigo600' = '#3949AB', 'Indigo700' = '#303F9F',
+  'Indigo800' = '#283593', 'Indigo900' = '#1A237E')
+
+ggsci_db$'material'$'blue' = c(
+  'Blue50'  = '#E3F2FD', 'Blue100' = '#BBDEFB',
+  'Blue200' = '#90CAF9', 'Blue300' = '#64B5F6',
+  'Blue400' = '#42A5F5', 'Blue500' = '#2196F3',
+  'Blue600' = '#1E88E5', 'Blue700' = '#1976D2',
+  'Blue800' = '#1565C0', 'Blue900' = '#0D47A1')
+
+ggsci_db$'material'$'light-blue' = c(
+  'LightBlue50'  = '#E1F5FE', 'LightBlue100' = '#B3E5FC',
+  'LightBlue200' = '#81D4FA', 'LightBlue300' = '#4FC3F7',
+  'LightBlue400' = '#29B6F6', 'LightBlue500' = '#03A9F4',
+  'LightBlue600' = '#039BE5', 'LightBlue700' = '#0288D1',
+  'LightBlue800' = '#0277BD', 'LightBlue900' = '#01579B')
+
+ggsci_db$'material'$'cyan' = c(
+  'Cyan50'  = '#E0F7FA', 'Cyan100' = '#B2EBF2',
+  'Cyan200' = '#80DEEA', 'Cyan300' = '#4DD0E1',
+  'Cyan400' = '#26C6DA', 'Cyan500' = '#00BCD4',
+  'Cyan600' = '#00ACC1', 'Cyan700' = '#0097A7',
+  'Cyan800' = '#00838F', 'Cyan900' = '#006064')
+
+ggsci_db$'material'$'teal' = c(
+  'Teal50'  = '#E0F2F1', 'Teal100' = '#B2DFDB',
+  'Teal200' = '#80CBC4', 'Teal300' = '#4DB6AC',
+  'Teal400' = '#26A69A', 'Teal500' = '#009688',
+  'Teal600' = '#00897B', 'Teal700' = '#00796B',
+  'Teal800' = '#00695C', 'Teal900' = '#004D40')
+
+ggsci_db$'material'$'green' = c(
+  'Green50'  = '#E8F5E9', 'Green100' = '#C8E6C9',
+  'Green200' = '#A5D6A7', 'Green300' = '#81C784',
+  'Green400' = '#66BB6A', 'Green500' = '#4CAF50',
+  'Green600' = '#43A047', 'Green700' = '#388E3C',
+  'Green800' = '#2E7D32', 'Green900' = '#1B5E20')
+
+ggsci_db$'material'$'light-green' = c(
+  'LightGreen50'  = '#F1F8E9', 'LightGreen100' = '#DCEDC8',
+  'LightGreen200' = '#C5E1A5', 'LightGreen300' = '#AED581',
+  'LightGreen400' = '#9CCC65', 'LightGreen500' = '#8BC34A',
+  'LightGreen600' = '#7CB342', 'LightGreen700' = '#689F38',
+  'LightGreen800' = '#558B2F', 'LightGreen900' = '#33691E')
+
+ggsci_db$'material'$'lime' = c(
+  'Lime50'  = '#F9FBE7', 'Lime100' = '#F0F4C3',
+  'Lime200' = '#E6EE9C', 'Lime300' = '#DCE775',
+  'Lime400' = '#D4E157', 'Lime500' = '#CDDC39',
+  'Lime600' = '#C0CA33', 'Lime700' = '#AFB42B',
+  'Lime800' = '#9E9D24', 'Lime900' = '#827717')
+
+ggsci_db$'material'$'yellow' = c(
+  'Yellow50'  = '#FFFDE7', 'Yellow100' = '#FFF9C4',
+  'Yellow200' = '#FFF59D', 'Yellow300' = '#FFF176',
+  'Yellow400' = '#FFEE58', 'Yellow500' = '#FFEB3B',
+  'Yellow600' = '#FDD835', 'Yellow700' = '#FBC02D',
+  'Yellow800' = '#F9A825', 'Yellow900' = '#F57F17')
+
+ggsci_db$'material'$'amber' = c(
+  'Amber50'  = '#FFF8E1', 'Amber100' = '#FFECB3',
+  'Amber200' = '#FFE082', 'Amber300' = '#FFD54F',
+  'Amber400' = '#FFCA28', 'Amber500' = '#FFC107',
+  'Amber600' = '#FFB300', 'Amber700' = '#FFA000',
+  'Amber800' = '#FF8F00', 'Amber900' = '#FF6F00')
+
+ggsci_db$'material'$'orange' = c(
+  'Orange50'  = '#FFF3E0', 'Orange100' = '#FFE0B2',
+  'Orange200' = '#FFCC80', 'Orange300' = '#FFB74D',
+  'Orange400' = '#FFA726', 'Orange500' = '#FF9800',
+  'Orange600' = '#FB8C00', 'Orange700' = '#F57C00',
+  'Orange800' = '#EF6C00', 'Orange900' = '#E65100')
+
+ggsci_db$'material'$'deep-orange' = c(
+  'DeepOrange50'  = '#FBE9E7', 'DeepOrange100' = '#FFCCBC',
+  'DeepOrange200' = '#FFAB91', 'DeepOrange300' = '#FF8A65',
+  'DeepOrange400' = '#FF7043', 'DeepOrange500' = '#FF5722',
+  'DeepOrange600' = '#F4511E', 'DeepOrange700' = '#E64A19',
+  'DeepOrange800' = '#D84315', 'DeepOrange900' = '#BF360C')
+
+ggsci_db$'material'$'brown' = c(
+  'Brown50'  = '#EFEBE9', 'Brown100' = '#D7CCC8',
+  'Brown200' = '#BCAAA4', 'Brown300' = '#A1887F',
+  'Brown400' = '#8D6E63', 'Brown500' = '#795548',
+  'Brown600' = '#6D4C41', 'Brown700' = '#5D4037',
+  'Brown800' = '#4E342E', 'Brown900' = '#3E2723')
+
+ggsci_db$'material'$'grey' = c(
+  'Grey50'  = '#FAFAFA', 'Grey100' = '#F5F5F5',
+  'Grey200' = '#EEEEEE', 'Grey300' = '#E0E0E0',
+  'Grey400' = '#BDBDBD', 'Grey500' = '#9E9E9E',
+  'Grey600' = '#757575', 'Grey700' = '#616161',
+  'Grey800' = '#424242', 'Grey900' = '#212121')
+
+ggsci_db$'material'$'blue-grey' = c(
+  'BlueGrey50'  = '#ECEFF1', 'BlueGrey100' = '#CFD8DC',
+  'BlueGrey200' = '#B0BEC5', 'BlueGrey300' = '#90A4AE',
+  'BlueGrey400' = '#78909C', 'BlueGrey500' = '#607D8B',
+  'BlueGrey600' = '#546E7A', 'BlueGrey700' = '#455A64',
+  'BlueGrey800' = '#37474F', 'BlueGrey900' = '#263238')
+
 save(ggsci_db, file = 'R/sysdata.rda')
 
 # barplot(rep(1, 10), col = ggsci_db$'npg'$'nrc')
@@ -238,3 +372,22 @@ save(ggsci_db, file = 'R/sysdata.rda')
 # barplot(rep(1, 12), col = ggsci_db$'rickandmorty'$'schwifty')
 # barplot(rep(1, 16), col = ggsci_db$'simpsons'$'springfield')
 # barplot(rep(1, 12), col = ggsci_db$'gsea'$'default')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'red')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'pink')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'purple')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'deep-purple')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'indigo')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'blue')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'light-blue')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'cyan')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'teal')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'green')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'light-green')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'lime')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'yellow')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'amber')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'orange')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'deep-orange')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'brown')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'grey')
+# barplot(rep(1, 10), col = ggsci_db$'material'$'blue-grey')
