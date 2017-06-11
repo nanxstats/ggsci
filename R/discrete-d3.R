@@ -27,8 +27,9 @@
 #' show_col(pal_d3("category20")(20))
 #' show_col(pal_d3("category20b")(20))
 #' show_col(pal_d3("category20c")(20))
-pal_d3 = function (palette = c('category10', 'category20',
-                               'category20b', 'category20c'), alpha = 1) {
+pal_d3 = function (
+  palette = c('category10', 'category20',
+              'category20b', 'category20c'), alpha = 1) {
 
   palette = match.arg(palette)
 
@@ -36,9 +37,10 @@ pal_d3 = function (palette = c('category10', 'category20',
 
   raw_cols = ggsci_db$'d3'[[palette]]
   raw_cols_rgb = col2rgb(raw_cols)
-  alpha_cols = rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
-                   alpha = alpha * 255L, names = names(raw_cols),
-                   maxColorValue = 255L)
+  alpha_cols = rgb(
+    raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
+    alpha = alpha * 255L, names = names(raw_cols),
+    maxColorValue = 255L)
 
   manual_pal(unname(alpha_cols))
 
@@ -88,9 +90,9 @@ pal_d3 = function (palette = c('category10', 'category20',
 #'
 #' p1 + scale_color_d3(palette = "category20c")
 #' p2 + scale_fill_d3(palette = "category20c")
-scale_color_d3 = function (palette = c('category10', 'category20',
-                                       'category20b', 'category20c'),
-                           alpha = 1, ...) {
+scale_color_d3 = function (
+  palette = c('category10', 'category20',
+              'category20b', 'category20c'), alpha = 1, ...) {
 
   palette = match.arg(palette)
   discrete_scale('colour', 'd3', pal_d3(palette, alpha), ...)
@@ -104,9 +106,9 @@ scale_colour_d3 = scale_color_d3
 #' @export scale_fill_d3
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_d3
-scale_fill_d3 = function (palette = c('category10', 'category20',
-                                      'category20b', 'category20c'),
-                          alpha = 1, ...) {
+scale_fill_d3 = function (
+  palette = c('category10', 'category20',
+              'category20b', 'category20c'), alpha = 1, ...) {
 
   palette = match.arg(palette)
   discrete_scale('fill', 'd3', pal_d3(palette, alpha), ...)

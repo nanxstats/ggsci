@@ -26,8 +26,8 @@
 #' library("scales")
 #' show_col(pal_gsea("default")(12))
 #' show_col(pal_gsea("default", n = 30, alpha = 0.6, reverse = TRUE)(30))
-rgb_gsea = function (palette = c('default'), n = 12,
-                     alpha = 1, reverse = FALSE) {
+rgb_gsea = function (
+  palette = c('default'), n = 12, alpha = 1, reverse = FALSE) {
 
   palette = match.arg(palette)
 
@@ -36,8 +36,9 @@ rgb_gsea = function (palette = c('default'), n = 12,
   raw_cols = ggsci_db$'gsea'[[palette]]
   func_cols = colorRamp(raw_cols, space = 'Lab', interpolate = 'spline')
   mat_cols = func_cols(seq(0L, 1L, length.out = n))
-  alpha_cols = rgb(mat_cols[, 1L], mat_cols[, 2L], mat_cols[, 3L],
-                   alpha = alpha * 255L, maxColorValue = 255L)
+  alpha_cols = rgb(
+    mat_cols[, 1L], mat_cols[, 2L], mat_cols[, 3L],
+    alpha = alpha * 255L, maxColorValue = 255L)
 
   if (reverse) alpha_cols = rev(alpha_cols)
 
@@ -63,8 +64,8 @@ rgb_gsea = function (palette = c('default'), n = 12,
 #' library("scales")
 #' show_col(pal_gsea("default")(12))
 #' show_col(pal_gsea("default", n = 30, alpha = 0.6, reverse = TRUE)(30))
-pal_gsea = function (palette = c('default'), n = 12,
-                     alpha = 1, reverse = FALSE) {
+pal_gsea = function (
+  palette = c('default'), n = 12, alpha = 1, reverse = FALSE) {
 
   palette = match.arg(palette)
 
@@ -101,12 +102,13 @@ pal_gsea = function (palette = c('default'), n = 12,
 #'        aes(x = Var1, y = Var2, fill = value)) +
 #'   geom_tile(colour = "black", size = 0.3) +
 #'   theme_bw() + scale_fill_gsea()
-scale_color_gsea = function (palette = c('default'),
-                             alpha = 1, reverse = FALSE, ...) {
+scale_color_gsea = function (
+  palette = c('default'), alpha = 1, reverse = FALSE, ...) {
 
   palette = match.arg(palette)
-  scale_color_gradientn(colours = rgb_gsea(palette, n = 512, alpha = alpha,
-                                           reverse = reverse), ...)
+  scale_color_gradientn(colours = rgb_gsea(
+    palette, n = 512, alpha = alpha, reverse = reverse),
+    ...)
 
 }
 
@@ -117,11 +119,12 @@ scale_colour_gsea = scale_color_gsea
 #' @export scale_fill_gsea
 #' @importFrom ggplot2 scale_fill_gradientn
 #' @rdname scale_gsea
-scale_fill_gsea = function (palette = c('default'), alpha = 1,
-                            reverse = FALSE, ...) {
+scale_fill_gsea = function (
+  palette = c('default'), alpha = 1, reverse = FALSE, ...) {
 
   palette = match.arg(palette)
-  scale_fill_gradientn(colours = rgb_gsea(palette, n = 512, alpha = alpha,
-                                          reverse = reverse), ...)
+  scale_fill_gradientn(colours = rgb_gsea(
+    palette, n = 512, alpha = alpha, reverse = reverse),
+    ...)
 
 }

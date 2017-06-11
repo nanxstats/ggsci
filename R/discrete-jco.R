@@ -28,9 +28,10 @@ pal_jco = function (palette = c('default'), alpha = 1) {
 
   raw_cols = ggsci_db$'jco'[[palette]]
   raw_cols_rgb = col2rgb(raw_cols)
-  alpha_cols = rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
-                   alpha = alpha * 255L, names = names(raw_cols),
-                   maxColorValue = 255L)
+  alpha_cols = rgb(
+    raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
+    alpha = alpha * 255L, names = names(raw_cols),
+    maxColorValue = 255L)
 
   manual_pal(unname(alpha_cols))
 

@@ -27,7 +27,8 @@
 #' library("scales")
 #' show_col(pal_igv("default")(51))
 #' show_col(pal_igv("alternating")(2))
-pal_igv = function (palette = c('default', 'alternating'), alpha = 1) {
+pal_igv = function (
+  palette = c('default', 'alternating'), alpha = 1) {
 
   palette = match.arg(palette)
 
@@ -35,9 +36,10 @@ pal_igv = function (palette = c('default', 'alternating'), alpha = 1) {
 
   raw_cols = ggsci_db$'igv'[[palette]]
   raw_cols_rgb = col2rgb(raw_cols)
-  alpha_cols = rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
-                   alpha = alpha * 255L, names = names(raw_cols),
-                   maxColorValue = 255L)
+  alpha_cols = rgb(
+    raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
+    alpha = alpha * 255L, names = names(raw_cols),
+    maxColorValue = 255L)
 
   manual_pal(unname(alpha_cols))
 
@@ -81,8 +83,8 @@ pal_igv = function (palette = c('default', 'alternating'), alpha = 1) {
 #'   values = rep(pal_igv("alternating")(2), times = 3))
 #' p2 + scale_fill_manual(
 #'   values = rep(pal_igv("alternating")(2), times = 3))
-scale_color_igv = function (palette = c('default', 'alternating'),
-                            alpha = 1, ...) {
+scale_color_igv = function (
+  palette = c('default', 'alternating'), alpha = 1, ...) {
 
   palette = match.arg(palette)
   discrete_scale('colour', 'igv', pal_igv(palette, alpha), ...)
@@ -96,8 +98,8 @@ scale_colour_igv = scale_color_igv
 #' @export scale_fill_igv
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_igv
-scale_fill_igv = function (palette = c('default', 'alternating'),
-                           alpha = 1, ...) {
+scale_fill_igv = function (
+  palette = c('default', 'alternating'), alpha = 1, ...) {
 
   palette = match.arg(palette)
   discrete_scale('fill', 'igv', pal_igv(palette, alpha), ...)
