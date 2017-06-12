@@ -76,7 +76,7 @@ devtools::install_github("road2stat/ggsci")
 
 ### Tron Legacy
 
-<img src="https://i.imgur.com/DQbF6LG.png" width="100%" alt="tron">
+<img src="https://i.imgur.com/RrF3kp3.png" width="100%" alt="tron">
 
 ### Futurama
 
