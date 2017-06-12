@@ -7,7 +7,7 @@ Two new discrete color palettes:
 - JAMA
 - Tron Legacy
 
-One new collection of continuous palette with 19 color options:
+One new collection of continuous palettes with 19 color options:
 
 - Material Design
 
