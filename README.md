@@ -28,75 +28,75 @@ devtools::install_github("road2stat/ggsci")
 
 ### NPG
 
-<img src="https://ggsci.net/img/gallery-npg.png" width="100%" alt="npg">
+<img src="https://i.imgur.com/ZjCm5ng.png" width="100%" alt="npg">
 
 ### AAAS
 
-<img src="https://ggsci.net/img/gallery-aaas.png" width="100%" alt="aaas">
+<img src="https://i.imgur.com/Wt8z0Xs.png" width="100%" alt="aaas">
 
 ### NEJM
 
-<img src="https://ggsci.net/img/gallery-nejm.png" width="100%" alt="nejm">
+<img src="https://i.imgur.com/WXREdrP.png" width="100%" alt="nejm">
 
 ### Lancet
 
-<img src="https://ggsci.net/img/gallery-lancet.png" width="100%" alt="lancet">
+<img src="https://i.imgur.com/5b01l68.png" width="100%" alt="lancet">
 
 ### JAMA
 
-<img src="https://ggsci.net/img/gallery-jama.png" width="100%" alt="jama">
+<img src="https://i.imgur.com/dmZO9e5.png" width="100%" alt="jama">
 
 ### JCO
 
-<img src="https://ggsci.net/img/gallery-jco.png" width="100%" alt="jco">
+<img src="https://i.imgur.com/3t8Q1kF.png" width="100%" alt="jco">
 
 ### UCSCGB
 
-<img src="https://ggsci.net/img/gallery-ucscgb.png" width="100%" alt="ucscgb">
+<img src="https://i.imgur.com/6HTPa1B.png" width="100%" alt="ucscgb">
 
 ### D3
 
-<img src="https://ggsci.net/img/gallery-d3.png" width="100%" alt="d3">
+<img src="https://i.imgur.com/mKhrUyT.png" width="100%" alt="d3">
 
 ### LocusZoom
 
-<img src="https://ggsci.net/img/gallery-locuszoom.png" width="100%" alt="locuszoom">
+<img src="https://i.imgur.com/JqdxnuF.png" width="100%" alt="locuszoom">
 
 ### IGV
 
-<img src="https://ggsci.net/img/gallery-igv.png" width="100%" alt="igv">
+<img src="https://i.imgur.com/bLB8Ofe.png" width="100%" alt="igv">
 
 ### UChicago
 
-<img src="https://ggsci.net/img/gallery-uchicago.png" width="100%" alt="uchicago">
+<img src="https://i.imgur.com/Eb8agLj.png" width="100%" alt="uchicago">
 
 ### Star Trek
 
-<img src="https://ggsci.net/img/gallery-startrek.png" width="100%" alt="startrek">
+<img src="https://i.imgur.com/HYs7OzD.png" width="100%" alt="startrek">
 
 ### Tron Legacy
 
-<img src="https://ggsci.net/img/gallery-tron.png" width="100%" alt="tron">
+<img src="https://i.imgur.com/DQbF6LG.png" width="100%" alt="tron">
 
 ### Futurama
 
-<img src="https://ggsci.net/img/gallery-futurama.png" width="100%" alt="futurama">
+<img src="https://i.imgur.com/IeBjLy7.png" width="100%" alt="futurama">
 
 ### Rick and Morty
 
-<img src="https://ggsci.net/img/gallery-rickandmorty.png" width="100%" alt="rickandmorty">
+<img src="https://i.imgur.com/8zKuCPz.png" width="100%" alt="rickandmorty">
 
 ### The Simpsons
 
-<img src="https://ggsci.net/img/gallery-simpsons.png" width="100%" alt="simpsons">
+<img src="https://i.imgur.com/zBqZjpX.png" width="100%" alt="simpsons">
 
 ### GSEA
 
-<img src="https://ggsci.net/img/gallery-gsea.png" width="100%" alt="gsea">
+<img src="https://i.imgur.com/20vxsS9.png" width="100%" alt="gsea">
 
 ### Material Design
 
-<img src="https://ggsci.net/img/gallery-material.png" width="92%" alt="material">
+<img src="https://i.imgur.com/W2lVixt.png" width="92%" alt="material">
 
 ## Links
 
