@@ -205,9 +205,9 @@ ggsci_db$'startrek'$'uniform' = c(
 
 # Color palette inspired by Tron Legacy
 ggsci_db$'tron'$'legacy' = c(
-  'BlackGuard'  = '#FF410D', 'Sam'        = '#6EE2FF',
-  'Clu'         = '#F7C530', 'Underclass' = '#95CC5E',
-  'CluFollower' = '#F79D1E', 'KevinFlynn' = '#D0DFE6',
+  'BlackGuard'  = '#FF410D', 'Sam'         = '#6EE2FF',
+  'Clu'         = '#F7C530', 'Underclass'  = '#95CC5E',
+  'KevinFlynn'  = '#D0DFE6', 'CluFollower' = '#F79D1E',
   'Underclass2' = '#748AA6')
 
 # Continuous Color Palettes
