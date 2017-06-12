@@ -36,57 +36,74 @@ We also provided aliases, such as `scale_colour_palname()` for
 `scale_color_palname()`. All available color palettes are
 summarized in the table below.
 
-+----------------+------------------------------+-------------------+----------------------+
-| Name           | Scales                       | Palette Types     | Palette Generator    |
-+================+==============================+===================+======================+
-| NPG            | `scale_color_npg()`          | `"nrc"`           | `pal_npg()`          |
-|                | `scale_fill_npg()`           |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| AAAS           | `scale_color_aaas()`         | `"default"`       | `pal_aaas()`         |
-|                | `scale_fill_aaas()`          |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| NEJM           | `scale_color_nejm()`         | `"default"`       | `pal_nejm()`         |
-|                | `scale_fill_nejm()`          |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| Lancet         | `scale_color_lancet()`       | `"lanonc"`        | `pal_lancet()`       |
-|                | `scale_fill_lancet()`        |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| JCO            | `scale_color_jco()`          | `"default"`       | `pal_jco()`          |
-|                | `scale_fill_jco()`           |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| UCSCGB         | `scale_color_ucscgb()`       | `"default"`       | `pal_ucscgb()`       |
-|                | `scale_fill_ucscgb()`        |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| D3             | `scale_color_d3()`<br>       | `"category10"`    | `pal_d3()`           |
-|                | `scale_fill_d3()`            | `"category20"`    |                      |
-|                |                              | `"category20b"`   |                      |
-|                |                              | `"category20c"`   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| LocusZoom      | `scale_color_locuszoom()`    | `"default"`       | `pal_locuszoom()`    |
-|                | `scale_fill_locuszoom()`     |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| IGV            | `scale_color_igv()`          | `"default"`<br>   | `pal_igv()`          |
-|                | `scale_fill_igv()`           | `"alternating"`   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| UChicago       | `scale_color_uchicago()`     | `"default"`<br>   | `pal_uchicago()`     |
-|                | `scale_fill_uchicago()`      | `"light"`<br>     |                      |
-|                |                              | `"dark"`          |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| Star Trek      | `scale_color_startrek()`     | `"uniform"`       | `pal_startrek()`     |
-|                | `scale_fill_startrek()`      |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| Futurama       | `scale_color_futurama()`     | `"planetexpress"` | `pal_futurama()`     |
-|                | `scale_fill_futurama()`      |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| Rick and Morty | `scale_color_rickandmorty()` | `"schwifty"`      | `pal_rickandmorty()` |
-|                | `scale_fill_rickandmorty()`  |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| The Simpsons   | `scale_color_simpsons()`     | `"springfield"`   | `pal_simpsons()`     |
-|                | `scale_fill_simpsons()`      |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
-| GSEA           | `scale_color_gsea()`         | `"default"`       | `pal_gsea()`         |
-|                | `scale_fill_gsea()`          |                   |                      |
-+----------------+------------------------------+-------------------+----------------------+
++-----------------+------------------------------+--------------------------------+----------------------+
+| Name            | Scales                       | Palette Types                  | Palette Generator    |
++=================+==============================+================================+======================+
+| NPG             | `scale_color_npg()`          | `"nrc"`                        | `pal_npg()`          |
+|                 | `scale_fill_npg()`           |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| AAAS            | `scale_color_aaas()`         | `"default"`                    | `pal_aaas()`         |
+|                 | `scale_fill_aaas()`          |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| NEJM            | `scale_color_nejm()`         | `"default"`                    | `pal_nejm()`         |
+|                 | `scale_fill_nejm()`          |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Lancet          | `scale_color_lancet()`       | `"lanonc"`                     | `pal_lancet()`       |
+|                 | `scale_fill_lancet()`        |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| JAMA            | `scale_color_jama()`         | `"default"`                    | `pal_jama()`         |
+|                 | `scale_fill_jama()`          |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| JCO             | `scale_color_jco()`          | `"default"`                    | `pal_jco()`          |
+|                 | `scale_fill_jco()`           |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| UCSCGB          | `scale_color_ucscgb()`       | `"default"`                    | `pal_ucscgb()`       |
+|                 | `scale_fill_ucscgb()`        |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| D3              | `scale_color_d3()`<br>       | `"category10"`                 | `pal_d3()`           |
+|                 | `scale_fill_d3()`            | `"category20"`                 |                      |
+|                 |                              | `"category20b"`                |                      |
+|                 |                              | `"category20c"`                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |
+|                 | `scale_fill_locuszoom()`     |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| IGV             | `scale_color_igv()`          | `"default"`<br>                | `pal_igv()`          |
+|                 | `scale_fill_igv()`           | `"alternating"`                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| UChicago        | `scale_color_uchicago()`     | `"default"`<br>                | `pal_uchicago()`     |
+|                 | `scale_fill_uchicago()`      | `"light"`<br>                  |                      |
+|                 |                              | `"dark"`                       |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Star Trek       | `scale_color_startrek()`     | `"uniform"`                    | `pal_startrek()`     |
+|                 | `scale_fill_startrek()`      |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Tron Legacy     | `scale_color_tron()`         | `"legacy"`                     | `pal_tron()`         |
+|                 | `scale_fill_tron()`          |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Futurama        | `scale_color_futurama()`     | `"planetexpress"`              | `pal_futurama()`     |
+|                 | `scale_fill_futurama()`      |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Rick and Morty  | `scale_color_rickandmorty()` | `"schwifty"`                   | `pal_rickandmorty()` |
+|                 | `scale_fill_rickandmorty()`  |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| The Simpsons    | `scale_color_simpsons()`     | `"springfield"`                | `pal_simpsons()`     |
+|                 | `scale_fill_simpsons()`      |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| GSEA            | `scale_color_gsea()`         | `"default"`                    | `pal_gsea()`         |
+|                 | `scale_fill_gsea()`          |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Material Design | `scale_color_material()`     | `"red"` `"pink"`<br>           | `pal_material()`     |
+|                 | `scale_fill_material()`      | `"purple"` `"deep-purple"`<br> |                      |
+|                 |                              | `"indigo"` `"blue"`<br>        |                      |
+|                 |                              | `"light-blue"` `"cyan"`<br>    |                      |
+|                 |                              | `"teal"` `"green"`<br>         |                      |
+|                 |                              | `"light-green"` `"lime"`<br>   |                      |
+|                 |                              | `"yellow"` `"amber"`<br>       |                      |
+|                 |                              | `"orange"` `"deep-orange"`<br> |                      |
+|                 |                              | `"brown"` `"grey"`<br>         |                      |
+|                 |                              | `"blue-grey"`                  |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 
 # Discrete Color Palettes
 
@@ -114,8 +131,8 @@ p2 = ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 
 ## NPG
 
-The NPG palette is inspired by the plots in journals published by
-Nature Publishing Group:
+The NPG palette is inspired by the plots in the journals published by
+<emph>Nature Publishing Group</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_npg = p1 + scale_color_npg()
@@ -125,8 +142,8 @@ grid.arrange(p1_npg, p2_npg, ncol = 2)
 
 ## AAAS
 
-The AAAS palette is inspired by the plots in journals published by
-American Association for the Advancement of Science:
+The AAAS palette is inspired by the plots in the journals published by
+<emph>American Association for the Advancement of Science</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_aaas = p1 + scale_color_aaas()
@@ -147,13 +164,24 @@ grid.arrange(p1_nejm, p2_nejm, ncol = 2)
 
 ## Lancet
 
-The Lancet palette is inspired by the plots in Lancet journals, such as
-<emph>Lancet Oncology</emph>:
+The Lancet palette is inspired by the plots in <emph>Lancet</emph> journals,
+such as <emph>Lancet Oncology</emph>:
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_lancet = p1 + scale_color_lancet()
 p2_lancet = p2 + scale_fill_lancet()
 grid.arrange(p1_lancet, p2_lancet, ncol = 2)
+```
+
+## JAMA
+
+The JAMA palette is inspired by the plots in
+<emph>The Journal of the American Medical Association</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_jama = p1 + scale_color_jama()
+p2_jama = p2 + scale_fill_jama()
+grid.arrange(p1_jama, p2_jama, ncol = 2)
 ```
 
 ## JCO
@@ -221,8 +249,8 @@ grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 
 The UChicago palette is based on
 [the colors](http://communications.uchicago.edu/identity/color-palette)
-used by The University of Chicago. There are three palette types
-(`default`, `light`, `dark`) available.
+used by <emph>The University of Chicago</emph>.
+There are three palette types (`default`, `light`, `dark`) available.
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_uchicago = p1 + scale_color_uchicago()
@@ -238,6 +266,22 @@ This palette is inspired by the (uniform) colors in <emph>Star Trek</emph>:
 p1_startrek = p1 + scale_color_startrek()
 p2_startrek = p2 + scale_fill_startrek()
 grid.arrange(p1_startrek, p2_startrek, ncol = 2)
+```
+
+## Tron Legacy
+
+This palette is inspired by the colors used in <emph>Tron Legacy</emph>.
+It is suitable for displaying data when using a dark theme:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_tron = p1 + theme_dark() + theme(
+    panel.background = element_rect(fill = "#2D2D2D"),
+    legend.key = element_rect(fill = "#2D2D2D")) +
+  scale_color_tron()
+p2_tron = p2 + theme_dark() + theme(
+    panel.background = element_rect(fill = "#2D2D2D")) +
+  scale_fill_tron()
+grid.arrange(p1_tron, p2_tron, ncol = 2)
 ```
 
 ## Futurama
@@ -286,7 +330,9 @@ cor_melt = melt(cor)
 p3 = ggplot(cor_melt,
             aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", size = 0.3) +
-  theme_bw()
+  theme_bw() +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank())
 ```
 
 ## GSEA
@@ -294,10 +340,62 @@ p3 = ggplot(cor_melt,
 The GSEA palette (continuous) is inspired by the heatmaps generated by
 [GSEA GenePattern](https://software.broadinstitute.org/cancer/software/genepattern/).
 
-```{r, fig.width = 8, fig.height = 6.67, out.width = 600, out.height = 500, dpi = 150}
-p3_gsea = p3 + scale_fill_gsea()
-p3_gsea
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p3_gsea     = p3 + scale_fill_gsea()
+p3_gsea_inv = p3 + scale_fill_gsea(reverse = TRUE)
+grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
 ```
+
+## Material Design
+
+The <emph>Material Design</emph> color palettes are from the [material design
+color guidelines](https://material.io/guidelines/style/color.html).
+
+We generate a random matrix first:
+
+```{r}
+library("reshape2")
+
+set.seed(42)
+k = 9
+x = diag(k)
+x[upper.tri(x)] = runif(sum(1:(k - 1)), 0, 1)
+x_melt = melt(x)
+
+p4 = ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(colour = "black", size = 0.3) +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  theme_bw() + theme(
+    legend.position = "none", plot.background = element_blank(),
+    axis.line = element_blank(), axis.ticks = element_blank(),
+    axis.text.x = element_blank(), axis.text.y = element_blank(),
+    axis.title.x = element_blank(), axis.title.y = element_blank(),
+    panel.background = element_blank(), panel.border = element_blank(),
+    panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+```
+
+Plot the matrix with the 19 material design color palettes:
+
+```{r, fig.width = 10.67, fig.height = 7.12, out.width = 800, out.height = 533, dpi = 150}
+grid.arrange(
+  p4 + scale_fill_material("red"),         p4 + scale_fill_material("pink"),
+  p4 + scale_fill_material("purple"),      p4 + scale_fill_material("deep-purple"),
+  p4 + scale_fill_material("indigo"),      p4 + scale_fill_material("blue"),
+  p4 + scale_fill_material("light-blue"),  p4 + scale_fill_material("cyan"),
+  p4 + scale_fill_material("teal"),        p4 + scale_fill_material("green"),
+  p4 + scale_fill_material("light-green"), p4 + scale_fill_material("lime"),
+  p4 + scale_fill_material("yellow"),      p4 + scale_fill_material("amber"),
+  p4 + scale_fill_material("orange"),      p4 + scale_fill_material("deep-orange"),
+  p4 + scale_fill_material("brown"),       p4 + scale_fill_material("grey"),
+  p4 + scale_fill_material("blue-grey"),
+  ncol = 6)
+```
+
+From the figure above, we can see that even though an identical matrix
+was visualized by all plots, some palettes are more preferrable
+than the others because our eyes are more sensitive to the changes
+of their saturation levels.
 
 # Non-ggplot2 Graphics
 

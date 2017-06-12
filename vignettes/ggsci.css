@@ -5,7 +5,7 @@ body {
   overflow: visible;
   padding-left: 2em;
   padding-right: 2em;
-  font-family: Lato, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Alegreya Sans", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 16px;
   line-height: 1.35;
 }
@@ -173,7 +173,7 @@ img {
 
 h1 {
   margin-top: 25px;
-  font-size: 35px;
+  font-size: 32px;
   line-height: 40px;
 }
 
