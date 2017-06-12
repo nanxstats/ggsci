@@ -1,3 +1,16 @@
+# ggsci 2.7 (2017-06-12)
+
+## New Features
+
+Two new discrete color palettes:
+
+- JAMA
+- Tron Legacy
+
+One new collection of continuous palette with 19 color options:
+
+- Material Design
+
 # ggsci 2.4 (2017-03-07)
 
 ## New Features
