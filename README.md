@@ -96,7 +96,7 @@ devtools::install_github("road2stat/ggsci")
 
 ### Material Design
 
-<img src="https://ggsci.net/img/gallery-material.png" width="100%" alt="material">
+<img src="https://ggsci.net/img/gallery-material.png" width="92%" alt="material">
 
 ## Links
 
