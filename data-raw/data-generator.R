@@ -221,6 +221,13 @@ ggsci_db$'gsea'$'default' = c(
   'BrinkPink'   = '#FF7080', 'Persimmon'      = '#FF5A5A',
   'Flamingo'    = '#EF4040', 'GuardsmanRed'   = '#D60C00')
 
+# Color palette inspired by heatmaps created by Tynan DeBold and Dov Friedman
+ggsci_db$'vaccine'$'default' = c(
+  '0'    = '#E7F0FA', '0.01' = '#C9E2F6', '0.02' = '#95CBEE',
+  '0.03' = '#0099DC', '0.09' = '#4AB04A', '0.1'  = '#FFD73E',
+  '0.15' = '#EEC73A', '0.25' = '#E29421', '0.4'  = '#E29421',
+  '0.5'  = '#F05336', '1'    = '#CE472E')
+
 # Material Design color palettes
 ggsci_db$'material'$'red' = c(
   'Red50'  = '#FFEBEE', 'Red100' = '#FFCDD2',
@@ -380,6 +387,7 @@ save(ggsci_db, file = 'R/sysdata.rda')
 # barplot(rep(1, 12), col = ggsci_db$'rickandmorty'$'schwifty')
 # barplot(rep(1, 16), col = ggsci_db$'simpsons'$'springfield')
 # barplot(rep(1, 12), col = ggsci_db$'gsea'$'default')
+# barplot(rep(1, 11), col = ggsci_db$'vaccine'$'default')
 # barplot(rep(1, 10), col = ggsci_db$'material'$'red')
 # barplot(rep(1, 10), col = ggsci_db$'material'$'pink')
 # barplot(rep(1, 10), col = ggsci_db$'material'$'purple')
