@@ -103,3 +103,7 @@ devtools::install_github("road2stat/ggsci")
 * Website: [https://ggsci.net](https://ggsci.net)
 * CRAN: [https://cran.r-project.org/package=ggsci](https://cran.r-project.org/package=ggsci)
 * GitHub: [https://github.com/road2stat/ggsci](https://github.com/road2stat/ggsci)
+
+## Contribute
+
+To contribute to this project, please take a look at the [Contributing Guidelines](CONTRIBUTING.md) first. Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
