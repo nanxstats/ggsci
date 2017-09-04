@@ -4,3 +4,5 @@
 .travis.yml
 ^appveyor\.yml$
 ^_pkgdown\.yml$
+^CONDUCT\.md$
+^CONTRIBUTING\.md$
