@@ -18,4 +18,3 @@ License: \tab GPL-3\cr }
 Nan Xiao <\email{me@nanx.me}>
         Miaozhu Li <\email{miaozhu.li@duke.edu}>
 }
-

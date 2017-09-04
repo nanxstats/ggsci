@@ -53,4 +53,3 @@ p2 + scale_fill_manual(
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

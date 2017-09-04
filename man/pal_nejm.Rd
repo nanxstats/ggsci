@@ -27,4 +27,3 @@ show_col(pal_nejm("default", alpha = 0.6)(8))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

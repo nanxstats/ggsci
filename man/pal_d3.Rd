@@ -28,11 +28,10 @@ show_col(pal_d3("category20")(20))
 show_col(pal_d3("category20b")(20))
 show_col(pal_d3("category20c")(20))
 }
+\references{
+\url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
+}
 \author{
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-\references{
-\url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
-}
-

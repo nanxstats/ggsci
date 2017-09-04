@@ -53,11 +53,10 @@ p2 + scale_fill_uchicago(palette = "light")
 p1 + scale_color_uchicago(palette = "dark")
 p2 + scale_fill_uchicago(palette = "dark")
 }
+\references{
+\url{http://communications.uchicago.edu/identity/color-palette}
+}
 \author{
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-\references{
-\url{http://communications.uchicago.edu/identity/color-palette}
-}
-

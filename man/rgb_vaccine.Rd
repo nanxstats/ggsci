@@ -36,11 +36,10 @@ library("scales")
 show_col(pal_vaccine("default")(11))
 show_col(pal_vaccine("default", n = 30, alpha = 0.6, reverse = TRUE)(30))
 }
+\references{
+\href{http://graphics.wsj.com/infectious-diseases-and-vaccines/}{Battling Infectious Diseases in the 20th Century: The Impact of Vaccines}.
+}
 \author{
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-\references{
-\href{http://graphics.wsj.com/infectious-diseases-and-vaccines/}{Battling Infectious Diseases in the 20th Century: The Impact of Vaccines}.
-}
-

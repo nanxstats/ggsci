@@ -58,11 +58,10 @@ p2 + scale_fill_d3(palette = "category20b")
 p1 + scale_color_d3(palette = "category20c")
 p2 + scale_fill_d3(palette = "category20c")
 }
+\references{
+\url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
+}
 \author{
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-\references{
-\url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
-}
-

@@ -27,4 +27,3 @@ show_col(pal_lancet("lanonc", alpha = 0.6)(9))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

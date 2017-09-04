@@ -26,4 +26,3 @@ show_col(pal_simpsons("springfield", alpha = 0.6)(16))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

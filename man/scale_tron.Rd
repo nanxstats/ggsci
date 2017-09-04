@@ -49,4 +49,3 @@ ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

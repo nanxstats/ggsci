@@ -24,13 +24,12 @@ library("scales")
 show_col(pal_igv("default")(51))
 show_col(pal_igv("alternating")(2))
 }
-\author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
-}
 \references{
 James T. Robinson, Helga Thorvaldsd\'{o}ttir, Wendy Winckler,
 Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov.
 Integrative Genomics Viewer. \emph{Nature Biotechnology} 29, 24--26 (2011).
 }
-
+\author{
+Nan Xiao <\email{me@nanx.me}> |
+<\href{https://nanx.me}{https://nanx.me}>
+}

@@ -27,4 +27,3 @@ show_col(pal_npg("nrc", alpha = 0.6)(10))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

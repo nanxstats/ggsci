@@ -26,4 +26,3 @@ show_col(pal_startrek("uniform", alpha = 0.6)(7))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

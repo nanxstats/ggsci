@@ -26,4 +26,3 @@ show_col(pal_ucscgb("default", alpha = 0.6)(26))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-

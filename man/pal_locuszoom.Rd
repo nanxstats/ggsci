@@ -22,13 +22,12 @@ library("scales")
 show_col(pal_locuszoom("default")(7))
 show_col(pal_locuszoom("default", alpha = 0.6)(7))
 }
-\author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
-}
 \references{
 Pruim, Randall J., et al. (2010). LocusZoom: regional visualization of
 genome-wide association scan results. \emph{Bioinformatics},
 26(18), 2336--2337.
 }
-
+\author{
+Nan Xiao <\email{me@nanx.me}> |
+<\href{https://nanx.me}{https://nanx.me}>
+}

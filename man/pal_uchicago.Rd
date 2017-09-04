@@ -25,11 +25,10 @@ show_col(pal_uchicago("default")(9))
 show_col(pal_uchicago("light")(9))
 show_col(pal_uchicago("dark")(9))
 }
+\references{
+\url{http://communications.uchicago.edu/identity/color-palette}
+}
 \author{
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-\references{
-\url{http://communications.uchicago.edu/identity/color-palette}
-}
-

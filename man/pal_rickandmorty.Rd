@@ -26,4 +26,3 @@ show_col(pal_rickandmorty("schwifty", alpha = 0.6)(12))
 Nan Xiao <\email{me@nanx.me}> |
 <\href{https://nanx.me}{https://nanx.me}>
 }
-
