@@ -1,6 +1,6 @@
 ---
-title: "Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2"
-author: "Nan Xiao <<https://nanx.me>> <br>
+title: "Scientific Journal and Sci-Fi Themed<br>Color Palettes for ggplot2"
+author: "Nan Xiao <<https://nanx.me>><br>
          Miaozhu Li <<http://miaozhu.li>>"
 date: "`r Sys.Date()`"
 output:
@@ -8,8 +8,6 @@ output:
     toc: true
     number_sections: true
     css: ggsci.css
-    includes:
-      in_header: header.html
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2}
@@ -426,7 +424,3 @@ and [viridis](https://cran.r-project.org/package=viridis).
 
 The color palettes in this package are solely created for research purposes.
 The authors are not responsible for the usage of such palettes.
-
-<hr>
-
-Project website: [ggsci.net](https://ggsci.net)
