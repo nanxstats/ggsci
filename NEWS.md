@@ -1,3 +1,9 @@
+# ggsci 2.8 (2017-09-30)
+
+## Improvements
+
+- Use system font stack instead of Google Fonts in vignettes to avoid pandoc SSL issue.
+
 # ggsci 2.7 (2017-06-12)
 
 ## New Features
