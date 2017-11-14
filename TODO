@@ -4,6 +4,7 @@
 - Marvel's The Defenders (colors from opening titles). Red - Daredevil; Blue - Jessica Jones; Orange - Luke Cage; Green - Iron Fist.
 - Gephi: https://github.com/gephi/gephi/blob/master/modules/Utils/src/main/java/org/gephi/utils/PaletteUtils.java#L83-L110
 - Apple Human Interface Guidelines: https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/ one discrete, one continuous.
+- The Gates Notes: Light https://www.gatesnotes.com/-/media/Images/Articles/Education/Education-2/education202013700px6.jpg Dark https://www.gatesnotes.com/-/media/Images/Quest/Energy/energymiraclesfederalrd.png https://www.gatesnotes.com/-/media/Images/Quest/Energy/energymiraclesTotalRDspending.png Search for TGN_Variables
 
 - Add a function for displaying all color palettes
 - Color palette extraction: http://colormind.io/
