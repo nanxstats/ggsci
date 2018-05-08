@@ -1,3 +1,9 @@
+# ggsci 2.8.9001 (2018-05-07)
+
+## Improvements
+
+- New URL for the documentation website: https://nanx.me/ggsci/.
+
 # ggsci 2.8 (2017-09-30)
 
 ## Improvements

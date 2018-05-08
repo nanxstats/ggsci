@@ -1,7 +1,7 @@
 template:
   params:
     bootswatch: cosmo
-    ganalytics: UA-75917303-1
+    ganalytics: UA-66394392-1
 
 navbar:
   type: inverse
