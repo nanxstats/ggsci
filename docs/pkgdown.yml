@@ -1,6 +1,6 @@
-pandoc: 2.1.3
-pkgdown: 0.1.0.9000
-pkgdown_sha: 8707a87127a4d04e69d0c9eac04f17025c48683a
+pandoc: 1.19.2.1
+pkgdown: 1.0.0
+pkgdown_sha: ~
 articles:
   ggsci: ggsci.html
 

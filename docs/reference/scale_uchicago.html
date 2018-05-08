@@ -25,6 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
+
+
+
 <meta property="og:title" content="The University of Chicago Color Scales — scale_color_uchicago" />
 
 <meta property="og:description" content="See pal_uchicago for details." />
@@ -41,16 +44,14 @@
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-75917303-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66394392-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-75917303-1');
+  gtag('config', 'UA-66394392-1');
 </script>
-
-
 
   </head>
 
@@ -67,7 +68,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ggsci</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">2.8.9000</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">2.8.9001</span>
       </span>
     </div>
 
@@ -110,13 +111,15 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>The University of Chicago Color Scales</h1>
-    <small>Source: <a href='https://github.com/road2stat/ggsci/blob/master/R/discrete-uchicago.R'><code>R/discrete-uchicago.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/road2stat/ggsci/blob/master/R/discrete-uchicago.R'><code>R/discrete-uchicago.R</code></a></small>
     <div class="hidden name"><code>scale_uchicago.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>See <code><a href='pal_uchicago.html'>pal_uchicago</a></code> for details.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>scale_color_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"default"</span>, <span class='st'>"light"</span>, <span class='st'>"dark"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='no'>...</span>)
@@ -168,9 +171,12 @@ See <code>alpha</code> in <code><a href='http://www.rdocumentation.org/packages/
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_histogram'>geom_histogram</a></span>(<span class='kw'>colour</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"dodge"</span>) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme'>theme_bw</a></span>()
 
-<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>()</div><div class='img'><img src='scale_uchicago-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>()</div><div class='img'><img src='scale_uchicago-2.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"light"</span>)</div><div class='img'><img src='scale_uchicago-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"light"</span>)</div><div class='img'><img src='scale_uchicago-4.png' alt='' width='700' height='433' /></div><div class='input'>
-<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"dark"</span>)</div><div class='img'><img src='scale_uchicago-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"dark"</span>)</div><div class='img'><img src='scale_uchicago-6.png' alt='' width='700' height='433' /></div></pre>
+<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>()</div><div class='img'><img src='scale_uchicago-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>()</div><div class='output co'>#&gt; <span class='error'>Error in grid.Call.graphics(C_setviewport, vp, TRUE): non-finite location and/or size for viewport</span></div><div class='img'><img src='scale_uchicago-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"light"</span>)
+<span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"light"</span>)
+
+<span class='no'>p1</span> + <span class='fu'>scale_color_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"dark"</span>)
+<span class='no'>p2</span> + <span class='fu'>scale_fill_uchicago</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='st'>"dark"</span>)</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
