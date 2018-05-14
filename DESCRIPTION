@@ -1,7 +1,7 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 2.8.9001
+Version: 2.9
 Authors@R: c(
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0250-5673")),
@@ -27,4 +27,4 @@ Suggests:
     gridExtra,
     reshape2
 Encoding: UTF-8
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000

@@ -1,6 +1,6 @@
 #' The University of Chicago Color Palettes
 #'
-#' Color palettes based on the colors used by The University of Chicago.
+#' Color palettes based on the colors used by the University of Chicago.
 #'
 #' @param palette Palette type.
 #' There are 3 available options:
@@ -18,7 +18,7 @@
 #' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{https://nanx.me}{https://nanx.me}>
 #'
-#' @references \url{http://communications.uchicago.edu/identity/color-palette}
+#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 #'
 #' @examples
 #' library("scales")
@@ -57,7 +57,7 @@ pal_uchicago = function (
 #' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{https://nanx.me}{https://nanx.me}>
 #'
-#' @references \url{http://communications.uchicago.edu/identity/color-palette}
+#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 #'
 #' @rdname scale_uchicago
 #'

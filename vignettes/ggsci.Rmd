@@ -246,8 +246,8 @@ grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 ## UChicago
 
 The UChicago palette is based on
-[the colors](http://communications.uchicago.edu/identity/color-palette)
-used by <emph>The University of Chicago</emph>.
+[the colors](https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf)
+used by the <emph>University of Chicago</emph>.
 There are three palette types (`default`, `light`, `dark`) available.
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}

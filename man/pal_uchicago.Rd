@@ -17,7 +17,7 @@ There are 3 available options:
 See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 }
 \description{
-Color palettes based on the colors used by The University of Chicago.
+Color palettes based on the colors used by the University of Chicago.
 }
 \examples{
 library("scales")
@@ -26,7 +26,7 @@ show_col(pal_uchicago("light")(9))
 show_col(pal_uchicago("dark")(9))
 }
 \references{
-\url{http://communications.uchicago.edu/identity/color-palette}
+\url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
