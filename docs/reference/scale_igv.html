@@ -68,7 +68,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ggsci</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">2.8.9001</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">2.9</span>
       </span>
     </div>
 
@@ -164,10 +164,12 @@ See <code>alpha</code> in <code><a href='http://www.rdocumentation.org/packages/
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_histogram'>geom_histogram</a></span>(<span class='kw'>colour</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>binwidth</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>position</span> <span class='kw'>=</span> <span class='st'>"dodge"</span>) +
   <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme'>theme_bw</a></span>()
 
-<span class='no'>p1</span> + <span class='fu'>scale_color_igv</span>()</div><div class='img'><img src='scale_igv-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_igv</span>()</div><div class='img'><img src='scale_igv-2.png' alt='' width='700' height='433' /></div><div class='input'>
+<span class='no'>p1</span> + <span class='fu'>scale_color_igv</span>()</div><div class='output co'>#&gt; <span class='error'>Error in grid.Call.graphics(C_setviewport, vp, TRUE): non-finite location and/or size for viewport</span></div><div class='img'><img src='scale_igv-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'>scale_fill_igv</span>()
+
 <span class='no'>p1</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual'>scale_colour_manual</a></span>(
-  <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'>rep</span>(<span class='fu'><a href='pal_igv.html'>pal_igv</a></span>(<span class='st'>"alternating"</span>)(<span class='fl'>2</span>), <span class='kw'>times</span> <span class='kw'>=</span> <span class='fl'>3</span>))</div><div class='img'><img src='scale_igv-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>p2</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual'>scale_fill_manual</a></span>(
-  <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'>rep</span>(<span class='fu'><a href='pal_igv.html'>pal_igv</a></span>(<span class='st'>"alternating"</span>)(<span class='fl'>2</span>), <span class='kw'>times</span> <span class='kw'>=</span> <span class='fl'>3</span>))</div><div class='img'><img src='scale_igv-4.png' alt='' width='700' height='433' /></div></pre>
+  <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'>rep</span>(<span class='fu'><a href='pal_igv.html'>pal_igv</a></span>(<span class='st'>"alternating"</span>)(<span class='fl'>2</span>), <span class='kw'>times</span> <span class='kw'>=</span> <span class='fl'>3</span>))
+<span class='no'>p2</span> + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/scale_manual'>scale_fill_manual</a></span>(
+  <span class='kw'>values</span> <span class='kw'>=</span> <span class='fu'>rep</span>(<span class='fu'><a href='pal_igv.html'>pal_igv</a></span>(<span class='st'>"alternating"</span>)(<span class='fl'>2</span>), <span class='kw'>times</span> <span class='kw'>=</span> <span class='fl'>3</span>))</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
