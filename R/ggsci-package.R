@@ -4,12 +4,14 @@
 #'
 #' Opened the vignette via \code{vignette("ggsci")}.
 #'
-#' \tabular{ll}{ Package: \tab ggsci\cr
+#' \tabular{ll}{
+#' Package: \tab ggsci\cr
 #' Type: \tab Package\cr
-#' License: \tab GPL-3\cr }
+#' License: \tab GPL-3}
 #'
 #' @name ggsci-package
 #' @docType package
-#' @author Nan Xiao <\email{me@@nanx.me}>
-#'         Miaozhu Li <\email{miaozhu.li@@duke.edu}>
+#' @author
+#' Nan Xiao <\email{me@@nanx.me}>
+#' Miaozhu Li <\email{miaozhu.li@@duke.edu}>
 NULL
