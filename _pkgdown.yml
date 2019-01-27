@@ -1,6 +1,0 @@
-template:
-  params:
-    bootswatch: cosmo
-
-navbar:
-  type: inverse
