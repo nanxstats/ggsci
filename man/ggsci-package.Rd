@@ -2,20 +2,30 @@
 % Please edit documentation in R/ggsci-package.R
 \docType{package}
 \name{ggsci-package}
+\alias{ggsci}
 \alias{ggsci-package}
-\title{Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'}
+\title{ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'}
 \description{
-Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
+A collection of 'ggplot2' color palettes inspired by
+    plots in scientific journals, data visualization libraries,
+    science fiction movies, and TV shows.
 }
-\details{
-Opened the vignette via \code{vignette("ggsci")}.
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://nanx.me/ggsci/}
+  \item \url{https://github.com/road2stat/ggsci}
+  \item Report bugs at \url{https://github.com/road2stat/ggsci/issues}
+}
 
-\tabular{ll}{
-Package: \tab ggsci\cr
-Type: \tab Package\cr
-License: \tab GPL-3}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}>
-Miaozhu Li <\email{miaozhu.li@duke.edu}>
+\strong{Maintainer}: Nan Xiao \email{me@nanx.me} (0000-0002-0250-5673)
+
+Other contributors:
+\itemize{
+  \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
 }
+
+}
+\keyword{internal}
