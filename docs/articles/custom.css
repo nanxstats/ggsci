@@ -1,0 +1,214 @@
+/* custom css style for Nan Xiao's R package vignettes */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #212529;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1.title {
+  padding-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212529;
+  font-weight: 700;
+}
+
+h1, h1.title {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h4.author {
+  padding-bottom: 10px;
+}
+
+h4.author>em {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h4.date {
+  padding-bottom: 10px;
+}
+
+h4.date>em {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+a {
+  color: #4582EC;
+}
+
+a:hover, a:focus, a:active {
+  color: #1559CF;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+pre, code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+/* float toc */
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: #4582EC;
+  border-color: #4582EC;
+}
+
+/* figure */
+
+div.figure {
+  text-align: center;
+}
+
+p.caption {
+  text-align: center;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  color: #4287c7;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: #c8c8c8;
+}
+
+.remark-code-line-highlighted {
+  background-color: #fff;
+}
+
+.remark-slide .title-slide {
+  padding-left: 340px;
+  padding-top: 110px;
+}
+
+.title-slide h1, .title-slide h2, .title-slide h3 {
+  color: #585858;
+}
+
+.title-slide h1, .title-slide h2 {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.title-slide h3 {
+  font-weight: 300;
+  font-weight: normal;
+  margin: 0;
+}
+
+.dark-green {
+  background-color: #789d57;
+}
+
+.dark-green h2, .dark-green h1 {
+  color: #fff;
+}
+
+.dark-gray {
+  background-color: #585858;
+}
+
+.dark-gray h2, .dark-gray h1 {
+  color: #fff;
+}
+
+/* Two-column layout */
+
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.pull-right~* {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+table {
+  margin: auto;
+  border-bottom: 1px solid #666;
+}
+
+table thead th {
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 5px;
+}
+
+thead, tfoot, tr:nth-child(even) {
+  background: #eee
+}
