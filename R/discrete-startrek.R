@@ -20,21 +20,20 @@
 #' library("scales")
 #' show_col(pal_startrek("uniform")(7))
 #' show_col(pal_startrek("uniform", alpha = 0.6)(7))
-pal_startrek = function (palette = c('uniform'), alpha = 1) {
+pal_startrek <- function(palette = c("uniform"), alpha = 1) {
+  palette <- match.arg(palette)
 
-  palette = match.arg(palette)
+  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
 
-  if (alpha > 1L | alpha <= 0L) stop('alpha must be in (0, 1]')
-
-  raw_cols = ggsci_db$'startrek'[[palette]]
-  raw_cols_rgb = col2rgb(raw_cols)
-  alpha_cols = rgb(
+  raw_cols <- ggsci_db$"startrek"[[palette]]
+  raw_cols_rgb <- col2rgb(raw_cols)
+  alpha_cols <- rgb(
     raw_cols_rgb[1L, ], raw_cols_rgb[2L, ], raw_cols_rgb[3L, ],
     alpha = alpha * 255L, names = names(raw_cols),
-    maxColorValue = 255L)
+    maxColorValue = 255L
+  )
 
   manual_pal(unname(alpha_cols))
-
 }
 
 #' Star Trek Color Scales
@@ -56,34 +55,34 @@ pal_startrek = function (palette = c('uniform'), alpha = 1) {
 #' @examples
 #' library("ggplot2")
 #' data("diamonds")
-#'
-#' ggplot(subset(diamonds, carat >= 2.2),
-#'        aes(x = table, y = price, colour = cut)) +
+#' 
+#' ggplot(
+#'   subset(diamonds, carat >= 2.2),
+#'   aes(x = table, y = price, colour = cut)
+#' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
 #'   theme_bw() + scale_color_startrek()
-#'
-#' ggplot(subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-#'        aes(x = depth, fill = cut)) +
+#' 
+#' ggplot(
+#'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
+#'   aes(x = depth, fill = cut)
+#' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
 #'   theme_bw() + scale_fill_startrek()
-scale_color_startrek = function (palette = c('uniform'), alpha = 1, ...) {
-
-  palette = match.arg(palette)
-  discrete_scale('colour', 'startrek', pal_startrek(palette, alpha), ...)
-
+scale_color_startrek <- function(palette = c("uniform"), alpha = 1, ...) {
+  palette <- match.arg(palette)
+  discrete_scale("colour", "startrek", pal_startrek(palette, alpha), ...)
 }
 
 #' @export scale_colour_startrek
 #' @rdname scale_startrek
-scale_colour_startrek = scale_color_startrek
+scale_colour_startrek <- scale_color_startrek
 
 #' @export scale_fill_startrek
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_startrek
-scale_fill_startrek = function (palette = c('uniform'), alpha = 1, ...) {
-
-  palette = match.arg(palette)
-  discrete_scale('fill', 'startrek', pal_startrek(palette, alpha), ...)
-
+scale_fill_startrek <- function(palette = c("uniform"), alpha = 1, ...) {
+  palette <- match.arg(palette)
+  discrete_scale("fill", "startrek", pal_startrek(palette, alpha), ...)
 }
