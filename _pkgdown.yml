@@ -1,0 +1,111 @@
+reference:
+  - title: "NPG"
+    contents:
+      - pal_npg
+      - scale_color_npg
+      - scale_colour_npg
+      - scale_fill_npg
+  - title: "AAAS"
+    contents:
+      - pal_aaas
+      - scale_color_aaas
+      - scale_colour_aaas
+      - scale_fill_aaas
+  - title: "NEJM"
+    contents:
+      - pal_nejm
+      - scale_color_nejm
+      - scale_colour_nejm
+      - scale_fill_nejm
+  - title: "NEJM"
+    contents:
+      - pal_lancet
+      - scale_color_lancet
+      - scale_colour_lancet
+      - scale_fill_lancet
+  - title: "JAMA"
+    contents:
+      - pal_jama
+      - scale_color_jama
+      - scale_colour_jama
+      - scale_fill_jama
+  - title: "JCO"
+    contents:
+      - pal_jco
+      - scale_color_jco
+      - scale_colour_jco
+      - scale_fill_jco
+  - title: "UCSCGB"
+    contents:
+      - pal_ucscgb
+      - scale_color_ucscgb
+      - scale_colour_ucscgb
+      - scale_fill_ucscgb
+  - title: "D3"
+    contents:
+      - pal_d3
+      - scale_color_d3
+      - scale_colour_d3
+      - scale_fill_d3
+  - title: "LocusZoom"
+    contents:
+      - pal_locuszoom
+      - scale_color_locuszoom
+      - scale_colour_locuszoom
+      - scale_fill_locuszoom
+  - title: "IGV"
+    contents:
+      - pal_igv
+      - scale_color_igv
+      - scale_colour_igv
+      - scale_fill_igv
+  - title: "UChicago"
+    contents:
+      - pal_uchicago
+      - scale_color_uchicago
+      - scale_colour_uchicago
+      - scale_fill_uchicago
+  - title: "Star Trek"
+    contents:
+      - pal_startrek
+      - scale_color_startrek
+      - scale_colour_startrek
+      - scale_fill_startrek
+  - title: "Tron Legacy"
+    contents:
+      - pal_tron
+      - scale_color_tron
+      - scale_colour_tron
+      - scale_fill_tron
+  - title: "Futurama"
+    contents:
+      - pal_futurama
+      - scale_color_futurama
+      - scale_colour_futurama
+      - scale_fill_futurama
+  - title: "Rick and Morty"
+    contents:
+      - pal_rickandmorty
+      - scale_color_rickandmorty
+      - scale_colour_rickandmorty
+      - scale_fill_rickandmorty
+  - title: "The Simpsons"
+    contents:
+      - pal_simpsons
+      - scale_color_simpsons
+      - scale_colour_simpsons
+      - scale_fill_simpsons
+  - title: "GSEA"
+    contents:
+      - rgb_gsea
+      - pal_gsea
+      - scale_color_gsea
+      - scale_colour_gsea
+      - scale_fill_gsea
+  - title: "Material Design"
+    contents:
+      - rgb_material
+      - pal_material
+      - scale_color_material
+      - scale_colour_material
+      - scale_fill_material
