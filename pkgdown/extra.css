@@ -9,6 +9,15 @@ body {
     color: #212529;
 }
 
+/* navbar */
+
+.navbar-default {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
 /* links */
 
 a {
@@ -16,7 +25,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #1559cf;
+    color: #1559CF;
 }
 
 /* pills */

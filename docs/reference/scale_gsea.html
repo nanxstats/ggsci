@@ -157,11 +157,13 @@ See <code>alpha</code> in <code><a href='https://www.rdocumentation.org/packages
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='st'>"reshape2"</span>)
 <span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='st'>"mtcars"</span>)
 
-<span class='no'>cor</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/cor'>cor</a></span>(<span class='no'>mtcars</span>)
-<span class='no'>cor_melt</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/reshape2/topics/melt'>melt</a></span>(<span class='no'>cor</span>)
+<span class='no'>cor</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/cor'>cor</a></span>(<span class='no'>mtcars</span>)
+<span class='no'>cor_melt</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/reshape2/topics/melt'>melt</a></span>(<span class='no'>cor</span>)
 
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='no'>cor_melt</span>,
-       <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Var1</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>Var2</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>value</span>)) +
+<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(
+  <span class='no'>cor_melt</span>,
+  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Var1</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>Var2</span>, <span class='kw'>fill</span> <span class='kw'>=</span> <span class='no'>value</span>)
+) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_tile.html'>geom_tile</a></span>(<span class='kw'>colour</span> <span class='kw'>=</span> <span class='st'>"black"</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>0.3</span>) +
   <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_bw</a></span>() + <span class='fu'>scale_fill_gsea</span>()</div><div class='img'><img src='scale_gsea-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
