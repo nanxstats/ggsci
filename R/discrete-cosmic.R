@@ -61,9 +61,6 @@ pal_cosmic <- function(palette = c("hallmarks"), alpha = 1) {
 #' @rdname scale_cosmic
 #'
 #' @examples
-#'
-#' # TODO: change to useing this palette
-#'
 #' library("ggplot2")
 #' data("diamonds")
 #'
@@ -73,21 +70,14 @@ pal_cosmic <- function(palette = c("hallmarks"), alpha = 1) {
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_dark() + theme(
-#'     panel.background = element_rect(fill = "#2D2D2D"),
-#'     legend.key = element_rect(fill = "#2D2D2D")
-#'   ) +
-#'   scale_color_cosmic()
+#'   theme_bw() + scale_color_cosmic()
 #'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_dark() + theme(
-#'     panel.background = element_rect(fill = "#2D2D2D")
-#'   ) +
-#'   scale_fill_cosmic()
+#'   theme_bw() + scale_fill_cosmic()
 scale_color_cosmic <- function(palette = c("hallmarks"), alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("colour", "cosmic", pal_cosmic(palette, alpha), ...)
