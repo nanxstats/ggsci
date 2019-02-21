@@ -4,7 +4,8 @@
 \alias{pal_cosmic}
 \title{COSMIC Color Palettes}
 \usage{
-pal_cosmic(palette = c("hallmarks"), alpha = 1)
+pal_cosmic(palette = c("hallmarks", "signature_substitutions"),
+  alpha = 1)
 }
 \arguments{
 \item{palette}{Palette type.
@@ -21,8 +22,8 @@ Somatic Mutations in Cancers (COSMIC)}
 }
 \examples{
 library("scales")
-show_col(pal_cosmic("hallmark")(10))
-show_col(pal_cosmic("hallmark", alpha = 0.6)(10))
+show_col(pal_cosmic("hallmarks")(10))
+show_col(pal_cosmic("hallmarks", alpha = 0.6)(10))
 show_col(pal_cosmic("signature_substitutions")(6))
 show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 }

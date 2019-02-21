@@ -26,9 +26,6 @@ See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 See \code{\link{pal_cosmic}} for details.
 }
 \examples{
-
-# TODO: change to useing this palette
-
 library("ggplot2")
 data("diamonds")
 
@@ -38,21 +35,14 @@ ggplot(
 ) +
   geom_point(alpha = 0.7) +
   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-  theme_dark() + theme(
-    panel.background = element_rect(fill = "#2D2D2D"),
-    legend.key = element_rect(fill = "#2D2D2D")
-  ) +
-  scale_color_cosmic()
+  theme_bw() + scale_color_cosmic()
 
 ggplot(
   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
   aes(x = depth, fill = cut)
 ) +
   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-  theme_dark() + theme(
-    panel.background = element_rect(fill = "#2D2D2D")
-  ) +
-  scale_fill_cosmic()
+  theme_bw() + scale_fill_cosmic()
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
