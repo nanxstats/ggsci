@@ -76,7 +76,7 @@ summarized in the table below.
 |                 | `scale_fill_uchicago()`      | `"light"`<br>                  |                      |
 |                 |                              | `"dark"`                       |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
-| COSMIC          | `scale_color_cosmic()`       | `"hallmarks"`                  | `pal_cosmic()`     |
+| COSMIC          | `scale_color_cosmic()`       | `"hallmarks"`                  | `pal_cosmic()`       |
 |                 | `scale_fill_cosmic()`        | `"signature_substitutions"`    |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
 | Star Trek       | `scale_color_startrek()`     | `"uniform"`                    | `pal_startrek()`     |
