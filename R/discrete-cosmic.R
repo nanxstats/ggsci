@@ -15,8 +15,6 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
 #' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
 #' <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
 #'
@@ -53,8 +51,6 @@ pal_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alph
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
 #' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
 #' <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
 #'

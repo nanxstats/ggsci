@@ -45,9 +45,6 @@ ggplot(
   theme_bw() + scale_fill_cosmic()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
-
 Joshua H. Cook <\email{joshuacook0023@gmail.com}> |
 <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
 }

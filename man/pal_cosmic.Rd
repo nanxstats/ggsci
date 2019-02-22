@@ -28,9 +28,6 @@ show_col(pal_cosmic("signature_substitutions")(6))
 show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
-
 Joshua H. Cook <\email{joshuacook0023@gmail.com}> |
 <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
 }

@@ -24,6 +24,7 @@ Useful links:
 
 Other contributors:
 \itemize{
+  \item Joshua Cook \email{joshuacook0023@gmail.com} [contributor]
   \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
 }
 
