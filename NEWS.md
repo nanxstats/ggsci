@@ -1,3 +1,9 @@
+# ggsci 3.0 (2019-02-22)
+
+## New Features
+
+- Added COSMIC color palettes. See `scale_color_cosmic()` and `scale_fill_cosmic()` for details. We thank Joshua H. Cook for contributing the color palettes.
+
 # ggsci 2.9 (2018-05-13)
 
 ## Improvements
