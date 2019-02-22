@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2' — ggsci-package • ggsci</title>
+<title>COSMIC Color Palettes — pal_cosmic • ggsci</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -32,11 +32,11 @@
 
   <link href="../extra.css" rel="stylesheet">
   
-<meta property="og:title" content="ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2' — ggsci-package" />
+<meta property="og:title" content="COSMIC Color Palettes — pal_cosmic" />
 
-<meta property="og:description" content="A collection of 'ggplot2' color palettes inspired by
-    plots in scientific journals, data visualization libraries,
-    science fiction movies, and TV shows." />
+<meta property="og:description" content="Color palettes inspired by the colors used projects from the
+Catalogue Of
+Somatic Mutations in Cancers (COSMIC)" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -109,45 +109,54 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'</h1>
-    <small class="dont-index">Source: <a href='https://github.com/road2stat/ggsci/blob/master/R/ggsci-package.R'><code>R/ggsci-package.R</code></a></small>
-    <div class="hidden name"><code>ggsci-package.Rd</code></div>
+    <h1>COSMIC Color Palettes</h1>
+    <small class="dont-index">Source: <a href='https://github.com/road2stat/ggsci/blob/master/R/discrete-cosmic.R'><code>R/discrete-cosmic.R</code></a></small>
+    <div class="hidden name"><code>pal_cosmic.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>A collection of 'ggplot2' color palettes inspired by
-    plots in scientific journals, data visualization libraries,
-    science fiction movies, and TV shows.</p>
+    <p>Color palettes inspired by the colors used projects from the
+<a href='https://cancer.sanger.ac.uk/cosmic'>Catalogue Of
+Somatic Mutations in Cancers (COSMIC)</a></p>
     
     </div>
 
-        
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p>Useful links:</p><ul>
-<li><p><a href='https://nanx.me/ggsci/'>https://nanx.me/ggsci/</a></p></li>
-<li><p><a href='https://github.com/road2stat/ggsci'>https://github.com/road2stat/ggsci</a></p></li>
-<li><p>Report bugs at <a href='https://github.com/road2stat/ggsci/issues'>https://github.com/road2stat/ggsci/issues</a></p></li>
-</ul></div>
+    <pre class="usage"><span class='fu'>pal_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks"</span>, <span class='st'>"signature_substitutions"</span>),
+  <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>palette</th>
+      <td><p>Palette type.
+Currently there is two available options: <code>"signature_substitutions"</code>
+(6-color palette) and <code>"hallmarks"</code> (10-color palette).</p></td>
+    </tr>
+    <tr>
+      <th>alpha</th>
+      <td><p>Transparency level, a real number in (0, 1].
+See <code>alpha</code> in <code><a href='https://www.rdocumentation.org/packages/grDevices/topics/rgb'>rgb</a></code> for details.</p></td>
+    </tr>
+    </table>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='st'>"scales"</span>)
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks"</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-4.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#see-also">See also</a></li>
-          </ul>
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
     <h2>Author</h2>
-    <p><strong>Maintainer</strong>: Nan Xiao <a href='mailto:me@nanx.me'>me@nanx.me</a> (0000-0002-0250-5673)</p>
-<p>Other contributors:</p><ul>
-<li><p>Joshua Cook <a href='mailto:joshuacook0023@gmail.com'>joshuacook0023@gmail.com</a> [contributor]</p></li>
-<li><p>Miaozhu Li <a href='mailto:miaozhu.li@duke.edu'>miaozhu.li@duke.edu</a> [contributor]</p></li>
-</ul>
-
-
+    <p>Joshua H. Cook &lt;<a href='mailto:joshuacook0023@gmail.com'>joshuacook0023@gmail.com</a>&gt; |
+&lt;<a href='https://github.com/jhrcook'>GitHub/jhrcook</a>&gt;</p>
   </div>
 </div>
 
