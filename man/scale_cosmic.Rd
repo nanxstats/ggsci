@@ -6,11 +6,14 @@
 \alias{scale_fill_cosmic}
 \title{COSMIC Color Scales}
 \usage{
-scale_color_cosmic(palette = c("hallmarks"), alpha = 1, ...)
+scale_color_cosmic(palette = c("hallmarks", "signature_substitutions"),
+  alpha = 1, ...)
 
-scale_colour_cosmic(palette = c("hallmarks"), alpha = 1, ...)
+scale_colour_cosmic(palette = c("hallmarks", "signature_substitutions"),
+  alpha = 1, ...)
 
-scale_fill_cosmic(palette = c("hallmarks"), alpha = 1, ...)
+scale_fill_cosmic(palette = c("hallmarks", "signature_substitutions"),
+  alpha = 1, ...)
 }
 \arguments{
 \item{palette}{Palette type.

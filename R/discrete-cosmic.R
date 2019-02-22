@@ -74,7 +74,7 @@ pal_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alph
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
 #'   theme_bw() + scale_fill_cosmic()
-scale_color_cosmic <- function(palette = c("hallmarks"), alpha = 1, ...) {
+scale_color_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("colour", "cosmic", pal_cosmic(palette, alpha), ...)
 }
@@ -86,7 +86,7 @@ scale_colour_cosmic <- scale_color_cosmic
 #' @export scale_fill_cosmic
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_cosmic
-scale_fill_cosmic <- function(palette = c("hallmarks"), alpha = 1, ...) {
+scale_fill_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("fill", "cosmic", pal_cosmic(palette, alpha), ...)
 }
