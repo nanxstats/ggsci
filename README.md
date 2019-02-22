@@ -1,4 +1,4 @@
-# ggsci  <a href="https://nanx.me/ggsci/"><img src="https://i.imgur.com/pGwTPP5.png" align="right" alt="logo" height="180" width="180" /></a>
+# ggsci  <a href="https://nanx.me/ggsci/"><img src="https://i.imgur.com/wX7tM4P.png" align="right" alt="logo" height="180" width="180" /></a>
 
 [![Build Status](https://travis-ci.org/road2stat/ggsci.svg?branch=master)](https://travis-ci.org/road2stat/ggsci)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/road2stat/ggsci?branch=master&svg=true)](https://ci.appveyor.com/project/road2stat/ggsci)
