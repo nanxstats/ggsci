@@ -184,6 +184,30 @@ ggsci_db$"uchicago"$"dark" <- c(
   "Violet" = "#350E20"
 )
 
+# Color palette inspired by COSMIC Hallmarks of Cancer
+ggsci_db$"cosmic"$"hallmarks" <- c(
+  "Invasion and Metastasis" = "#171717",
+  "Escaping Immunic Response to Cancer" = "#7D0226",
+  "Change of Cellular Energetics" = "#300049",
+  "Cell Replicative Immortality" = "#165459",
+  "Suppression of Growth" = "#3F2327",
+  "Genome Instability and Mutations" = "#0B1948",
+  "Angiogenesis" = "#E71012",
+  "Escaping Programmed Cell Death" = "#555555",
+  "Proliferative Signaling" = "#193006",
+  "Tumour Promoting Inflammation" = "#A8450C"
+)
+
+# Color palette inspired by COSMIC Hallmarks of Cancer
+ggsci_db$"cosmic"$"signature_substitutions" <- c(
+  "C>A" = "#5ABCEB",
+  "C>G" = "#050708",
+  "C>T" = "#D33C32",
+  "T>A" = "#CBCACB",
+  "T>C" = "#ABCD72",
+  "T>G" = "#E7C9C6"
+)
+
 # Color palette inspired by The Simpsons
 ggsci_db$"simpsons"$"springfield" <- c(
   "HomerYellow" = "#FED439", "HomerBlue" = "#709AE1",
