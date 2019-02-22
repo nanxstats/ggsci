@@ -66,6 +66,12 @@ devtools::install_github("road2stat/ggsci")
 
 <img src="https://i.imgur.com/bLB8Ofe.png" width="100%" alt="igv">
 
+### COSMIC
+
+<img src="https://i.imgur.com/B4w0K3f.png" width="100%" alt="cosmic-hallmarks">
+
+<img src="https://i.imgur.com/hrqbmAa.png" width="100%" alt="cosmic-signature-substitutions">
+
 ### UChicago
 
 <img src="https://i.imgur.com/Eb8agLj.png" width="100%" alt="uchicago">
