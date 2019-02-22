@@ -72,12 +72,12 @@ summarized in the table below.
 | IGV             | `scale_color_igv()`          | `"default"`<br>                | `pal_igv()`          |
 |                 | `scale_fill_igv()`           | `"alternating"`                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| COSMIC          | `scale_color_cosmic()`       | `"hallmarks"`                  | `pal_cosmic()`       |
+|                 | `scale_fill_cosmic()`        | `"signature_substitutions"`    |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | UChicago        | `scale_color_uchicago()`     | `"default"`<br>                | `pal_uchicago()`     |
 |                 | `scale_fill_uchicago()`      | `"light"`<br>                  |                      |
 |                 |                              | `"dark"`                       |                      |
-+-----------------+------------------------------+--------------------------------+----------------------+
-| COSMIC          | `scale_color_cosmic()`       | `"hallmarks"`                  | `pal_cosmic()`       |
-|                 | `scale_fill_cosmic()`        | `"signature_substitutions"`    |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
 | Star Trek       | `scale_color_startrek()`     | `"uniform"`                    | `pal_startrek()`     |
 |                 | `scale_fill_startrek()`      |                                |                      |
@@ -253,6 +253,22 @@ p2_igv_default <- p2 + scale_fill_igv()
 grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 ```
 
+## COSMIC
+
+Color palette inspired by [COSMIC](https://cancer.sanger.ac.uk/cosmic) Hallmarks of Cancer (`"hallmarks"`) and the mutational signature substitution (`"signature_substitutions"`) colors.
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_cosmic_hallmarks <- p1 + scale_color_cosmic()
+p2_cosmic_hallmarks <- p2 + scale_fill_cosmic()
+grid.arrange(p1_cosmic_hallmarks, p2_cosmic_hallmarks, ncol = 2)
+```
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_cosmic_signature <- p1 + scale_color_cosmic("signature_substitutions")
+p2_cosmic_signature <- p2 + scale_fill_cosmic("signature_substitutions")
+grid.arrange(p1_cosmic_signature, p2_cosmic_signature, ncol = 2)
+```
+
 ## UChicago
 
 The UChicago palette is based on
@@ -265,17 +281,6 @@ p1_uchicago <- p1 + scale_color_uchicago()
 p2_uchicago <- p2 + scale_fill_uchicago()
 grid.arrange(p1_uchicago, p2_uchicago, ncol = 2)
 ```
-
-## COSMIC
-
-# Color palette inspired by [COSMIC](https://cancer.sanger.ac.uk/cosmic) Hallmarks of Cancer (`"hallmarks"`) and the mutational signature substitution (`"signature_substitutions"`) colors.
-
-```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
-p1_cancer_hallmarks <- p1 + scale_color_cosmic()
-p2_cancer_hallmarks <- p2 + scale_fill_cosmic()
-grid.arrange(p1_cancer_hallmarks, p2_cancer_hallmarks, ncol = 2)
-```
-
 
 ## Star Trek
 
