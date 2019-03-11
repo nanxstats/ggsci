@@ -185,7 +185,7 @@ ggsci_db$"uchicago"$"dark" <- c(
 )
 
 # Color palette inspired by COSMIC Hallmarks of Cancer
-ggsci_db$"cosmic"$"hallmarks" <- c(
+ggsci_db$"cosmic"$"hallmarks_dark" <- c(
   "Invasion and Metastasis" = "#171717",
   "Escaping Immunic Response to Cancer" = "#7D0226",
   "Change of Cellular Energetics" = "#300049",
@@ -196,6 +196,21 @@ ggsci_db$"cosmic"$"hallmarks" <- c(
   "Escaping Programmed Cell Death" = "#555555",
   "Proliferative Signaling" = "#193006",
   "Tumour Promoting Inflammation" = "#A8450C"
+)
+
+# Color palette inspired by Hanahan, Weinberg Hallmarks of Cancer
+# TODO
+ggsci_db$"cosmic"$"hallmarks_light" <- c(
+  "Invasion and Metastasis" = "#2E2A2B",
+  "Escaping Immunic Response to Cancer" = "#CF4E9C",
+  "Change of Cellular Energetics" = "#8C57A2",
+  "Cell Replicative Immortality" = "#358DB9",
+  "Suppression of Growth" = "#82581F",
+  "Genome Instability and Mutations" = "#2F509E",
+  "Angiogenesis" = "#E5614C",
+  "Escaping Programmed Cell Death" = "#97A1A7",
+  "Proliferative Signaling" = "#3DA873",
+  "Tumour Promoting Inflammation" = "#DC9445"
 )
 
 # Color palette inspired by COSMIC Hallmarks of Cancer

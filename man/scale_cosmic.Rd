@@ -6,19 +6,20 @@
 \alias{scale_fill_cosmic}
 \title{COSMIC Color Scales}
 \usage{
-scale_color_cosmic(palette = c("hallmarks", "signature_substitutions"),
-  alpha = 1, ...)
+scale_color_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
+  "signature_substitutions"), alpha = 1, ...)
 
-scale_colour_cosmic(palette = c("hallmarks", "signature_substitutions"),
-  alpha = 1, ...)
+scale_colour_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
+  "signature_substitutions"), alpha = 1, ...)
 
-scale_fill_cosmic(palette = c("hallmarks", "signature_substitutions"),
-  alpha = 1, ...)
+scale_fill_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
+  "signature_substitutions"), alpha = 1, ...)
 }
 \arguments{
 \item{palette}{Palette type.
-Currently there is two available options: \code{"signature_substitutions"}
-(6-color palette) and \code{"hallmarks"} (10-color palette).}
+Currently there are three available options: \code{"signature_substitutions"}
+(6-color palette), \code{"hallmarks_light"} (10-color palette), and
+\code{"hallmarks_dark"} (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
@@ -46,6 +47,7 @@ ggplot(
 ) +
   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
   theme_bw() + scale_fill_cosmic()
+
 }
 \author{
 Joshua H. Cook <\email{joshuacook0023@gmail.com}> |

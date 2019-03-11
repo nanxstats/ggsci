@@ -4,13 +4,14 @@
 \alias{pal_cosmic}
 \title{COSMIC Color Palettes}
 \usage{
-pal_cosmic(palette = c("hallmarks", "signature_substitutions"),
-  alpha = 1)
+pal_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
+  "signature_substitutions"), alpha = 1)
 }
 \arguments{
 \item{palette}{Palette type.
-Currently there is two available options: \code{"signature_substitutions"}
-(6-color palette) and \code{"hallmarks"} (10-color palette).}
+Currently there are three available options: \code{"signature_substitutions"}
+(6-color palette), \code{"hallmarks_light"} (10-color palette), and
+\code{"hallmarks_dark"} (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
@@ -22,8 +23,10 @@ Somatic Mutations in Cancers (COSMIC)}
 }
 \examples{
 library("scales")
-show_col(pal_cosmic("hallmarks")(10))
-show_col(pal_cosmic("hallmarks", alpha = 0.6)(10))
+show_col(pal_cosmic("hallmarks_light")(10))
+show_col(pal_cosmic("hallmarks_light", alpha = 0.6)(10))
+show_col(pal_cosmic("hallmarks_dark")(10))
+show_col(pal_cosmic("hallmarks_dark", alpha = 0.6)(10))
 show_col(pal_cosmic("signature_substitutions")(6))
 show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 }
