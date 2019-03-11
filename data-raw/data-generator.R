@@ -199,7 +199,6 @@ ggsci_db$"cosmic"$"hallmarks_dark" <- c(
 )
 
 # Color palette inspired by Hanahan, Weinberg Hallmarks of Cancer
-# TODO
 ggsci_db$"cosmic"$"hallmarks_light" <- c(
   "Invasion and Metastasis" = "#2E2A2B",
   "Escaping Immunic Response to Cancer" = "#CF4E9C",
