@@ -12,10 +12,10 @@ pal_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
 \code{"signature_substitutions"} (6-color palette),
 \code{"hallmarks_light"} (10-color palette), and \code{"hallmarks_dark"}
 (10-color palette). The \code{"hallmarks_light"} option is from
-\href{https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230}{Hanahan and Weinberg (2011)}}
+\href{https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230}{Hanahan and Weinberg (2011)}.}
 
-\item{alpha}{Transparency level, a real number in (0, 1]. See \code{alpha}
-in \code{\link[grDevices]{rgb}} for details.}
+\item{alpha}{Transparency level, a real number in (0, 1].
+See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in projects from the

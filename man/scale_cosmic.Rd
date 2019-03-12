@@ -20,10 +20,10 @@ scale_fill_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
 \code{"signature_substitutions"} (6-color palette),
 \code{"hallmarks_light"} (10-color palette), and \code{"hallmarks_dark"}
 (10-color palette). The \code{"hallmarks_light"} option is from
-\href{https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230}{Hanahan and Weinberg (2011)}}
+\href{https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230}{Hanahan and Weinberg (2011)}.}
 
-\item{alpha}{Transparency level, a real number in (0, 1]. See \code{alpha}
-in \code{\link[grDevices]{rgb}} for details.}
+\item{alpha}{Transparency level, a real number in (0, 1].
+See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 
 \item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
 }
@@ -48,7 +48,6 @@ ggplot(
 ) +
   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
   theme_bw() + scale_fill_cosmic()
-
 }
 \author{
 Joshua H. Cook <\email{joshuacook0023@gmail.com}> |
