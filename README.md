@@ -68,7 +68,9 @@ devtools::install_github("road2stat/ggsci")
 
 ### COSMIC
 
-<img src="https://i.imgur.com/B4w0K3f.png" width="100%" alt="cosmic-hallmarks">
+<img src="https://i.imgur.com/5xp1TZf.png" width="100%" alt="cosmic-hallmarks-light">
+
+<img src="https://i.imgur.com/B4w0K3f.png" width="100%" alt="cosmic-hallmarks-dark">
 
 <img src="https://i.imgur.com/hrqbmAa.png" width="100%" alt="cosmic-signature-substitutions">
 
