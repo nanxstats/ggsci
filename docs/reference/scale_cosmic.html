@@ -118,23 +118,25 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>scale_color_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks"</span>, <span class='st'>"signature_substitutions"</span>),
-  <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)
+    <pre class="usage"><span class='fu'>scale_color_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks_light"</span>, <span class='st'>"hallmarks_dark"</span>,
+  <span class='st'>"signature_substitutions"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)
 
-<span class='fu'>scale_colour_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks"</span>, <span class='st'>"signature_substitutions"</span>),
-  <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)
+<span class='fu'>scale_colour_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks_light"</span>, <span class='st'>"hallmarks_dark"</span>,
+  <span class='st'>"signature_substitutions"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)
 
-<span class='fu'>scale_fill_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks"</span>, <span class='st'>"signature_substitutions"</span>),
-  <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
+<span class='fu'>scale_fill_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks_light"</span>, <span class='st'>"hallmarks_dark"</span>,
+  <span class='st'>"signature_substitutions"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>palette</th>
-      <td><p>Palette type.
-Currently there is two available options: <code>"signature_substitutions"</code>
-(6-color palette) and <code>"hallmarks"</code> (10-color palette).</p></td>
+      <td><p>Palette type. Currently there are three available options:
+<code>"signature_substitutions"</code> (6-color palette),
+<code>"hallmarks_light"</code> (10-color palette), and <code>"hallmarks_dark"</code>
+(10-color palette). The <code>"hallmarks_light"</code> option is from
+<a href='https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230'>Hanahan and Weinberg (2011)</a>.</p></td>
     </tr>
     <tr>
       <th>alpha</th>

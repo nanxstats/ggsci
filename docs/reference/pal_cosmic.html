@@ -34,7 +34,7 @@
   
 <meta property="og:title" content="COSMIC Color Palettes — pal_cosmic" />
 
-<meta property="og:description" content="Color palettes inspired by the colors used projects from the
+<meta property="og:description" content="Color palettes inspired by the colors used in projects from the
 Catalogue Of
 Somatic Mutations in Cancers (COSMIC)" />
 <meta name="twitter:card" content="summary" />
@@ -116,23 +116,25 @@ Somatic Mutations in Cancers (COSMIC)" />
 
     <div class="ref-description">
     
-    <p>Color palettes inspired by the colors used projects from the
+    <p>Color palettes inspired by the colors used in projects from the
 <a href='https://cancer.sanger.ac.uk/cosmic'>Catalogue Of
 Somatic Mutations in Cancers (COSMIC)</a></p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>pal_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks"</span>, <span class='st'>"signature_substitutions"</span>),
-  <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
+    <pre class="usage"><span class='fu'>pal_cosmic</span>(<span class='kw'>palette</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"hallmarks_light"</span>, <span class='st'>"hallmarks_dark"</span>,
+  <span class='st'>"signature_substitutions"</span>), <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>1</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>palette</th>
-      <td><p>Palette type.
-Currently there is two available options: <code>"signature_substitutions"</code>
-(6-color palette) and <code>"hallmarks"</code> (10-color palette).</p></td>
+      <td><p>Palette type. Currently there are three available options:
+<code>"signature_substitutions"</code> (6-color palette),
+<code>"hallmarks_light"</code> (10-color palette), and <code>"hallmarks_dark"</code>
+(10-color palette). The <code>"hallmarks_light"</code> option is from
+<a href='https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230'>Hanahan and Weinberg (2011)</a>.</p></td>
     </tr>
     <tr>
       <th>alpha</th>
@@ -144,7 +146,7 @@ See <code>alpha</code> in <code><a href='https://www.rdocumentation.org/packages
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='st'>"scales"</span>)
-<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks"</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-4.png' alt='' width='700' height='433' /></div></pre>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks_light"</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks_light"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks_dark"</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"hallmarks_dark"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>10</span>))</div><div class='img'><img src='pal_cosmic-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/scales/topics/show_col'>show_col</a></span>(<span class='fu'>pal_cosmic</span>(<span class='st'>"signature_substitutions"</span>, <span class='kw'>alpha</span> <span class='kw'>=</span> <span class='fl'>0.6</span>)(<span class='fl'>6</span>))</div><div class='img'><img src='pal_cosmic-6.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
