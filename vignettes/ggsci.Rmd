@@ -72,8 +72,9 @@ summarized in the table below.
 | IGV             | `scale_color_igv()`          | `"default"`<br>                | `pal_igv()`          |
 |                 | `scale_fill_igv()`           | `"alternating"`                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
-| COSMIC          | `scale_color_cosmic()`       | `"hallmarks"`                  | `pal_cosmic()`       |
-|                 | `scale_fill_cosmic()`        | `"signature_substitutions"`    |                      |
+| COSMIC          | `scale_color_cosmic()`       | `"hallmarks_light"`<br>        | `pal_cosmic()`       |
+|                 | `scale_fill_cosmic()`        | `"hallmarks_dark"`<br>         |                      |
+|                 |                              | `"signature_substitutions"`    |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
 | UChicago        | `scale_color_uchicago()`     | `"default"`<br>                | `pal_uchicago()`     |
 |                 | `scale_fill_uchicago()`      | `"light"`<br>                  |                      |
@@ -255,12 +256,18 @@ grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 
 ## COSMIC
 
-Color palette inspired by [COSMIC](https://cancer.sanger.ac.uk/cosmic) Hallmarks of Cancer (`"hallmarks"`) and the mutational signature substitution (`"signature_substitutions"`) colors.
+Color palettes inspired by the colors used in projects from the [Catalogue Of Somatic Mutations in Cancers (COSMIC)](https://cancer.sanger.ac.uk/cosmic).
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
-p1_cosmic_hallmarks <- p1 + scale_color_cosmic()
-p2_cosmic_hallmarks <- p2 + scale_fill_cosmic()
-grid.arrange(p1_cosmic_hallmarks, p2_cosmic_hallmarks, ncol = 2)
+p1_cosmic_hallmarks_light <- p1 + scale_color_cosmic("hallmarks_light")
+p2_cosmic_hallmarks_light <- p2 + scale_fill_cosmic("hallmarks_light")
+grid.arrange(p1_cosmic_hallmarks_light, p2_cosmic_hallmarks_light, ncol = 2)
+```
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_cosmic_hallmarks_dark <- p1 + scale_color_cosmic("hallmarks_dark")
+p2_cosmic_hallmarks_dark <- p2 + scale_fill_cosmic("hallmarks_dark")
+grid.arrange(p1_cosmic_hallmarks_dark, p2_cosmic_hallmarks_dark, ncol = 2)
 ```
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
