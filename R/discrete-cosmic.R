@@ -1,14 +1,17 @@
 #' COSMIC Color Palettes
 #'
-#' Color palettes inspired by the colors used projects from the
+#' Color palettes inspired by the colors used in projects from the
 #' \href{https://cancer.sanger.ac.uk/cosmic}{Catalogue Of
 #' Somatic Mutations in Cancers (COSMIC)}
 #'
-#' @param palette Palette type.
-#' Currently there is two available options: \code{"signature_substitutions"}
-#' (6-color palette) and \code{"hallmarks"} (10-color palette).
-#' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' @param palette Palette type. Currently there are three available options:
+#'     \code{"signature_substitutions"} (6-color palette),
+#'     \code{"hallmarks_light"} (10-color palette), and \code{"hallmarks_dark"}
+#'     (10-color palette). The \code{"hallmarks_light"} option is from
+#'     \href{https://www.ncbi.nlm.nih.gov/pubmed/?term=21376230}{Hanahan and Weinberg (2011)}
+#'
+#' @param alpha Transparency level, a real number in (0, 1]. See \code{alpha}
+#'     in \code{\link[grDevices]{rgb}} for details.
 #'
 #' @export pal_cosmic
 #'
@@ -20,11 +23,16 @@
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_cosmic("hallmarks")(10))
-#' show_col(pal_cosmic("hallmarks", alpha = 0.6)(10))
+#' show_col(pal_cosmic("hallmarks_light")(10))
+#' show_col(pal_cosmic("hallmarks_light", alpha = 0.6)(10))
+#' show_col(pal_cosmic("hallmarks_dark")(10))
+#' show_col(pal_cosmic("hallmarks_dark", alpha = 0.6)(10))
 #' show_col(pal_cosmic("signature_substitutions")(6))
 #' show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
-pal_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alpha = 1) {
+pal_cosmic <- function(palette = c("hallmarks_light",
+                                   "hallmarks_dark",
+                                   "signature_substitutions"),
+                       alpha = 1) {
   palette <- match.arg(palette)
 
   if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
@@ -74,7 +82,11 @@ pal_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alph
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
 #'   theme_bw() + scale_fill_cosmic()
-scale_color_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alpha = 1, ...) {
+#'
+scale_color_cosmic <- function(palette = c("hallmarks_light",
+                                           "hallmarks_dark",
+                                           "signature_substitutions"),
+                               alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("colour", "cosmic", pal_cosmic(palette, alpha), ...)
 }
@@ -86,7 +98,10 @@ scale_colour_cosmic <- scale_color_cosmic
 #' @export scale_fill_cosmic
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_cosmic
-scale_fill_cosmic <- function(palette = c("hallmarks", "signature_substitutions"), alpha = 1, ...) {
+scale_fill_cosmic <- function(palette = c("hallmarks_light",
+                                          "hallmarks_dark",
+                                          "signature_substitutions"),
+                              alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("fill", "cosmic", pal_cosmic(palette, alpha), ...)
 }
