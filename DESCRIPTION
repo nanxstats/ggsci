@@ -14,8 +14,8 @@ Description: A collection of 'ggplot2' color palettes inspired by
 License: GPL-3 | file LICENSE
 LazyData: TRUE
 VignetteBuilder: knitr
-URL: https://nanx.me/ggsci/, https://github.com/road2stat/ggsci
-BugReports: https://github.com/road2stat/ggsci/issues
+URL: https://nanx.me/ggsci/, https://github.com/nanxstats/ggsci
+BugReports: https://github.com/nanxstats/ggsci/issues
 Depends:
     R (>= 3.0.2)
 Imports:

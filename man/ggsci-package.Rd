@@ -14,8 +14,8 @@ A collection of 'ggplot2' color palettes inspired by
 Useful links:
 \itemize{
   \item \url{https://nanx.me/ggsci/}
-  \item \url{https://github.com/road2stat/ggsci}
-  \item Report bugs at \url{https://github.com/road2stat/ggsci/issues}
+  \item \url{https://github.com/nanxstats/ggsci}
+  \item Report bugs at \url{https://github.com/nanxstats/ggsci/issues}
 }
 
 }

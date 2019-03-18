@@ -1,7 +1,7 @@
 # ggsci  <a href="https://nanx.me/ggsci/"><img src="https://i.imgur.com/wX7tM4P.png" align="right" alt="logo" height="180" width="180" /></a>
 
-[![Build Status](https://travis-ci.org/road2stat/ggsci.svg?branch=master)](https://travis-ci.org/road2stat/ggsci)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/road2stat/ggsci?branch=master&svg=true)](https://ci.appveyor.com/project/road2stat/ggsci)
+[![Build Status](https://travis-ci.org/nanxstats/ggsci.svg?branch=master)](https://travis-ci.org/nanxstats/ggsci)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/nanxstats/ggsci?branch=master&svg=true)](https://ci.appveyor.com/project/nanxstats/ggsci)
 [![CRAN Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
 [![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
 
@@ -19,7 +19,7 @@ Or try the development version on GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("road2stat/ggsci")
+devtools::install_github("nanxstats/ggsci")
 ```
 
 [Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or open with `vignette("ggsci")` in R) for a quick-start guide.
