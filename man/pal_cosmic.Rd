@@ -4,8 +4,10 @@
 \alias{pal_cosmic}
 \title{COSMIC Color Palettes}
 \usage{
-pal_cosmic(palette = c("hallmarks_light", "hallmarks_dark",
-  "signature_substitutions"), alpha = 1)
+pal_cosmic(
+  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+  alpha = 1
+)
 }
 \arguments{
 \item{palette}{Palette type. Currently there are three available options:

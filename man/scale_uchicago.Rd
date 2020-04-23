@@ -6,14 +6,11 @@
 \alias{scale_fill_uchicago}
 \title{The University of Chicago Color Scales}
 \usage{
-scale_color_uchicago(palette = c("default", "light", "dark"),
-  alpha = 1, ...)
+scale_color_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 
-scale_colour_uchicago(palette = c("default", "light", "dark"),
-  alpha = 1, ...)
+scale_colour_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 
-scale_fill_uchicago(palette = c("default", "light", "dark"), alpha = 1,
-  ...)
+scale_fill_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 }
 \arguments{
 \item{palette}{Palette type.

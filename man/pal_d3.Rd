@@ -4,8 +4,10 @@
 \alias{pal_d3}
 \title{D3.js Color Palettes}
 \usage{
-pal_d3(palette = c("category10", "category20", "category20b",
-  "category20c"), alpha = 1)
+pal_d3(
+  palette = c("category10", "category20", "category20b", "category20c"),
+  alpha = 1
+)
 }
 \arguments{
 \item{palette}{Palette type.

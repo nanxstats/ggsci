@@ -1,11 +1,12 @@
 # TODO
 
-- Adventure Time
-- simpsonsworld: https://www.simpsonsworld.com/browse/episodes 7-color palette.
-- Okabe, Masataka and Kei Ito's Color Universal Design (CUD) for color blindness: http://jfly.iam.u-tokyo.ac.jp/color/ https://www.chronicle.com/blogs/profhacker/color-blind-accessible-figures/59189 https://www.nature.com/articles/nmeth.1618
-- Gephi: https://github.com/gephi/gephi/blob/master/modules/Utils/src/main/java/org/gephi/utils/PaletteUtils.java#L83-L110
-- Apple Human Interface Guidelines: https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/ one discrete, one continuous.
+- Adventure Time https://www.reddit.com/r/MakeupAddiction/comments/1bxzmn/adventure_time_with_finn_and_jake_palette/
 - God of War
 
 - Add a function for displaying all color palettes
 - Color palette extraction: http://colormind.io/
+
+# DONE
+
+- simpsonsworld: https://www.simpsonsworld.com/browse/episodes 7-color palette.
+- Okabe, Masataka and Kei Ito's Color Universal Design (CUD) for color blindness: http://jfly.iam.u-tokyo.ac.jp/color/ https://www.chronicle.com/blogs/profhacker/color-blind-accessible-figures/59189 https://www.nature.com/articles/nmeth.1618

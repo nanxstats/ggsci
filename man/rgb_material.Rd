@@ -4,10 +4,14 @@
 \alias{rgb_material}
 \title{Material Design Color Palettes}
 \usage{
-rgb_material(palette = c("red", "pink", "purple", "deep-purple",
-  "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green",
-  "lime", "yellow", "amber", "orange", "deep-orange", "brown", "grey",
-  "blue-grey"), n = 10, alpha = 1, reverse = FALSE)
+rgb_material(
+  palette = c("red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue",
+    "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange",
+    "deep-orange", "brown", "grey", "blue-grey"),
+  n = 10,
+  alpha = 1,
+  reverse = FALSE
+)
 }
 \arguments{
 \item{palette}{Palette type.

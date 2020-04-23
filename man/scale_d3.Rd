@@ -6,14 +6,23 @@
 \alias{scale_fill_d3}
 \title{D3.js Color Scales}
 \usage{
-scale_color_d3(palette = c("category10", "category20", "category20b",
-  "category20c"), alpha = 1, ...)
+scale_color_d3(
+  palette = c("category10", "category20", "category20b", "category20c"),
+  alpha = 1,
+  ...
+)
 
-scale_colour_d3(palette = c("category10", "category20", "category20b",
-  "category20c"), alpha = 1, ...)
+scale_colour_d3(
+  palette = c("category10", "category20", "category20b", "category20c"),
+  alpha = 1,
+  ...
+)
 
-scale_fill_d3(palette = c("category10", "category20", "category20b",
-  "category20c"), alpha = 1, ...)
+scale_fill_d3(
+  palette = c("category10", "category20", "category20b", "category20c"),
+  alpha = 1,
+  ...
+)
 }
 \arguments{
 \item{palette}{Palette type.

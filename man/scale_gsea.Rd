@@ -6,14 +6,11 @@
 \alias{scale_fill_gsea}
 \title{The GSEA GenePattern Color Scales}
 \usage{
-scale_color_gsea(palette = c("default"), alpha = 1, reverse = FALSE,
-  ...)
+scale_color_gsea(palette = c("default"), alpha = 1, reverse = FALSE, ...)
 
-scale_colour_gsea(palette = c("default"), alpha = 1, reverse = FALSE,
-  ...)
+scale_colour_gsea(palette = c("default"), alpha = 1, reverse = FALSE, ...)
 
-scale_fill_gsea(palette = c("default"), alpha = 1, reverse = FALSE,
-  ...)
+scale_fill_gsea(palette = c("default"), alpha = 1, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Palette type.

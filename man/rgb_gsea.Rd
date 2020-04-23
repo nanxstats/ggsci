@@ -4,8 +4,7 @@
 \alias{rgb_gsea}
 \title{The GSEA GenePattern Color Palettes}
 \usage{
-rgb_gsea(palette = c("default"), n = 12, alpha = 1,
-  reverse = FALSE)
+rgb_gsea(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 }
 \arguments{
 \item{palette}{Palette type.
