@@ -6,6 +6,8 @@
 \alias{ggsci-package}
 \title{ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
     science fiction movies, and TV shows.
