@@ -1,8 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
-.travis.yml
-^appveyor\.yml$
 ^_pkgdown\.yml$
 ^pkgdown$
 ^docs$

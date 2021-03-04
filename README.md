@@ -1,7 +1,5 @@
 # ggsci  <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
 
-[![Build Status](https://travis-ci.org/nanxstats/ggsci.svg?branch=master)](https://travis-ci.org/nanxstats/ggsci)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/nanxstats/ggsci?branch=master&svg=true)](https://ci.appveyor.com/project/nanxstats/ggsci)
 [![CRAN Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
 [![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
 
