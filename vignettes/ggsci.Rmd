@@ -1,8 +1,5 @@
 ---
 title: "Scientific Journal and Sci-Fi Themed<br>Color Palettes for ggplot2"
-author: "Nan Xiao <<https://nanx.me>><br>
-         Miaozhu Li <<http://miaozhu.li>>"
-date: "`r Sys.Date()`"
 output:
   rmarkdown::html_document:
     toc: true
