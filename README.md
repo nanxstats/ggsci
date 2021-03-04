@@ -1,7 +1,10 @@
 # ggsci  <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg)](https://github.com/nanxstats/ggsci/actions)
 [![CRAN Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
 [![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
+<!-- badges: end -->
 
 `ggsci` offers a collection of `ggplot2` color palettes inspired by scientific journals, data visualization libraries, science fiction movies, and TV shows.
 
