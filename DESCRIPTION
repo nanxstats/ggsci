@@ -12,7 +12,6 @@ Description: A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
     science fiction movies, and TV shows.
 License: GPL-3 | file LICENSE
-LazyData: TRUE
 VignetteBuilder: knitr
 URL: https://nanx.me/ggsci/, https://github.com/nanxstats/ggsci
 BugReports: https://github.com/nanxstats/ggsci/issues
