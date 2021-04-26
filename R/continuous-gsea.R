@@ -19,8 +19,8 @@
 #' @author Nan Xiao <\email{me@@nanx.me}> |
 #' <\href{https://nanx.me}{https://nanx.me}>
 #'
-#' @note The 12 base colors used in this palette are derived from
-#' \href{ftp://ftp.broad.mit.edu/pub/genepattern/modules/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf}{this document}.
+#' @note The 12 base colors used in this palette are derived from the
+#' \href{https://modulerepository.genepattern.org/gpModuleRepository/download/prod/module/?file=/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf}{HeatMapImage documentation}.
 #'
 #' @examples
 #' library("scales")
