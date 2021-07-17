@@ -1,112 +1,119 @@
-# ggsci  <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# ggsci <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
 
 <!-- badges: start -->
+
 [![R-CMD-check](https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg)](https://github.com/nanxstats/ggsci/actions)
-[![CRAN Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
-[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
+[![CRAN
+Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
+[![Downloads from the RStudio CRAN
+mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
 <!-- badges: end -->
 
-`ggsci` offers a collection of `ggplot2` color palettes inspired by scientific journals, data visualization libraries, science fiction movies, and TV shows.
+`ggsci` offers a collection of `ggplot2` color palettes inspired by
+scientific journals, data visualization libraries, science fiction
+movies, and TV shows.
 
 ## Installation
 
-Install `ggsci` from CRAN:
+You can install `ggsci` from CRAN:
 
-```r
+``` r
 install.packages("ggsci")
 ```
 
 Or try the development version on GitHub:
 
-```r
-# install.packages("devtools")
-devtools::install_github("nanxstats/ggsci")
+``` r
+remotes::install_github("nanxstats/ggsci")
 ```
 
-[Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or open with `vignette("ggsci")` in R) for a quick-start guide.
+[Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or
+open with `vignette("ggsci")` in R) for a quick-start guide.
 
 ## Gallery
 
 ### NPG
 
-<img src="https://i.imgur.com/ZjCm5ng.png" width="100%" alt="npg">
+<img src="man/figures/README-ggsci-npg-1.png" width="100%" />
 
 ### AAAS
 
-<img src="https://i.imgur.com/Wt8z0Xs.png" width="100%" alt="aaas">
+<img src="man/figures/README-ggsci-aaas-1.png" width="100%" />
 
 ### NEJM
 
-<img src="https://i.imgur.com/WXREdrP.png" width="100%" alt="nejm">
+<img src="man/figures/README-ggsci-nejm-1.png" width="100%" />
 
 ### Lancet
 
-<img src="https://i.imgur.com/5b01l68.png" width="100%" alt="lancet">
+<img src="man/figures/README-ggsci-lancet-1.png" width="100%" />
 
 ### JAMA
 
-<img src="https://i.imgur.com/dmZO9e5.png" width="100%" alt="jama">
+<img src="man/figures/README-ggsci-jama-1.png" width="100%" />
 
 ### JCO
 
-<img src="https://i.imgur.com/3t8Q1kF.png" width="100%" alt="jco">
+<img src="man/figures/README-ggsci-jco-1.png" width="100%" />
 
 ### UCSCGB
 
-<img src="https://i.imgur.com/6HTPa1B.png" width="100%" alt="ucscgb">
+<img src="man/figures/README-ggsci-ucscgb-1.png" width="100%" />
 
 ### D3
 
-<img src="https://i.imgur.com/mKhrUyT.png" width="100%" alt="d3">
+<img src="man/figures/README-ggsci-d3-1.png" width="100%" />
 
 ### LocusZoom
 
-<img src="https://i.imgur.com/JqdxnuF.png" width="100%" alt="locuszoom">
+<img src="man/figures/README-ggsci-locuszoom-1.png" width="100%" />
 
 ### IGV
 
-<img src="https://i.imgur.com/bLB8Ofe.png" width="100%" alt="igv">
+<img src="man/figures/README-ggsci-igv-1.png" width="100%" />
 
 ### COSMIC
 
-<img src="https://i.imgur.com/5xp1TZf.png" width="100%" alt="cosmic-hallmarks-light">
-
-<img src="https://i.imgur.com/B4w0K3f.png" width="100%" alt="cosmic-hallmarks-dark">
-
-<img src="https://i.imgur.com/hrqbmAa.png" width="100%" alt="cosmic-signature-substitutions">
+<img src="man/figures/README-ggsci-cosmic-1.png" width="100%" /><img src="man/figures/README-ggsci-cosmic-2.png" width="100%" /><img src="man/figures/README-ggsci-cosmic-3.png" width="100%" />
 
 ### UChicago
 
-<img src="https://i.imgur.com/Eb8agLj.png" width="100%" alt="uchicago">
+<img src="man/figures/README-ggsci-uchicago-1.png" width="100%" />
 
 ### Star Trek
 
-<img src="https://i.imgur.com/HYs7OzD.png" width="100%" alt="startrek">
+<img src="man/figures/README-ggsci-startrek-1.png" width="100%" />
 
 ### Tron Legacy
 
-<img src="https://i.imgur.com/RrF3kp3.png" width="100%" alt="tron">
+<img src="man/figures/README-ggsci-tron-1.png" width="100%" />
 
 ### Futurama
 
-<img src="https://i.imgur.com/IeBjLy7.png" width="100%" alt="futurama">
+<img src="man/figures/README-ggsci-futurama-1.png" width="100%" />
 
 ### Rick and Morty
 
-<img src="https://i.imgur.com/8zKuCPz.png" width="100%" alt="rickandmorty">
+<img src="man/figures/README-ggsci-rickandmorty-1.png" width="100%" />
 
 ### The Simpsons
 
-<img src="https://i.imgur.com/zBqZjpX.png" width="100%" alt="simpsons">
+<img src="man/figures/README-ggsci-simpsons-1.png" width="100%" />
 
 ### GSEA
 
-<img src="https://i.imgur.com/20vxsS9.png" width="100%" alt="gsea">
+<img src="man/figures/README-ggsci-gsea-1.png" width="100%" />
 
 ### Material Design
 
-<img src="https://i.imgur.com/W2lVixt.png" width="92%" alt="material">
+<img src="man/figures/README-ggsci-material-1.png" width="100%" />
 
 ## Contribute
 
-To contribute to this project, please take a look at the [Contributing Guidelines](CONTRIBUTING.md) first. Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+To contribute to this project, please take a look at the [Contributing
+Guidelines](CONTRIBUTING.md) first. Please note that this project is
+released with a [Contributor Code of Conduct](CONDUCT.md). By
+participating in this project you agree to abide by its terms.

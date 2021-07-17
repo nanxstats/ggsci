@@ -1,0 +1,296 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  echo = FALSE,
+  message = FALSE
+)
+```
+
+# ggsci <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg)](https://github.com/nanxstats/ggsci/actions)
+[![CRAN Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
+[![Downloads from the RStudio CRAN mirror](https://cranlogs.r-pkg.org/badges/ggsci)](https://cran.r-project.org/package=ggsci)
+<!-- badges: end -->
+
+`ggsci` offers a collection of `ggplot2` color palettes inspired by scientific journals, data visualization libraries, science fiction movies, and TV shows.
+
+## Installation
+
+You can install `ggsci` from CRAN:
+
+```r
+install.packages("ggsci")
+```
+
+Or try the development version on GitHub:
+
+```r
+remotes::install_github("nanxstats/ggsci")
+```
+
+[Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or open with `vignette("ggsci")` in R) for a quick-start guide.
+
+## Gallery
+
+```{r}
+library("ggsci")
+library("ggplot2")
+library("gridExtra")
+
+data("diamonds")
+
+p1 <- ggplot(
+  subset(diamonds, carat >= 2.2),
+  aes(x = table, y = price, colour = cut)
+) +
+  geom_point(alpha = 0.7) +
+  geom_smooth(method = "loess", alpha = 0.05, size = 1, span = 1) +
+  theme_bw() +
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+
+p2 <- ggplot(
+  subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
+  aes(x = depth, fill = cut)
+) +
+  geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
+  theme_bw() +
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+```
+
+### NPG
+
+```{r, ggsci-npg, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_npg <- p1 + scale_color_npg()
+p2_npg <- p2 + scale_fill_npg()
+grid.arrange(p1_npg, p2_npg, ncol = 2)
+```
+
+### AAAS
+
+```{r, ggsci-aaas, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_aaas <- p1 + scale_color_aaas()
+p2_aaas <- p2 + scale_fill_aaas()
+grid.arrange(p1_aaas, p2_aaas, ncol = 2)
+```
+
+### NEJM
+
+```{r, ggsci-nejm, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_nejm <- p1 + scale_color_nejm()
+p2_nejm <- p2 + scale_fill_nejm()
+grid.arrange(p1_nejm, p2_nejm, ncol = 2)
+```
+
+### Lancet
+
+```{r, ggsci-lancet, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_lancet <- p1 + scale_color_lancet()
+p2_lancet <- p2 + scale_fill_lancet()
+grid.arrange(p1_lancet, p2_lancet, ncol = 2)
+```
+
+### JAMA
+
+```{r, ggsci-jama, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_jama <- p1 + scale_color_jama()
+p2_jama <- p2 + scale_fill_jama()
+grid.arrange(p1_jama, p2_jama, ncol = 2)
+```
+
+### JCO
+
+```{r, ggsci-jco, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_jco <- p1 + scale_color_jco()
+p2_jco <- p2 + scale_fill_jco()
+grid.arrange(p1_jco, p2_jco, ncol = 2)
+```
+
+### UCSCGB
+
+```{r, ggsci-ucscgb, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_ucscgb <- p1 + scale_color_ucscgb()
+p2_ucscgb <- p2 + scale_fill_ucscgb()
+grid.arrange(p1_ucscgb, p2_ucscgb, ncol = 2)
+```
+
+### D3
+
+```{r, ggsci-d3, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_d3 <- p1 + scale_color_d3()
+p2_d3 <- p2 + scale_fill_d3()
+grid.arrange(p1_d3, p2_d3, ncol = 2)
+```
+
+### LocusZoom
+
+```{r, ggsci-locuszoom, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_locuszoom <- p1 + scale_color_locuszoom()
+p2_locuszoom <- p2 + scale_fill_locuszoom()
+grid.arrange(p1_locuszoom, p2_locuszoom, ncol = 2)
+```
+
+### IGV
+
+```{r, ggsci-igv, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_igv <- p1 + scale_color_igv()
+p2_igv <- p2 + scale_fill_igv()
+grid.arrange(p1_igv, p2_igv, ncol = 2)
+```
+
+### COSMIC
+
+```{r, ggsci-cosmic, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_cosmic_hallmarks_light <- p1 + scale_color_cosmic("hallmarks_light")
+p2_cosmic_hallmarks_light <- p2 + scale_fill_cosmic("hallmarks_light")
+grid.arrange(p1_cosmic_hallmarks_light, p2_cosmic_hallmarks_light, ncol = 2)
+
+p1_cosmic_hallmarks_dark <- p1 + scale_color_cosmic("hallmarks_dark")
+p2_cosmic_hallmarks_dark <- p2 + scale_fill_cosmic("hallmarks_dark")
+grid.arrange(p1_cosmic_hallmarks_dark, p2_cosmic_hallmarks_dark, ncol = 2)
+
+p1_cosmic_signature <- p1 + scale_color_cosmic("signature_substitutions")
+p2_cosmic_signature <- p2 + scale_fill_cosmic("signature_substitutions")
+grid.arrange(p1_cosmic_signature, p2_cosmic_signature, ncol = 2)
+```
+
+### UChicago
+
+```{r, ggsci-uchicago, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_uchicago <- p1 + scale_color_uchicago()
+p2_uchicago <- p2 + scale_fill_uchicago()
+grid.arrange(p1_uchicago, p2_uchicago, ncol = 2)
+```
+
+### Star Trek
+
+```{r, ggsci-startrek, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_startrek <- p1 + scale_color_startrek()
+p2_startrek <- p2 + scale_fill_startrek()
+grid.arrange(p1_startrek, p2_startrek, ncol = 2)
+```
+
+### Tron Legacy
+
+```{r, ggsci-tron, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_tron <- p1 +
+  theme_dark() +
+  theme(
+    panel.background = element_rect(fill = "#2D2D2D"),
+    legend.key = element_rect(fill = "#2D2D2D"),
+    axis.title.x = element_blank(), axis.title.y = element_blank()
+  ) +
+  scale_color_tron()
+p2_tron <- p2 +
+  theme_dark() +
+  theme(
+    panel.background = element_rect(fill = "#2D2D2D"),
+    axis.title.x = element_blank(), axis.title.y = element_blank()
+  ) +
+  scale_fill_tron()
+
+grid.arrange(p1_tron, p2_tron, ncol = 2)
+```
+
+### Futurama
+
+```{r, ggsci-futurama, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_futurama <- p1 + scale_color_futurama()
+p2_futurama <- p2 + scale_fill_futurama()
+grid.arrange(p1_futurama, p2_futurama, ncol = 2)
+```
+
+### Rick and Morty
+
+```{r, ggsci-rickandmorty, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_rickandmorty <- p1 + scale_color_rickandmorty()
+p2_rickandmorty <- p2 + scale_fill_rickandmorty()
+grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
+```
+
+### The Simpsons
+
+```{r, ggsci-simpsons, fig.width=10.6667, fig.height=3.3334, dpi=300}
+p1_simpsons <- p1 + scale_color_simpsons()
+p2_simpsons <- p2 + scale_fill_simpsons()
+grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
+```
+
+### GSEA
+
+```{r}
+library("reshape2")
+
+data("mtcars")
+cor <- cor(unname(cbind(mtcars, mtcars, mtcars, mtcars)))
+cor_melt <- melt(cor)
+
+p3 <- ggplot(cor_melt, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(colour = "black", size = 0.3) +
+  theme_bw() +
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+```
+
+```{r, ggsci-gsea, fig.width=10.6667, fig.height=4.000013, dpi=300}
+p3_gsea <- p3 + scale_fill_gsea()
+p3_gsea_inv <- p3 + scale_fill_gsea(reverse = TRUE)
+grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
+```
+
+### Material Design
+
+```{r, ggsci-material, fig.width=10.6667, fig.height=7.111133, dpi=300}
+set.seed(42)
+k <- 9
+x <- diag(k)
+x[upper.tri(x)] <- runif(sum(1:(k - 1)), 0, 1)
+x_melt <- melt(x)
+
+p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
+  geom_tile(colour = "black", size = 0.3) +
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  theme_bw() +
+  theme(
+    legend.position = "none", plot.background = element_blank(),
+    axis.line = element_blank(), axis.ticks = element_blank(),
+    axis.text.x = element_blank(), axis.text.y = element_blank(),
+    axis.title.x = element_blank(), axis.title.y = element_blank(),
+    panel.background = element_blank(), panel.border = element_blank(),
+    panel.grid.major = element_blank(), panel.grid.minor = element_blank()
+  )
+
+grid.arrange(
+  p4 + scale_fill_material("red"), p4 + scale_fill_material("pink"),
+  p4 + scale_fill_material("purple"), p4 + scale_fill_material("deep-purple"),
+  p4 + scale_fill_material("indigo"), p4 + scale_fill_material("blue"),
+  p4 + scale_fill_material("light-blue"), p4 + scale_fill_material("cyan"),
+  p4 + scale_fill_material("teal"), p4 + scale_fill_material("green"),
+  p4 + scale_fill_material("light-green"), p4 + scale_fill_material("lime"),
+  p4 + scale_fill_material("yellow"), p4 + scale_fill_material("amber"),
+  p4 + scale_fill_material("orange"), p4 + scale_fill_material("deep-orange"),
+  p4 + scale_fill_material("brown"), p4 + scale_fill_material("grey"),
+  p4 + scale_fill_material("blue-grey"),
+  ncol = 6
+)
+```
+
+## Contribute
+
+To contribute to this project, please take a look at the [Contributing Guidelines](CONTRIBUTING.md) first. Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
