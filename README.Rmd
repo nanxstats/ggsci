@@ -238,6 +238,14 @@ p2_simpsons <- p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 ```
 
+### Squid Game
+
+```{r, ggsci-squidgame, fig.width=10.6667, fig.height=3.3334, dpi=227}
+p1_squidgame <- p1 + scale_color_squidgame()
+p2_squidgame <- p2 + scale_fill_squidgame()
+grid.arrange(p1_squidgame, p2_squidgame, ncol = 2)
+```
+
 ### GSEA
 
 ```{r}

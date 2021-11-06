@@ -8,9 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-A collection of 'ggplot2' color palettes inspired by
-    plots in scientific journals, data visualization libraries,
-    science fiction movies, and TV shows.
+A collection of 'ggplot2' color palettes inspired by plots in scientific journals, data visualization libraries, science fiction movies, and TV shows.
 }
 \seealso{
 Useful links:
@@ -28,6 +26,7 @@ Other contributors:
 \itemize{
   \item Joshua Cook \email{joshuacook0023@gmail.com} [contributor]
   \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
+  \item Keith Turner \email{khturner@gmail.com} [contributor]
 }
 
 }

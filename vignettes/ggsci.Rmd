@@ -92,6 +92,9 @@ summarized in the table below.
 | The Simpsons    | `scale_color_simpsons()`     | `"springfield"`                | `pal_simpsons()`     |
 |                 | `scale_fill_simpsons()`      |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Squid Game      | `scale_color_squidgame()`    | `"stair_room"`                 | `pal_squidgame()`   |
+|                 | `scale_fill_squidgame()`     |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | GSEA            | `scale_color_gsea()`         | `"default"`                    | `pal_gsea()`         |
 |                 | `scale_fill_gsea()`          |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -343,6 +346,17 @@ This palette is inspired by the colors used in the TV show
 p1_simpsons <- p1 + scale_color_simpsons()
 p2_simpsons <- p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
+```
+
+## Squid Game
+
+This palette is inspired by the colors used in the Netflix show
+<emph>Squid Game</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_squidgame <- p1 + scale_color_squidgame()
+p2_squidgame <- p2 + scale_fill_squidgame()
+grid.arrange(p1_squidgame, p2_squidgame, ncol = 2)
 ```
 
 # Continuous Color Palettes

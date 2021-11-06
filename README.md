@@ -31,9 +31,12 @@ remotes::install_github("nanxstats/ggsci")
 ```
 
 [Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or
-open with `vignette("ggsci")` in R) for a quick-start guide.
+open with `vignette("ggsci")` in R) for a quick-start
+guide.
 
 ## Gallery
+
+    #> Warning: package 'gridExtra' was built under R version 4.0.2
 
 ### NPG
 
@@ -102,6 +105,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 ### The Simpsons
 
 <img src="man/figures/README-ggsci-simpsons-1.png" width="100%" />
+
+### Squid Game
+
+<img src="man/figures/README-ggsci-squidgame-1.png" width="100%" />
 
 ### GSEA
 
