@@ -1,3 +1,8 @@
+url: https://nanx.me/ggsci/
+
+template:
+  bootstrap: 5
+
 reference:
   - title: "NPG"
     contents:

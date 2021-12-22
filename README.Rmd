@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ggsci <a href="https://nanx.me/ggsci/"><img src="man/figures/logo.png" align="right" height="180" /></a>
+# ggsci <img src="man/figures/logo.png" align="right" width="120" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg)](https://github.com/nanxstats/ggsci/actions)
