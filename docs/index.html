@@ -4,7 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="A collection of ggplot2 color palettes inspired by
+    plots in scientific journals, data visualization libraries,
+    science fiction movies, and TV shows.">
 <title>Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2 • ggsci</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -12,260 +15,258 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
-<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><link href="extra.css" rel="stylesheet">
-<meta property="og:title" content="Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2">
+<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2">
 <meta property="og:description" content="A collection of ggplot2 color palettes inspired by
     plots in scientific journals, data visualization libraries,
     science fiction movies, and TV shows.">
-<meta property="og:image" content="/logo.png">
+<meta property="og:image" content="https://nanx.me/ggsci/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body data-spy="scroll" data-target="#toc">
-    <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">ggsci</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.9</span>
-      </span>
-    </div>
+<body>
+    <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
+    
 
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    
+    <a class="navbar-brand me-2" href="index.html">ggsci</a>
+
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2.9</small>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="collapse navbar-collapse ms-2">
+      <ul class="navbar-nav me-auto">
+<li class="nav-item">
+  <a class="nav-link" href="articles/ggsci.html">Get started</a>
 </li>
-<li>
-  <a href="articles/ggsci.html">Get started</a>
+<li class="nav-item">
+  <a class="nav-link" href="reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="reference/index.html">Reference</a>
-</li>
-<li>
-  <a href="news/index.html">Changelog</a>
+<li class="nav-item">
+  <a class="nav-link" href="news/index.html">Changelog</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="https://github.com/nanxstats/ggsci/">
-    <span class="fab fa-github fa-lg"></span>
+<form class="form-inline my-2 my-lg-0" role="search">
+        <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
+</form>
+
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/nanxstats/ggsci/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
       </ul>
 </div>
-<!--/.nav-collapse -->
+
+    
   </div>
-<!--/.container -->
+</nav><div class="container template-home">
+<div class="row">
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="ggsci-">ggsci <a class="anchor" aria-label="anchor" href="#ggsci-"></a>
+</h1>
 </div>
-<!--/.navbar -->
-
-      
-
-      </header><div class="row">
-  <div class="contents col-md-9">
-<div id="ggsci-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#ggsci-" class="anchor"></a>ggsci <a href="https://nanx.me/ggsci/"><img src="reference/figures/logo.png" align="right" height="180"></a>
-</h1></div>
 <!-- badges: start -->
 
 <p><code>ggsci</code> offers a collection of <code>ggplot2</code> color palettes inspired by scientific journals, data visualization libraries, science fiction movies, and TV shows.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>You can install <code>ggsci</code> from CRAN:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"ggsci"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ggsci"</span><span class="op">)</span></code></pre></div>
 <p>Or try the development version on GitHub:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"nanxstats/ggsci"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"nanxstats/ggsci"</span><span class="op">)</span></code></pre></div>
 <p><a href="https://nanx.me/ggsci/articles/ggsci.html">Browse the vignette</a> (or open with <code><a href="articles/ggsci.html">vignette("ggsci")</a></code> in R) for a quick-start guide.</p>
 </div>
-<div id="gallery" class="section level2">
-<h2 class="hasAnchor">
-<a href="#gallery" class="anchor"></a>Gallery</h2>
-<div id="npg" class="section level3">
-<h3 class="hasAnchor">
-<a href="#npg" class="anchor"></a>NPG</h3>
+<div class="section level2">
+<h2 id="gallery">Gallery<a class="anchor" aria-label="anchor" href="#gallery"></a>
+</h2>
+<div class="section level3">
+<h3 id="npg">NPG<a class="anchor" aria-label="anchor" href="#npg"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-npg-1.png" width="100%"></p>
 </div>
-<div id="aaas" class="section level3">
-<h3 class="hasAnchor">
-<a href="#aaas" class="anchor"></a>AAAS</h3>
+<div class="section level3">
+<h3 id="aaas">AAAS<a class="anchor" aria-label="anchor" href="#aaas"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-aaas-1.png" width="100%"></p>
 </div>
-<div id="nejm" class="section level3">
-<h3 class="hasAnchor">
-<a href="#nejm" class="anchor"></a>NEJM</h3>
+<div class="section level3">
+<h3 id="nejm">NEJM<a class="anchor" aria-label="anchor" href="#nejm"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-nejm-1.png" width="100%"></p>
 </div>
-<div id="lancet" class="section level3">
-<h3 class="hasAnchor">
-<a href="#lancet" class="anchor"></a>Lancet</h3>
+<div class="section level3">
+<h3 id="lancet">Lancet<a class="anchor" aria-label="anchor" href="#lancet"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-lancet-1.png" width="100%"></p>
 </div>
-<div id="jama" class="section level3">
-<h3 class="hasAnchor">
-<a href="#jama" class="anchor"></a>JAMA</h3>
+<div class="section level3">
+<h3 id="jama">JAMA<a class="anchor" aria-label="anchor" href="#jama"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-jama-1.png" width="100%"></p>
 </div>
-<div id="jco" class="section level3">
-<h3 class="hasAnchor">
-<a href="#jco" class="anchor"></a>JCO</h3>
+<div class="section level3">
+<h3 id="jco">JCO<a class="anchor" aria-label="anchor" href="#jco"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-jco-1.png" width="100%"></p>
 </div>
-<div id="ucscgb" class="section level3">
-<h3 class="hasAnchor">
-<a href="#ucscgb" class="anchor"></a>UCSCGB</h3>
+<div class="section level3">
+<h3 id="ucscgb">UCSCGB<a class="anchor" aria-label="anchor" href="#ucscgb"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-ucscgb-1.png" width="100%"></p>
 </div>
-<div id="d3" class="section level3">
-<h3 class="hasAnchor">
-<a href="#d3" class="anchor"></a>D3</h3>
+<div class="section level3">
+<h3 id="d3">D3<a class="anchor" aria-label="anchor" href="#d3"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-d3-1.png" width="100%"></p>
 </div>
-<div id="locuszoom" class="section level3">
-<h3 class="hasAnchor">
-<a href="#locuszoom" class="anchor"></a>LocusZoom</h3>
+<div class="section level3">
+<h3 id="locuszoom">LocusZoom<a class="anchor" aria-label="anchor" href="#locuszoom"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-locuszoom-1.png" width="100%"></p>
 </div>
-<div id="igv" class="section level3">
-<h3 class="hasAnchor">
-<a href="#igv" class="anchor"></a>IGV</h3>
+<div class="section level3">
+<h3 id="igv">IGV<a class="anchor" aria-label="anchor" href="#igv"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-igv-1.png" width="100%"></p>
 </div>
-<div id="cosmic" class="section level3">
-<h3 class="hasAnchor">
-<a href="#cosmic" class="anchor"></a>COSMIC</h3>
+<div class="section level3">
+<h3 id="cosmic">COSMIC<a class="anchor" aria-label="anchor" href="#cosmic"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-cosmic-1.png" width="100%"><img src="reference/figures/README-ggsci-cosmic-2.png" width="100%"><img src="reference/figures/README-ggsci-cosmic-3.png" width="100%"></p>
 </div>
-<div id="uchicago" class="section level3">
-<h3 class="hasAnchor">
-<a href="#uchicago" class="anchor"></a>UChicago</h3>
+<div class="section level3">
+<h3 id="uchicago">UChicago<a class="anchor" aria-label="anchor" href="#uchicago"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-uchicago-1.png" width="100%"></p>
 </div>
-<div id="star-trek" class="section level3">
-<h3 class="hasAnchor">
-<a href="#star-trek" class="anchor"></a>Star Trek</h3>
+<div class="section level3">
+<h3 id="star-trek">Star Trek<a class="anchor" aria-label="anchor" href="#star-trek"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-startrek-1.png" width="100%"></p>
 </div>
-<div id="tron-legacy" class="section level3">
-<h3 class="hasAnchor">
-<a href="#tron-legacy" class="anchor"></a>Tron Legacy</h3>
+<div class="section level3">
+<h3 id="tron-legacy">Tron Legacy<a class="anchor" aria-label="anchor" href="#tron-legacy"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-tron-1.png" width="100%"></p>
 </div>
-<div id="futurama" class="section level3">
-<h3 class="hasAnchor">
-<a href="#futurama" class="anchor"></a>Futurama</h3>
+<div class="section level3">
+<h3 id="futurama">Futurama<a class="anchor" aria-label="anchor" href="#futurama"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-futurama-1.png" width="100%"></p>
 </div>
-<div id="rick-and-morty" class="section level3">
-<h3 class="hasAnchor">
-<a href="#rick-and-morty" class="anchor"></a>Rick and Morty</h3>
+<div class="section level3">
+<h3 id="rick-and-morty">Rick and Morty<a class="anchor" aria-label="anchor" href="#rick-and-morty"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-rickandmorty-1.png" width="100%"></p>
 </div>
-<div id="the-simpsons" class="section level3">
-<h3 class="hasAnchor">
-<a href="#the-simpsons" class="anchor"></a>The Simpsons</h3>
+<div class="section level3">
+<h3 id="the-simpsons">The Simpsons<a class="anchor" aria-label="anchor" href="#the-simpsons"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-simpsons-1.png" width="100%"></p>
 </div>
-<div id="gsea" class="section level3">
-<h3 class="hasAnchor">
-<a href="#gsea" class="anchor"></a>GSEA</h3>
+<div class="section level3">
+<h3 id="gsea">GSEA<a class="anchor" aria-label="anchor" href="#gsea"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-gsea-1.png" width="100%"></p>
 </div>
-<div id="material-design" class="section level3">
-<h3 class="hasAnchor">
-<a href="#material-design" class="anchor"></a>Material Design</h3>
+<div class="section level3">
+<h3 id="material-design">Material Design<a class="anchor" aria-label="anchor" href="#material-design"></a>
+</h3>
 <p><img src="reference/figures/README-ggsci-material-1.png" width="100%"></p>
 </div>
 </div>
-<div id="contribute" class="section level2">
-<h2 class="hasAnchor">
-<a href="#contribute" class="anchor"></a>Contribute</h2>
+<div class="section level2">
+<h2 id="contribute">Contribute<a class="anchor" aria-label="anchor" href="#contribute"></a>
+</h2>
 <p>To contribute to this project, please take a look at the <a href="CONTRIBUTING.html">Contributing Guidelines</a> first. Please note that this project is released with a <a href="CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p>
 </div>
 </div>
-  </div>
-
-  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
-<h2>Links</h2>
+  </main><aside class="col-md-3"><div class="links">
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=ggsci">https://​cloud.r-project.org/​package=ggsci</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/nanxstats/ggsci/">https://​github.com/​nanxstats/​ggsci/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/nanxstats/ggsci/issues">https://​github.com/​nanxstats/​ggsci/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=ggsci" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/nanxstats/ggsci/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/nanxstats/ggsci/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> | file <a href="LICENSE-text.html">LICENSE</a>
+<a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a> | file <a href="LICENSE-text.html">LICENSE</a>
 </li>
 </ul>
 </div>
+
 <div class="community">
-<h2>Community</h2>
+<h2 data-toc-skip>Community</h2>
 <ul class="list-unstyled">
 <li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 </ul>
 </div>
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing ggsci</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Nan Xiao <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0250-5673" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li><a href="authors.html">All authors...</a></li>
+<li>Nan Xiao <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0250-5673" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/nanxstats/ggsci/actions"><img src="https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://cran.r-project.org/package=ggsci"><img src="https://www.r-pkg.org/badges/version/ggsci" alt="CRAN Version"></a></li>
-<li><a href="https://cran.r-project.org/package=ggsci"><img src="https://cranlogs.r-pkg.org/badges/ggsci" alt="Downloads from the RStudio CRAN mirror"></a></li>
+<li><a href="https://github.com/nanxstats/ggsci/actions" class="external-link"><img src="https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://cran.r-project.org/package=ggsci" class="external-link"><img src="https://www.r-pkg.org/badges/version/ggsci" alt="CRAN Version"></a></li>
+<li><a href="https://cran.r-project.org/package=ggsci" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/ggsci" alt="Downloads from the RStudio CRAN mirror"></a></li>
 </ul>
 </div>
-</div>
-</div>
 
-
-      <footer><div class="copyright">
-  <p>Developed by Nan Xiao.</p>
+  </aside>
 </div>
 
-<div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+
+    <footer><div class="pkgdown-footer-left">
+  <p></p>
+<p>Developed by Nan Xiao.</p>
 </div>
 
-      </footer>
+<div class="pkgdown-footer-right">
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+</div>
+
+    </footer>
 </div>
 
   
 
+  
 
   </body>
 </html>
