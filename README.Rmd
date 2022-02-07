@@ -238,6 +238,22 @@ p2_simpsons <- p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 ```
 
+### Flat UI
+
+```{r, ggsci-flatui, fig.width=10.6667, fig.height=3.3334, dpi=227}
+p1_flatui <- p1 + scale_color_flatui()
+p2_flatui <- p2 + scale_fill_flatui()
+grid.arrange(p1_flatui, p2_flatui, ncol = 2)
+```
+
+### Frontiers
+
+```{r, ggsci-frontiers, fig.width=10.6667, fig.height=3.3334, dpi=227}
+p1_frontiers <- p1 + scale_color_frontiers()
+p2_frontiers <- p2 + scale_fill_frontiers()
+grid.arrange(p1_frontiers, p2_frontiers, ncol = 2)
+```
+
 ### GSEA
 
 ```{r}

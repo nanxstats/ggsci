@@ -99,6 +99,9 @@ summarized in the table below.
 | The Simpsons    | `scale_color_simpsons()`     | `"springfield"`                | `pal_simpsons()`     |
 |                 | `scale_fill_simpsons()`      |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Flat UI         | `scale_color_flatui()`       | `"aussie"`                     | `pal_flatui()`       |
+|                 | `scale_fill_flatui()`        |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | GSEA            | `scale_color_gsea()`         | `"default"`                    | `pal_gsea()`         |
 |                 | `scale_fill_gsea()`          |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -230,7 +233,7 @@ There are four palette types (`category10`, `category20`,
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_d3 <- p1 + scale_color_d3()
-p2_d3 <- p2 + scale_fill_d3()
+p2_d3 <- p2 + scale_fill_d3("category10")
 grid.arrange(p1_d3, p2_d3, ncol = 2)
 ```
 
@@ -350,6 +353,17 @@ This palette is inspired by the colors used in the TV show
 p1_simpsons <- p1 + scale_color_simpsons()
 p2_simpsons <- p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
+```
+
+### Flat UI
+
+This palette is inspired by the colors used in the TV show
+<emph>The Simpsons</emph>:
+
+```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
+p1_flatui <- p1 + scale_color_flatui()
+p2_flatui <- p2 + scale_fill_flatui()
+grid.arrange(p1_flatui, p2_flatui, ncol = 2)
 ```
 
 ## Continuous Color Palettes
