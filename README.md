@@ -103,6 +103,14 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-simpsons-1.png" width="100%" />
 
+### Flat UI
+
+<img src="man/figures/README-ggsci-flatui-1.png" width="100%" />
+
+### Frontiers
+
+<img src="man/figures/README-ggsci-frontiers-1.png" width="100%" />
+
 ### GSEA
 
 <img src="man/figures/README-ggsci-gsea-1.png" width="100%" />
