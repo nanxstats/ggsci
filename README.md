@@ -27,7 +27,7 @@ install.packages("ggsci")
 Or try the development version on GitHub:
 
 ``` r
-remotes::install_github("nanxstats/ggsci")
+remotes::install_github("clarajegousse/ggsci")
 ```
 
 [Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or
