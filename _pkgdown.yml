@@ -106,6 +106,18 @@ reference:
       - scale_color_simpsons
       - scale_colour_simpsons
       - scale_fill_simpsons
+  - title: "Flat UI"
+    contents:
+      - pal_flatui
+      - scale_color_flatui
+      - scale_colour_flatui
+      - scale_fill_flatui
+  - title: "Frontiers"
+    contents:
+      - pal_frontiers
+      - scale_color_frontiers
+      - scale_colour_frontiers
+      - scale_fill_frontiers
   - title: "GSEA"
     contents:
       - rgb_gsea
