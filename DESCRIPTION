@@ -1,12 +1,14 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 2.9
+Version: 2.9.9000
 Authors@R: c(
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0250-5673")),
     person("Joshua", "Cook", email = "joshuacook0023@gmail.com", role = "ctb"),
-    person("Miaozhu", "Li", email = "miaozhu.li@duke.edu", role = "ctb"))
+    person("Clara", "Jégousse", email = "cat3@hi.is", role = "ctb"),
+    person("Miaozhu", "Li", email = "miaozhu.li@duke.edu", role = "ctb")
+    )
 Maintainer: Nan Xiao <me@nanx.me>
 Description: A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
@@ -27,4 +29,4 @@ Suggests:
     gridExtra,
     reshape2
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
