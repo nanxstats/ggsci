@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/nanxstats/ggsci/workflows/R-CMD-check/badge.svg)](https://github.com/nanxstats/ggsci/actions)
+[![R-CMD-check](https://github.com/nanxstats/ggsci/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nanxstats/ggsci/actions/workflows/R-CMD-check.yaml)
 [![CRAN
 Version](https://www.r-pkg.org/badges/version/ggsci)](https://cran.r-project.org/package=ggsci)
 [![Downloads from the RStudio CRAN
