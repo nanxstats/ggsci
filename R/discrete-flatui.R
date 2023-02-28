@@ -18,7 +18,7 @@
 #' @author Clara Jégousse <\email{cat3@@hi.is}>
 #'
 #' @examples
-#' #' library("scales")
+#' library("scales")
 #' show_col(pal_flatui("default")(10))
 #' show_col(pal_flatui("flattastic")(12))
 #' show_col(pal_flatui("aussie")(10))

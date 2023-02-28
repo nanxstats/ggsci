@@ -20,7 +20,7 @@ See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 Color palettes inspired by the colors used in \emph{Flat UI Colors}.
 }
 \examples{
-#' library("scales")
+library("scales")
 show_col(pal_flatui("default")(10))
 show_col(pal_flatui("flattastic")(12))
 show_col(pal_flatui("aussie")(10))
