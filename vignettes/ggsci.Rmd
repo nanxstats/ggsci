@@ -361,7 +361,7 @@ grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 
 ### Flat UI
 
-Three flat UI color palettes from [FLAT UI COLORS2](https://flatuicolors.com):
+Three flat UI color palettes from [Flat UI Colors 2](https://flatuicolors.com):
 
 ```{r, fig.width = 10.67, fig.height = 4, out.width = 800, out.height = 300, dpi = 150}
 p1_flatui <- p1 + scale_color_flatui()
@@ -435,7 +435,8 @@ p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", size = 0.3) +
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0)) +
-  theme_bw() + theme(
+  theme_bw() +
+  theme(
     legend.position = "none", plot.background = element_blank(),
     axis.line = element_blank(), axis.ticks = element_blank(),
     axis.text.x = element_blank(), axis.text.y = element_blank(),
