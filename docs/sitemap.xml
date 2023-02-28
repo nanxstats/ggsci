@@ -43,6 +43,12 @@
     <loc>https://nanx.me/ggsci/reference/pal_d3.html</loc>
   </url>
   <url>
+    <loc>https://nanx.me/ggsci/reference/pal_flatui.html</loc>
+  </url>
+  <url>
+    <loc>https://nanx.me/ggsci/reference/pal_frontiers.html</loc>
+  </url>
+  <url>
     <loc>https://nanx.me/ggsci/reference/pal_futurama.html</loc>
   </url>
   <url>
@@ -104,6 +110,12 @@
   </url>
   <url>
     <loc>https://nanx.me/ggsci/reference/scale_d3.html</loc>
+  </url>
+  <url>
+    <loc>https://nanx.me/ggsci/reference/scale_flatui.html</loc>
+  </url>
+  <url>
+    <loc>https://nanx.me/ggsci/reference/scale_frontiers.html</loc>
   </url>
   <url>
     <loc>https://nanx.me/ggsci/reference/scale_futurama.html</loc>
