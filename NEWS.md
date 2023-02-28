@@ -1,8 +1,15 @@
-# ggsci 3.0.0 (2019-06-24)
+# ggsci 2.9.9000
 
 ## New Features
 
-- Added COSMIC color palettes. See `scale_color_cosmic()` and `scale_fill_cosmic()` for details. We thank Joshua H. Cook for contributing the color palettes.
+- Added three Flat UI colors palettes and one color palette inspired by the
+  logo of frontiers.org (thanks, @clarajegousse, #14).
+- Added COSMIC color palettes. See `scale_color_cosmic()` and
+  `scale_fill_cosmic()` for details (thanks, @jhrcook, #5, #7).
+
+## Bug fixes
+
+- Replace `size` with `linewidth` in code examples for ggplot2 >= 3.4.0.
 
 # ggsci 2.9 (2018-05-13)
 
