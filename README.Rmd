@@ -10,6 +10,7 @@ knitr::knit_hooks$set(optipng = knitr::hook_optipng)
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
+  dev = "ragg_png",
   fig.path = "man/figures/README-",
   out.width = "100%",
   echo = FALSE,
