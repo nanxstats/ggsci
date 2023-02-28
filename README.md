@@ -27,7 +27,7 @@ install.packages("ggsci")
 Or try the development version on GitHub:
 
 ``` r
-remotes::install_github("nanxstats/ggsci")
+remotes::install_github("clarajegousse/ggsci")
 ```
 
 [Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or
@@ -102,6 +102,14 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 ### The Simpsons
 
 <img src="man/figures/README-ggsci-simpsons-1.png" width="100%" />
+
+### Flat UI
+
+<img src="man/figures/README-ggsci-flatui-1.png" width="100%" />
+
+### Frontiers
+
+<img src="man/figures/README-ggsci-frontiers-1.png" width="100%" />
 
 ### GSEA
 
