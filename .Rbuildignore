@@ -1,11 +1,13 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
+
+^\.github$
 ^_pkgdown\.yml$
 ^pkgdown$
 ^docs$
-^CONDUCT\.md$
+
+^data-raw$
 ^CONTRIBUTING\.md$
-^\.github$
-^README\.Rmd$
+^CODE_OF_CONDUCT\.md$
 ^LICENSE\.md$
+^README\.Rmd$
