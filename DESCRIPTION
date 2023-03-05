@@ -13,7 +13,7 @@ Maintainer: Nan Xiao <me@nanx.me>
 Description: A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
     science fiction movies, and TV shows.
-License: GPL-3 | file LICENSE
+License: GPL (>= 3)
 VignetteBuilder: knitr
 URL: https://nanx.me/ggsci/, https://github.com/nanxstats/ggsci
 BugReports: https://github.com/nanxstats/ggsci/issues
