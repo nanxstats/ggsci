@@ -1,4 +1,4 @@
-# ggsci 2.9.9000
+# ggsci 3.0.0
 
 ## New Features
 
@@ -11,19 +11,19 @@
 
 - Replace `size` with `linewidth` in code examples for ggplot2 >= 3.4.0.
 
-# ggsci 2.9 (2018-05-13)
+# ggsci 2.9
 
 ## Improvements
 
-- New URL for the documentation website: https://nanx.me/ggsci/.
+- New URL for the documentation website: <https://nanx.me/ggsci/>.
 
-# ggsci 2.8 (2017-09-30)
+# ggsci 2.8
 
 ## Improvements
 
 - Use system font stack instead of Google Fonts in vignettes to avoid pandoc SSL issue.
 
-# ggsci 2.7 (2017-06-12)
+# ggsci 2.7
 
 ## New Features
 
@@ -36,7 +36,7 @@ One new collection of continuous palettes with 19 color options:
 
 - Material Design
 
-# ggsci 2.4 (2017-03-07)
+# ggsci 2.4
 
 ## New Features
 
@@ -47,7 +47,7 @@ Four new discrete color palettes:
 - IGV
 - Star Trek
 
-# ggsci 2.0 (2016-11-20)
+# ggsci 2.0
 
 ## New Features
 
@@ -60,17 +60,17 @@ The first continuous color palette:
 
 - GSEA GenePattern
 
-# ggsci 1.0 (2016-04-01)
+# ggsci 1.0
 
 ## New Features
 
-Eight discrete color palettes:
+Eight discrete color palettes (2016-04-01):
 
-  - NPG
-  - AAAS
-  - Lancet
-  - JCO
-  - UCSCGB
-  - UChicago
-  - The Simpsons (Springfield)
-  - Rick and Morty (Schwifty)
+- NPG
+- AAAS
+- Lancet
+- JCO
+- UCSCGB
+- UChicago
+- The Simpsons (Springfield)
+- Rick and Morty (Schwifty)
