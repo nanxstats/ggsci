@@ -17,6 +17,7 @@ vignette: >
 knitr::knit_hooks$set(pngquant = knitr::hook_pngquant)
 
 knitr::opts_chunk$set(
+  message = FALSE,
   collapse = TRUE,
   comment = "#>",
   dev = "ragg_png",
