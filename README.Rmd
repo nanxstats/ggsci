@@ -4,15 +4,15 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::knit_hooks$set(optipng = knitr::hook_optipng)
+```{r, include=FALSE}
+knitr::knit_hooks$set(pngquant = knitr::hook_pngquant)
 
 knitr::opts_chunk$set(
   echo = FALSE,
   message = FALSE,
+  fig.path = "man/figures/README-",
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
   dev = "ragg_png",
   dpi = 72,
   fig.retina = 2,
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
   fig.height = 3.3334,
   fig.align = "center",
   out.width = "100%",
-  optipng = "-o1"
+  pngquant = "--speed=1 --quality=50"
 )
 ```
 
