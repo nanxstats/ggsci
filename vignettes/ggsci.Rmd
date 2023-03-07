@@ -145,7 +145,7 @@ p1 <- ggplot(
   aes(x = table, y = price, colour = cut)
 ) +
   geom_point(alpha = 0.7) +
-  geom_smooth(method = "loess", alpha = 0.05, size = 1, span = 1) +
+  geom_smooth(method = "loess", alpha = 0.05, linewidth = 1, span = 1) +
   theme_bw()
 
 p2 <- ggplot(
@@ -402,7 +402,7 @@ p3 <- ggplot(
   cor_melt,
   aes(x = Var1, y = Var2, fill = value)
 ) +
-  geom_tile(colour = "black", size = 0.3) +
+  geom_tile(colour = "black", linewidth = 0.3) +
   theme_bw() +
   theme(
     axis.title.x = element_blank(),
@@ -438,7 +438,7 @@ x[upper.tri(x)] <- runif(sum(1:(k - 1)), 0, 1)
 x_melt <- melt(x)
 
 p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
-  geom_tile(colour = "black", size = 0.3) +
+  geom_tile(colour = "black", linewidth = 0.3) +
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0)) +
   theme_bw() +
