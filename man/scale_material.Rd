@@ -56,8 +56,8 @@ There are 19 available options:
 \item \code{"brown"}
 \item \code{"grey"}
 \item \code{"blue-grey"}}
-See the \href{https://material.io/guidelines/style/color.html}{material
-design color guidelines} for details.}
+See \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}
+for details.}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}

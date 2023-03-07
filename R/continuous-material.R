@@ -24,8 +24,8 @@
 #' \item \code{"brown"}
 #' \item \code{"grey"}
 #' \item \code{"blue-grey"}}
-#' See the \href{https://material.io/guidelines/style/color.html}{material
-#' design color guidelines} for details.
+#' See \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}
+#' for details.
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
 #' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
@@ -40,7 +40,7 @@
 #' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references
-#' \url{https://material.io/guidelines/style/color.html}
+#' \url{https://m2.material.io/design/color/the-color-system.html}
 #'
 #' @examples
 #' library("scales")

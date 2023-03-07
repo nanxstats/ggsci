@@ -159,7 +159,7 @@ p2 <- ggplot(
 ### NPG
 
 The NPG palette is inspired by the plots in the journals published by
-<emph>Nature Publishing Group</emph>:
+Nature Publishing Group:
 
 ```{r}
 p1_npg <- p1 + scale_color_npg()
@@ -170,7 +170,7 @@ grid.arrange(p1_npg, p2_npg, ncol = 2)
 ### AAAS
 
 The AAAS palette is inspired by the plots in the journals published by
-<emph>American Association for the Advancement of Science</emph>:
+American Association for the Advancement of Science:
 
 ```{r}
 p1_aaas <- p1 + scale_color_aaas()
@@ -180,8 +180,8 @@ grid.arrange(p1_aaas, p2_aaas, ncol = 2)
 
 ### NEJM
 
-The NEJM palette is inspired by the plots in
-<emph>The New England Journal of Medicine</emph>:
+The NEJM palette is inspired by the plots in the
+_New England Journal of Medicine_:
 
 ```{r}
 p1_nejm <- p1 + scale_color_nejm()
@@ -191,8 +191,8 @@ grid.arrange(p1_nejm, p2_nejm, ncol = 2)
 
 ### Lancet
 
-The Lancet palette is inspired by the plots in <emph>Lancet</emph> journals,
-such as <emph>Lancet Oncology</emph>:
+The Lancet palette is inspired by the plots in _Lancet_ journals,
+such as _Lancet Oncology_:
 
 ```{r}
 p1_lancet <- p1 + scale_color_lancet()
@@ -202,8 +202,8 @@ grid.arrange(p1_lancet, p2_lancet, ncol = 2)
 
 ### JAMA
 
-The JAMA palette is inspired by the plots in
-<emph>The Journal of the American Medical Association</emph>:
+The JAMA palette is inspired by the plots in the
+_Journal of the American Medical Association_:
 
 ```{r}
 p1_jama <- p1 + scale_color_jama()
@@ -214,7 +214,7 @@ grid.arrange(p1_jama, p2_jama, ncol = 2)
 ### JCO
 
 The JCO palette is inspired by the the plots in
-<emph>Journal of Clinical Oncology</emph>:
+_Journal of Clinical Oncology_:
 
 ```{r}
 p1_jco <- p1 + scale_color_jco()
@@ -298,7 +298,7 @@ grid.arrange(p1_cosmic_signature, p2_cosmic_signature, ncol = 2)
 
 The UChicago palette is based on
 [the colors](https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf)
-used by the <emph>University of Chicago</emph>.
+used by the University of Chicago.
 There are three palette types (`default`, `light`, `dark`) available.
 
 ```{r}
@@ -309,7 +309,7 @@ grid.arrange(p1_uchicago, p2_uchicago, ncol = 2)
 
 ### Star Trek
 
-This palette is inspired by the (uniform) colors in <emph>Star Trek</emph>:
+This palette is inspired by the (uniform) colors in _Star Trek_:
 
 ```{r}
 p1_startrek <- p1 + scale_color_startrek()
@@ -319,7 +319,7 @@ grid.arrange(p1_startrek, p2_startrek, ncol = 2)
 
 ### Tron Legacy
 
-This palette is inspired by the colors used in <emph>Tron Legacy</emph>.
+This palette is inspired by the colors used in _Tron Legacy_.
 It is suitable for displaying data when using a dark theme:
 
 ```{r}
@@ -337,7 +337,7 @@ grid.arrange(p1_tron, p2_tron, ncol = 2)
 
 ### Futurama
 
-This palette is inspired by the colors used in the TV show <emph>Futurama</emph>:
+This palette is inspired by the colors used in the TV show _Futurama_:
 
 ```{r}
 p1_futurama <- p1 + scale_color_futurama()
@@ -347,7 +347,7 @@ grid.arrange(p1_futurama, p2_futurama, ncol = 2)
 
 ### Rick and Morty
 
-This palette is inspired by the colors used in the TV show <emph>Rick and Morty</emph>:
+This palette is inspired by the colors used in the TV show _Rick and Morty_:
 
 ```{r}
 p1_rickandmorty <- p1 + scale_color_rickandmorty()
@@ -358,7 +358,7 @@ grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
 ### The Simpsons
 
 This palette is inspired by the colors used in the TV show
-<emph>The Simpsons</emph>:
+_The Simpsons_:
 
 ```{r}
 p1_simpsons <- p1 + scale_color_simpsons()
@@ -423,8 +423,8 @@ grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
 
 ### Material Design
 
-The <emph>Material Design</emph> color palettes are from the [material design
-color guidelines](https://material.io/guidelines/style/color.html).
+The Material Design color palettes are from the
+[Material Design color system](https://m2.material.io/design/color/the-color-system.html).
 
 We generate a random matrix first:
 
@@ -499,7 +499,7 @@ in every generator or scale function.
 Please note some of the palettes might not be the best choice for certain
 purposes, such as color-blind safe, photocopy safe, or print friendly.
 If you do have such considerations, you might want to check out
-color palettes like [ColorBrewer](http://colorbrewer2.org)
+color palettes like [ColorBrewer](https://colorbrewer2.org)
 and [viridis](https://cran.r-project.org/package=viridis).
 
 The color palettes in this package are solely created for research purposes.
