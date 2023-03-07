@@ -271,7 +271,7 @@ cor_melt <- melt(cor)
 
 p3 <- ggplot(cor_melt, aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", linewidth = 0.3) +
-  theme_bw() +
+  theme_void() +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank())
 ```
 
