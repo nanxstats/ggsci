@@ -2,8 +2,9 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
+  ggsci-faq: ggsci-faq.html
   ggsci: ggsci.html
-last_built: 2023-03-07T22:55Z
+last_built: 2023-03-08T01:14Z
 urls:
   reference: https://nanx.me/ggsci/reference
   article: https://nanx.me/ggsci/articles
