@@ -56,13 +56,35 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="3.0.0" id="ggsci-300">ggsci 3.0.0<a class="anchor" aria-label="anchor" href="#ggsci-300"></a></h2>
 <div class="section level3">
-<h3 id="new-features-3-0-0">New Features<a class="anchor" aria-label="anchor" href="#new-features-3-0-0"></a></h3>
-<ul><li>Added three Flat UI colors palettes and one color palette inspired by the logo of frontiers.org (thanks, <a href="https://github.com/clarajegousse" class="external-link">@clarajegousse</a>, <a href="https://github.com/nanxstats/ggsci/issues/14" class="external-link">#14</a>).</li>
-<li>Added COSMIC color palettes. See <code><a href="../reference/scale_cosmic.html">scale_color_cosmic()</a></code> and <code><a href="../reference/scale_cosmic.html">scale_fill_cosmic()</a></code> for details (thanks, <a href="https://github.com/jhrcook" class="external-link">@jhrcook</a>, <a href="https://github.com/nanxstats/ggsci/issues/5" class="external-link">#5</a>, <a href="https://github.com/nanxstats/ggsci/issues/7" class="external-link">#7</a>).</li>
+<h3 id="new-features-3-0-0">New features<a class="anchor" aria-label="anchor" href="#new-features-3-0-0"></a></h3>
+<ul><li>Added three Flat UI color palettes in
+<ul><li><code><a href="../reference/scale_flatui.html">scale_color_flatui()</a></code></li>
+<li><code><a href="../reference/scale_flatui.html">scale_fill_flatui()</a></code></li>
+</ul>
+and one color palette inspired by the logo of frontiers.org in
+<ul><li><code><a href="../reference/scale_frontiers.html">scale_color_frontiers()</a></code></li>
+<li>
+<code><a href="../reference/scale_frontiers.html">scale_fill_frontiers()</a></code> (thanks, <a href="https://github.com/clarajegousse" class="external-link">@clarajegousse</a>, <a href="https://github.com/nanxstats/ggsci/issues/14" class="external-link">#14</a>).</li>
+</ul></li>
+<li>Added three COSMIC color palettes in
+<ul><li><code><a href="../reference/scale_cosmic.html">scale_color_cosmic()</a></code></li>
+<li><code><a href="../reference/scale_cosmic.html">scale_fill_cosmic()</a></code></li>
+</ul>
+(thanks, <a href="https://github.com/jhrcook" class="external-link">@jhrcook</a>, <a href="https://github.com/nanxstats/ggsci/issues/5" class="external-link">#5</a>, <a href="https://github.com/nanxstats/ggsci/issues/7" class="external-link">#7</a>).</li>
 </ul></div>
 <div class="section level3">
-<h3 id="bug-fixes-3-0-0">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-3-0-0"></a></h3>
-<ul><li>Replace <code>size</code> with <code>linewidth</code> in code examples for ggplot2 &gt;= 3.4.0.</li>
+<h3 id="improvements-3-0-0">Improvements<a class="anchor" aria-label="anchor" href="#improvements-3-0-0"></a></h3>
+<ul><li>Use a proper, three-component version number following Semantic Versioning.</li>
+<li>Reduce output figure size in vignettes and <code>README.Rmd</code> by switching to the ragg PNG device and using pngquant for compression.</li>
+<li>Added a new vignette on frequently asked questions.
+<ul><li>A simple solution to interpolate the color palettes when the data has more categories than the number of colors in a discrete color scale.</li>
+<li>A note on using a color scale consistently for multiple ggplot2 plots by setting global options (thanks, <a href="https://github.com/DanChaltiel" class="external-link">@DanChaltiel</a>, <a href="https://github.com/nanxstats/ggsci/issues/13" class="external-link">#13</a>).</li>
+</ul></li>
+<li>Replace <code>size</code> with <code>linewidth</code> in code examples for ggplot2 &gt;= 3.4.0.</li>
+<li>Replaced the previous logo with a new hex sticker logo.</li>
+<li>Replaced previous CI/CD solutions with GitHub Actions workflows.</li>
+<li>Fixed broken or moved links in function documentation and vignettes.</li>
+<li>Removed the <code>LazyData</code> field from <code>DESCRIPTION</code>.</li>
 </ul></div>
 </div>
     <div class="section level2">
@@ -82,7 +104,7 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.7" id="ggsci-27">ggsci 2.7<a class="anchor" aria-label="anchor" href="#ggsci-27"></a></h2><p class="text-muted">CRAN release: 2017-06-12</p>
 <div class="section level3">
-<h3 id="new-features-2-7">New Features<a class="anchor" aria-label="anchor" href="#new-features-2-7"></a></h3>
+<h3 id="new-features-2-7">New features<a class="anchor" aria-label="anchor" href="#new-features-2-7"></a></h3>
 <p>Two new discrete color palettes:</p>
 <ul><li>JAMA</li>
 <li>Tron Legacy</li>
@@ -93,7 +115,7 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.4" id="ggsci-24">ggsci 2.4<a class="anchor" aria-label="anchor" href="#ggsci-24"></a></h2><p class="text-muted">CRAN release: 2017-03-08</p>
 <div class="section level3">
-<h3 id="new-features-2-4">New Features<a class="anchor" aria-label="anchor" href="#new-features-2-4"></a></h3>
+<h3 id="new-features-2-4">New features<a class="anchor" aria-label="anchor" href="#new-features-2-4"></a></h3>
 <p>Four new discrete color palettes:</p>
 <ul><li>NEJM</li>
 <li>LocusZoom</li>
@@ -104,7 +126,7 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="2.0" id="ggsci-20">ggsci 2.0<a class="anchor" aria-label="anchor" href="#ggsci-20"></a></h2><p class="text-muted">CRAN release: 2016-11-21</p>
 <div class="section level3">
-<h3 id="new-features-2-0">New Features<a class="anchor" aria-label="anchor" href="#new-features-2-0"></a></h3>
+<h3 id="new-features-2-0">New features<a class="anchor" aria-label="anchor" href="#new-features-2-0"></a></h3>
 <p>Two new discrete color palettes:</p>
 <ul><li>D3.js (v3)</li>
 <li>Futurama (Planet Express)</li>
@@ -115,7 +137,7 @@
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="1.0" id="ggsci-10">ggsci 1.0<a class="anchor" aria-label="anchor" href="#ggsci-10"></a></h2>
 <div class="section level3">
-<h3 id="new-features-1-0">New Features<a class="anchor" aria-label="anchor" href="#new-features-1-0"></a></h3>
+<h3 id="new-features-1-0">New features<a class="anchor" aria-label="anchor" href="#new-features-1-0"></a></h3>
 <p>Eight discrete color palettes (2016-04-01):</p>
 <ul><li>NPG</li>
 <li>AAAS</li>
