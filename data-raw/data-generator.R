@@ -1,7 +1,7 @@
 # Generate internal color palettes data `R/sysdata.rda`
 #
-# [1] R Packages - Internal data. http://r-pkgs.had.co.nz/data.html#data-sysdata
-# [2] Name that Color. http://chir.ag/projects/name-that-color/
+# - R Packages - Internal data. <https://r-pkgs.org/data.html#sec-data-sysdata>
+# - Name that Color. <http://chir.ag/projects/name-that-color/>
 
 ggsci_db <- vector("list")
 
