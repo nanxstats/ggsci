@@ -53,27 +53,6 @@ remotes::install_github("nanxstats/ggsci")
 [Browse the vignette](https://nanx.me/ggsci/articles/ggsci.html) (or open with
 `vignette("ggsci")` in R) for a quick-start guide.
 
-## Usage
-
-```{r, eval=FALSE}
-library(ggsci)
-#in base plots
-x = factor(mtcars$cyl, labels=pal_jama()(3))
-plot(x = mtcars$mpg, y = mtcars$hp, col = x, pch = 16)
-
-#in ggplot2
-library(ggplot2)
-ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
-    geom_point() +
-    scale_color_nejm()
-
-#in ggplot2, using options
-options(ggplot2.discrete.colour=ggsci::scale_colour_lancet)
-ggplot(mtcars, aes(x = mpg, y = hp, color = factor(cyl))) +
-    geom_point()
-
-```
-
 ## Gallery
 
 ```{r}
