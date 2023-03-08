@@ -1,0 +1,56 @@
+---
+title: "Frequently Asked Questions about ggsci"
+output:
+  rmarkdown::html_document:
+    toc: true
+    toc_float: false
+    toc_depth: 2
+    number_sections: false
+    highlight: "textmate"
+    css: custom.css
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Frequently Asked Questions about ggsci}
+---
+
+## What if my data has more categories than the number of colors offered?
+
+Although it is recommended that we do not encode too many categories
+in different colors, in practice, one can still create an "adaptive"
+color palette based on the existing discrete color palettes in ggsci.
+
+See this blog post for a detailed guide on creating
+[adaptive ggplot2 color scales with color interpolation](https://nanx.me/blog/post/ggplot2-color-interpolation/).
+
+## Use a color scale consistently for multiple plots in a document
+
+To apply a color scale for all plots in a document and avoid repetition,
+a simple solution is setting the two global options
+`ggplot2.discrete.colour` and `ggplot2.discrete.fill`. For example:
+
+```r
+library("ggplot2")
+
+p <- ggplot(mpg, aes(displ, hwy, colour = factor(cyl), fill = factor(cyl))) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_bw()
+
+p
+
+# Set global options
+options(
+  ggplot2.discrete.colour = ggsci::scale_colour_d3,
+  ggplot2.discrete.fill = ggsci::scale_fill_d3
+)
+
+p
+
+# Restore original options after use
+options(
+  ggplot2.discrete.colour = NULL,
+  ggplot2.discrete.fill = NULL
+)
+
+p
+```
