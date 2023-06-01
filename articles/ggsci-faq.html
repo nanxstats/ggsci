@@ -134,6 +134,60 @@ repetition, a simple solution is setting the two global options
 <span></span>
 <span><span class="va">p</span></span></code></pre></div>
 </div>
+<div class="section level2">
+<h2 id="customize-color-ordering-in-a-palette">Customize color ordering in a palette<a class="anchor" aria-label="anchor" href="#customize-color-ordering-in-a-palette"></a>
+</h2>
+<p>You can customize the color selection and ordering of any discrete
+color palette in ggsci by using the following function that returns a
+custom color scale function. This method is flexible and encourages code
+reuse.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">#' Define a custom color scale</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @param pal Name of the color palette, as part of the</span></span>
+<span><span class="co">#'   original palette function name.</span></span>
+<span><span class="co">#' @param palette Palette type, as defined in the</span></span>
+<span><span class="co">#'   original palette function (optional).</span></span>
+<span><span class="co">#' @param n Number of (first) colors to fetch from the original palette.</span></span>
+<span><span class="co">#' @param order A vector of color index (optional).</span></span>
+<span><span class="co">#' @param alpha Transparency level.</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @return A custom color scale function.</span></span>
+<span><span class="va">scale_color_custom</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">pal</span>, <span class="va">palette</span>, <span class="va">n</span>, <span class="va">order</span>, <span class="va">alpha</span> <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">pal</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/getFromNamespace.html" class="external-link">getFromNamespace</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"pal_"</span>, <span class="va">pal</span><span class="op">)</span>, <span class="st">"ggsci"</span><span class="op">)</span></span>
+<span></span>
+<span>  <span class="va">colors</span> <span class="op">&lt;-</span> <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/missing.html" class="external-link">missing</a></span><span class="op">(</span><span class="va">palette</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="fu">pal</span><span class="op">(</span>alpha <span class="op">=</span> <span class="va">alpha</span><span class="op">)</span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
+<span>    <span class="fu">pal</span><span class="op">(</span>palette <span class="op">=</span> <span class="va">palette</span>, alpha <span class="op">=</span> <span class="va">alpha</span><span class="op">)</span><span class="op">(</span><span class="va">n</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">order</span><span class="op">)</span> <span class="op">&gt;</span> <span class="fu"><a href="https://rdrr.io/r/base/length.html" class="external-link">length</a></span><span class="op">(</span><span class="va">colors</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="st">"The length of order exceeds the number of colors."</span>, call. <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="va">colors</span> <span class="op">&lt;-</span> <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/missing.html" class="external-link">missing</a></span><span class="op">(</span><span class="va">order</span><span class="op">)</span><span class="op">)</span> <span class="va">colors</span><span class="op">[</span><span class="va">order</span><span class="op">]</span></span>
+<span></span>
+<span>  <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_manual.html" class="external-link">scale_color_manual</a></span><span class="op">(</span>values <span class="op">=</span> <span class="va">colors</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
+<p>Use <code>scale_color_custom()</code> in an example:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://nanx.me/ggsci/">ggsci</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">42</span><span class="op">)</span></span>
+<span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span></span>
+<span>  x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span>,</span>
+<span>  y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">100</span><span class="op">)</span>,</span>
+<span>  group <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fl">100</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">df</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, y <span class="op">=</span> <span class="va">y</span>, color <span class="op">=</span> <span class="va">group</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">p</span> <span class="op">+</span> <span class="fu">scale_color_custom</span><span class="op">(</span><span class="st">"d3"</span>, palette <span class="op">=</span> <span class="st">"category20"</span>, n <span class="op">=</span> <span class="fl">20</span>, order <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">11</span>, <span class="fl">13</span>, <span class="fl">12</span>, <span class="fl">15</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="ggsci-faq_files/figure-html/unnamed-chunk-3-1.png" width="65%" style="display: block; margin: auto;"></p>
+</div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside>
 </div>
