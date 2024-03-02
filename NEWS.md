@@ -1,3 +1,13 @@
+# ggsci 3.0.1
+
+## Improvements
+
+- Expand the FAQ vignette to include a solution for
+  [customizing color selection and ordering in a palette](https://nanx.me/ggsci/articles/ggsci-faq.html#customize-color-ordering-in-a-palette)
+  with self-defined color scale functions (#23).
+- Fix "lost braces" check notes on r-devel by using Unicode characters
+  ([a91faf1](https://github.com/nanxstats/ggsci/commit/a91faf183ae44fe43355283c173a1e2de70de6d2)).
+
 # ggsci 3.0.0
 
 ## New features
