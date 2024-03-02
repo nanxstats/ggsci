@@ -266,7 +266,7 @@ grid.arrange(p1_locuszoom, p2_locuszoom, ncol = 2)
 ### IGV
 
 The IGV palette is from the colors used by
-[Integrative Genomics Viewer](http://software.broadinstitute.org/software/igv/)
+[Integrative Genomics Viewer](https://igv.org/doc/desktop/)
 for representing chromosomes. There are two palette types
 (`default`, `alternating`) available.
 
