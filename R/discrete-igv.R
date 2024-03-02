@@ -19,7 +19,7 @@
 #' <\href{https://nanx.me}{https://nanx.me}>
 #'
 #' @references
-#' James T. Robinson, Helga Thorvaldsd\'{o}ttir, Wendy Winckler,
+#' James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler,
 #' Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov.
 #' Integrative Genomics Viewer. \emph{Nature Biotechnology} 29, 24--26 (2011).
 #'
