@@ -2,6 +2,8 @@ url: https://nanx.me/ggsci/
 
 template:
   bootstrap: 5
+  bslib:
+    preset: "bootstrap"
 
 reference:
   - title: "NPG"
