@@ -1,7 +1,7 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 3.0.1
+Version: 3.0.2
 Authors@R: c(
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0250-5673")),
@@ -14,7 +14,6 @@ Description: A collection of 'ggplot2' color palettes inspired by
     plots in scientific journals, data visualization libraries,
     science fiction movies, and TV shows.
 License: GPL (>= 3)
-VignetteBuilder: knitr
 URL: https://nanx.me/ggsci/, https://github.com/nanxstats/ggsci
 BugReports: https://github.com/nanxstats/ggsci/issues
 Depends:
@@ -29,5 +28,6 @@ Suggests:
     ragg,
     reshape2,
     rmarkdown
+VignetteBuilder: knitr
 Encoding: UTF-8
 RoxygenNote: 7.3.1
