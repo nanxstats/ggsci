@@ -29,7 +29,7 @@
 rgb_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"gsea"[[palette]]
   func_cols <- colorRamp(raw_cols, space = "Lab", interpolate = "spline")

@@ -23,7 +23,7 @@
 pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"futurama"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)

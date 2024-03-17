@@ -24,7 +24,7 @@
 pal_nejm <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"nejm"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)

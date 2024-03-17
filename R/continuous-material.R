@@ -54,7 +54,7 @@ rgb_material <- function(
     ), n = 10, alpha = 1, reverse = FALSE) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"material"[[palette]]
   func_cols <- colorRamp(raw_cols, space = "Lab", interpolate = "spline")
