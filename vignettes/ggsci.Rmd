@@ -39,10 +39,10 @@ knitr::opts_chunk$set(
 >
 > --- Claude Monet
 
-`ggsci` offers a collection of high-quality color palettes inspired by
+ggsci offers a collection of high-quality color palettes inspired by
 colors used in scientific journals, data visualization libraries,
-science fiction movies, and TV shows. The color palettes in `ggsci`
-are available as `ggplot2` scales. For all the color palettes,
+science fiction movies, and TV shows. The color palettes in ggsci
+are available as ggplot2 scales. For all the color palettes,
 the corresponding scales are named as:
 
 - `scale_color_palname()`
@@ -135,7 +135,7 @@ summarized in the table below.
 ## Discrete color palettes
 
 We will use scatterplots with smooth curves, and bar plots to demonstrate
-the discrete color palettes in `ggsci`.
+the discrete color palettes in ggsci.
 
 ```{r}
 library("ggsci")
@@ -393,7 +393,7 @@ grid.arrange(p1_frontiers, p2_frontiers, ncol = 2)
 ## Continuous color palettes
 
 We will use a correlation matrix visualization (a special type of heatmap)
-to demonstrate the continuous color palettes in `ggsci`.
+to demonstrate the continuous color palettes in ggsci.
 
 ```{r}
 library("reshape2")
@@ -481,7 +481,7 @@ of their saturation levels.
 
 ## Non-ggplot2 graphics
 
-To apply the color palettes in `ggsci` to other graphics systems
+To apply the color palettes in ggsci to other graphics systems
 (such as base graphics and lattice graphics), simply use the
 palette generator functions in the table above. For example:
 
