@@ -35,14 +35,16 @@ ggplot(
 ) +
   geom_point(alpha = 0.7) +
   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-  theme_bw() + scale_color_simpsons()
+  theme_bw() +
+  scale_color_simpsons()
 
 ggplot(
   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
   aes(x = depth, fill = cut)
 ) +
   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-  theme_bw() + scale_fill_simpsons()
+  theme_bw() +
+  scale_fill_simpsons()
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |

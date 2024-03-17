@@ -30,11 +30,11 @@
 #' show_col(pal_cosmic("signature_substitutions")(6))
 #' show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 pal_cosmic <- function(
-  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-  alpha = 1) {
+    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+    alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"cosmic"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -73,19 +73,21 @@ pal_cosmic <- function(
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_cosmic()
+#'   theme_bw() +
+#'   scale_color_cosmic()
 #'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_cosmic()
+#'   theme_bw() +
+#'   scale_fill_cosmic()
 scale_color_cosmic <- function(
-  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-  alpha = 1, ...) {
+    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+    alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "cosmic", pal_cosmic(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_cosmic(palette, alpha), ...)
 }
 
 #' @export scale_colour_cosmic
@@ -96,8 +98,8 @@ scale_colour_cosmic <- scale_color_cosmic
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_cosmic
 scale_fill_cosmic <- function(
-  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-  alpha = 1, ...) {
+    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+    alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "cosmic", pal_cosmic(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_cosmic(palette, alpha), ...)
 }

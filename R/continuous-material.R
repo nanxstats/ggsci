@@ -47,14 +47,14 @@
 #' show_col(pal_material("indigo")(10))
 #' show_col(pal_material("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 rgb_material <- function(
-  palette = c(
-    "red", "pink", "purple", "deep-purple", "indigo", "blue",
-    "light-blue", "cyan", "teal", "green", "light-green", "lime",
-    "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
-  ), n = 10, alpha = 1, reverse = FALSE) {
+    palette = c(
+      "red", "pink", "purple", "deep-purple", "indigo", "blue",
+      "light-blue", "cyan", "teal", "green", "light-green", "lime",
+      "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
+    ), n = 10, alpha = 1, reverse = FALSE) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"material"[[palette]]
   func_cols <- colorRamp(raw_cols, space = "Lab", interpolate = "spline")
@@ -87,11 +87,11 @@ rgb_material <- function(
 #' show_col(pal_material("indigo")(10))
 #' show_col(pal_material("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 pal_material <- function(
-  palette = c(
-    "red", "pink", "purple", "deep-purple", "indigo", "blue",
-    "light-blue", "cyan", "teal", "green", "light-green", "lime",
-    "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
-  ), n = 10, alpha = 1, reverse = FALSE) {
+    palette = c(
+      "red", "pink", "purple", "deep-purple", "indigo", "blue",
+      "light-blue", "cyan", "teal", "green", "light-green", "lime",
+      "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
+    ), n = 10, alpha = 1, reverse = FALSE) {
   palette <- match.arg(palette)
 
   alpha_cols <- rgb_material(palette, n, alpha, reverse)
@@ -127,13 +127,14 @@ pal_material <- function(
 #'   aes(x = Var1, y = Var2, fill = value)
 #' ) +
 #'   geom_tile(colour = "black", size = 0.3) +
-#'   theme_bw() + scale_fill_material("blue-grey")
+#'   theme_bw() +
+#'   scale_fill_material("blue-grey")
 scale_color_material <- function(
-  palette = c(
-    "red", "pink", "purple", "deep-purple", "indigo", "blue",
-    "light-blue", "cyan", "teal", "green", "light-green", "lime",
-    "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
-  ), alpha = 1, reverse = FALSE, ...) {
+    palette = c(
+      "red", "pink", "purple", "deep-purple", "indigo", "blue",
+      "light-blue", "cyan", "teal", "green", "light-green", "lime",
+      "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
+    ), alpha = 1, reverse = FALSE, ...) {
   palette <- match.arg(palette)
   scale_color_gradientn(
     colours = rgb_material(
@@ -152,11 +153,11 @@ scale_colour_material <- scale_color_material
 #' @importFrom ggplot2 scale_fill_gradientn
 #' @rdname scale_material
 scale_fill_material <- function(
-  palette = c(
-    "red", "pink", "purple", "deep-purple", "indigo", "blue",
-    "light-blue", "cyan", "teal", "green", "light-green", "lime",
-    "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
-  ), alpha = 1, reverse = FALSE, ...) {
+    palette = c(
+      "red", "pink", "purple", "deep-purple", "indigo", "blue",
+      "light-blue", "cyan", "teal", "green", "light-green", "lime",
+      "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"
+    ), alpha = 1, reverse = FALSE, ...) {
   palette <- match.arg(palette)
   scale_fill_gradientn(
     colours = rgb_material(

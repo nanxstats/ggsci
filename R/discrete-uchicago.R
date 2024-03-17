@@ -28,7 +28,7 @@
 pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"uchicago"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -88,7 +88,7 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
 #' p2 + scale_fill_uchicago(palette = "dark")
 scale_color_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "uchicago", pal_uchicago(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_uchicago(palette, alpha), ...)
 }
 
 #' @export scale_colour_uchicago
@@ -100,5 +100,5 @@ scale_colour_uchicago <- scale_color_uchicago
 #' @rdname scale_uchicago
 scale_fill_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "uchicago", pal_uchicago(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_uchicago(palette, alpha), ...)
 }

@@ -30,7 +30,7 @@
 pal_igv <- function(palette = c("default", "alternating"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"igv"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -89,7 +89,7 @@ pal_igv <- function(palette = c("default", "alternating"), alpha = 1) {
 #' )
 scale_color_igv <- function(palette = c("default", "alternating"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "igv", pal_igv(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_igv(palette, alpha), ...)
 }
 
 #' @export scale_colour_igv
@@ -101,5 +101,5 @@ scale_colour_igv <- scale_color_igv
 #' @rdname scale_igv
 scale_fill_igv <- function(palette = c("default", "alternating"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "igv", pal_igv(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_igv(palette, alpha), ...)
 }

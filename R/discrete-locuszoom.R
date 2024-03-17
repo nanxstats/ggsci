@@ -28,7 +28,7 @@
 pal_locuszoom <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"locuszoom"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -60,24 +60,26 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
 #' @examples
 #' library("ggplot2")
 #' data("diamonds")
-#' 
+#'
 #' ggplot(
 #'   subset(diamonds, carat >= 2.2),
 #'   aes(x = table, y = price, colour = cut)
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_locuszoom()
-#' 
+#'   theme_bw() +
+#'   scale_color_locuszoom()
+#'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_locuszoom()
+#'   theme_bw() +
+#'   scale_fill_locuszoom()
 scale_color_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "locuszoom", pal_locuszoom(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_locuszoom(palette, alpha), ...)
 }
 
 #' @export scale_colour_locuszoom
@@ -89,5 +91,5 @@ scale_colour_locuszoom <- scale_color_locuszoom
 #' @rdname scale_locuszoom
 scale_fill_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "locuszoom", pal_locuszoom(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_locuszoom(palette, alpha), ...)
 }

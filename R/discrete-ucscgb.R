@@ -23,7 +23,7 @@
 pal_ucscgb <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"ucscgb"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -55,24 +55,26 @@ pal_ucscgb <- function(palette = c("default"), alpha = 1) {
 #' @examples
 #' library("ggplot2")
 #' data("diamonds")
-#' 
+#'
 #' ggplot(
 #'   subset(diamonds, carat >= 2.2),
 #'   aes(x = table, y = price, colour = cut)
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_ucscgb()
-#' 
+#'   theme_bw() +
+#'   scale_color_ucscgb()
+#'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_ucscgb()
+#'   theme_bw() +
+#'   scale_fill_ucscgb()
 scale_color_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "ucscgb", pal_ucscgb(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_ucscgb(palette, alpha), ...)
 }
 
 #' @export scale_colour_ucscgb
@@ -84,5 +86,5 @@ scale_colour_ucscgb <- scale_color_ucscgb
 #' @rdname scale_ucscgb
 scale_fill_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "ucscgb", pal_ucscgb(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_ucscgb(palette, alpha), ...)
 }

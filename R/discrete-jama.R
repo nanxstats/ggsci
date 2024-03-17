@@ -24,7 +24,7 @@
 pal_jama <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"jama"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -56,24 +56,26 @@ pal_jama <- function(palette = c("default"), alpha = 1) {
 #' @examples
 #' library("ggplot2")
 #' data("diamonds")
-#' 
+#'
 #' ggplot(
 #'   subset(diamonds, carat >= 2.2),
 #'   aes(x = table, y = price, colour = cut)
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_jama()
-#' 
+#'   theme_bw() +
+#'   scale_color_jama()
+#'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_jama()
+#'   theme_bw() +
+#'   scale_fill_jama()
 scale_color_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "jama", pal_jama(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_jama(palette, alpha), ...)
 }
 
 #' @export scale_colour_jama
@@ -85,5 +87,5 @@ scale_colour_jama <- scale_color_jama
 #' @rdname scale_jama
 scale_fill_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "jama", pal_jama(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_jama(palette, alpha), ...)
 }

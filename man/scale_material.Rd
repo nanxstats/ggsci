@@ -82,7 +82,8 @@ ggplot(
   aes(x = Var1, y = Var2, fill = value)
 ) +
   geom_tile(colour = "black", size = 0.3) +
-  theme_bw() + scale_fill_material("blue-grey")
+  theme_bw() +
+  scale_fill_material("blue-grey")
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |

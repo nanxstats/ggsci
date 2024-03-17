@@ -22,7 +22,7 @@
 pal_frontiers <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"frontiers"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -60,7 +60,8 @@ pal_frontiers <- function(palette = c("default"), alpha = 1) {
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_dark() + theme(
+#'   theme_dark() +
+#'   theme(
 #'     panel.background = element_rect(fill = "#2D2D2D"),
 #'     legend.key = element_rect(fill = "#2D2D2D")
 #'   ) +
@@ -71,13 +72,14 @@ pal_frontiers <- function(palette = c("default"), alpha = 1) {
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_dark() + theme(
+#'   theme_dark() +
+#'   theme(
 #'     panel.background = element_rect(fill = "#2D2D2D")
 #'   ) +
 #'   scale_fill_frontiers()
 scale_color_frontiers <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "frontiers", pal_frontiers(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_frontiers(palette, alpha), ...)
 }
 
 #' @export scale_colour_frontiers
@@ -89,5 +91,5 @@ scale_colour_frontiers <- scale_color_frontiers
 #' @rdname scale_frontiers
 scale_fill_frontiers <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "frontiers", pal_frontiers(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_frontiers(palette, alpha), ...)
 }

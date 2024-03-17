@@ -25,7 +25,7 @@
 pal_aaas <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
-  if (alpha > 1L | alpha <= 0L) stop("alpha must be in (0, 1]")
+  if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
   raw_cols <- ggsci_db$"aaas"[[palette]]
   raw_cols_rgb <- col2rgb(raw_cols)
@@ -64,17 +64,19 @@ pal_aaas <- function(palette = c("default"), alpha = 1) {
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_aaas()
+#'   theme_bw() +
+#'   scale_color_aaas()
 #'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_aaas()
+#'   theme_bw() +
+#'   scale_fill_aaas()
 scale_color_aaas <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "aaas", pal_aaas(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_aaas(palette, alpha), ...)
 }
 
 #' @export scale_colour_aaas
@@ -86,5 +88,5 @@ scale_colour_aaas <- scale_color_aaas
 #' @rdname scale_aaas
 scale_fill_aaas <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "aaas", pal_aaas(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_aaas(palette, alpha), ...)
 }
