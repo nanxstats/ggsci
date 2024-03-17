@@ -33,7 +33,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">ggsci</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.0.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,11 +98,11 @@
 <p>I learned at the same time to love it.</p>
 <p>— Claude Monet</p>
 </blockquote>
-<p><code>ggsci</code> offers a collection of high-quality color palettes
-inspired by colors used in scientific journals, data visualization
-libraries, science fiction movies, and TV shows. The color palettes in
-<code>ggsci</code> are available as <code>ggplot2</code> scales. For all
-the color palettes, the corresponding scales are named as:</p>
+<p>ggsci offers a collection of high-quality color palettes inspired by
+colors used in scientific journals, data visualization libraries,
+science fiction movies, and TV shows. The color palettes in ggsci are
+available as ggplot2 scales. For all the color palettes, the
+corresponding scales are named as:</p>
 <ul>
 <li><code>scale_color_palname()</code></li>
 <li><code>scale_fill_palname()</code></li>
@@ -331,7 +331,7 @@ summarized in the table below.</p>
 <h2 id="discrete-color-palettes">Discrete color palettes<a class="anchor" aria-label="anchor" href="#discrete-color-palettes"></a>
 </h2>
 <p>We will use scatterplots with smooth curves, and bar plots to
-demonstrate the discrete color palettes in <code>ggsci</code>.</p>
+demonstrate the discrete color palettes in ggsci.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://nanx.me/ggsci/">"ggsci"</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://ggplot2.tidyverse.org" class="external-link">"ggplot2"</a></span><span class="op">)</span></span>
@@ -586,8 +586,7 @@ Simpsons</em>:</p>
 <h2 id="continuous-color-palettes">Continuous color palettes<a class="anchor" aria-label="anchor" href="#continuous-color-palettes"></a>
 </h2>
 <p>We will use a correlation matrix visualization (a special type of
-heatmap) to demonstrate the continuous color palettes in
-<code>ggsci</code>.</p>
+heatmap) to demonstrate the continuous color palettes in ggsci.</p>
 <div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/hadley/reshape" class="external-link">"reshape2"</a></span><span class="op">)</span></span>
 <span></span>
@@ -670,9 +669,9 @@ their saturation levels.</p>
 <div class="section level2">
 <h2 id="non-ggplot2-graphics">Non-ggplot2 graphics<a class="anchor" aria-label="anchor" href="#non-ggplot2-graphics"></a>
 </h2>
-<p>To apply the color palettes in <code>ggsci</code> to other graphics
-systems (such as base graphics and lattice graphics), simply use the
-palette generator functions in the table above. For example:</p>
+<p>To apply the color palettes in ggsci to other graphics systems (such
+as base graphics and lattice graphics), simply use the palette generator
+functions in the table above. For example:</p>
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mypal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/pal_npg.html">pal_npg</a></span><span class="op">(</span><span class="st">"nrc"</span>, alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span></span>
 <span><span class="va">mypal</span></span>
