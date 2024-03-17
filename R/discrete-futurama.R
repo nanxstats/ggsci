@@ -62,14 +62,16 @@ pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_futurama()
+#'   theme_bw() +
+#'   scale_color_futurama()
 #'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_fill_futurama()
+#'   theme_bw() +
+#'   scale_fill_futurama()
 scale_color_futurama <- function(palette = c("planetexpress"), alpha = 1, ...) {
   palette <- match.arg(palette)
   discrete_scale("colour", "futurama", pal_futurama(palette, alpha), ...)

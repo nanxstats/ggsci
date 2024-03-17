@@ -97,7 +97,8 @@ pal_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 #'   aes(x = Var1, y = Var2, fill = value)
 #' ) +
 #'   geom_tile(colour = "black", size = 0.3) +
-#'   theme_bw() + scale_fill_gsea()
+#'   theme_bw() +
+#'   scale_fill_gsea()
 scale_color_gsea <- function(palette = c("default"), alpha = 1, reverse = FALSE, ...) {
   palette <- match.arg(palette)
   scale_color_gradientn(colours = rgb_gsea(palette, n = 512, alpha = alpha, reverse = reverse), ...)
