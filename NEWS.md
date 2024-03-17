@@ -1,3 +1,10 @@
+# ggsci 3.0.2
+
+## Improvements
+
+- Remove `scale_name` from all `discrete_scale()` calls because the
+  argument has been deprecated in ggplot2 3.5.0 (thanks, @DanChaltiel, #25).
+
 # ggsci 3.0.1
 
 ## Improvements
