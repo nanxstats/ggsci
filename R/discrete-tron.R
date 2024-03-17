@@ -81,7 +81,7 @@ pal_tron <- function(palette = c("legacy"), alpha = 1) {
 #'   scale_fill_tron()
 scale_color_tron <- function(palette = c("legacy"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "tron", pal_tron(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_tron(palette, alpha), ...)
 }
 
 #' @export scale_colour_tron
@@ -93,5 +93,5 @@ scale_colour_tron <- scale_color_tron
 #' @rdname scale_tron
 scale_fill_tron <- function(palette = c("legacy"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "tron", pal_tron(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_tron(palette, alpha), ...)
 }

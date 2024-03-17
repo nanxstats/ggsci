@@ -74,7 +74,7 @@ pal_ucscgb <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_ucscgb()
 scale_color_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "ucscgb", pal_ucscgb(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_ucscgb(palette, alpha), ...)
 }
 
 #' @export scale_colour_ucscgb
@@ -86,5 +86,5 @@ scale_colour_ucscgb <- scale_color_ucscgb
 #' @rdname scale_ucscgb
 scale_fill_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "ucscgb", pal_ucscgb(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_ucscgb(palette, alpha), ...)
 }

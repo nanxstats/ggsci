@@ -74,7 +74,7 @@ pal_simpsons <- function(palette = c("springfield"), alpha = 1) {
 #'   scale_fill_simpsons()
 scale_color_simpsons <- function(palette = c("springfield"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "simpsons", pal_simpsons(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_simpsons(palette, alpha), ...)
 }
 
 #' @export scale_colour_simpsons
@@ -86,5 +86,5 @@ scale_colour_simpsons <- scale_color_simpsons
 #' @rdname scale_simpsons
 scale_fill_simpsons <- function(palette = c("springfield"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "simpsons", pal_simpsons(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_simpsons(palette, alpha), ...)
 }

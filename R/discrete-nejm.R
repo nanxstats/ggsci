@@ -75,7 +75,7 @@ pal_nejm <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_nejm()
 scale_color_nejm <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "nejm", pal_nejm(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_nejm(palette, alpha), ...)
 }
 
 #' @export scale_colour_nejm
@@ -87,5 +87,5 @@ scale_colour_nejm <- scale_color_nejm
 #' @rdname scale_nejm
 scale_fill_nejm <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "nejm", pal_nejm(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_nejm(palette, alpha), ...)
 }

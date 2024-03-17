@@ -74,7 +74,7 @@ pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
 #'   scale_fill_futurama()
 scale_color_futurama <- function(palette = c("planetexpress"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "futurama", pal_futurama(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_futurama(palette, alpha), ...)
 }
 
 #' @export scale_colour_futurama
@@ -86,5 +86,5 @@ scale_colour_futurama <- scale_color_futurama
 #' @rdname scale_futurama
 scale_fill_futurama <- function(palette = c("planetexpress"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "futurama", pal_futurama(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_futurama(palette, alpha), ...)
 }

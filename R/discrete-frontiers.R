@@ -79,7 +79,7 @@ pal_frontiers <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_frontiers()
 scale_color_frontiers <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "frontiers", pal_frontiers(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_frontiers(palette, alpha), ...)
 }
 
 #' @export scale_colour_frontiers
@@ -91,5 +91,5 @@ scale_colour_frontiers <- scale_color_frontiers
 #' @rdname scale_frontiers
 scale_fill_frontiers <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "frontiers", pal_frontiers(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_frontiers(palette, alpha), ...)
 }

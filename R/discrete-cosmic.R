@@ -87,7 +87,7 @@ scale_color_cosmic <- function(
     palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
     alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "cosmic", pal_cosmic(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_cosmic(palette, alpha), ...)
 }
 
 #' @export scale_colour_cosmic
@@ -101,5 +101,5 @@ scale_fill_cosmic <- function(
     palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
     alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "cosmic", pal_cosmic(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_cosmic(palette, alpha), ...)
 }

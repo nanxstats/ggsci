@@ -74,7 +74,7 @@ pal_rickandmorty <- function(palette = c("schwifty"), alpha = 1) {
 #'   scale_fill_rickandmorty()
 scale_color_rickandmorty <- function(palette = c("schwifty"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "rickandmorty", pal_rickandmorty(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_rickandmorty(palette, alpha), ...)
 }
 
 #' @export scale_colour_rickandmorty
@@ -86,5 +86,5 @@ scale_colour_rickandmorty <- scale_color_rickandmorty
 #' @rdname scale_rickandmorty
 scale_fill_rickandmorty <- function(palette = c("schwifty"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "rickandmorty", pal_rickandmorty(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_rickandmorty(palette, alpha), ...)
 }

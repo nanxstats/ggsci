@@ -75,7 +75,7 @@ pal_jama <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_jama()
 scale_color_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "jama", pal_jama(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_jama(palette, alpha), ...)
 }
 
 #' @export scale_colour_jama
@@ -87,5 +87,5 @@ scale_colour_jama <- scale_color_jama
 #' @rdname scale_jama
 scale_fill_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "jama", pal_jama(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_jama(palette, alpha), ...)
 }

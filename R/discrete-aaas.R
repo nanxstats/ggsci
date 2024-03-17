@@ -76,7 +76,7 @@ pal_aaas <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_aaas()
 scale_color_aaas <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "aaas", pal_aaas(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_aaas(palette, alpha), ...)
 }
 
 #' @export scale_colour_aaas
@@ -88,5 +88,5 @@ scale_colour_aaas <- scale_color_aaas
 #' @rdname scale_aaas
 scale_fill_aaas <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "aaas", pal_aaas(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_aaas(palette, alpha), ...)
 }

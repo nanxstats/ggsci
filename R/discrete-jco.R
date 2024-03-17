@@ -74,7 +74,7 @@ pal_jco <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_jco()
 scale_color_jco <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "jco", pal_jco(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_jco(palette, alpha), ...)
 }
 
 #' @export scale_colour_jco
@@ -86,5 +86,5 @@ scale_colour_jco <- scale_color_jco
 #' @rdname scale_jco
 scale_fill_jco <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "jco", pal_jco(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_jco(palette, alpha), ...)
 }

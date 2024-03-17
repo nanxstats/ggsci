@@ -79,7 +79,7 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_locuszoom()
 scale_color_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "locuszoom", pal_locuszoom(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_locuszoom(palette, alpha), ...)
 }
 
 #' @export scale_colour_locuszoom
@@ -91,5 +91,5 @@ scale_colour_locuszoom <- scale_color_locuszoom
 #' @rdname scale_locuszoom
 scale_fill_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "locuszoom", pal_locuszoom(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_locuszoom(palette, alpha), ...)
 }

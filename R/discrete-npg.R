@@ -75,7 +75,7 @@ pal_npg <- function(palette = c("nrc"), alpha = 1) {
 #'   scale_fill_npg()
 scale_color_npg <- function(palette = c("nrc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "npg", pal_npg(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_npg(palette, alpha), ...)
 }
 
 #' @export scale_colour_npg
@@ -87,5 +87,5 @@ scale_colour_npg <- scale_color_npg
 #' @rdname scale_npg
 scale_fill_npg <- function(palette = c("nrc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "npg", pal_npg(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_npg(palette, alpha), ...)
 }

@@ -86,7 +86,7 @@ pal_flatui <- function(palette = c("default", "flattastic", "aussie"), alpha = 1
 #' p2 + scale_fill_flatui(palette = "aussie")
 scale_color_flatui <- function(palette = c("default", "flattastic", "aussie"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", "flatui", pal_flatui(palette, alpha), ...)
+  discrete_scale("colour", palette = pal_flatui(palette, alpha), ...)
 }
 
 #' @export scale_colour_flatui
@@ -98,5 +98,5 @@ scale_colour_flatui <- scale_color_flatui
 #' @rdname scale_flatui
 scale_fill_flatui <- function(palette = c("default", "flattastic", "aussie"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", "flatui", pal_flatui(palette, alpha), ...)
+  discrete_scale("fill", palette = pal_flatui(palette, alpha), ...)
 }
