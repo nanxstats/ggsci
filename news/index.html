@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">ggsci</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.0.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">3.0.3</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,14 @@
     </div>
 
     <div class="section level2">
-<h2 class="pkg-version" data-toc-text="3.0.2" id="ggsci-302">ggsci 3.0.2<a class="anchor" aria-label="anchor" href="#ggsci-302"></a></h2>
+<h2 class="pkg-version" data-toc-text="3.0.3" id="ggsci-303">ggsci 3.0.3<a class="anchor" aria-label="anchor" href="#ggsci-303"></a></h2>
+<div class="section level3">
+<h3 id="improvements-3-0-3">Improvements<a class="anchor" aria-label="anchor" href="#improvements-3-0-3"></a></h3>
+<ul><li>Detect ggplot2 version at runtime to determine if the argument <code>scale_name</code> is needed for all <code><a href="https://ggplot2.tidyverse.org/reference/discrete_scale.html" class="external-link">discrete_scale()</a></code> calls. This ensures ggsci always works regardless of the ggplot2 version installed (thanks, <a href="https://github.com/flyingicedragon" class="external-link">@flyingicedragon</a>, <a href="https://github.com/nanxstats/ggsci/issues/29" class="external-link">#29</a>).</li>
+</ul></div>
+</div>
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="3.0.2" id="ggsci-302">ggsci 3.0.2<a class="anchor" aria-label="anchor" href="#ggsci-302"></a></h2><p class="text-muted">CRAN release: 2024-03-18</p>
 <div class="section level3">
 <h3 id="improvements-3-0-2">Improvements<a class="anchor" aria-label="anchor" href="#improvements-3-0-2"></a></h3>
 <ul><li>Remove <code>scale_name</code> from all <code><a href="https://ggplot2.tidyverse.org/reference/discrete_scale.html" class="external-link">discrete_scale()</a></code> calls because the argument has been deprecated in ggplot2 3.5.0 (thanks, <a href="https://github.com/DanChaltiel" class="external-link">@DanChaltiel</a>, <a href="https://github.com/nanxstats/ggsci/issues/25" class="external-link">#25</a>).</li>
