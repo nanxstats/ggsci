@@ -74,7 +74,11 @@ pal_startrek <- function(palette = c("uniform"), alpha = 1) {
 #'   scale_fill_startrek()
 scale_color_startrek <- function(palette = c("uniform"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_startrek(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_startrek(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "startrek", palette = pal_startrek(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_startrek
@@ -86,5 +90,9 @@ scale_colour_startrek <- scale_color_startrek
 #' @rdname scale_startrek
 scale_fill_startrek <- function(palette = c("uniform"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_startrek(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_startrek(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "startrek", palette = pal_startrek(palette, alpha), ...)
+  }
 }

@@ -74,7 +74,11 @@ pal_rickandmorty <- function(palette = c("schwifty"), alpha = 1) {
 #'   scale_fill_rickandmorty()
 scale_color_rickandmorty <- function(palette = c("schwifty"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_rickandmorty(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_rickandmorty(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "rickandmorty", palette = pal_rickandmorty(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_rickandmorty
@@ -86,5 +90,9 @@ scale_colour_rickandmorty <- scale_color_rickandmorty
 #' @rdname scale_rickandmorty
 scale_fill_rickandmorty <- function(palette = c("schwifty"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_rickandmorty(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_rickandmorty(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "rickandmorty", palette = pal_rickandmorty(palette, alpha), ...)
+  }
 }

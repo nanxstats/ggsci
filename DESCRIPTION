@@ -1,7 +1,7 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 3.0.2
+Version: 3.0.3
 Authors@R: c(
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0250-5673")),

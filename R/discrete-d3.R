@@ -93,7 +93,11 @@ pal_d3 <- function(palette = c("category10", "category20", "category20b", "categ
 #' p2 + scale_fill_d3(palette = "category20c")
 scale_color_d3 <- function(palette = c("category10", "category20", "category20b", "category20c"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_d3(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_d3(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "d3", palette = pal_d3(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_d3
@@ -105,5 +109,9 @@ scale_colour_d3 <- scale_color_d3
 #' @rdname scale_d3
 scale_fill_d3 <- function(palette = c("category10", "category20", "category20b", "category20c"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_d3(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_d3(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "d3", palette = pal_d3(palette, alpha), ...)
+  }
 }

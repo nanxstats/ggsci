@@ -88,7 +88,11 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
 #' p2 + scale_fill_uchicago(palette = "dark")
 scale_color_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_uchicago(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_uchicago(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "uchicago", palette = pal_uchicago(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_uchicago
@@ -100,5 +104,9 @@ scale_colour_uchicago <- scale_color_uchicago
 #' @rdname scale_uchicago
 scale_fill_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_uchicago(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_uchicago(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "uchicago", palette = pal_uchicago(palette, alpha), ...)
+  }
 }

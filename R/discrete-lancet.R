@@ -75,7 +75,11 @@ pal_lancet <- function(palette = c("lanonc"), alpha = 1) {
 #'   scale_fill_lancet()
 scale_color_lancet <- function(palette = c("lanonc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_lancet(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_lancet(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "lancet", palette = pal_lancet(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_lancet
@@ -87,5 +91,9 @@ scale_colour_lancet <- scale_color_lancet
 #' @rdname scale_lancet
 scale_fill_lancet <- function(palette = c("lanonc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_lancet(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_lancet(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "lancet", palette = pal_lancet(palette, alpha), ...)
+  }
 }

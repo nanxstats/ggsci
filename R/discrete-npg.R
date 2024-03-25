@@ -75,7 +75,11 @@ pal_npg <- function(palette = c("nrc"), alpha = 1) {
 #'   scale_fill_npg()
 scale_color_npg <- function(palette = c("nrc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_npg(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_npg(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "npg", palette = pal_npg(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_npg
@@ -87,5 +91,9 @@ scale_colour_npg <- scale_color_npg
 #' @rdname scale_npg
 scale_fill_npg <- function(palette = c("nrc"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_npg(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_npg(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "npg", palette = pal_npg(palette, alpha), ...)
+  }
 }

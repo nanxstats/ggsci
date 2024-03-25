@@ -74,7 +74,11 @@ pal_jco <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_jco()
 scale_color_jco <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_jco(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_jco(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "jco", palette = pal_jco(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_jco
@@ -86,5 +90,9 @@ scale_colour_jco <- scale_color_jco
 #' @rdname scale_jco
 scale_fill_jco <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_jco(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_jco(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "jco", palette = pal_jco(palette, alpha), ...)
+  }
 }

@@ -1,3 +1,11 @@
+# ggsci 3.0.3
+
+## Improvements
+
+- Detect ggplot2 version at runtime to determine if the argument `scale_name`
+  is needed for all `discrete_scale()` calls. This ensures ggsci always works
+  regardless of the ggplot2 version installed (thanks, @flyingicedragon, #29).
+
 # ggsci 3.0.2
 
 ## Improvements

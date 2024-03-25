@@ -89,7 +89,11 @@ pal_igv <- function(palette = c("default", "alternating"), alpha = 1) {
 #' )
 scale_color_igv <- function(palette = c("default", "alternating"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_igv(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_igv(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "igv", palette = pal_igv(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_igv
@@ -101,5 +105,9 @@ scale_colour_igv <- scale_color_igv
 #' @rdname scale_igv
 scale_fill_igv <- function(palette = c("default", "alternating"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_igv(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_igv(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "igv", palette = pal_igv(palette, alpha), ...)
+  }
 }
