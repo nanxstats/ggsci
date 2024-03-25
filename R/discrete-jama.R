@@ -75,7 +75,11 @@ pal_jama <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_jama()
 scale_color_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_jama(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_jama(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "jama", palette = pal_jama(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_jama
@@ -87,5 +91,9 @@ scale_colour_jama <- scale_color_jama
 #' @rdname scale_jama
 scale_fill_jama <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_jama(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_jama(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "jama", palette = pal_jama(palette, alpha), ...)
+  }
 }

@@ -87,7 +87,11 @@ scale_color_cosmic <- function(
     palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
     alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_cosmic(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_cosmic(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "cosmic", palette = pal_cosmic(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_cosmic
@@ -101,5 +105,9 @@ scale_fill_cosmic <- function(
     palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
     alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_cosmic(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_cosmic(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "cosmic", palette = pal_cosmic(palette, alpha), ...)
+  }
 }

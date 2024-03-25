@@ -79,7 +79,11 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_locuszoom()
 scale_color_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_locuszoom(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_locuszoom(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "locuszoom", palette = pal_locuszoom(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_locuszoom
@@ -91,5 +95,9 @@ scale_colour_locuszoom <- scale_color_locuszoom
 #' @rdname scale_locuszoom
 scale_fill_locuszoom <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_locuszoom(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_locuszoom(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "locuszoom", palette = pal_locuszoom(palette, alpha), ...)
+  }
 }

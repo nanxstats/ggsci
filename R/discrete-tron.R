@@ -81,7 +81,11 @@ pal_tron <- function(palette = c("legacy"), alpha = 1) {
 #'   scale_fill_tron()
 scale_color_tron <- function(palette = c("legacy"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_tron(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_tron(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "tron", palette = pal_tron(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_tron
@@ -93,5 +97,9 @@ scale_colour_tron <- scale_color_tron
 #' @rdname scale_tron
 scale_fill_tron <- function(palette = c("legacy"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_tron(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_tron(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "tron", palette = pal_tron(palette, alpha), ...)
+  }
 }

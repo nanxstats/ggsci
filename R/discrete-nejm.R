@@ -75,7 +75,11 @@ pal_nejm <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_nejm()
 scale_color_nejm <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_nejm(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_nejm(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "nejm", palette = pal_nejm(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_nejm
@@ -87,5 +91,9 @@ scale_colour_nejm <- scale_color_nejm
 #' @rdname scale_nejm
 scale_fill_nejm <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_nejm(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_nejm(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "nejm", palette = pal_nejm(palette, alpha), ...)
+  }
 }

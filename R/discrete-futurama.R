@@ -74,7 +74,11 @@ pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
 #'   scale_fill_futurama()
 scale_color_futurama <- function(palette = c("planetexpress"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_futurama(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_futurama(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "futurama", palette = pal_futurama(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_futurama
@@ -86,5 +90,9 @@ scale_colour_futurama <- scale_color_futurama
 #' @rdname scale_futurama
 scale_fill_futurama <- function(palette = c("planetexpress"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_futurama(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_futurama(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "futurama", palette = pal_futurama(palette, alpha), ...)
+  }
 }

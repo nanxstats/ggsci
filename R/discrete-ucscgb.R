@@ -74,7 +74,11 @@ pal_ucscgb <- function(palette = c("default"), alpha = 1) {
 #'   scale_fill_ucscgb()
 scale_color_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("colour", palette = pal_ucscgb(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("colour", palette = pal_ucscgb(palette, alpha), ...)
+  } else {
+    discrete_scale("colour", scale_name = "ucscgb", palette = pal_ucscgb(palette, alpha), ...)
+  }
 }
 
 #' @export scale_colour_ucscgb
@@ -86,5 +90,9 @@ scale_colour_ucscgb <- scale_color_ucscgb
 #' @rdname scale_ucscgb
 scale_fill_ucscgb <- function(palette = c("default"), alpha = 1, ...) {
   palette <- match.arg(palette)
-  discrete_scale("fill", palette = pal_ucscgb(palette, alpha), ...)
+  if (is_ggplot2_350()) {
+    discrete_scale("fill", palette = pal_ucscgb(palette, alpha), ...)
+  } else {
+    discrete_scale("fill", scale_name = "ucscgb", palette = pal_ucscgb(palette, alpha), ...)
+  }
 }
