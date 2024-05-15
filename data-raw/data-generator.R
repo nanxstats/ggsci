@@ -52,14 +52,14 @@ ggsci_db$"jama"$"default" <- c(
 # Color palette inspired by plots in BMJ (http://technology.bmj.com/living-style-guide/colour.html)
 ggsci_db$"bmj"$"default" <- c(
   "Blue" = "#2A6EBB", 
-  "Grey" = "#747678",
   "Yellow" = "#F0AB00", 
-  "Orange" = "#E37222",
-  "Red" = "#CD202C", 
   "Pink" = "#C50084",
   "Purple" = "#7D5CC6", 
+  "Orange" = "#E37222",
+  "Green" = "#69BE28",
   "Aqua" = "#00B2A9",
-  "Green" = "#69BE28"
+  "Red" = "#CD202C", 
+  "Grey" = "#747678"
 )
 
 # Color palette inspired by plots in Journal of Clinical Oncology
