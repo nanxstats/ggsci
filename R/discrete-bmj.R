@@ -1,11 +1,10 @@
-#' The BMJ Color Palettes
+#' BMJ Color Palettes
 #'
-#' Color palette inspired by plots in
-#' \emph{The BMJ}.
+#' Color palette from the BMJ living style guide.
 #'
 #' @param palette Palette type.
 #' Currently there is one available option: \code{"default"}
-#' (7-color palette).
+#' (9-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
 #' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
 #'
@@ -15,12 +14,11 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Hui Chen <\email{huichen@@zju.edu.cn}>
-#' Modified from Nan Xiao's code on JAMA pallett
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_bmj("default")(7))
-#' show_col(pal_bmj("default", alpha = 0.6)(7))
+#' show_col(pal_bmj("default")(9))
+#' show_col(pal_bmj("default", alpha = 0.6)(9))
 pal_bmj <- function(palette = c("default"), alpha = 1) {
   palette <- match.arg(palette)
 
@@ -37,7 +35,7 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Journal of the American Medical Association Color Scales
+#' BMJ Color Scales
 #'
 #' See \code{\link{pal_bmj}} for details.
 #'
@@ -48,8 +46,7 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Hui Chen <\email{huichen@@zju.edu.cn}>
 #'
 #' @rdname scale_bmj
 #'
