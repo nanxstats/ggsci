@@ -55,6 +55,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-jama-1.png" width="100%" style="display: block; margin: auto;" />
 
+### BMJ
+
+<img src="man/figures/README-ggsci-bmj-1.png" width="100%" style="display: block; margin: auto;" />
+
 ### JCO
 
 <img src="man/figures/README-ggsci-jco-1.png" width="100%" style="display: block; margin: auto;" />

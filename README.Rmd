@@ -126,6 +126,14 @@ p2_jama <- p2 + scale_fill_jama()
 grid.arrange(p1_jama, p2_jama, ncol = 2)
 ```
 
+### BMJ
+
+```{r, ggsci-bmj}
+p1_bmj <- p1 + scale_color_bmj()
+p2_bmj <- p2 + scale_fill_bmj()
+grid.arrange(p1_bmj, p2_bmj, ncol = 2)
+```
+
 ### JCO
 
 ```{r, ggsci-jco}
