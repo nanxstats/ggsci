@@ -50,7 +50,7 @@ ggsci_db$"jama"$"default" <- c(
 )
 
 # Color palette from BMJ living style guide
-# http://technology.bmj.com/living-style-guide/colour.html
+# https://technology.bmj.com/living-style-guide/colour.html
 ggsci_db$"bmj"$"default" <- c(
   "Blue" = "#2A6EBB",
   "Yellow" = "#F0AB00",
