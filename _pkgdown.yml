@@ -36,6 +36,12 @@ reference:
       - scale_color_jama
       - scale_colour_jama
       - scale_fill_jama
+  - title: "BMJ"
+    contents:
+      - pal_bmj
+      - scale_color_bmj
+      - scale_colour_bmj
+      - scale_fill_bmj
   - title: "JCO"
     contents:
       - pal_jco

@@ -70,6 +70,9 @@ summarized in the table below.
 | JAMA            | `scale_color_jama()`         | `"default"`                    | `pal_jama()`         |
 |                 | `scale_fill_jama()`          |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| BMJ             | `scale_color_bmj()`          | `"default"`                    | `pal_bmj()`          |
+|                 | `scale_fill_bmj()`           |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | JCO             | `scale_color_jco()`          | `"default"`                    | `pal_jco()`          |
 |                 | `scale_fill_jco()`           |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -213,6 +216,17 @@ _Journal of the American Medical Association_:
 p1_jama <- p1 + scale_color_jama()
 p2_jama <- p2 + scale_fill_jama()
 grid.arrange(p1_jama, p2_jama, ncol = 2)
+```
+
+### BMJ
+
+The BMJ palette is from the
+[BMJ living style guide](https://technology.bmj.com/living-style-guide/colour.html):
+
+```{r}
+p1_bmj <- p1 + scale_color_bmj()
+p2_bmj <- p2 + scale_fill_bmj()
+grid.arrange(p1_bmj, p2_bmj, ncol = 2)
 ```
 
 ### JCO
