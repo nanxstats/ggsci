@@ -49,16 +49,17 @@ ggsci_db$"jama"$"default" <- c(
   "Makara" = "#80796B"
 )
 
-# Color palette inspired by plots in BMJ (http://technology.bmj.com/living-style-guide/colour.html)
+# Color palette from BMJ living style guide
+# http://technology.bmj.com/living-style-guide/colour.html
 ggsci_db$"bmj"$"default" <- c(
-  "Blue" = "#2A6EBB", 
-  "Yellow" = "#F0AB00", 
+  "Blue" = "#2A6EBB",
+  "Yellow" = "#F0AB00",
   "Pink" = "#C50084",
-  "Purple" = "#7D5CC6", 
+  "Purple" = "#7D5CC6",
   "Orange" = "#E37222",
   "Green" = "#69BE28",
   "Aqua" = "#00B2A9",
-  "Red" = "#CD202C", 
+  "Red" = "#CD202C",
   "Grey" = "#747678"
 )
 
@@ -521,7 +522,9 @@ test_barplot("futurama", "planetexpress")
 test_barplot("rickandmorty", "schwifty")
 test_barplot("simpsons", "springfield")
 test_barplot("gsea", "default")
-test_barplot("flatuiau", "intense")
+test_barplot("flatui", "default")
+test_barplot("flatui", "flattastic")
+test_barplot("flatui", "aussie")
 test_barplot("material", "red")
 test_barplot("material", "pink")
 test_barplot("material", "purple")
