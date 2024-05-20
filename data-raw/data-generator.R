@@ -49,6 +49,19 @@ ggsci_db$"jama"$"default" <- c(
   "Makara" = "#80796B"
 )
 
+# Color palette inspired by plots in BMJ (http://technology.bmj.com/living-style-guide/colour.html)
+ggsci_db$"bmj"$"default" <- c(
+  "Blue" = "#2A6EBB", 
+  "Yellow" = "#F0AB00", 
+  "Pink" = "#C50084",
+  "Purple" = "#7D5CC6", 
+  "Orange" = "#E37222",
+  "Green" = "#69BE28",
+  "Aqua" = "#00B2A9",
+  "Red" = "#CD202C", 
+  "Grey" = "#747678"
+)
+
 # Color palette inspired by plots in Journal of Clinical Oncology
 ggsci_db$"jco"$"default" <- c(
   "Lochmara" = "#0073C2", "Corn" = "#EFC000",
@@ -486,6 +499,7 @@ test_barplot("aaas", "default")
 test_barplot("nejm", "default")
 test_barplot("lancet", "lanonc")
 test_barplot("jama", "default")
+test_barplot("bmj", "default")
 test_barplot("jco", "default")
 test_barplot("ucscgb", "default")
 test_barplot("d3", "category10")
