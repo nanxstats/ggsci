@@ -40,6 +40,9 @@
     <loc>https://nanx.me/ggsci/reference/pal_aaas.html</loc>
   </url>
   <url>
+    <loc>https://nanx.me/ggsci/reference/pal_bmj.html</loc>
+  </url>
+  <url>
     <loc>https://nanx.me/ggsci/reference/pal_cosmic.html</loc>
   </url>
   <url>
@@ -107,6 +110,9 @@
   </url>
   <url>
     <loc>https://nanx.me/ggsci/reference/scale_aaas.html</loc>
+  </url>
+  <url>
+    <loc>https://nanx.me/ggsci/reference/scale_bmj.html</loc>
   </url>
   <url>
     <loc>https://nanx.me/ggsci/reference/scale_cosmic.html</loc>
