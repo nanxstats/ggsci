@@ -18,12 +18,12 @@ Currently there is one available option: \code{"default"}
 (8-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
 }
 \description{
-See \code{\link{pal_nejm}} for details.
+See \code{\link[=pal_nejm]{pal_nejm()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -47,6 +47,6 @@ ggplot(
   scale_fill_nejm()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
+<\url{https://nanx.me}>
 }

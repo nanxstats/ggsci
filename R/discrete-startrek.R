@@ -1,12 +1,12 @@
 #' Star Trek Color Palettes
 #'
-#' Color palettes inspired by the colors used in \emph{Star Trek}.
+#' Color palettes inspired by the colors used in *Star Trek*.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"uniform"}
+#' Currently there is one available option: `"uniform"`
 #' (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_startrek
 #'
@@ -14,7 +14,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -38,17 +38,17 @@ pal_startrek <- function(palette = c("uniform"), alpha = 1) {
 
 #' Star Trek Color Scales
 #'
-#' See \code{\link{pal_startrek}} for details.
+#' See [pal_startrek()] for details.
 #'
 #' @inheritParams pal_startrek
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_startrek
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_startrek
 #'

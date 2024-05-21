@@ -4,11 +4,11 @@
 #' heatmaps plotted by GSEA GenePattern.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
+#' Currently there is one available option: `"default"`
 #' (continuous palette with 12 base colors).
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #' @param reverse Logical. Should the order of the colors be reversed?
 #'
 #' @export rgb_gsea
@@ -17,10 +17,10 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @note The 12 base colors used in this palette are derived from the
-#' \href{https://modulerepository.genepattern.org/gpModuleRepository/download/prod/module/?file=/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf}{HeatMapImage documentation}.
+#' [HeatMapImage documentation](https://modulerepository.genepattern.org/gpModuleRepository/download/prod/module/?file=/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf).
 #'
 #' @examples
 #' library("scales")
@@ -56,7 +56,7 @@ rgb_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -70,17 +70,17 @@ pal_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 
 #' The GSEA GenePattern Color Scales
 #'
-#' See \code{\link{pal_gsea}} for details.
+#' See [pal_gsea()] for details.
 #'
 #' @inheritParams pal_gsea
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_gsea
 #'
 #' @importFrom ggplot2 scale_color_gradientn
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_gsea
 #'

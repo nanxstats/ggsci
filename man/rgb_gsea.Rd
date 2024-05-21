@@ -14,7 +14,7 @@ Currently there is one available option: \code{"default"}
 \item{n}{Number of individual colors to be generated.}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
 \item{reverse}{Logical. Should the order of the colors be reversed?}
 }
@@ -33,5 +33,5 @@ show_col(pal_gsea("default", n = 30, alpha = 0.6, reverse = TRUE)(30))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+<\url{https://nanx.me}>
 }

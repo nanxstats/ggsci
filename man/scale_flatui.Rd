@@ -32,12 +32,12 @@ Currently there are three available option:
 \code{"aussie"} (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
 }
 \description{
-See \code{\link{pal_flatui}} for details.
+See \code{\link[=pal_flatui]{pal_flatui()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -71,5 +71,5 @@ p1 + scale_color_flatui(palette = "aussie")
 p2 + scale_fill_flatui(palette = "aussie")
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse \if{html}{\out{<\email{cat3@hi.is}>}}
 }

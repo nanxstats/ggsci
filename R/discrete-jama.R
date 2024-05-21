@@ -1,13 +1,13 @@
 #' Journal of the American Medical Association Color Palettes
 #'
 #' Color palette inspired by plots in
-#' \emph{The Journal of the American Medical Association}.
+#' *The Journal of the American Medical Association*.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
+#' Currently there is one available option: `"default"`
 #' (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_jama
 #'
@@ -15,7 +15,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -39,17 +39,17 @@ pal_jama <- function(palette = c("default"), alpha = 1) {
 
 #' Journal of the American Medical Association Color Scales
 #'
-#' See \code{\link{pal_jama}} for details.
+#' See [pal_jama()] for details.
 #'
 #' @inheritParams pal_jama
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_jama
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_jama
 #'

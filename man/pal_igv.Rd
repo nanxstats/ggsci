@@ -13,7 +13,7 @@ There are two available options:
 \code{"alternating"} (2-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes based on the colors used by
@@ -30,6 +30,6 @@ Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov.
 Integrative Genomics Viewer. \emph{Nature Biotechnology} 29, 24--26 (2011).
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
+<\url{https://nanx.me}>
 }

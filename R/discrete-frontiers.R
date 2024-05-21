@@ -1,12 +1,12 @@
 #' Frontiers Color Palettes
 #'
-#' Color palettes inspired by the colors used in \emph{Frontiers}.
+#' Color palettes inspired by the colors used in *Frontiers*.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
+#' Currently there is one available option: `"default"`
 #' (10-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_frontiers
 #'
@@ -37,10 +37,10 @@ pal_frontiers <- function(palette = c("default"), alpha = 1) {
 
 #' Frontiers Color Scales
 #'
-#' See \code{\link{pal_frontiers}} for details.
+#' See [pal_frontiers()] for details.
 #'
 #' @inheritParams pal_frontiers
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_frontiers
 #'

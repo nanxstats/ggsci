@@ -17,12 +17,11 @@ pal_cosmic(
 \href{https://pubmed.ncbi.nlm.nih.gov/21376230/}{Hanahan and Weinberg (2011)}.}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in projects from the
-\href{https://cancer.sanger.ac.uk/cosmic}{Catalogue Of
-Somatic Mutations in Cancers (COSMIC)}
+\href{https://cancer.sanger.ac.uk/cosmic}{Catalogue Of Somatic Mutations in Cancers (COSMIC)}
 }
 \examples{
 library("scales")
@@ -34,6 +33,6 @@ show_col(pal_cosmic("signature_substitutions")(6))
 show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 }
 \author{
-Joshua H. Cook <\email{joshuacook0023@gmail.com}> |
+Joshua H. Cook \if{html}{\out{<\email{joshuacook0023@gmail.com}>}} |
 <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
 }

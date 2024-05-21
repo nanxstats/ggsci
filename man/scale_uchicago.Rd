@@ -20,12 +20,12 @@ There are 3 available options:
 \code{"dark"} (9-color dark palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
 }
 \description{
-See \code{\link{pal_uchicago}} for details.
+See \code{\link[=pal_uchicago]{pal_uchicago()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -59,6 +59,6 @@ p2 + scale_fill_uchicago(palette = "dark")
 \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
+<\url{https://nanx.me}>
 }

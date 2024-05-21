@@ -1,13 +1,13 @@
 #' Lancet Journal Color Palettes
 #'
 #' Color palettes inspired by plots in Lancet journals,
-#' such as \emph{Lancet Oncology}.
+#' such as *Lancet Oncology*.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"lanonc"}
-#' (9-color palette inspired by \emph{Lancet Oncology}).
+#' Currently there is one available option: `"lanonc"`
+#' (9-color palette inspired by *Lancet Oncology*).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_lancet
 #'
@@ -15,7 +15,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -39,17 +39,17 @@ pal_lancet <- function(palette = c("lanonc"), alpha = 1) {
 
 #' Lancet Journal Color Scales
 #'
-#' See \code{\link{pal_lancet}} for details.
+#' See [pal_lancet()] for details.
 #'
 #' @inheritParams pal_lancet
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_lancet
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_lancet
 #'

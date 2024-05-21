@@ -14,7 +14,7 @@ There are 3 available options:
 \code{"dark"} (9-color dark palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes based on the colors used by the University of Chicago.
@@ -29,6 +29,6 @@ show_col(pal_uchicago("dark")(9))
 \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
+<\url{https://nanx.me}>
 }

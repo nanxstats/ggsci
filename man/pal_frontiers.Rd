@@ -12,7 +12,7 @@ Currently there is one available option: \code{"default"}
 (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Frontiers}.
@@ -23,5 +23,5 @@ show_col(pal_frontiers("default")(7))
 show_col(pal_frontiers("default", alpha = 0.6)(7))
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse \if{html}{\out{<\email{cat3@hi.is}>}}
 }

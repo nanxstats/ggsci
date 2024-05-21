@@ -5,30 +5,30 @@
 #' @param palette Palette type.
 #' There are 19 available options:
 #' \itemize{
-#' \item \code{"red"}
-#' \item \code{"pink"}
-#' \item \code{"purple"}
-#' \item \code{"deep-purple"}
-#' \item \code{"indigo"}
-#' \item \code{"blue"}
-#' \item \code{"light-blue"}
-#' \item \code{"cyan"}
-#' \item \code{"teal"}
-#' \item \code{"green"}
-#' \item \code{"light-green"}
-#' \item \code{"lime"}
-#' \item \code{"yellow"}
-#' \item \code{"amber"}
-#' \item \code{"orange"},
-#' \item \code{"deep-orange"}
-#' \item \code{"brown"}
-#' \item \code{"grey"}
-#' \item \code{"blue-grey"}}
-#' See \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}
+#' \item `"red"`
+#' \item `"pink"`
+#' \item `"purple"`
+#' \item `"deep-purple"`
+#' \item `"indigo"`
+#' \item `"blue"`
+#' \item `"light-blue"`
+#' \item `"cyan"`
+#' \item `"teal"`
+#' \item `"green"`
+#' \item `"light-green"`
+#' \item `"lime"`
+#' \item `"yellow"`
+#' \item `"amber"`
+#' \item `"orange"`,
+#' \item `"deep-orange"`
+#' \item `"brown"`
+#' \item `"grey"`
+#' \item `"blue-grey"`}
+#' See [Material Design color system](https://m2.material.io/design/color/the-color-system.html)
 #' for details.
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #' @param reverse Logical. Should the order of the colors be reversed?
 #'
 #' @export rgb_material
@@ -37,10 +37,10 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @references
-#' \url{https://m2.material.io/design/color/the-color-system.html}
+#' <https://m2.material.io/design/color/the-color-system.html>
 #'
 #' @examples
 #' library("scales")
@@ -80,7 +80,7 @@ rgb_material <- function(
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -100,17 +100,17 @@ pal_material <- function(
 
 #' Material Design Color Palettes
 #'
-#' See \code{\link{pal_material}} for details.
+#' See [pal_material()] for details.
 #'
 #' @inheritParams pal_material
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_material
 #'
 #' @importFrom ggplot2 scale_color_gradientn
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_material
 #'

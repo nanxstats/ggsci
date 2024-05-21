@@ -12,7 +12,7 @@ Currently there is one available option: \code{"legacy"}
 (7-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Tron Legacy}.
@@ -24,5 +24,5 @@ show_col(pal_tron("legacy", alpha = 0.6)(7))
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+<\url{https://nanx.me}>
 }

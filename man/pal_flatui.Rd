@@ -14,7 +14,7 @@ Currently there are three available option:
 \code{"aussie"} (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Flat UI Colors}.

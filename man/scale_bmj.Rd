@@ -18,12 +18,12 @@ Currently there is one available option: \code{"default"}
 (9-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
 }
 \description{
-See \code{\link{pal_bmj}} for details.
+See \code{\link[=pal_bmj]{pal_bmj()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -47,5 +47,5 @@ ggplot(
   scale_fill_bmj()
 }
 \author{
-Hui Chen <\email{huichen@zju.edu.cn}>
+Hui Chen \if{html}{\out{<\email{huichen@zju.edu.cn}>}}
 }

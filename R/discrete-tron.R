@@ -1,12 +1,12 @@
 #' Tron Legacy Color Palettes
 #'
-#' Color palettes inspired by the colors used in \emph{Tron Legacy}.
+#' Color palettes inspired by the colors used in *Tron Legacy*.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"legacy"}
+#' Currently there is one available option: `"legacy"`
 #' (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_tron
 #'
@@ -14,7 +14,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -38,17 +38,17 @@ pal_tron <- function(palette = c("legacy"), alpha = 1) {
 
 #' Tron Legacy Color Scales
 #'
-#' See \code{\link{pal_tron}} for details.
+#' See [pal_tron()] for details.
 #'
 #' @inheritParams pal_tron
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_tron
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_tron
 #'

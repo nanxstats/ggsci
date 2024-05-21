@@ -19,12 +19,12 @@ There are two available options:
 \code{"alternating"} (2-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
 }
 \description{
-See \code{\link{pal_igv}} for details.
+See \code{\link[=pal_igv]{pal_igv()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -57,5 +57,5 @@ p2 + scale_fill_manual(
 }
 \author{
 Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+<\url{https://nanx.me}>
 }

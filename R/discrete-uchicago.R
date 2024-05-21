@@ -4,11 +4,11 @@
 #'
 #' @param palette Palette type.
 #' There are 3 available options:
-#' \code{"default"} (9-color palette);
-#' \code{"light"} (9-color light palette);
-#' \code{"dark"} (9-color dark palette).
+#' `"default"` (9-color palette);
+#' `"light"` (9-color light palette);
+#' `"dark"` (9-color dark palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_uchicago
 #'
@@ -16,9 +16,9 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
-#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+#' @references <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @examples
 #' library("scales")
@@ -43,19 +43,19 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
 
 #' The University of Chicago Color Scales
 #'
-#' See \code{\link{pal_uchicago}} for details.
+#' See [pal_uchicago()] for details.
 #'
 #' @inheritParams pal_uchicago
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_uchicago
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
-#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+#' @references <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @rdname scale_uchicago
 #'

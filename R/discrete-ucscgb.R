@@ -3,10 +3,10 @@
 #' Color palette from UCSC Genome Browser chromosome colors.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
+#' Currently there is one available option: `"default"`
 #' (26-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_ucscgb
 #'
@@ -14,7 +14,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @examples
 #' library("scales")
@@ -38,17 +38,17 @@ pal_ucscgb <- function(palette = c("default"), alpha = 1) {
 
 #' UCSC Genome Browser Color Scales
 #'
-#' See \code{\link{pal_ucscgb}} for details.
+#' See [pal_ucscgb()] for details.
 #'
 #' @inheritParams pal_ucscgb
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... additional parameters for [ggplot2::discrete_scale()]
 #'
 #' @export scale_color_ucscgb
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
 #' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' <[https://nanx.me](https://nanx.me)>
 #'
 #' @rdname scale_ucscgb
 #'

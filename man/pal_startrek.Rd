@@ -12,7 +12,7 @@ Currently there is one available option: \code{"uniform"}
 (7-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Star Trek}.
@@ -23,6 +23,6 @@ show_col(pal_startrek("uniform")(7))
 show_col(pal_startrek("uniform", alpha = 0.6)(7))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
+<\url{https://nanx.me}>
 }
