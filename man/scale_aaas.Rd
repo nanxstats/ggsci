@@ -4,7 +4,7 @@
 \alias{scale_color_aaas}
 \alias{scale_colour_aaas}
 \alias{scale_fill_aaas}
-\title{AAAS Journal Color Scales}
+\title{AAAS journal color scales}
 \usage{
 scale_color_aaas(palette = c("default"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"default"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_aaas]{pal_aaas()}} for details.

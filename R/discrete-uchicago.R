@@ -1,14 +1,14 @@
-#' The University of Chicago Color Palettes
+#' The University of Chicago color palettes
 #'
 #' Color palettes based on the colors used by the University of Chicago.
 #'
 #' @param palette Palette type.
-#' There are 3 available options:
-#' `"default"` (9-color palette);
-#' `"light"` (9-color light palette);
-#' `"dark"` (9-color dark palette).
+#'   There are three available options:
+#'   - `"default"` (9-color palette);
+#'   - `"light"` (9-color light palette);
+#'   - `"dark"` (9-color dark palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_uchicago
 #'
@@ -41,12 +41,12 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' The University of Chicago Color Scales
+#' The University of Chicago color scales
 #'
 #' See [pal_uchicago()] for details.
 #'
 #' @inheritParams pal_uchicago
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_uchicago
 #'

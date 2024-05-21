@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-ucscgb.R
 \name{pal_ucscgb}
 \alias{pal_ucscgb}
-\title{UCSC Genome Browser Color Palette}
+\title{UCSC Genome Browser color palette}
 \usage{
 pal_ucscgb(palette = c("default"), alpha = 1)
 }

@@ -1,14 +1,14 @@
-#' AAAS Journal Color Palettes
+#' AAAS journal color palettes
 #'
 #' Color palettes inspired by plots in journals published by
 #' American Association for the Advancement of Science (AAAS),
-#' such as *Science* and *Science Translational Medicine*.
+#' such as _Science_ and _Science Translational Medicine_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (10-color palette inspired by *Science*).
+#'   Currently there is one available option: `"default"`
+#'   (10-color palette inspired by _Science_).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_aaas
 #'
@@ -37,12 +37,12 @@ pal_aaas <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' AAAS Journal Color Scales
+#' AAAS journal color scales
 #'
 #' See [pal_aaas()] for details.
 #'
 #' @inheritParams pal_aaas
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_aaas
 #'

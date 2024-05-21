@@ -2,7 +2,7 @@
 % Please edit documentation in R/continuous-material.R
 \name{pal_material}
 \alias{pal_material}
-\title{Material Design Color Palettes}
+\title{Material Design color palettes}
 \usage{
 pal_material(
   palette = c("red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue",
@@ -14,8 +14,7 @@ pal_material(
 )
 }
 \arguments{
-\item{palette}{Palette type.
-There are 19 available options:
+\item{palette}{Palette type. There are 19 available options:
 \itemize{
 \item \code{"red"}
 \item \code{"pink"}
@@ -35,9 +34,10 @@ There are 19 available options:
 \item \code{"deep-orange"}
 \item \code{"brown"}
 \item \code{"grey"}
-\item \code{"blue-grey"}}
-See \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}
-for details.}
+\item \code{"blue-grey"}
+}
+
+For details, see \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}.}
 
 \item{n}{Number of individual colors to be generated.}
 
@@ -47,7 +47,7 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 \item{reverse}{Logical. Should the order of the colors be reversed?}
 }
 \description{
-The Material Design color palettes.
+The Material Design 2 color palettes.
 }
 \examples{
 library("scales")

@@ -1,15 +1,14 @@
-#' D3.js Color Palettes
+#' D3.js color palettes
 #'
 #' Color palettes based on the colors used by D3.js.
 #'
-#' @param palette Palette type.
-#' There are 4 available options:
-#' `"category10"` (10-color palette);
-#' `"category20"` (20-color palette);
-#' `"category20b"` (20-color palette);
-#' `"category20c"` (20-color palette).
+#' @param palette Palette type. There are four available options:
+#'   - `"category10"` (10-color palette).
+#'   - `"category20"` (20-color palette).
+#'   - `"category20b"` (20-color palette).
+#'   - `"category20c"` (20-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_d3
 #'
@@ -43,12 +42,12 @@ pal_d3 <- function(palette = c("category10", "category20", "category20b", "categ
   manual_pal(unname(alpha_cols))
 }
 
-#' D3.js Color Scales
+#' D3.js color scales
 #'
 #' See [pal_d3()] for details.
 #'
 #' @inheritParams pal_d3
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_d3
 #'

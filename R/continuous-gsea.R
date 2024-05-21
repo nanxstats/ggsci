@@ -1,14 +1,14 @@
-#' The GSEA GenePattern Color Palettes
+#' The GSEA GenePattern color palettes
 #'
 #' Color palette inspired by the colors used in the
 #' heatmaps plotted by GSEA GenePattern.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (continuous palette with 12 base colors).
+#'   Currently there is one available option: `"default"`
+#'   (continuous palette with 12 base colors).
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #' @param reverse Logical. Should the order of the colors be reversed?
 #'
 #' @export rgb_gsea
@@ -43,7 +43,7 @@ rgb_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
   alpha_cols
 }
 
-#' The GSEA GenePattern Color Palettes
+#' The GSEA GenePattern color palettes
 #'
 #' Color palette inspired by the colors used in the
 #' heatmaps plotted by GSEA GenePattern.
@@ -66,12 +66,12 @@ pal_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
   manual_pal(unname(alpha_cols))
 }
 
-#' The GSEA GenePattern Color Scales
+#' The GSEA GenePattern color scales
 #'
 #' See [pal_gsea()] for details.
 #'
 #' @inheritParams pal_gsea
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_gsea
 #'

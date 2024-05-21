@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-jama.R
 \name{pal_jama}
 \alias{pal_jama}
-\title{Journal of the American Medical Association Color Palettes}
+\title{Journal of the American Medical Association color palettes}
 \usage{
 pal_jama(palette = c("default"), alpha = 1)
 }

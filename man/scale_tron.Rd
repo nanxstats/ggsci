@@ -4,7 +4,7 @@
 \alias{scale_color_tron}
 \alias{scale_colour_tron}
 \alias{scale_fill_tron}
-\title{Tron Legacy Color Scales}
+\title{Tron Legacy color scales}
 \usage{
 scale_color_tron(palette = c("legacy"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"legacy"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_tron]{pal_tron()}} for details.

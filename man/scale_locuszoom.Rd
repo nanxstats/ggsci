@@ -4,7 +4,7 @@
 \alias{scale_color_locuszoom}
 \alias{scale_colour_locuszoom}
 \alias{scale_fill_locuszoom}
-\title{LocusZoom Color Scales}
+\title{LocusZoom color scales}
 \usage{
 scale_color_locuszoom(palette = c("default"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"default"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_locuszoom]{pal_locuszoom()}} for details.

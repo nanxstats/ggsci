@@ -2,15 +2,17 @@
 % Please edit documentation in R/discrete-igv.R
 \name{pal_igv}
 \alias{pal_igv}
-\title{Integrative Genomics Viewer (IGV) Color Palettes}
+\title{Integrative Genomics Viewer (IGV) color palettes}
 \usage{
 pal_igv(palette = c("default", "alternating"), alpha = 1)
 }
 \arguments{
 \item{palette}{Palette type.
 There are two available options:
-\code{"default"} (51-color palette);
-\code{"alternating"} (2-color palette).}
+\itemize{
+\item \code{"default"} (51-color palette).
+\item \code{"alternating"} (2-color palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}

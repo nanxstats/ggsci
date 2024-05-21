@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-simpsons.R
 \name{pal_simpsons}
 \alias{pal_simpsons}
-\title{The Simpsons Color Palettes}
+\title{The Simpsons color palettes}
 \usage{
 pal_simpsons(palette = c("springfield"), alpha = 1)
 }

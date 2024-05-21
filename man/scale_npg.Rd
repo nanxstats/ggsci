@@ -4,7 +4,7 @@
 \alias{scale_color_npg}
 \alias{scale_colour_npg}
 \alias{scale_fill_npg}
-\title{NPG Journal Color Scales}
+\title{NPG journal color scales}
 \usage{
 scale_color_npg(palette = c("nrc"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"nrc"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_npg]{pal_npg()}} for details.

@@ -1,12 +1,12 @@
-#' Tron Legacy Color Palettes
+#' Tron Legacy color palettes
 #'
-#' Color palettes inspired by the colors used in *Tron Legacy*.
+#' Color palettes inspired by the colors used in _Tron Legacy_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"legacy"`
-#' (7-color palette).
+#'   Currently there is one available option: `"legacy"`
+#'   (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_tron
 #'
@@ -35,12 +35,12 @@ pal_tron <- function(palette = c("legacy"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Tron Legacy Color Scales
+#' Tron Legacy color scales
 #'
 #' See [pal_tron()] for details.
 #'
 #' @inheritParams pal_tron
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_tron
 #'

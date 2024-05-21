@@ -1,12 +1,12 @@
-#' The Futurama Color Palettes
+#' Futurama color palettes
 #'
-#' Color palettes inspired by the colors used in *Futurama*.
+#' Color palettes inspired by the colors used in _Futurama_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"planetexpress"`
-#' (12-color palette).
+#'   Currently there is one available option: `"planetexpress"`
+#'   (12-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_futurama
 #'
@@ -35,12 +35,12 @@ pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' The Futurama Color Scales
+#' Futurama color scales
 #'
 #' See [pal_futurama()] for details.
 #'
 #' @inheritParams pal_futurama
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_futurama
 #'

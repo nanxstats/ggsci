@@ -4,7 +4,7 @@
 \alias{scale_color_jama}
 \alias{scale_colour_jama}
 \alias{scale_fill_jama}
-\title{Journal of the American Medical Association Color Scales}
+\title{Journal of the American Medical Association color scales}
 \usage{
 scale_color_jama(palette = c("default"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"default"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_jama]{pal_jama()}} for details.

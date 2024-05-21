@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-locuszoom.R
 \name{pal_locuszoom}
 \alias{pal_locuszoom}
-\title{LocusZoom Color Palette}
+\title{LocusZoom color palette}
 \usage{
 pal_locuszoom(palette = c("default"), alpha = 1)
 }

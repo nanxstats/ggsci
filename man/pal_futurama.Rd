@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-futurama.R
 \name{pal_futurama}
 \alias{pal_futurama}
-\title{The Futurama Color Palettes}
+\title{Futurama color palettes}
 \usage{
 pal_futurama(palette = c("planetexpress"), alpha = 1)
 }

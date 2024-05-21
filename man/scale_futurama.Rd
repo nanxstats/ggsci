@@ -4,7 +4,7 @@
 \alias{scale_color_futurama}
 \alias{scale_colour_futurama}
 \alias{scale_fill_futurama}
-\title{The Futurama Color Scales}
+\title{Futurama color scales}
 \usage{
 scale_color_futurama(palette = c("planetexpress"), alpha = 1, ...)
 
@@ -20,7 +20,7 @@ Currently there is one available option: \code{"planetexpress"}
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
 See \code{\link[=pal_futurama]{pal_futurama()}} for details.

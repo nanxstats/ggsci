@@ -1,13 +1,13 @@
-#' Lancet Journal Color Palettes
+#' Lancet journal color palettes
 #'
 #' Color palettes inspired by plots in Lancet journals,
-#' such as *Lancet Oncology*.
+#' such as _Lancet Oncology_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"lanonc"`
-#' (9-color palette inspired by *Lancet Oncology*).
+#'   Currently there is one available option: `"lanonc"`
+#'   (9-color palette inspired by _Lancet Oncology_).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_lancet
 #'
@@ -36,12 +36,12 @@ pal_lancet <- function(palette = c("lanonc"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Lancet Journal Color Scales
+#' Lancet journal color scales
 #'
 #' See [pal_lancet()] for details.
 #'
 #' @inheritParams pal_lancet
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_lancet
 #'

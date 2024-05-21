@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-tron.R
 \name{pal_tron}
 \alias{pal_tron}
-\title{Tron Legacy Color Palettes}
+\title{Tron Legacy color palettes}
 \usage{
 pal_tron(palette = c("legacy"), alpha = 1)
 }

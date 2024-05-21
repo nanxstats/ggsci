@@ -1,12 +1,12 @@
-#' BMJ Color Palettes
+#' BMJ color palettes
 #'
 #' Color palette from the BMJ living style guide.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (9-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (9-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_bmj
 #'
@@ -38,12 +38,12 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' BMJ Color Scales
+#' BMJ color scales
 #'
 #' See [pal_bmj()] for details.
 #'
 #' @inheritParams pal_bmj
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_bmj
 #'

@@ -1,13 +1,13 @@
-#' NPG Journal Color Palettes
+#' NPG journal color palettes
 #'
 #' Color palettes inspired by plots in journals published by
-#' Nature Publishing Group, such as *Nature Reviews Cancer*.
+#' Nature Publishing Group, such as _Nature Reviews Cancer_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"nrc"`
-#' (10-color palette inspired by *Nature Reviews Cancer*).
+#'   Currently there is one available option: `"nrc"`
+#'   (10-color palette inspired by _Nature Reviews Cancer_).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_npg
 #'
@@ -36,12 +36,12 @@ pal_npg <- function(palette = c("nrc"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' NPG Journal Color Scales
+#' NPG journal color scales
 #'
 #' See [pal_npg()] for details.
 #'
 #' @inheritParams pal_npg
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_npg
 #'

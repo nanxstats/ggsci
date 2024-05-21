@@ -2,7 +2,7 @@
 % Please edit documentation in R/continuous-gsea.R
 \name{rgb_gsea}
 \alias{rgb_gsea}
-\title{The GSEA GenePattern Color Palettes}
+\title{The GSEA GenePattern color palettes}
 \usage{
 rgb_gsea(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 }

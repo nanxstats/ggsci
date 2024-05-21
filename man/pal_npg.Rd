@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-npg.R
 \name{pal_npg}
 \alias{pal_npg}
-\title{NPG Journal Color Palettes}
+\title{NPG journal color palettes}
 \usage{
 pal_npg(palette = c("nrc"), alpha = 1)
 }

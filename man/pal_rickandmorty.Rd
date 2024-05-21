@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-rickandmorty.R
 \name{pal_rickandmorty}
 \alias{pal_rickandmorty}
-\title{Rick and Morty Color Palettes}
+\title{Rick and Morty color palettes}
 \usage{
 pal_rickandmorty(palette = c("schwifty"), alpha = 1)
 }

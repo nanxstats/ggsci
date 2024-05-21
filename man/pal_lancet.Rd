@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-lancet.R
 \name{pal_lancet}
 \alias{pal_lancet}
-\title{Lancet Journal Color Palettes}
+\title{Lancet journal color palettes}
 \usage{
 pal_lancet(palette = c("lanonc"), alpha = 1)
 }

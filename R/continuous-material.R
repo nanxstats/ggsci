@@ -1,34 +1,34 @@
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
-#' The Material Design color palettes.
+#' The Material Design 2 color palettes.
 #'
-#' @param palette Palette type.
-#' There are 19 available options:
-#' \itemize{
-#' \item `"red"`
-#' \item `"pink"`
-#' \item `"purple"`
-#' \item `"deep-purple"`
-#' \item `"indigo"`
-#' \item `"blue"`
-#' \item `"light-blue"`
-#' \item `"cyan"`
-#' \item `"teal"`
-#' \item `"green"`
-#' \item `"light-green"`
-#' \item `"lime"`
-#' \item `"yellow"`
-#' \item `"amber"`
-#' \item `"orange"`,
-#' \item `"deep-orange"`
-#' \item `"brown"`
-#' \item `"grey"`
-#' \item `"blue-grey"`}
-#' See [Material Design color system](https://m2.material.io/design/color/the-color-system.html)
-#' for details.
+#' @param palette Palette type. There are 19 available options:
+#'   - `"red"`
+#'   - `"pink"`
+#'   - `"purple"`
+#'   - `"deep-purple"`
+#'   - `"indigo"`
+#'   - `"blue"`
+#'   - `"light-blue"`
+#'   - `"cyan"`
+#'   - `"teal"`
+#'   - `"green"`
+#'   - `"light-green"`
+#'   - `"lime"`
+#'   - `"yellow"`
+#'   - `"amber"`
+#'   - `"orange"`,
+#'   - `"deep-orange"`
+#'   - `"brown"`
+#'   - `"grey"`
+#'   - `"blue-grey"`
+#'
+#'   For details, see [Material Design color
+#'   system](https://m2.material.io/design/color/the-color-system.html).
+#'
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #' @param reverse Logical. Should the order of the colors be reversed?
 #'
 #' @export rgb_material
@@ -68,9 +68,9 @@ rgb_material <- function(
   alpha_cols
 }
 
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
-#' The Material Design color palettes.
+#' The Material Design 2 color palettes.
 #'
 #' @inheritParams rgb_material
 #'
@@ -96,12 +96,12 @@ pal_material <- function(
   manual_pal(unname(alpha_cols))
 }
 
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
 #' See [pal_material()] for details.
 #'
 #' @inheritParams pal_material
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_material
 #'

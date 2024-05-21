@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-jco.R
 \name{pal_jco}
 \alias{pal_jco}
-\title{Journal of Clinical Oncology Color Palettes}
+\title{Journal of Clinical Oncology color palettes}
 \usage{
 pal_jco(palette = c("default"), alpha = 1)
 }

@@ -1,17 +1,18 @@
-#' COSMIC Color Palettes
+#' COSMIC color palettes
 #'
 #' Color palettes inspired by the colors used in projects from the
 #' [Catalogue Of
-#' Somatic Mutations in Cancers (COSMIC)](https://cancer.sanger.ac.uk/cosmic)
+#' Somatic Mutations in Cancers (COSMIC)](https://cancer.sanger.ac.uk/cosmic).
 #'
 #' @param palette Palette type. Currently there are three available options:
-#' `"signature_substitutions"` (6-color palette),
-#' `"hallmarks_light"` (10-color palette), and `"hallmarks_dark"`
-#' (10-color palette). The `"hallmarks_light"` option is from
-#' [Hanahan and Weinberg (2011)](https://pubmed.ncbi.nlm.nih.gov/21376230/).
+#'   - `"signature_substitutions"` (6-color palette).
+#'   - `"hallmarks_light"` (10-color palette).
+#'   - `"hallmarks_dark"` (10-color palette).
 #'
+#'   The `"hallmarks_light"` option is from
+#'   [Hanahan and Weinberg (2011)](https://pubmed.ncbi.nlm.nih.gov/21376230/).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_cosmic
 #'
@@ -47,12 +48,12 @@ pal_cosmic <- function(
   manual_pal(unname(alpha_cols))
 }
 
-#' COSMIC Color Scales
+#' COSMIC color scales
 #'
 #' See [pal_cosmic()] for details.
 #'
 #' @inheritParams pal_cosmic
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_cosmic
 #'

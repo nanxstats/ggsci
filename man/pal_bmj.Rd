@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-bmj.R
 \name{pal_bmj}
 \alias{pal_bmj}
-\title{BMJ Color Palettes}
+\title{BMJ color palettes}
 \usage{
 pal_bmj(palette = c("default"), alpha = 1)
 }

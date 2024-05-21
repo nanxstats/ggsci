@@ -1,13 +1,13 @@
-#' NEJM Color Palettes
+#' NEJM color palettes
 #'
 #' Color palette inspired by plots in
-#' *The New England Journal of Medicine*.
+#' _The New England Journal of Medicine_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (8-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (8-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_nejm
 #'
@@ -36,12 +36,12 @@ pal_nejm <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' NEJM Color Scales
+#' NEJM color scales
 #'
 #' See [pal_nejm()] for details.
 #'
 #' @inheritParams pal_nejm
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_nejm
 #'

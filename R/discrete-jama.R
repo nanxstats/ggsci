@@ -1,13 +1,13 @@
-#' Journal of the American Medical Association Color Palettes
+#' Journal of the American Medical Association color palettes
 #'
 #' Color palette inspired by plots in
-#' *The Journal of the American Medical Association*.
+#' _The Journal of the American Medical Association_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (7-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_jama
 #'
@@ -36,12 +36,12 @@ pal_jama <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Journal of the American Medical Association Color Scales
+#' Journal of the American Medical Association color scales
 #'
 #' See [pal_jama()] for details.
 #'
 #' @inheritParams pal_jama
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_jama
 #'

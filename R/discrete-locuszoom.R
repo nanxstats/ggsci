@@ -1,12 +1,12 @@
-#' LocusZoom Color Palette
+#' LocusZoom color palette
 #'
 #' Color palettes based on the colors used by LocusZoom.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: `"default"`
-#' (7-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_locuszoom
 #'
@@ -40,12 +40,12 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' LocusZoom Color Scales
+#' LocusZoom color scales
 #'
 #' See [pal_locuszoom()] for details.
 #'
 #' @inheritParams pal_locuszoom
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_locuszoom
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-aaas.R
 \name{pal_aaas}
 \alias{pal_aaas}
-\title{AAAS Journal Color Palettes}
+\title{AAAS journal color palettes}
 \usage{
 pal_aaas(palette = c("default"), alpha = 1)
 }

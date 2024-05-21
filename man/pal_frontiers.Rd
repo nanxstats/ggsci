@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-frontiers.R
 \name{pal_frontiers}
 \alias{pal_frontiers}
-\title{Frontiers Color Palettes}
+\title{Frontiers journal color palettes}
 \usage{
 pal_frontiers(palette = c("default"), alpha = 1)
 }
@@ -15,7 +15,7 @@ Currently there is one available option: \code{"default"}
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
-Color palettes inspired by the colors used in \emph{Frontiers}.
+Color palettes inspired by the colors used in \emph{Frontiers} journals.
 }
 \examples{
 library("scales")

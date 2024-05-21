@@ -1,14 +1,13 @@
-#' Flat UI Color Palettes
+#' Flat UI color palettes
 #'
-#' Color palettes inspired by the colors used in *Flat UI Colors*.
+#' Color palettes inspired by the Flat UI colors.
 #'
-#' @param palette Palette type.
-#' Currently there are three available option:
-#' `"default"` (10-color palette).
-#' `"flattastic"` (12-color palette).
-#' `"aussie"` (10-color palette).
+#' @param palette Palette type. Currently there are three available options:
+#'   - `"default"` (10-color palette).
+#'   - `"flattastic"` (12-color palette).
+#'   - `"aussie"` (10-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See `alpha` in [grDevices::rgb()] for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_flatui
 #'
@@ -39,12 +38,12 @@ pal_flatui <- function(palette = c("default", "flattastic", "aussie"), alpha = 1
   manual_pal(unname(alpha_cols))
 }
 
-#' Flat UI Color Scales
+#' Flat UI color scales
 #'
 #' See [pal_flatui()] for details.
 #'
 #' @inheritParams pal_flatui
-#' @param ... additional parameters for [ggplot2::discrete_scale()]
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_flatui
 #'

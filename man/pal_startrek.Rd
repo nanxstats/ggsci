@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-startrek.R
 \name{pal_startrek}
 \alias{pal_startrek}
-\title{Star Trek Color Palettes}
+\title{Star Trek color palettes}
 \usage{
 pal_startrek(palette = c("uniform"), alpha = 1)
 }

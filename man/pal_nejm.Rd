@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-nejm.R
 \name{pal_nejm}
 \alias{pal_nejm}
-\title{NEJM Color Palettes}
+\title{NEJM color palettes}
 \usage{
 pal_nejm(palette = c("default"), alpha = 1)
 }
