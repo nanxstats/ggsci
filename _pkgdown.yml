@@ -24,7 +24,7 @@ reference:
       - scale_color_nejm
       - scale_colour_nejm
       - scale_fill_nejm
-  - title: "NEJM"
+  - title: "Lancet"
     contents:
       - pal_lancet
       - scale_color_lancet
