@@ -4,7 +4,7 @@
 \alias{scale_color_rickandmorty}
 \alias{scale_colour_rickandmorty}
 \alias{scale_fill_rickandmorty}
-\title{Rick and Morty Color Scales}
+\title{Rick and Morty color scales}
 \usage{
 scale_color_rickandmorty(palette = c("schwifty"), alpha = 1, ...)
 
@@ -18,12 +18,12 @@ Currently there is one available option: \code{"schwifty"}
 (12-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_rickandmorty}} for details.
+See \code{\link[=pal_rickandmorty]{pal_rickandmorty()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -47,6 +47,5 @@ ggplot(
   scale_fill_rickandmorty()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

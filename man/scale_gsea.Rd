@@ -4,7 +4,7 @@
 \alias{scale_color_gsea}
 \alias{scale_colour_gsea}
 \alias{scale_fill_gsea}
-\title{The GSEA GenePattern Color Scales}
+\title{The GSEA GenePattern color scales}
 \usage{
 scale_color_gsea(palette = c("default"), alpha = 1, reverse = FALSE, ...)
 
@@ -18,14 +18,14 @@ Currently there is one available option: \code{"default"}
 (continuous palette with 12 base colors).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
 \item{reverse}{Logical. Should the order of the colors be reversed?}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_gsea}} for details.
+See \code{\link[=pal_gsea]{pal_gsea()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -44,6 +44,5 @@ ggplot(
   scale_fill_gsea()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-lancet.R
 \name{pal_lancet}
 \alias{pal_lancet}
-\title{Lancet Journal Color Palettes}
+\title{Lancet journal color palettes}
 \usage{
 pal_lancet(palette = c("lanonc"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"lanonc"}
 (9-color palette inspired by \emph{Lancet Oncology}).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by plots in Lancet journals,
@@ -24,6 +24,5 @@ show_col(pal_lancet("lanonc")(9))
 show_col(pal_lancet("lanonc", alpha = 0.6)(9))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

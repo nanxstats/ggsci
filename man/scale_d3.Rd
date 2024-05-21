@@ -4,7 +4,7 @@
 \alias{scale_color_d3}
 \alias{scale_colour_d3}
 \alias{scale_fill_d3}
-\title{D3.js Color Scales}
+\title{D3.js color scales}
 \usage{
 scale_color_d3(
   palette = c("category10", "category20", "category20b", "category20c"),
@@ -25,20 +25,21 @@ scale_fill_d3(
 )
 }
 \arguments{
-\item{palette}{Palette type.
-There are 4 available options:
-\code{"category10"} (10-color palette);
-\code{"category20"} (20-color palette);
-\code{"category20b"} (20-color palette);
-\code{"category20c"} (20-color palette).}
+\item{palette}{Palette type. There are four available options:
+\itemize{
+\item \code{"category10"} (10-color palette).
+\item \code{"category20"} (20-color palette).
+\item \code{"category20b"} (20-color palette).
+\item \code{"category20c"} (20-color palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_d3}} for details.
+See \code{\link[=pal_d3]{pal_d3()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -75,6 +76,5 @@ p2 + scale_fill_d3(palette = "category20c")
 \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-d3.R
 \name{pal_d3}
 \alias{pal_d3}
-\title{D3.js Color Palettes}
+\title{D3.js color palettes}
 \usage{
 pal_d3(
   palette = c("category10", "category20", "category20b", "category20c"),
@@ -10,15 +10,16 @@ pal_d3(
 )
 }
 \arguments{
-\item{palette}{Palette type.
-There are 4 available options:
-\code{"category10"} (10-color palette);
-\code{"category20"} (20-color palette);
-\code{"category20b"} (20-color palette);
-\code{"category20c"} (20-color palette).}
+\item{palette}{Palette type. There are four available options:
+\itemize{
+\item \code{"category10"} (10-color palette).
+\item \code{"category20"} (20-color palette).
+\item \code{"category20b"} (20-color palette).
+\item \code{"category20c"} (20-color palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes based on the colors used by D3.js.
@@ -34,6 +35,5 @@ show_col(pal_d3("category20c")(20))
 \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

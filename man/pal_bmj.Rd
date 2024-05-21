@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-bmj.R
 \name{pal_bmj}
 \alias{pal_bmj}
-\title{BMJ Color Palettes}
+\title{BMJ color palettes}
 \usage{
 pal_bmj(palette = c("default"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"default"}
 (9-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palette from the BMJ living style guide.
@@ -22,6 +22,9 @@ library("scales")
 show_col(pal_bmj("default")(9))
 show_col(pal_bmj("default", alpha = 0.6)(9))
 }
+\references{
+\url{https://technology.bmj.com/living-style-guide/colour.html}
+}
 \author{
-Hui Chen <\email{huichen@zju.edu.cn}>
+Hui Chen | \email{huichen@zju.edu.cn}
 }

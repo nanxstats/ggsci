@@ -4,7 +4,7 @@
 \alias{scale_color_frontiers}
 \alias{scale_colour_frontiers}
 \alias{scale_fill_frontiers}
-\title{Frontiers Color Scales}
+\title{Frontiers journal color scales}
 \usage{
 scale_color_frontiers(palette = c("default"), alpha = 1, ...)
 
@@ -18,12 +18,12 @@ Currently there is one available option: \code{"default"}
 (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_frontiers}} for details.
+See \code{\link[=pal_frontiers]{pal_frontiers()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -54,5 +54,5 @@ ggplot(
   scale_fill_frontiers()
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse | \email{cat3@hi.is}
 }

@@ -1,27 +1,26 @@
-#' Integrative Genomics Viewer (IGV) Color Palettes
+#' Integrative Genomics Viewer (IGV) color palettes
 #'
 #' Color palettes based on the colors used by
 #' Integrative Genomics Viewer (IGV).
 #'
 #' @param palette Palette type.
-#' There are two available options:
-#' \code{"default"} (51-color palette);
-#' \code{"alternating"} (2-color palette).
+#'   There are two available options:
+#'   - `"default"` (51-color palette).
+#'   - `"alternating"` (2-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_igv
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
 #' James T. Robinson, Helga Thorvaldsdóttir, Wendy Winckler,
 #' Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov.
-#' Integrative Genomics Viewer. \emph{Nature Biotechnology} 29, 24--26 (2011).
+#' Integrative Genomics Viewer. _Nature Biotechnology_ 29, 24--26 (2011).
 #'
 #' @examples
 #' library("scales")
@@ -43,19 +42,18 @@ pal_igv <- function(palette = c("default", "alternating"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Integrative Genomics Viewer (IGV) Color Scales
+#' Integrative Genomics Viewer (IGV) color scales
 #'
-#' See \code{\link{pal_igv}} for details.
+#' See [pal_igv()] for details.
 #'
 #' @inheritParams pal_igv
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_igv
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_igv
 #'

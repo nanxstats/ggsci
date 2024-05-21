@@ -1,34 +1,34 @@
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
-#' The Material Design color palettes.
+#' The Material Design 2 color palettes.
 #'
-#' @param palette Palette type.
-#' There are 19 available options:
-#' \itemize{
-#' \item \code{"red"}
-#' \item \code{"pink"}
-#' \item \code{"purple"}
-#' \item \code{"deep-purple"}
-#' \item \code{"indigo"}
-#' \item \code{"blue"}
-#' \item \code{"light-blue"}
-#' \item \code{"cyan"}
-#' \item \code{"teal"}
-#' \item \code{"green"}
-#' \item \code{"light-green"}
-#' \item \code{"lime"}
-#' \item \code{"yellow"}
-#' \item \code{"amber"}
-#' \item \code{"orange"},
-#' \item \code{"deep-orange"}
-#' \item \code{"brown"}
-#' \item \code{"grey"}
-#' \item \code{"blue-grey"}}
-#' See \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}
-#' for details.
+#' @param palette Palette type. There are 19 available options:
+#'   - `"red"`
+#'   - `"pink"`
+#'   - `"purple"`
+#'   - `"deep-purple"`
+#'   - `"indigo"`
+#'   - `"blue"`
+#'   - `"light-blue"`
+#'   - `"cyan"`
+#'   - `"teal"`
+#'   - `"green"`
+#'   - `"light-green"`
+#'   - `"lime"`
+#'   - `"yellow"`
+#'   - `"amber"`
+#'   - `"orange"`,
+#'   - `"deep-orange"`
+#'   - `"brown"`
+#'   - `"grey"`
+#'   - `"blue-grey"`
+#'
+#'   For details, see [Material Design color
+#'   system](https://m2.material.io/design/color/the-color-system.html).
+#'
 #' @param n Number of individual colors to be generated.
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #' @param reverse Logical. Should the order of the colors be reversed?
 #'
 #' @export rgb_material
@@ -36,11 +36,10 @@
 #' @importFrom grDevices colorRamp rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
-#' \url{https://m2.material.io/design/color/the-color-system.html}
+#' <https://m2.material.io/design/color/the-color-system.html>
 #'
 #' @examples
 #' library("scales")
@@ -69,9 +68,9 @@ rgb_material <- function(
   alpha_cols
 }
 
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
-#' The Material Design color palettes.
+#' The Material Design 2 color palettes.
 #'
 #' @inheritParams rgb_material
 #'
@@ -79,8 +78,7 @@ rgb_material <- function(
 #'
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @examples
 #' library("scales")
@@ -98,19 +96,18 @@ pal_material <- function(
   manual_pal(unname(alpha_cols))
 }
 
-#' Material Design Color Palettes
+#' Material Design color palettes
 #'
-#' See \code{\link{pal_material}} for details.
+#' See [pal_material()] for details.
 #'
 #' @inheritParams pal_material
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_material
 #'
 #' @importFrom ggplot2 scale_color_gradientn
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_material
 #'

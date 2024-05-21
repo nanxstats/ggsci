@@ -1,19 +1,22 @@
-#' BMJ Color Palettes
+#' BMJ color palettes
 #'
 #' Color palette from the BMJ living style guide.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
-#' (9-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (9-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_bmj
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Hui Chen <\email{huichen@@zju.edu.cn}>
+#' @author Hui Chen | \email{huichen@zju.edu.cn}
+#'
+#' @references
+#' <https://technology.bmj.com/living-style-guide/colour.html>
 #'
 #' @examples
 #' library("scales")
@@ -35,20 +38,23 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' BMJ Color Scales
+#' BMJ color scales
 #'
-#' See \code{\link{pal_bmj}} for details.
+#' See [pal_bmj()] for details.
 #'
 #' @inheritParams pal_bmj
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_bmj
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Hui Chen <\email{huichen@@zju.edu.cn}>
+#' @author Hui Chen | \email{huichen@zju.edu.cn}
 #'
 #' @rdname scale_bmj
+#'
+#' @references
+#' <https://technology.bmj.com/living-style-guide/colour.html>
 #'
 #' @examples
 #' library("ggplot2")

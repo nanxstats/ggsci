@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-ucscgb.R
 \name{pal_ucscgb}
 \alias{pal_ucscgb}
-\title{UCSC Genome Browser Color Palette}
+\title{UCSC Genome Browser color palette}
 \usage{
 pal_ucscgb(palette = c("default"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"default"}
 (26-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palette from UCSC Genome Browser chromosome colors.
@@ -23,6 +23,5 @@ show_col(pal_ucscgb("default")(26))
 show_col(pal_ucscgb("default", alpha = 0.6)(26))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

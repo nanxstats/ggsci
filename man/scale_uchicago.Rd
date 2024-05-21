@@ -4,7 +4,7 @@
 \alias{scale_color_uchicago}
 \alias{scale_colour_uchicago}
 \alias{scale_fill_uchicago}
-\title{The University of Chicago Color Scales}
+\title{The University of Chicago color scales}
 \usage{
 scale_color_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 
@@ -14,18 +14,20 @@ scale_fill_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 }
 \arguments{
 \item{palette}{Palette type.
-There are 3 available options:
-\code{"default"} (9-color palette);
-\code{"light"} (9-color light palette);
-\code{"dark"} (9-color dark palette).}
+There are three available options:
+\itemize{
+\item \code{"default"} (9-color palette);
+\item \code{"light"} (9-color light palette);
+\item \code{"dark"} (9-color dark palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_uchicago}} for details.
+See \code{\link[=pal_uchicago]{pal_uchicago()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -59,6 +61,5 @@ p2 + scale_fill_uchicago(palette = "dark")
 \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

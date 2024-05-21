@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-simpsons.R
 \name{pal_simpsons}
 \alias{pal_simpsons}
-\title{The Simpsons Color Palettes}
+\title{The Simpsons color palettes}
 \usage{
 pal_simpsons(palette = c("springfield"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"springfield"}
 (16-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{The Simpsons}.
@@ -23,6 +23,5 @@ show_col(pal_simpsons("springfield")(16))
 show_col(pal_simpsons("springfield", alpha = 0.6)(16))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

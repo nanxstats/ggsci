@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-jco.R
 \name{pal_jco}
 \alias{pal_jco}
-\title{Journal of Clinical Oncology Color Palettes}
+\title{Journal of Clinical Oncology color palettes}
 \usage{
 pal_jco(palette = c("default"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"default"}
 (10-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palette inspired by plots in \emph{Journal of Clinical Oncology}.
@@ -23,6 +23,5 @@ show_col(pal_jco("default")(10))
 show_col(pal_jco("default", alpha = 0.6)(10))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

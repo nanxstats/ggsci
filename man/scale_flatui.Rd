@@ -4,7 +4,7 @@
 \alias{scale_color_flatui}
 \alias{scale_colour_flatui}
 \alias{scale_fill_flatui}
-\title{Flat UI Color Scales}
+\title{Flat UI color scales}
 \usage{
 scale_color_flatui(
   palette = c("default", "flattastic", "aussie"),
@@ -25,19 +25,20 @@ scale_fill_flatui(
 )
 }
 \arguments{
-\item{palette}{Palette type.
-Currently there are three available option:
-\code{"default"} (10-color palette).
-\code{"flattastic"} (12-color palette).
-\code{"aussie"} (10-color palette).}
+\item{palette}{Palette type. Currently there are three available options:
+\itemize{
+\item \code{"default"} (10-color palette).
+\item \code{"flattastic"} (12-color palette).
+\item \code{"aussie"} (10-color palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_flatui}} for details.
+See \code{\link[=pal_flatui]{pal_flatui()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -71,5 +72,5 @@ p1 + scale_color_flatui(palette = "aussie")
 p2 + scale_fill_flatui(palette = "aussie")
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse | \email{cat3@hi.is}
 }

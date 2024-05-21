@@ -1,25 +1,26 @@
-#' COSMIC Color Palettes
+#' COSMIC color palettes
 #'
 #' Color palettes inspired by the colors used in projects from the
-#' \href{https://cancer.sanger.ac.uk/cosmic}{Catalogue Of
-#' Somatic Mutations in Cancers (COSMIC)}
+#' [Catalogue Of
+#' Somatic Mutations in Cancers (COSMIC)](https://cancer.sanger.ac.uk/cosmic).
 #'
 #' @param palette Palette type. Currently there are three available options:
-#' \code{"signature_substitutions"} (6-color palette),
-#' \code{"hallmarks_light"} (10-color palette), and \code{"hallmarks_dark"}
-#' (10-color palette). The \code{"hallmarks_light"} option is from
-#' \href{https://pubmed.ncbi.nlm.nih.gov/21376230/}{Hanahan and Weinberg (2011)}.
+#'   - `"signature_substitutions"` (6-color palette).
+#'   - `"hallmarks_light"` (10-color palette).
+#'   - `"hallmarks_dark"` (10-color palette).
 #'
+#'   The `"hallmarks_light"` option is from
+#'   [Hanahan and Weinberg (2011)](https://pubmed.ncbi.nlm.nih.gov/21376230/).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_cosmic
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
-#' <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
+#' @author Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+#' [@jhrcook](https://github.com/jhrcook)
 #'
 #' @examples
 #' library("scales")
@@ -47,19 +48,19 @@ pal_cosmic <- function(
   manual_pal(unname(alpha_cols))
 }
 
-#' COSMIC Color Scales
+#' COSMIC color scales
 #'
-#' See \code{\link{pal_cosmic}} for details.
+#' See [pal_cosmic()] for details.
 #'
 #' @inheritParams pal_cosmic
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_cosmic
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
-#' <\href{https://github.com/jhrcook}{GitHub/jhrcook}>
+#' @author Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+#' [@jhrcook](https://github.com/jhrcook)
 #'
 #' @rdname scale_cosmic
 #'

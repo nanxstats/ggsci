@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-tron.R
 \name{pal_tron}
 \alias{pal_tron}
-\title{Tron Legacy Color Palettes}
+\title{Tron Legacy color palettes}
 \usage{
 pal_tron(palette = c("legacy"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"legacy"}
 (7-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Tron Legacy}.
@@ -23,6 +23,5 @@ show_col(pal_tron("legacy")(7))
 show_col(pal_tron("legacy", alpha = 0.6)(7))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

@@ -1,24 +1,24 @@
-#' The University of Chicago Color Palettes
+#' The University of Chicago color palettes
 #'
 #' Color palettes based on the colors used by the University of Chicago.
 #'
 #' @param palette Palette type.
-#' There are 3 available options:
-#' \code{"default"} (9-color palette);
-#' \code{"light"} (9-color light palette);
-#' \code{"dark"} (9-color dark palette).
+#'   There are three available options:
+#'   - `"default"` (9-color palette);
+#'   - `"light"` (9-color light palette);
+#'   - `"dark"` (9-color dark palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_uchicago
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+#' @references
+#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @examples
 #' library("scales")
@@ -41,21 +41,21 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' The University of Chicago Color Scales
+#' The University of Chicago color scales
 #'
-#' See \code{\link{pal_uchicago}} for details.
+#' See [pal_uchicago()] for details.
 #'
 #' @inheritParams pal_uchicago
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_uchicago
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references \url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+#' @references
+#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @rdname scale_uchicago
 #'

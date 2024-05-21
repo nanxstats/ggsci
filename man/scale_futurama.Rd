@@ -4,7 +4,7 @@
 \alias{scale_color_futurama}
 \alias{scale_colour_futurama}
 \alias{scale_fill_futurama}
-\title{The Futurama Color Scales}
+\title{Futurama color scales}
 \usage{
 scale_color_futurama(palette = c("planetexpress"), alpha = 1, ...)
 
@@ -18,12 +18,12 @@ Currently there is one available option: \code{"planetexpress"}
 (12-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_futurama}} for details.
+See \code{\link[=pal_futurama]{pal_futurama()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -47,6 +47,5 @@ ggplot(
   scale_fill_futurama()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

@@ -1,20 +1,19 @@
-#' The Simpsons Color Palettes
+#' The Simpsons color palettes
 #'
-#' Color palettes inspired by the colors used in \emph{The Simpsons}.
+#' Color palettes inspired by the colors used in _The Simpsons_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"springfield"}
-#' (16-color palette).
+#'   Currently there is one available option: `"springfield"`
+#'   (16-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_simpsons
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @examples
 #' library("scales")
@@ -36,19 +35,18 @@ pal_simpsons <- function(palette = c("springfield"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' The Simpsons Color Scales
+#' The Simpsons color scales
 #'
-#' See \code{\link{pal_simpsons}} for details.
+#' See [pal_simpsons()] for details.
 #'
 #' @inheritParams pal_simpsons
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_simpsons
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_simpsons
 #'

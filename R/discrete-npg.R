@@ -1,21 +1,20 @@
-#' NPG Journal Color Palettes
+#' NPG journal color palettes
 #'
 #' Color palettes inspired by plots in journals published by
-#' Nature Publishing Group, such as \emph{Nature Reviews Cancer}.
+#' Nature Publishing Group, such as _Nature Reviews Cancer_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"nrc"}
-#' (10-color palette inspired by \emph{Nature Reviews Cancer}).
+#'   Currently there is one available option: `"nrc"`
+#'   (10-color palette inspired by _Nature Reviews Cancer_).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_npg
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @examples
 #' library("scales")
@@ -37,19 +36,18 @@ pal_npg <- function(palette = c("nrc"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' NPG Journal Color Scales
+#' NPG journal color scales
 #'
-#' See \code{\link{pal_npg}} for details.
+#' See [pal_npg()] for details.
 #'
 #' @inheritParams pal_npg
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_npg
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_npg
 #'

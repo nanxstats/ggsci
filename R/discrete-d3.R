@@ -1,25 +1,24 @@
-#' D3.js Color Palettes
+#' D3.js color palettes
 #'
 #' Color palettes based on the colors used by D3.js.
 #'
-#' @param palette Palette type.
-#' There are 4 available options:
-#' \code{"category10"} (10-color palette);
-#' \code{"category20"} (20-color palette);
-#' \code{"category20b"} (20-color palette);
-#' \code{"category20c"} (20-color palette).
+#' @param palette Palette type. There are four available options:
+#'   - `"category10"` (10-color palette).
+#'   - `"category20"` (20-color palette).
+#'   - `"category20b"` (20-color palette).
+#'   - `"category20c"` (20-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_d3
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
+#' @references
+#' <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
 #'
 #' @examples
 #' library("scales")
@@ -43,21 +42,21 @@ pal_d3 <- function(palette = c("category10", "category20", "category20b", "categ
   manual_pal(unname(alpha_cols))
 }
 
-#' D3.js Color Scales
+#' D3.js color scales
 #'
-#' See \code{\link{pal_d3}} for details.
+#' See [pal_d3()] for details.
 #'
 #' @inheritParams pal_d3
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_d3
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
+#' @references
+#' <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
 #'
 #' @rdname scale_d3
 #'

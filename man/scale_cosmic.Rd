@@ -4,7 +4,7 @@
 \alias{scale_color_cosmic}
 \alias{scale_colour_cosmic}
 \alias{scale_fill_cosmic}
-\title{COSMIC Color Scales}
+\title{COSMIC color scales}
 \usage{
 scale_color_cosmic(
   palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
@@ -26,18 +26,22 @@ scale_fill_cosmic(
 }
 \arguments{
 \item{palette}{Palette type. Currently there are three available options:
-\code{"signature_substitutions"} (6-color palette),
-\code{"hallmarks_light"} (10-color palette), and \code{"hallmarks_dark"}
-(10-color palette). The \code{"hallmarks_light"} option is from
+\itemize{
+\item \code{"signature_substitutions"} (6-color palette).
+\item \code{"hallmarks_light"} (10-color palette).
+\item \code{"hallmarks_dark"} (10-color palette).
+}
+
+The \code{"hallmarks_light"} option is from
 \href{https://pubmed.ncbi.nlm.nih.gov/21376230/}{Hanahan and Weinberg (2011)}.}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 
-\item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
+\item{...}{Additional parameters for \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 }
 \description{
-See \code{\link{pal_cosmic}} for details.
+See \code{\link[=pal_cosmic]{pal_cosmic()}} for details.
 }
 \examples{
 library("ggplot2")
@@ -61,6 +65,6 @@ ggplot(
   scale_fill_cosmic()
 }
 \author{
-Joshua H. Cook <\email{joshuacook0023@gmail.com}> |
-<\href{https://github.com/jhrcook}{GitHub/jhrcook}>
+Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+\href{https://github.com/jhrcook}{@jhrcook}
 }

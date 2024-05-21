@@ -1,20 +1,19 @@
-#' The Futurama Color Palettes
+#' Futurama color palettes
 #'
-#' Color palettes inspired by the colors used in \emph{Futurama}.
+#' Color palettes inspired by the colors used in _Futurama_.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"planetexpress"}
-#' (12-color palette).
+#'   Currently there is one available option: `"planetexpress"`
+#'   (12-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_futurama
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @examples
 #' library("scales")
@@ -36,19 +35,18 @@ pal_futurama <- function(palette = c("planetexpress"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' The Futurama Color Scales
+#' Futurama color scales
 #'
-#' See \code{\link{pal_futurama}} for details.
+#' See [pal_futurama()] for details.
 #'
 #' @inheritParams pal_futurama
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_futurama
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_futurama
 #'

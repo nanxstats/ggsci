@@ -1,19 +1,19 @@
-#' Frontiers Color Palettes
+#' Frontiers journal color palettes
 #'
-#' Color palettes inspired by the colors used in \emph{Frontiers}.
+#' Color palettes inspired by the colors used in _Frontiers_ journals.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
-#' (10-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (10-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_frontiers
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Clara Jégousse <\email{cat3@@hi.is}>
+#' @author Clara Jégousse | \email{cat3@hi.is}
 #'
 #' @examples
 #' library("scales")
@@ -35,18 +35,18 @@ pal_frontiers <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' Frontiers Color Scales
+#' Frontiers journal color scales
 #'
-#' See \code{\link{pal_frontiers}} for details.
+#' See [pal_frontiers()] for details.
 #'
 #' @inheritParams pal_frontiers
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_frontiers
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Clara Jégousse <\email{cat3@@hi.is}>
+#' @author Clara Jégousse | \email{cat3@hi.is}
 #'
 #' @rdname scale_frontiers
 #'

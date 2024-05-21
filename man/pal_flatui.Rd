@@ -2,22 +2,23 @@
 % Please edit documentation in R/discrete-flatui.R
 \name{pal_flatui}
 \alias{pal_flatui}
-\title{Flat UI Color Palettes}
+\title{Flat UI color palettes}
 \usage{
 pal_flatui(palette = c("default", "flattastic", "aussie"), alpha = 1)
 }
 \arguments{
-\item{palette}{Palette type.
-Currently there are three available option:
-\code{"default"} (10-color palette).
-\code{"flattastic"} (12-color palette).
-\code{"aussie"} (10-color palette).}
+\item{palette}{Palette type. Currently there are three available options:
+\itemize{
+\item \code{"default"} (10-color palette).
+\item \code{"flattastic"} (12-color palette).
+\item \code{"aussie"} (10-color palette).
+}}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
-Color palettes inspired by the colors used in \emph{Flat UI Colors}.
+Color palettes inspired by the Flat UI colors.
 }
 \examples{
 library("scales")
@@ -27,5 +28,5 @@ show_col(pal_flatui("aussie")(10))
 show_col(pal_flatui("aussie", alpha = 0.6)(10))
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse | \email{cat3@hi.is}
 }

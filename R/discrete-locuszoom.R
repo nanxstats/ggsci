@@ -1,24 +1,23 @@
-#' LocusZoom Color Palette
+#' LocusZoom color palette
 #'
 #' Color palettes based on the colors used by LocusZoom.
 #'
 #' @param palette Palette type.
-#' Currently there is one available option: \code{"default"}
-#' (7-color palette).
+#'   Currently there is one available option: `"default"`
+#'   (7-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
-#' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#'   See `alpha` in [grDevices::rgb()] for details.
 #'
 #' @export pal_locuszoom
 #'
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
 #' Pruim, Randall J., et al. (2010). LocusZoom: regional visualization of
-#' genome-wide association scan results. \emph{Bioinformatics},
+#' genome-wide association scan results. _Bioinformatics_,
 #' 26(18), 2336--2337.
 #'
 #' @examples
@@ -41,19 +40,18 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
   manual_pal(unname(alpha_cols))
 }
 
-#' LocusZoom Color Scales
+#' LocusZoom color scales
 #'
-#' See \code{\link{pal_locuszoom}} for details.
+#' See [pal_locuszoom()] for details.
 #'
 #' @inheritParams pal_locuszoom
-#' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
+#' @param ... Additional parameters for [ggplot2::discrete_scale()].
 #'
 #' @export scale_color_locuszoom
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <\href{https://nanx.me}{https://nanx.me}>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_locuszoom
 #'

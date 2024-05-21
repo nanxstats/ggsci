@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-rickandmorty.R
 \name{pal_rickandmorty}
 \alias{pal_rickandmorty}
-\title{Rick and Morty Color Palettes}
+\title{Rick and Morty color palettes}
 \usage{
 pal_rickandmorty(palette = c("schwifty"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"schwifty"}
 (12-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by the colors used in \emph{Rick and Morty}.
@@ -23,6 +23,5 @@ show_col(pal_rickandmorty("schwifty")(12))
 show_col(pal_rickandmorty("schwifty", alpha = 0.6)(12))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

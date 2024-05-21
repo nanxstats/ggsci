@@ -2,7 +2,7 @@
 % Please edit documentation in R/discrete-aaas.R
 \name{pal_aaas}
 \alias{pal_aaas}
-\title{AAAS Journal Color Palettes}
+\title{AAAS journal color palettes}
 \usage{
 pal_aaas(palette = c("default"), alpha = 1)
 }
@@ -12,7 +12,7 @@ Currently there is one available option: \code{"default"}
 (10-color palette inspired by \emph{Science}).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
-See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
 Color palettes inspired by plots in journals published by
@@ -25,6 +25,5 @@ show_col(pal_aaas("default")(10))
 show_col(pal_aaas("default", alpha = 0.6)(10))
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\href{https://nanx.me}{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }
