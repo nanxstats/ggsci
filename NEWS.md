@@ -1,3 +1,16 @@
+# ggsci 3.1.0
+
+## New features
+
+- The BMJ color palettes are implemented in `scale_color_bmj()`
+  and `scale_fill_bmj()` (thanks, @huichen99, #32).
+
+## Documentation
+
+- Convert Rd syntax to Markdown in roxygen2 documentation.
+  This simplifies documentation formatting and makes it much easier
+  to add new color scales for contributors (#35).
+
 # ggsci 3.0.3
 
 ## Improvements

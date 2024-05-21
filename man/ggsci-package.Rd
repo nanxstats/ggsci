@@ -26,6 +26,7 @@ Other contributors:
 \itemize{
   \item Joshua Cook \email{joshuacook0023@gmail.com} [contributor]
   \item Clara Jégousse \email{cat3@hi.is} [contributor]
+  \item Hui Chen \email{huichen@zju.edu.cn} [contributor]
   \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
 }
 
