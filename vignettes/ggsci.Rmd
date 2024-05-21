@@ -489,7 +489,7 @@ grid.arrange(
 ```
 
 From the figure above, we can see that even though an identical matrix
-was visualized by all plots, some palettes are more preferrable
+was visualized by all plots, some palettes are more preferable
 than the others because our eyes are more sensitive to the changes
 of their saturation levels.
 
