@@ -46,6 +46,9 @@ ggplot(
   theme_bw() +
   scale_fill_bmj()
 }
+\references{
+\url{https://technology.bmj.com/living-style-guide/colour.html}
+}
 \author{
-Hui Chen \if{html}{\out{<\email{huichen@zju.edu.cn}>}}
+Hui Chen | \email{huichen@zju.edu.cn}
 }

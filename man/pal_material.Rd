@@ -55,6 +55,5 @@ show_col(pal_material("indigo")(10))
 show_col(pal_material("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

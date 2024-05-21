@@ -56,6 +56,5 @@ p2 + scale_fill_manual(
 )
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

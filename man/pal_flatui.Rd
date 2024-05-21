@@ -27,5 +27,5 @@ show_col(pal_flatui("aussie")(10))
 show_col(pal_flatui("aussie", alpha = 0.6)(10))
 }
 \author{
-Clara Jégousse <\email{cat3@hi.is}>
+Clara Jégousse | \email{cat3@hi.is}
 }

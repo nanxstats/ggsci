@@ -36,8 +36,7 @@
 #' @importFrom grDevices colorRamp rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
 #' <https://m2.material.io/design/color/the-color-system.html>
@@ -79,8 +78,7 @@ rgb_material <- function(
 #'
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @examples
 #' library("scales")
@@ -109,8 +107,7 @@ pal_material <- function(
 #'
 #' @importFrom ggplot2 scale_color_gradientn
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_material
 #'

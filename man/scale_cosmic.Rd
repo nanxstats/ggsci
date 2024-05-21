@@ -61,6 +61,6 @@ ggplot(
   scale_fill_cosmic()
 }
 \author{
-Joshua H. Cook \if{html}{\out{<\email{joshuacook0023@gmail.com}>}} |
-<\href{https://github.com/jhrcook}{GitHub/jhrcook}>
+Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+\href{https://github.com/jhrcook}{@jhrcook}
 }

@@ -24,6 +24,5 @@ show_col(pal_npg("nrc")(10))
 show_col(pal_npg("nrc", alpha = 0.6)(10))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

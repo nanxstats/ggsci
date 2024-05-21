@@ -23,6 +23,5 @@ show_col(pal_simpsons("springfield")(16))
 show_col(pal_simpsons("springfield", alpha = 0.6)(16))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

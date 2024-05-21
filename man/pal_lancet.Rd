@@ -24,6 +24,5 @@ show_col(pal_lancet("lanonc")(9))
 show_col(pal_lancet("lanonc", alpha = 0.6)(9))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

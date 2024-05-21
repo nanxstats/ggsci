@@ -18,8 +18,8 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
-#' <[GitHub/jhrcook](https://github.com/jhrcook)>
+#' @author Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+#' [@jhrcook](https://github.com/jhrcook)
 #'
 #' @examples
 #' library("scales")
@@ -58,8 +58,8 @@ pal_cosmic <- function(
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Joshua H. Cook <\email{joshuacook0023@@gmail.com}> |
-#' <[GitHub/jhrcook](https://github.com/jhrcook)>
+#' @author Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+#' [@jhrcook](https://github.com/jhrcook)
 #'
 #' @rdname scale_cosmic
 #'

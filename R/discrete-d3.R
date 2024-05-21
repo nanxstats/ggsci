@@ -16,10 +16,10 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
+#' @references
+#' <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
 #'
 #' @examples
 #' library("scales")
@@ -54,10 +54,10 @@ pal_d3 <- function(palette = c("category10", "category20", "category20b", "categ
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
+#' @references
+#' <https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md>
 #'
 #' @rdname scale_d3
 #'

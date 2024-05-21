@@ -30,6 +30,5 @@ Mitchell Guttman, Eric S. Lander, Gad Getz, Jill P. Mesirov.
 Integrative Genomics Viewer. \emph{Nature Biotechnology} 29, 24--26 (2011).
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

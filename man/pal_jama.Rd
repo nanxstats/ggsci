@@ -24,6 +24,5 @@ show_col(pal_jama("default")(7))
 show_col(pal_jama("default", alpha = 0.6)(7))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

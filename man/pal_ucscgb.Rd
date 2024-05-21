@@ -23,6 +23,5 @@ show_col(pal_ucscgb("default")(26))
 show_col(pal_ucscgb("default", alpha = 0.6)(26))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

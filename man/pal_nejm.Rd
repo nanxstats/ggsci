@@ -24,6 +24,5 @@ show_col(pal_nejm("default")(8))
 show_col(pal_nejm("default", alpha = 0.6)(8))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

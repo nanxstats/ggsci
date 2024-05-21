@@ -33,6 +33,6 @@ show_col(pal_cosmic("signature_substitutions")(6))
 show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 }
 \author{
-Joshua H. Cook \if{html}{\out{<\email{joshuacook0023@gmail.com}>}} |
-<\href{https://github.com/jhrcook}{GitHub/jhrcook}>
+Joshua H. Cook | \email{joshuacook0023@gmail.com} |
+\href{https://github.com/jhrcook}{@jhrcook}
 }

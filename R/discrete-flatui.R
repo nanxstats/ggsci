@@ -15,7 +15,7 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Clara Jégousse <\email{cat3@@hi.is}>
+#' @author Clara Jégousse | \email{cat3@hi.is}
 #'
 #' @examples
 #' library("scales")
@@ -50,7 +50,7 @@ pal_flatui <- function(palette = c("default", "flattastic", "aussie"), alpha = 1
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Clara Jégousse <\email{cat3@@hi.is}>
+#' @author Clara Jégousse | \email{cat3@hi.is}
 #'
 #' @rdname scale_flatui
 #'

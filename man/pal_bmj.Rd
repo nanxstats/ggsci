@@ -22,6 +22,9 @@ library("scales")
 show_col(pal_bmj("default")(9))
 show_col(pal_bmj("default", alpha = 0.6)(9))
 }
+\references{
+\url{https://technology.bmj.com/living-style-guide/colour.html}
+}
 \author{
-Hui Chen \if{html}{\out{<\email{huichen@zju.edu.cn}>}}
+Hui Chen | \email{huichen@zju.edu.cn}
 }

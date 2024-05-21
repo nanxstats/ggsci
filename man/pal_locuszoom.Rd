@@ -28,6 +28,5 @@ genome-wide association scan results. \emph{Bioinformatics},
 26(18), 2336--2337.
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

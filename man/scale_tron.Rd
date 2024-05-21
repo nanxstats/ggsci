@@ -54,6 +54,5 @@ ggplot(
   scale_fill_tron()
 }
 \author{
-Nan Xiao <\email{me@nanx.me}> |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

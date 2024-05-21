@@ -13,7 +13,10 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Hui Chen <\email{huichen@@zju.edu.cn}>
+#' @author Hui Chen | \email{huichen@zju.edu.cn}
+#'
+#' @references
+#' <https://technology.bmj.com/living-style-guide/colour.html>
 #'
 #' @examples
 #' library("scales")
@@ -46,9 +49,12 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Hui Chen <\email{huichen@@zju.edu.cn}>
+#' @author Hui Chen | \email{huichen@zju.edu.cn}
 #'
 #' @rdname scale_bmj
+#'
+#' @references
+#' <https://technology.bmj.com/living-style-guide/colour.html>
 #'
 #' @examples
 #' library("ggplot2")

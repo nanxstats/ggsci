@@ -58,6 +58,5 @@ show_col(pal_material("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 \url{https://m2.material.io/design/color/the-color-system.html}
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

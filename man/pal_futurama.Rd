@@ -23,6 +23,5 @@ show_col(pal_futurama("planetexpress")(12))
 show_col(pal_futurama("planetexpress", alpha = 0.6)(12))
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }

@@ -13,12 +13,11 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
 #' Pruim, Randall J., et al. (2010). LocusZoom: regional visualization of
-#' genome-wide association scan results. *Bioinformatics*,
+#' genome-wide association scan results. _Bioinformatics_,
 #' 26(18), 2336--2337.
 #'
 #' @examples
@@ -52,8 +51,7 @@ pal_locuszoom <- function(palette = c("default"), alpha = 1) {
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @rdname scale_locuszoom
 #'

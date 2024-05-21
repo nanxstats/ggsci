@@ -23,5 +23,5 @@ show_col(pal_frontiers("default")(7))
 show_col(pal_frontiers("default", alpha = 0.6)(7))
 }
 \author{
-Clara Jégousse \if{html}{\out{<\email{cat3@hi.is}>}}
+Clara Jégousse | \email{cat3@hi.is}
 }

@@ -15,10 +15,10 @@
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom scales manual_pal
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
+#' @references
+#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @examples
 #' library("scales")
@@ -52,10 +52,10 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
 #'
 #' @importFrom ggplot2 discrete_scale
 #'
-#' @author Nan Xiao <\email{me@@nanx.me}> |
-#' <[https://nanx.me](https://nanx.me)>
+#' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
-#' @references <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
+#' @references
+#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
 #'
 #' @rdname scale_uchicago
 #'

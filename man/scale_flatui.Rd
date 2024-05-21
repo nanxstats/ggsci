@@ -71,5 +71,5 @@ p1 + scale_color_flatui(palette = "aussie")
 p2 + scale_fill_flatui(palette = "aussie")
 }
 \author{
-Clara Jégousse \if{html}{\out{<\email{cat3@hi.is}>}}
+Clara Jégousse | \email{cat3@hi.is}
 }

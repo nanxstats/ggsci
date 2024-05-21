@@ -34,6 +34,5 @@ show_col(pal_d3("category20c")(20))
 \url{https://github.com/d3/d3-3.x-api-reference/blob/master/Ordinal-Scales.md}
 }
 \author{
-Nan Xiao \if{html}{\out{<\email{me@nanx.me}>}} |
-<\url{https://nanx.me}>
+Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
 }
