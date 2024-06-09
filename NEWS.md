@@ -1,3 +1,12 @@
+# ggsci 3.1.0.9000
+
+## Improvements
+
+- Move internal color palette data from `R/sysdata.rda` to `R/palettes.R`.
+  This change enhances package development transparency, reduces unnecessary
+  indirection, and simplifies contributions by avoiding the construction
+  of the palette data using the R script in `data-raw/` (#42).
+
 # ggsci 3.1.0
 
 ## New features
