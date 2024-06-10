@@ -137,6 +137,20 @@ ggsci_db$"d3"$"category20c" <- c(
   "Snuff" = "#DADAEB", "Alto" = "#D9D9D9"
 )
 
+# Observable 10 color palette
+ggsci_db$"observable"$"observable10" <- c(
+  "Blue" = "#4269D0",
+  "Orange" = "#EFB118",
+  "Red" = "#FF725C",
+  "Cyan" = "#6CC5B0",
+  "Green" = "#3CA951",
+  "Pink" = "#FF8AB7",
+  "Purple" = "#A463F2",
+  "LightBlue" = "#97BBF5",
+  "Brown" = "#9C6B4E",
+  "Gray" = "#9498A0"
+)
+
 # Color palette inspired by IGV
 ggsci_db$"igv"$"default" <- c(
   "chr1" = "#5050FF", "chr2" = "#CE3D32", "chr3" = "#749B58",

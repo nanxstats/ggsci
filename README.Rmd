@@ -158,6 +158,14 @@ p2_d3 <- p2 + scale_fill_d3()
 grid.arrange(p1_d3, p2_d3, ncol = 2)
 ```
 
+### Observable
+
+```{r, ggsci-observable}
+p1_observable <- p1 + scale_color_observable()
+p2_observable <- p2 + scale_fill_observable()
+grid.arrange(p1_observable, p2_observable, ncol = 2)
+```
+
 ### LocusZoom
 
 ```{r, ggsci-locuszoom}
