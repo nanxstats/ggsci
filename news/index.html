@@ -62,6 +62,7 @@
 <div class="section level3">
 <h3 id="improvements-3-1-0-9000">Improvements<a class="anchor" aria-label="anchor" href="#improvements-3-1-0-9000"></a></h3>
 <ul><li>Move internal color palette data from <code>R/sysdata.rda</code> to <code>R/palettes.R</code>. This change enhances package development transparency, reduces unnecessary indirection, and simplifies contributions by avoiding the construction of the palette data using the R script in <code>data-raw/</code> (<a href="https://github.com/nanxstats/ggsci/issues/42" class="external-link">#42</a>).</li>
+<li>For continuous palette examples, remove the reshape2 dependency and use more compact grid layout to reduce output image size (<a href="https://github.com/nanxstats/ggsci/issues/45" class="external-link">#45</a>).</li>
 </ul></div>
 </div>
     <div class="section level2">
