@@ -1,5 +1,10 @@
 # ggsci 3.1.0.9000
 
+## New features
+
+- Add the Observable 10 palette in `scale_color_observable()`
+  and `scale_fill_observable()` (#41).
+
 ## Improvements
 
 - Move internal color palette data from `R/sysdata.rda` to `R/palettes.R`.

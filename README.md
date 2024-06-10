@@ -71,6 +71,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-d3-1.png" width="100%" style="display: block; margin: auto;" />
 
+### Observable
+
+<img src="man/figures/README-ggsci-observable-1.png" width="100%" style="display: block; margin: auto;" />
+
 ### LocusZoom
 
 <img src="man/figures/README-ggsci-locuszoom-1.png" width="100%" style="display: block; margin: auto;" />

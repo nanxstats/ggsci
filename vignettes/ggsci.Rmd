@@ -84,6 +84,9 @@ summarized in the table below.
 |                 |                              | `"category20b"`                |                      |
 |                 |                              | `"category20c"`                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Observable      | `scale_color_observable()`   | `"observable10"`               | `pal_observable()`   |
+|                 | `scale_fill_observable()`    |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |
 |                 | `scale_fill_locuszoom()`     |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -264,6 +267,17 @@ There are four palette types (`category10`, `category20`,
 p1_d3 <- p1 + scale_color_d3()
 p2_d3 <- p2 + scale_fill_d3()
 grid.arrange(p1_d3, p2_d3, ncol = 2)
+```
+
+### Observable
+
+The [Observable 10 palette](https://observablehq.com/blog/crafting-data-colors)
+is the default categorical colors scheme used by Observable.
+
+```{r}
+p1_observable <- p1 + scale_color_observable()
+p2_observable <- p2 + scale_fill_observable()
+grid.arrange(p1_observable, p2_observable, ncol = 2)
 ```
 
 ### LocusZoom

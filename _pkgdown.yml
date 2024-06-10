@@ -60,6 +60,12 @@ reference:
       - scale_color_d3
       - scale_colour_d3
       - scale_fill_d3
+  - title: "Observable"
+    contents:
+      - pal_observable
+      - scale_color_observable
+      - scale_colour_observable
+      - scale_fill_observable
   - title: "LocusZoom"
     contents:
       - pal_locuszoom
