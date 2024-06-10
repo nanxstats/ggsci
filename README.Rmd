@@ -279,11 +279,13 @@ grid.arrange(p1_frontiers, p2_frontiers, ncol = 2)
 ### GSEA
 
 ```{r}
-library("reshape2")
-
 data("mtcars")
 cor <- cor(unname(cbind(mtcars, mtcars, mtcars, mtcars)))
-cor_melt <- melt(cor)
+cor_melt <- data.frame(
+  Var1 = rep(seq_len(nrow(cor)), times = ncol(cor)),
+  Var2 = rep(seq_len(ncol(cor)), each = nrow(cor)),
+  value = as.vector(cor)
+)
 
 p3 <- ggplot(cor_melt, aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", linewidth = 0.3) +
@@ -304,7 +306,11 @@ set.seed(42)
 k <- 9
 x <- diag(k)
 x[upper.tri(x)] <- runif(sum(1:(k - 1)), 0, 1)
-x_melt <- melt(x)
+x_melt <- data.frame(
+  Var1 = rep(seq_len(nrow(x)), times = ncol(x)),
+  Var2 = rep(seq_len(ncol(x)), each = nrow(x)),
+  value = as.vector(x)
+)
 
 p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
   geom_tile(colour = "black", linewidth = 0.3) +
