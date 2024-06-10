@@ -27,7 +27,6 @@ Suggests:
     gridExtra,
     knitr,
     ragg,
-    reshape2,
     rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8

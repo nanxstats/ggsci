@@ -83,11 +83,14 @@ pal_gsea <- function(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 #'
 #' @examples
 #' library("ggplot2")
-#' library("reshape2")
-#' data("mtcars")
 #'
+#' data("mtcars")
 #' cor <- cor(mtcars)
-#' cor_melt <- melt(cor)
+#' cor_melt <- data.frame(
+#'   Var1 = rep(seq_len(nrow(cor)), times = ncol(cor)),
+#'   Var2 = rep(seq_len(ncol(cor)), each = nrow(cor)),
+#'   value = as.vector(cor)
+#' )
 #'
 #' ggplot(
 #'   cor_melt,
