@@ -280,7 +280,7 @@ grid.arrange(p1_frontiers, p2_frontiers, ncol = 2)
 
 ```{r}
 data("mtcars")
-cor <- cor(unname(cbind(mtcars, mtcars, mtcars, mtcars)))
+cor <- cor(unname(mtcars))
 cor_melt <- data.frame(
   Var1 = rep(seq_len(nrow(cor)), times = ncol(cor)),
   Var2 = rep(seq_len(ncol(cor)), each = nrow(cor)),
@@ -301,9 +301,9 @@ grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
 
 ### Material Design
 
-```{r, ggsci-material, fig.height=7.12}
+```{r, ggsci-material, fig.height=3.8}
 set.seed(42)
-k <- 9
+k <- 6
 x <- diag(k)
 x[upper.tri(x)] <- runif(sum(1:(k - 1)), 0, 1)
 x_melt <- data.frame(
@@ -337,7 +337,7 @@ grid.arrange(
   p4 + scale_fill_material("orange"), p4 + scale_fill_material("deep-orange"),
   p4 + scale_fill_material("brown"), p4 + scale_fill_material("grey"),
   p4 + scale_fill_material("blue-grey"),
-  ncol = 6
+  ncol = 8
 )
 ```
 

@@ -425,7 +425,7 @@ to demonstrate the continuous color palettes in ggsci.
 
 ```{r}
 data("mtcars")
-cor <- cor(unname(cbind(mtcars, mtcars, mtcars, mtcars)))
+cor <- cor(unname(mtcars))
 cor_melt <- data.frame(
   Var1 = rep(seq_len(nrow(cor)), times = ncol(cor)),
   Var2 = rep(seq_len(ncol(cor)), each = nrow(cor)),
@@ -461,7 +461,7 @@ We generate a random matrix first:
 
 ```{r}
 set.seed(42)
-k <- 9
+k <- 6
 x <- diag(k)
 x[upper.tri(x)] <- runif(sum(1:(k - 1)), 0, 1)
 x_melt <- data.frame(
@@ -487,7 +487,7 @@ p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
 
 Plot the matrix with the 19 material design color palettes:
 
-```{r, fig.height=7.12}
+```{r, fig.height=3.8}
 grid.arrange(
   p4 + scale_fill_material("red"), p4 + scale_fill_material("pink"),
   p4 + scale_fill_material("purple"), p4 + scale_fill_material("deep-purple"),
@@ -499,7 +499,7 @@ grid.arrange(
   p4 + scale_fill_material("orange"), p4 + scale_fill_material("deep-orange"),
   p4 + scale_fill_material("brown"), p4 + scale_fill_material("grey"),
   p4 + scale_fill_material("blue-grey"),
-  ncol = 6
+  ncol = 8
 )
 ```
 
@@ -518,8 +518,7 @@ palette generator functions in the table above. For example:
 mypal <- pal_npg("nrc", alpha = 0.7)(9)
 mypal
 
-library("scales")
-show_col(mypal)
+scales::show_col(mypal)
 ```
 
 You will be able to use the generated hex color codes for such
