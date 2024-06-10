@@ -11,6 +11,8 @@
   This change enhances package development transparency, reduces unnecessary
   indirection, and simplifies contributions by avoiding the construction
   of the palette data using the R script in `data-raw/` (#42).
+- For continuous palette examples, remove the reshape2 dependency and
+  use more compact grid layout to reduce output image size (#45).
 
 # ggsci 3.1.0
 
