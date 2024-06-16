@@ -299,9 +299,9 @@ p3_gsea_inv <- p3 + scale_fill_gsea(reverse = TRUE)
 grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
 ```
 
-### Material Design
+### Bootstrap 5
 
-```{r, ggsci-material, fig.height=3.8}
+```{r}
 set.seed(42)
 k <- 6
 x <- diag(k)
@@ -325,7 +325,23 @@ p4 <- ggplot(x_melt, aes(x = Var1, y = Var2, fill = value)) +
     panel.background = element_blank(), panel.border = element_blank(),
     panel.grid.major = element_blank(), panel.grid.minor = element_blank()
   )
+```
 
+```{r, ggsci-bs5, fig.height=2.6}
+grid.arrange(
+  p4 + scale_fill_bs5("blue"), p4 + scale_fill_bs5("indigo"),
+  p4 + scale_fill_bs5("purple"), p4 + scale_fill_bs5("pink"),
+  p4 + scale_fill_bs5("red"), p4 + scale_fill_bs5("orange"),
+  p4 + scale_fill_bs5("yellow"), p4 + scale_fill_bs5("green"),
+  p4 + scale_fill_bs5("teal"), p4 + scale_fill_bs5("cyan"),
+  p4 + scale_fill_bs5("gray"),
+  ncol = 8
+)
+```
+
+### Material Design
+
+```{r, ggsci-material, fig.height=3.8}
 grid.arrange(
   p4 + scale_fill_material("red"), p4 + scale_fill_material("pink"),
   p4 + scale_fill_material("purple"), p4 + scale_fill_material("deep-purple"),

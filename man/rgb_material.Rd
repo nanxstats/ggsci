@@ -30,14 +30,12 @@ rgb_material(
 \item \code{"lime"}
 \item \code{"yellow"}
 \item \code{"amber"}
-\item \code{"orange"},
+\item \code{"orange"}
 \item \code{"deep-orange"}
 \item \code{"brown"}
 \item \code{"grey"}
 \item \code{"blue-grey"}
-}
-
-For details, see \href{https://m2.material.io/design/color/the-color-system.html}{Material Design color system}.}
+}}
 
 \item{n}{Number of individual colors to be generated.}
 
@@ -47,7 +45,7 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 \item{reverse}{Logical. Should the order of the colors be reversed?}
 }
 \description{
-The Material Design 2 color palettes.
+Material Design 2 color palettes.
 }
 \examples{
 library("scales")
