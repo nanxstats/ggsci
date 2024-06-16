@@ -625,8 +625,14 @@ Simpsons</em>:</p>
 <div class="section level2">
 <h2 id="continuous-color-palettes">Continuous color palettes<a class="anchor" aria-label="anchor" href="#continuous-color-palettes"></a>
 </h2>
+<p>There are two types of continuous color palettes in ggsci: diverging
+and sequential. Diverging palettes have a central neutral color and
+contrasting colors at the ends, making them suitable for visualizing
+data with a natural midpoint. Sequential palettes use a gradient of
+colors that range from low to high intensity or lightness, making them
+ideal for representing data with increasing or decreasing values.</p>
 <p>We will use a correlation matrix visualization (a special type of
-heatmap) to demonstrate the continuous color palettes in ggsci.</p>
+heatmap) to demonstrate the diverging color palettes.</p>
 <div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"mtcars"</span><span class="op">)</span></span>
 <span><span class="va">cor</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span><span class="op">)</span></span>
@@ -643,25 +649,8 @@ heatmap) to demonstrate the continuous color palettes in ggsci.</p>
 <span>    axis.title.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>    axis.title.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code></pre></div>
-<div class="section level3">
-<h3 id="gsea">GSEA<a class="anchor" aria-label="anchor" href="#gsea"></a>
-</h3>
-<p>The GSEA palette (continuous) is inspired by the heatmaps generated
-by <a href="https://software.broadinstitute.org/cancer/software/genepattern/" class="external-link">GSEA
-GenePattern</a>.</p>
+<p>To demonstrate sequential palettes, we use a random matrix:</p>
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">p3_gsea</span> <span class="op">&lt;-</span> <span class="va">p3</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_gsea.html">scale_fill_gsea</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="va">p3_gsea_inv</span> <span class="op">&lt;-</span> <span class="va">p3</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_gsea.html">scale_fill_gsea</a></span><span class="op">(</span>reverse <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span><span class="va">p3_gsea</span>, <span class="va">p3_gsea_inv</span>, ncol <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ggsci_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;"></p>
-</div>
-<div class="section level3">
-<h3 id="material-design">Material Design<a class="anchor" aria-label="anchor" href="#material-design"></a>
-</h3>
-<p>The Material Design color palettes are from the <a href="https://m2.material.io/design/color/the-color-system.html" class="external-link">Material
-Design color system</a>.</p>
-<p>We generate a random matrix first:</p>
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">42</span><span class="op">)</span></span>
 <span><span class="va">k</span> <span class="op">&lt;-</span> <span class="fl">6</span></span>
 <span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">k</span><span class="op">)</span></span>
@@ -685,8 +674,41 @@ Design color system</a>.</p>
 <span>    panel.background <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>, panel.border <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>,</span>
 <span>    panel.grid.major <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>, panel.grid.minor <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span></span>
 <span>  <span class="op">)</span></span></code></pre></div>
-<p>Plot the matrix with the 19 material design color palettes:</p>
+<div class="section level3">
+<h3 id="gsea">GSEA<a class="anchor" aria-label="anchor" href="#gsea"></a>
+</h3>
+<p>The GSEA palette (continuous) is inspired by the heatmaps generated
+by <a href="https://software.broadinstitute.org/cancer/software/genepattern/" class="external-link">GSEA
+GenePattern</a>.</p>
+<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">p3_gsea</span> <span class="op">&lt;-</span> <span class="va">p3</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_gsea.html">scale_fill_gsea</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">p3_gsea_inv</span> <span class="op">&lt;-</span> <span class="va">p3</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_gsea.html">scale_fill_gsea</a></span><span class="op">(</span>reverse <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span><span class="va">p3_gsea</span>, <span class="va">p3_gsea_inv</span>, ncol <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="bootstrap-5">Bootstrap 5<a class="anchor" aria-label="anchor" href="#bootstrap-5"></a>
+</h3>
+<p>The Bootstrap 5 color palettes are from the <a href="https://getbootstrap.com/docs/5.3/customize/color/#all-colors" class="external-link">Bootstrap
+5 color system</a>.</p>
 <div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span></span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"blue"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"indigo"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"purple"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"pink"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"red"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"orange"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"yellow"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"green"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"teal"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"cyan"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_bs5.html">scale_fill_bs5</a></span><span class="op">(</span><span class="st">"gray"</span><span class="op">)</span>,</span>
+<span>  ncol <span class="op">=</span> <span class="fl">8</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="material-design">Material Design<a class="anchor" aria-label="anchor" href="#material-design"></a>
+</h3>
+<p>The Material Design color palettes are from the <a href="https://m2.material.io/design/color/the-color-system.html" class="external-link">Material
+Design color system</a>.</p>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span></span>
 <span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_material.html">scale_fill_material</a></span><span class="op">(</span><span class="st">"red"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_material.html">scale_fill_material</a></span><span class="op">(</span><span class="st">"pink"</span><span class="op">)</span>,</span>
 <span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_material.html">scale_fill_material</a></span><span class="op">(</span><span class="st">"purple"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_material.html">scale_fill_material</a></span><span class="op">(</span><span class="st">"deep-purple"</span><span class="op">)</span>,</span>
@@ -700,7 +722,7 @@ Design color system</a>.</p>
 <span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_material.html">scale_fill_material</a></span><span class="op">(</span><span class="st">"blue-grey"</span><span class="op">)</span>,</span>
 <span>  ncol <span class="op">=</span> <span class="fl">8</span></span>
 <span><span class="op">)</span></span></code></pre></div>
-<p><img src="ggsci_files/figure-html/unnamed-chunk-29-1.png" width="100%" style="display: block; margin: auto;"></p>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-30-1.png" width="100%" style="display: block; margin: auto;"></p>
 <p>From the figure above, we can see that even though an identical
 matrix was visualized by all plots, some palettes are more preferable
 than the others because our eyes are more sensitive to the changes of
@@ -713,15 +735,15 @@ their saturation levels.</p>
 <p>To apply the color palettes in ggsci to other graphics systems (such
 as base graphics and lattice graphics), simply use the palette generator
 functions in the table above. For example:</p>
-<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mypal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/pal_npg.html">pal_npg</a></span><span class="op">(</span><span class="st">"nrc"</span>, alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span></span>
 <span><span class="va">mypal</span></span>
 <span><span class="co">#&gt; [1] "#E64B35B2" "#4DBBD5B2" "#00A087B2" "#3C5488B2" "#F39B7FB2" "#8491B4B2"</span></span>
 <span><span class="co">#&gt; [7] "#91D1C2B2" "#DC0000B2" "#7E6148B2"</span></span></code></pre></div>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">mypal</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ggsci_files/figure-html/unnamed-chunk-30-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-31-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>You will be able to use the generated hex color codes for such
 graphics systems accordingly. The transparent level of the entire
 palette is easily adjustable via the argument <code>"alpha"</code> in
