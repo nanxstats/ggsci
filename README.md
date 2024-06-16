@@ -123,6 +123,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-gsea-1.png" width="100%" style="display: block; margin: auto;" />
 
+### Bootstrap 5
+
+<img src="man/figures/README-ggsci-bs5-1.png" width="100%" style="display: block; margin: auto;" />
+
 ### Material Design
 
 <img src="man/figures/README-ggsci-material-1.png" width="100%" style="display: block; margin: auto;" />
