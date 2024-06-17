@@ -7,7 +7,7 @@ ggsci_db <- vector("list")
 
 # Discrete Color Palettes
 
-# Color palette inspired by plots in Nature Reviews Cancer
+# Color palette inspired by plots in Nature Reviews Cancer ----
 ggsci_db$"npg"$"nrc" <- c(
   "Cinnabar" = "#E64B35", "Shakespeare" = "#4DBBD5",
   "PersianGreen" = "#00A087", "Chambray" = "#3C5488",
@@ -16,7 +16,7 @@ ggsci_db$"npg"$"nrc" <- c(
   "RomanCoffee" = "#7E6148", "Sandrift" = "#B09C85"
 )
 
-# Color palette inspired by plots in Science from AAAS
+# Color palette inspired by plots in Science from AAAS ----
 ggsci_db$"aaas"$"default" <- c(
   "Chambray" = "#3B4992", "Red" = "#EE0000",
   "FunGreen" = "#008B45", "HoneyFlower" = "#631879",
@@ -25,7 +25,7 @@ ggsci_db$"aaas"$"default" <- c(
   "Stack" = "#808180", "CodGray" = "#1B1919"
 )
 
-# Color palette inspired by plots in The New England Journal of Medicine
+# Color palette inspired by plots in The New England Journal of Medicine ----
 ggsci_db$"nejm"$"default" <- c(
   "TallPoppy" = "#BC3C29", "DeepCerulean" = "#0072B5",
   "Zest" = "#E18727", "Eucalyptus" = "#20854E",
@@ -33,7 +33,7 @@ ggsci_db$"nejm"$"default" <- c(
   "Salomie" = "#FFDC91", "FrenchRose" = "#EE4C97"
 )
 
-# Color palette inspired by plots in Lancet Oncology
+# Color palette inspired by plots in Lancet Oncology ----
 ggsci_db$"lancet"$"lanonc" <- c(
   "CongressBlue" = "#00468B", "Red" = "#ED0000",
   "Apple" = "#42B540", "BondiBlue" = "#0099B4",
@@ -42,7 +42,7 @@ ggsci_db$"lancet"$"lanonc" <- c(
   "CodGray" = "#1B1919"
 )
 
-# Color palette inspired by plots in The Journal of the American Medical Association
+# Color palette inspired by plots in The Journal of the American Medical Association ----
 ggsci_db$"jama"$"default" <- c(
   "Limed Spruce" = "#374E55", "Anzac" = "#DF8F44",
   "Cerulean" = "#00A1D5", "Apple Blossom" = "#B24745",
@@ -50,7 +50,7 @@ ggsci_db$"jama"$"default" <- c(
   "Makara" = "#80796B"
 )
 
-# Color palette from BMJ living style guide
+# Color palette from BMJ living style guide ----
 # https://technology.bmj.com/living-style-guide/colour.html
 ggsci_db$"bmj"$"default" <- c(
   "Blue" = "#2A6EBB",
@@ -64,7 +64,7 @@ ggsci_db$"bmj"$"default" <- c(
   "Grey" = "#747678"
 )
 
-# Color palette inspired by plots in Journal of Clinical Oncology
+# Color palette inspired by plots in Journal of Clinical Oncology ----
 ggsci_db$"jco"$"default" <- c(
   "Lochmara" = "#0073C2", "Corn" = "#EFC000",
   "Gray" = "#868686", "ChestnutRose" = "#CD534C",
@@ -73,7 +73,7 @@ ggsci_db$"jco"$"default" <- c(
   "WellRead" = "#A73030", "KashmirBlue" = "#4A6990"
 )
 
-# Color palette inspired by UCSC Genome Browser Chromosome Colors
+# UCSC Genome Browser chromosome colors ----
 ggsci_db$"ucscgb"$"default" <- c(
   "chr5" = "#FF0000", "chr8" = "#FF9900", "chr9" = "#FFCC00",
   "chr12" = "#00FF00", "chr15" = "#6699FF", "chr20" = "#CC33FF",
@@ -86,7 +86,7 @@ ggsci_db$"ucscgb"$"default" <- c(
   "chrUn" = "#79CC3D", "chrM" = "#CCCC99"
 )
 
-# Color palette inspired by D3.js
+# Color palette from D3.js ----
 ggsci_db$"d3"$"category10" <- c(
   "Matisse" = "#1F77B4", "Flamenco" = "#FF7F0E",
   "ForestGreen" = "#2CA02C", "Punch" = "#D62728",
@@ -95,7 +95,7 @@ ggsci_db$"d3"$"category10" <- c(
   "KeyLimePie" = "#BCBD22", "Java" = "#17BECF"
 )
 
-# Color palette inspired by D3.js
+# Color palette from D3.js ----
 ggsci_db$"d3"$"category20" <- c(
   "Matisse" = "#1F77B4", "Flamenco" = "#FF7F0E",
   "ForestGreen" = "#2CA02C", "Punch" = "#D62728",
@@ -109,7 +109,7 @@ ggsci_db$"d3"$"category20" <- c(
   "Deco" = "#DBDB8D", "RegentStBlue" = "#9EDAE5"
 )
 
-# Color palette inspired by D3.js
+# Color palette from D3.js ----
 ggsci_db$"d3"$"category20b" <- c(
   "EastBay" = "#393B79", "ChaletGreen" = "#637939",
   "Pesto" = "#8C6D31", "Lotus" = "#843C39",
@@ -123,7 +123,7 @@ ggsci_db$"d3"$"category20b" <- c(
   "TonysPink" = "#E7969C", "LightOrchid" = "#DE9ED6"
 )
 
-# Color palette inspired by D3.js
+# Color palette from D3.js ----
 ggsci_db$"d3"$"category20c" <- c(
   "BostonBlue" = "#3182BD", "Christine" = "#E6550D",
   "SeaGreen" = "#31A354", "Deluge" = "#756BB1",
@@ -137,7 +137,7 @@ ggsci_db$"d3"$"category20c" <- c(
   "Snuff" = "#DADAEB", "Alto" = "#D9D9D9"
 )
 
-# Observable 10 color palette
+# Observable 10 color palette ----
 ggsci_db$"observable"$"observable10" <- c(
   "Blue" = "#4269D0",
   "Orange" = "#EFB118",
@@ -151,7 +151,7 @@ ggsci_db$"observable"$"observable10" <- c(
   "Gray" = "#9498A0"
 )
 
-# Color palette inspired by IGV
+# Color palette from IGV ----
 ggsci_db$"igv"$"default" <- c(
   "chr1" = "#5050FF", "chr2" = "#CE3D32", "chr3" = "#749B58",
   "chr4" = "#F0E685", "chr5" = "#466983", "chr6" = "#BA6338",
@@ -172,12 +172,12 @@ ggsci_db$"igv"$"default" <- c(
   "chr46" = "#FF1463", "chr47" = "#00D68F", "chr48" = "#14FFB1"
 )
 
-# Color palette inspired by IGV
+# Color palette from IGV ----
 ggsci_db$"igv"$"alternating" <- c(
   "Indigo" = "#5773CC", "SelectiveYellow" = "#FFB900"
 )
 
-# Color palette inspired by LocusZoom
+# Color palette from LocusZoom ----
 ggsci_db$"locuszoom"$"default" <- c(
   "0.8to1.0" = "#D43F3A", "0.6to0.8" = "#EEA236",
   "0.4to0.6" = "#5CB85C", "0.2to0.4" = "#46B8DA",
@@ -185,7 +185,7 @@ ggsci_db$"locuszoom"$"default" <- c(
   "nodata" = "#B8B8B8"
 )
 
-# Color palette inspired by University of Chicago Color Palette
+# University of Chicago color palette ----
 ggsci_db$"uchicago"$"default" <- c(
   "Maroon" = "#800000", "DarkGray" = "#767676",
   "Yellow" = "#FFA319", "LightGreen" = "#8A9045",
@@ -194,7 +194,7 @@ ggsci_db$"uchicago"$"default" <- c(
   "Violet" = "#350E20"
 )
 
-# Color palette inspired by University of Chicago color palette (light version)
+# University of Chicago color palette (light version) ----
 ggsci_db$"uchicago"$"light" <- c(
   "Maroon" = "#800000", "LightGray" = "#D6D6CE",
   "Yellow" = "#FFB547", "LightGreen" = "#ADB17D",
@@ -203,7 +203,7 @@ ggsci_db$"uchicago"$"light" <- c(
   "Violet" = "#725663"
 )
 
-# Color palette inspired by University of Chicago color palette (dark version)
+# University of Chicago color palette (dark version) ----
 ggsci_db$"uchicago"$"dark" <- c(
   "Maroon" = "#800000", "DarkGray" = "#767676",
   "Yellow" = "#CC8214", "LightGreen" = "#616530",
@@ -212,7 +212,7 @@ ggsci_db$"uchicago"$"dark" <- c(
   "Violet" = "#350E20"
 )
 
-# Color palette inspired by COSMIC Hallmarks of Cancer
+# Color palette inspired by COSMIC Hallmarks of Cancer ----
 ggsci_db$"cosmic"$"hallmarks_dark" <- c(
   "Invasion and Metastasis" = "#171717",
   "Escaping Immunic Response to Cancer" = "#7D0226",
@@ -226,7 +226,7 @@ ggsci_db$"cosmic"$"hallmarks_dark" <- c(
   "Tumour Promoting Inflammation" = "#A8450C"
 )
 
-# Color palette inspired by Hanahan, Weinberg Hallmarks of Cancer
+# Color palette inspired by Hanahan, Weinberg Hallmarks of Cancer ----
 ggsci_db$"cosmic"$"hallmarks_light" <- c(
   "Invasion and Metastasis" = "#2E2A2B",
   "Escaping Immunic Response to Cancer" = "#CF4E9C",
@@ -240,7 +240,7 @@ ggsci_db$"cosmic"$"hallmarks_light" <- c(
   "Tumour Promoting Inflammation" = "#DC9445"
 )
 
-# Color palette inspired by COSMIC Hallmarks of Cancer
+# Color palette inspired by COSMIC Hallmarks of Cancer ----
 ggsci_db$"cosmic"$"signature_substitutions" <- c(
   "C>A" = "#5ABCEB",
   "C>G" = "#050708",
@@ -250,7 +250,7 @@ ggsci_db$"cosmic"$"signature_substitutions" <- c(
   "T>G" = "#E7C9C6"
 )
 
-# Color palette inspired by The Simpsons
+# Color palette inspired by The Simpsons ----
 ggsci_db$"simpsons"$"springfield" <- c(
   "HomerYellow" = "#FED439", "HomerBlue" = "#709AE1",
   "HomerGrey" = "#8A9197", "HomerBrown" = "#D2AF81",
@@ -262,7 +262,7 @@ ggsci_db$"simpsons"$"springfield" <- c(
   "BobGreen" = "#1A9993", "FrinkPink" = "#FD8CC1"
 )
 
-# Color palette inspired by Futurama
+# Color palette inspired by Futurama ----
 ggsci_db$"futurama"$"planetexpress" <- c(
   "FryOrange" = "#FF6F00", "FryRed" = "#C71000",
   "FryBlue" = "#008EA0", "LeelaPurple" = "#8A4198",
@@ -272,7 +272,7 @@ ggsci_db$"futurama"$"planetexpress" <- c(
   "ScruffyGreen" = "#1A5354", "LeelaGrey" = "#3F4041"
 )
 
-# Color palette inspired by Rick and Morty
+# Color palette inspired by Rick and Morty ----
 ggsci_db$"rickandmorty"$"schwifty" <- c(
   "MortyYellow" = "#FAFD7C", "MortyBrown" = "#82491E",
   "MortyBlue" = "#24325F", "RickBlue" = "#B7E4F9",
@@ -282,7 +282,7 @@ ggsci_db$"rickandmorty"$"schwifty" <- c(
   "RickBrown" = "#917C5D", "MeeseeksBlue" = "#69C8EC"
 )
 
-# Color palette inspired by Star Trek
+# Color palette inspired by Star Trek ----
 ggsci_db$"startrek"$"uniform" <- c(
   "Engineering" = "#CC0C00", "Sciences" = "#5C88DA",
   "Senior" = "#84BD00", "Command" = "#FFCD00",
@@ -290,7 +290,7 @@ ggsci_db$"startrek"$"uniform" <- c(
   "Jade" = "#00AF66"
 )
 
-# Color palette inspired by Tron Legacy
+# Color palette inspired by Tron Legacy ----
 ggsci_db$"tron"$"legacy" <- c(
   "BlackGuard" = "#FF410D", "Sam" = "#6EE2FF",
   "Clu" = "#F7C530", "Underclass" = "#95CC5E",
@@ -298,7 +298,7 @@ ggsci_db$"tron"$"legacy" <- c(
   "Underclass2" = "#748AA6"
 )
 
-# Color palette inspired by the logo of Frontiers
+# Color palette inspired by the logo of Frontiers ----
 # https://www.frontiersin.org
 ggsci_db$"frontiers"$"default" <- c(
   "Crimson" = "#D51317", "Tangerine" = "#F39200",
@@ -308,7 +308,7 @@ ggsci_db$"frontiers"$"default" <- c(
   "Plum" = "#6F286A", "DoveGrey" = "#706F6F"
 )
 
-# Flat UI color palette V1
+# Flat UI color palette V1 ----
 # https://flatuicolors.com/palette/defo
 ggsci_db$"flatui"$"default" <- c(
   "Pomegranate" = "#c0392b", "Pumkin" = "#d35400",
@@ -318,7 +318,7 @@ ggsci_db$"flatui"$"default" <- c(
   "Asbestos" = "#7f8c8d", "Silver" = "#bdc3c7"
 )
 
-# Flat UI color palette by Erigon
+# Flat UI color palette by Erigon ----
 ggsci_db$"flatui"$"flattastic" <- c(
   "Grapefruit" = "#DA4453", "Bittersweet" = "#E95546",
   "Sunflower" = "#F6BA59", "Grass" = "#8BC163",
@@ -328,7 +328,7 @@ ggsci_db$"flatui"$"flattastic" <- c(
   "MediumGrey" = "#AAB2BC", "DarkGrey" = "#434A53"
 )
 
-# Flat UI color palette by Aussie Palette by Kate Hoolahan
+# Flat UI color palette by Aussie Palette by Kate Hoolahan ----
 # https://flatuicolors.com/palette/au
 ggsci_db$"flatui"$"aussie" <- c(
   "Turbo" = "#F9CA24", "QuinceJelly" = "#F0932B",
@@ -340,7 +340,7 @@ ggsci_db$"flatui"$"aussie" <- c(
 
 # Continuous Color Palettes
 
-# Color palette inspired by heatmaps generated by GSEA GenePattern
+# Color palette from heatmaps generated by GSEA GenePattern ----
 ggsci_db$"gsea"$"default" <- c(
   "Purple" = "#4500AD", "DarkBlue" = "#2700D1",
   "RoyalBlue" = "#6B58EF", "Malibu" = "#8888FF",
@@ -350,7 +350,7 @@ ggsci_db$"gsea"$"default" <- c(
   "Flamingo" = "#EF4040", "GuardsmanRed" = "#D60C00"
 )
 
-# Bootstrap 5 color palettes
+# Bootstrap 5 color palettes ----
 ggsci_db$"bs5"$"blue" <- c(
   "blue-100" = "#cfe2ff", "blue-200" = "#9ec5fe",
   "blue-300" = "#6ea8fe", "blue-400" = "#3d8bfd",
@@ -439,7 +439,7 @@ ggsci_db$"bs5"$"gray" <- c(
   "gray-900" = "#212529"
 )
 
-# Material Design color palettes
+# Material Design color palettes ----
 ggsci_db$"material"$"red" <- c(
   "Red50" = "#FFEBEE", "Red100" = "#FFCDD2",
   "Red200" = "#EF9A9A", "Red300" = "#E57373",
@@ -590,4 +590,159 @@ ggsci_db$"material"$"blue-grey" <- c(
   "BlueGrey400" = "#78909C", "BlueGrey500" = "#607D8B",
   "BlueGrey600" = "#546E7A", "BlueGrey700" = "#455A64",
   "BlueGrey800" = "#37474F", "BlueGrey900" = "#263238"
+)
+
+# Tailwind CSS v3 color palettes ----
+ggsci_db$"tw3"$"slate" <- c(
+  "slate-50" = "#f8fafc", "slate-100" = "#f1f5f9", "slate-200" = "#e2e8f0",
+  "slate-300" = "#cbd5e1", "slate-400" = "#94a3b8", "slate-500" = "#64748b",
+  "slate-600" = "#475569", "slate-700" = "#334155", "slate-800" = "#1e293b",
+  "slate-900" = "#0f172a", "slate-950" = "#020617"
+)
+
+ggsci_db$"tw3"$"gray" <- c(
+  "gray-50" = "#f9fafb", "gray-100" = "#f3f4f6", "gray-200" = "#e5e7eb",
+  "gray-300" = "#d1d5db", "gray-400" = "#9ca3af", "gray-500" = "#6b7280",
+  "gray-600" = "#4b5563", "gray-700" = "#374151", "gray-800" = "#1f2937",
+  "gray-900" = "#111827", "gray-950" = "#030712"
+)
+
+ggsci_db$"tw3"$"zinc" <- c(
+  "zinc-50" = "#fafafa", "zinc-100" = "#f4f4f5", "zinc-200" = "#e4e4e7",
+  "zinc-300" = "#d4d4d8", "zinc-400" = "#a1a1aa", "zinc-500" = "#71717a",
+  "zinc-600" = "#52525b", "zinc-700" = "#3f3f46", "zinc-800" = "#27272a",
+  "zinc-900" = "#18181b", "zinc-950" = "#09090b"
+)
+
+ggsci_db$"tw3"$"neutral" <- c(
+  "neutral-50" = "#fafafa", "neutral-100" = "#f5f5f5", "neutral-200" = "#e5e5e5",
+  "neutral-300" = "#d4d4d4", "neutral-400" = "#a3a3a3", "neutral-500" = "#737373",
+  "neutral-600" = "#525252", "neutral-700" = "#404040", "neutral-800" = "#262626",
+  "neutral-900" = "#171717", "neutral-950" = "#0a0a0a"
+)
+
+ggsci_db$"tw3"$"stone" <- c(
+  "stone-50" = "#fafaf9", "stone-100" = "#f5f5f4", "stone-200" = "#e7e5e4",
+  "stone-300" = "#d6d3d1", "stone-400" = "#a8a29e", "stone-500" = "#78716c",
+  "stone-600" = "#57534e", "stone-700" = "#44403c", "stone-800" = "#292524",
+  "stone-900" = "#1c1917", "stone-950" = "#0c0a09"
+)
+
+ggsci_db$"tw3"$"red" <- c(
+  "red-50" = "#fef2f2", "red-100" = "#fee2e2", "red-200" = "#fecaca",
+  "red-300" = "#fca5a5", "red-400" = "#f87171", "red-500" = "#ef4444",
+  "red-600" = "#dc2626", "red-700" = "#b91c1c", "red-800" = "#991b1b",
+  "red-900" = "#7f1d1d", "red-950" = "#450a0a"
+)
+
+ggsci_db$"tw3"$"orange" <- c(
+  "orange-50" = "#fff7ed", "orange-100" = "#ffedd5", "orange-200" = "#fed7aa",
+  "orange-300" = "#fdba74", "orange-400" = "#fb923c", "orange-500" = "#f97316",
+  "orange-600" = "#ea580c", "orange-700" = "#c2410c", "orange-800" = "#9a3412",
+  "orange-900" = "#7c2d12", "orange-950" = "#431407"
+)
+
+ggsci_db$"tw3"$"amber" <- c(
+  "amber-50" = "#fffbeb", "amber-100" = "#fef3c7", "amber-200" = "#fde68a",
+  "amber-300" = "#fcd34d", "amber-400" = "#fbbf24", "amber-500" = "#f59e0b",
+  "amber-600" = "#d97706", "amber-700" = "#b45309", "amber-800" = "#92400e",
+  "amber-900" = "#78350f", "amber-950" = "#451a03"
+)
+
+ggsci_db$"tw3"$"yellow" <- c(
+  "yellow-50" = "#fefce8", "yellow-100" = "#fef9c3", "yellow-200" = "#fef08a",
+  "yellow-300" = "#fde047", "yellow-400" = "#facc15", "yellow-500" = "#eab308",
+  "yellow-600" = "#ca8a04", "yellow-700" = "#a16207", "yellow-800" = "#854d0e",
+  "yellow-900" = "#713f12", "yellow-950" = "#422006"
+)
+
+ggsci_db$"tw3"$"lime" <- c(
+  "lime-50" = "#f7fee7", "lime-100" = "#ecfccb", "lime-200" = "#d9f99d",
+  "lime-300" = "#bef264", "lime-400" = "#a3e635", "lime-500" = "#84cc16",
+  "lime-600" = "#65a30d", "lime-700" = "#4d7c0f", "lime-800" = "#3f6212",
+  "lime-900" = "#365314", "lime-950" = "#1a2e05"
+)
+
+ggsci_db$"tw3"$"green" <- c(
+  "green-50" = "#f0fdf4", "green-100" = "#dcfce7", "green-200" = "#bbf7d0",
+  "green-300" = "#86efac", "green-400" = "#4ade80", "green-500" = "#22c55e",
+  "green-600" = "#16a34a", "green-700" = "#15803d", "green-800" = "#166534",
+  "green-900" = "#14532d", "green-950" = "#052e16"
+)
+
+ggsci_db$"tw3"$"emerald" <- c(
+  "emerald-50" = "#ecfdf5", "emerald-100" = "#d1fae5", "emerald-200" = "#a7f3d0",
+  "emerald-300" = "#6ee7b7", "emerald-400" = "#34d399", "emerald-500" = "#10b981",
+  "emerald-600" = "#059669", "emerald-700" = "#047857", "emerald-800" = "#065f46",
+  "emerald-900" = "#064e3b", "emerald-950" = "#022c22"
+)
+
+ggsci_db$"tw3"$"teal" <- c(
+  "teal-50" = "#f0fdfa", "teal-100" = "#ccfbf1", "teal-200" = "#99f6e4",
+  "teal-300" = "#5eead4", "teal-400" = "#2dd4bf", "teal-500" = "#14b8a6",
+  "teal-600" = "#0d9488", "teal-700" = "#0f766e", "teal-800" = "#115e59",
+  "teal-900" = "#134e4a", "teal-950" = "#042f2e"
+)
+
+ggsci_db$"tw3"$"cyan" <- c(
+  "cyan-50" = "#ecfeff", "cyan-100" = "#cffafe", "cyan-200" = "#a5f3fc",
+  "cyan-300" = "#67e8f9", "cyan-400" = "#22d3ee", "cyan-500" = "#06b6d4",
+  "cyan-600" = "#0891b2", "cyan-700" = "#0e7490", "cyan-800" = "#155e75",
+  "cyan-900" = "#164e63", "cyan-950" = "#083344"
+)
+
+ggsci_db$"tw3"$"sky" <- c(
+  "sky-50" = "#f0f9ff", "sky-100" = "#e0f2fe", "sky-200" = "#bae6fd",
+  "sky-300" = "#7dd3fc", "sky-400" = "#38bdf8", "sky-500" = "#0ea5e9",
+  "sky-600" = "#0284c7", "sky-700" = "#0369a1", "sky-800" = "#075985",
+  "sky-900" = "#0c4a6e", "sky-950" = "#082f49"
+)
+
+ggsci_db$"tw3"$"blue" <- c(
+  "blue-50" = "#eff6ff", "blue-100" = "#dbeafe", "blue-200" = "#bfdbfe",
+  "blue-300" = "#93c5fd", "blue-400" = "#60a5fa", "blue-500" = "#3b82f6",
+  "blue-600" = "#2563eb", "blue-700" = "#1d4ed8", "blue-800" = "#1e40af",
+  "blue-900" = "#1e3a8a", "blue-950" = "#172554"
+)
+
+ggsci_db$"tw3"$"indigo" <- c(
+  "indigo-50" = "#eef2ff", "indigo-100" = "#e0e7ff", "indigo-200" = "#c7d2fe",
+  "indigo-300" = "#a5b4fc", "indigo-400" = "#818cf8", "indigo-500" = "#6366f1",
+  "indigo-600" = "#4f46e5", "indigo-700" = "#4338ca", "indigo-800" = "#3730a3",
+  "indigo-900" = "#312e81", "indigo-950" = "#1e1b4b"
+)
+
+ggsci_db$"tw3"$"violet" <- c(
+  "violet-50" = "#f5f3ff", "violet-100" = "#ede9fe", "violet-200" = "#ddd6fe",
+  "violet-300" = "#c4b5fd", "violet-400" = "#a78bfa", "violet-500" = "#8b5cf6",
+  "violet-600" = "#7c3aed", "violet-700" = "#6d28d9", "violet-800" = "#5b21b6",
+  "violet-900" = "#4c1d95", "violet-950" = "#2e1065"
+)
+
+ggsci_db$"tw3"$"purple" <- c(
+  "purple-50" = "#faf5ff", "purple-100" = "#f3e8ff", "purple-200" = "#e9d5ff",
+  "purple-300" = "#d8b4fe", "purple-400" = "#c084fc", "purple-500" = "#a855f7",
+  "purple-600" = "#9333ea", "purple-700" = "#7e22ce", "purple-800" = "#6b21a8",
+  "purple-900" = "#581c87", "purple-950" = "#3b0764"
+)
+
+ggsci_db$"tw3"$"fuchsia" <- c(
+  "fuchsia-50" = "#fdf4ff", "fuchsia-100" = "#fae8ff", "fuchsia-200" = "#f5d0fe",
+  "fuchsia-300" = "#f0abfc", "fuchsia-400" = "#e879f9", "fuchsia-500" = "#d946ef",
+  "fuchsia-600" = "#c026d3", "fuchsia-700" = "#a21caf", "fuchsia-800" = "#86198f",
+  "fuchsia-900" = "#701a75", "fuchsia-950" = "#4a044e"
+)
+
+ggsci_db$"tw3"$"pink" <- c(
+  "pink-50" = "#fdf2f8", "pink-100" = "#fce7f3", "pink-200" = "#fbcfe8",
+  "pink-300" = "#f9a8d4", "pink-400" = "#f472b6", "pink-500" = "#ec4899",
+  "pink-600" = "#db2777", "pink-700" = "#be185d", "pink-800" = "#9d174d",
+  "pink-900" = "#831843", "pink-950" = "#500724"
+)
+
+ggsci_db$"tw3"$"rose" <- c(
+  "rose-50" = "#fff1f2", "rose-100" = "#ffe4e6", "rose-200" = "#fecdd3",
+  "rose-300" = "#fda4af", "rose-400" = "#fb7185", "rose-500" = "#f43f5e",
+  "rose-600" = "#e11d48", "rose-700" = "#be123c", "rose-800" = "#9f1239",
+  "rose-900" = "#881337", "rose-950" = "#4c0519"
 )
