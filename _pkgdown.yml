@@ -153,3 +153,10 @@ reference:
       - scale_color_material
       - scale_colour_material
       - scale_fill_material
+  - title: "Tailwind CSS"
+    contents:
+      - rgb_tw3
+      - pal_tw3
+      - scale_color_tw3
+      - scale_colour_tw3
+      - scale_fill_tw3

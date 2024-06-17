@@ -131,6 +131,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-material-1.png" width="100%" style="display: block; margin: auto;" />
 
+### Tailwind CSS
+
+<img src="man/figures/README-ggsci-tw3-1.png" width="100%" style="display: block; margin: auto;" />
+
 ## Contribute
 
 To contribute to this project, please take a look at the [Contributing
