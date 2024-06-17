@@ -1,9 +1,13 @@
-# ggsci 3.1.0.9000
+# ggsci 3.2.0
 
 ## New features
 
 - Add the Observable 10 palette in `scale_color_observable()`
   and `scale_fill_observable()` (#41).
+- Add Bootstrap 5 color palettes (continuous) in `scale_color_bs5()`
+  and `scale_fill_bs5()` (#18).
+- Add Tailwind CSS color palettes (continuous) in `scale_color_tw3()`
+  and `scale_fill_tw3()` (#19).
 
 ## Improvements
 
