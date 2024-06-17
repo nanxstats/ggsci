@@ -325,6 +325,18 @@ summarized in the table below.</p>
 <td><code><a href="../reference/pal_gsea.html">pal_gsea()</a></code></td>
 </tr>
 <tr class="odd">
+<td>Bootstrap 5</td>
+<td>
+<code><a href="../reference/scale_bs5.html">scale_color_bs5()</a></code> <code><a href="../reference/scale_bs5.html">scale_fill_bs5()</a></code>
+</td>
+<td>
+<code>"blue"</code> <code>"indigo"</code><br><code>"purple"</code>
+<code>"pink"</code><br><code>"red"</code> <code>"orange"</code><br><code>"yellow"</code> <code>"green"</code><br><code>"teal"</code>
+<code>"cyan"</code><br><code>"gray"</code>
+</td>
+<td><code><a href="../reference/pal_bs5.html">pal_bs5()</a></code></td>
+</tr>
+<tr class="even">
 <td>Material Design</td>
 <td>
 <code><a href="../reference/scale_material.html">scale_color_material()</a></code>
@@ -340,6 +352,20 @@ summarized in the table below.</p>
 <code>"grey"</code><br><code>"blue-grey"</code>
 </td>
 <td><code><a href="../reference/pal_material.html">pal_material()</a></code></td>
+</tr>
+<tr class="odd">
+<td>Tailwind CSS</td>
+<td>
+<code><a href="../reference/scale_tw3.html">scale_color_tw3()</a></code> <code><a href="../reference/scale_tw3.html">scale_fill_tw3()</a></code>
+</td>
+<td>
+<code>"slate"</code> <code>"gray"</code><br><code>"zinc"</code>
+<code>"neutral"</code><br><code>"stone"</code> <code>"red"</code><br><code>"orange"</code> <code>"amber"</code><br><code>"yellow"</code>
+<code>"lime"</code><br><code>"green"</code> <code>"emerald"</code><br><code>"teal"</code> <code>"cyan"</code><br><code>"sky"</code>
+<code>"blue"</code><br><code>"indigo"</code> <code>"violet"</code><br><code>"purple"</code> <code>"fuchsia"</code><br><code>"pink"</code>
+<code>"rose"</code>
+</td>
+<td><code><a href="../reference/pal_tw3.html">pal_tw3()</a></code></td>
 </tr>
 </tbody>
 </table>
@@ -723,6 +749,28 @@ Design color system</a>.</p>
 <span>  ncol <span class="op">=</span> <span class="fl">8</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 <p><img src="ggsci_files/figure-html/unnamed-chunk-30-1.png" width="100%" style="display: block; margin: auto;"></p>
+</div>
+<div class="section level3">
+<h3 id="tailwind-css">Tailwind CSS<a class="anchor" aria-label="anchor" href="#tailwind-css"></a>
+</h3>
+<p>The Tailwind CSS color palettes are from the <a href="https://tailwindcss.com/docs/customizing-colors" class="external-link">Tailwind default
+colors</a>.</p>
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/pkg/gridExtra/man/arrangeGrob.html" class="external-link">grid.arrange</a></span><span class="op">(</span></span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"slate"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"gray"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"zinc"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"neutral"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"stone"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"red"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"orange"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"amber"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"yellow"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"lime"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"green"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"emerald"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"teal"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"cyan"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"sky"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"blue"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"indigo"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"violet"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"purple"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"fuchsia"</span><span class="op">)</span>,</span>
+<span>  <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"pink"</span><span class="op">)</span>, <span class="va">p4</span> <span class="op">+</span> <span class="fu"><a href="../reference/scale_tw3.html">scale_fill_tw3</a></span><span class="op">(</span><span class="st">"rose"</span><span class="op">)</span>,</span>
+<span>  ncol <span class="op">=</span> <span class="fl">8</span></span>
+<span><span class="op">)</span></span></code></pre></div>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-31-1.png" width="100%" style="display: block; margin: auto;"></p>
 <p>From the figure above, we can see that even though an identical
 matrix was visualized by all plots, some palettes are more preferable
 than the others because our eyes are more sensitive to the changes of
@@ -735,15 +783,15 @@ their saturation levels.</p>
 <p>To apply the color palettes in ggsci to other graphics systems (such
 as base graphics and lattice graphics), simply use the palette generator
 functions in the table above. For example:</p>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mypal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/pal_npg.html">pal_npg</a></span><span class="op">(</span><span class="st">"nrc"</span>, alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span></span>
 <span><span class="va">mypal</span></span>
 <span><span class="co">#&gt; [1] "#E64B35B2" "#4DBBD5B2" "#00A087B2" "#3C5488B2" "#F39B7FB2" "#8491B4B2"</span></span>
 <span><span class="co">#&gt; [7] "#91D1C2B2" "#DC0000B2" "#7E6148B2"</span></span></code></pre></div>
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">mypal</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ggsci_files/figure-html/unnamed-chunk-31-1.png" width="60%" style="display: block; margin: auto;"></p>
+<p><img src="ggsci_files/figure-html/unnamed-chunk-32-1.png" width="60%" style="display: block; margin: auto;"></p>
 <p>You will be able to use the generated hex color codes for such
 graphics systems accordingly. The transparent level of the entire
 palette is easily adjustable via the argument <code>"alpha"</code> in
