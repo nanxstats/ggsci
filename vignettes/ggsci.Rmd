@@ -126,6 +126,13 @@ summarized in the table below.
 | GSEA            | `scale_color_gsea()`         | `"default"`                    | `pal_gsea()`         |
 |                 | `scale_fill_gsea()`          |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Bootstrap 5     | `scale_color_bs5()`          | `"blue"` `"indigo"`<br>        | `pal_bs5()`          |
+|                 | `scale_fill_bs5()`           | `"purple"` `"pink"`<br>        |                      |
+|                 |                              | `"red"` `"orange"`<br>         |                      |
+|                 |                              | `"yellow"` `"green"`<br>       |                      |
+|                 |                              | `"teal"` `"cyan"`<br>          |                      |
+|                 |                              | `"gray"`                       |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | Material Design | `scale_color_material()`     | `"red"` `"pink"`<br>           | `pal_material()`     |
 |                 | `scale_fill_material()`      | `"purple"` `"deep-purple"`<br> |                      |
 |                 |                              | `"indigo"` `"blue"`<br>        |                      |
@@ -136,6 +143,18 @@ summarized in the table below.
 |                 |                              | `"orange"` `"deep-orange"`<br> |                      |
 |                 |                              | `"brown"` `"grey"`<br>         |                      |
 |                 |                              | `"blue-grey"`                  |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
+| Tailwind CSS    | `scale_color_tw3()`          | `"slate"` `"gray"`<br>         | `pal_tw3()`          |
+|                 | `scale_fill_tw3()`           | `"zinc"` `"neutral"`<br>       |                      |
+|                 |                              | `"stone"` `"red"`<br>          |                      |
+|                 |                              | `"orange"` `"amber"`<br>       |                      |
+|                 |                              | `"yellow"` `"lime"`<br>        |                      |
+|                 |                              | `"green"` `"emerald"`<br>      |                      |
+|                 |                              | `"teal"` `"cyan"`<br>          |                      |
+|                 |                              | `"sky"` `"blue"`<br>           |                      |
+|                 |                              | `"indigo"` `"violet"`<br>      |                      |
+|                 |                              | `"purple"` `"fuchsia"`<br>     |                      |
+|                 |                              | `"pink"` `"rose"`              |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
 
 ## Discrete color palettes
@@ -521,6 +540,28 @@ grid.arrange(
   p4 + scale_fill_material("orange"), p4 + scale_fill_material("deep-orange"),
   p4 + scale_fill_material("brown"), p4 + scale_fill_material("grey"),
   p4 + scale_fill_material("blue-grey"),
+  ncol = 8
+)
+```
+
+### Tailwind CSS
+
+The Tailwind CSS color palettes are from the
+[Tailwind default colors](https://tailwindcss.com/docs/customizing-colors).
+
+```{r, fig.height=3.8}
+grid.arrange(
+  p4 + scale_fill_tw3("slate"), p4 + scale_fill_tw3("gray"),
+  p4 + scale_fill_tw3("zinc"), p4 + scale_fill_tw3("neutral"),
+  p4 + scale_fill_tw3("stone"), p4 + scale_fill_tw3("red"),
+  p4 + scale_fill_tw3("orange"), p4 + scale_fill_tw3("amber"),
+  p4 + scale_fill_tw3("yellow"), p4 + scale_fill_tw3("lime"),
+  p4 + scale_fill_tw3("green"), p4 + scale_fill_tw3("emerald"),
+  p4 + scale_fill_tw3("teal"), p4 + scale_fill_tw3("cyan"),
+  p4 + scale_fill_tw3("sky"), p4 + scale_fill_tw3("blue"),
+  p4 + scale_fill_tw3("indigo"), p4 + scale_fill_tw3("violet"),
+  p4 + scale_fill_tw3("purple"), p4 + scale_fill_tw3("fuchsia"),
+  p4 + scale_fill_tw3("pink"), p4 + scale_fill_tw3("rose"),
   ncol = 8
 )
 ```
