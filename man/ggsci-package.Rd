@@ -20,7 +20,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Nan Xiao \email{me@nanx.me} (\href{https://orcid.org/0000-0002-0250-5673}{ORCID})
+\strong{Maintainer}: Nan Xiao \email{me@nanx.me} (\href{https://orcid.org/0000-0002-0250-5673}{ORCID}) [copyright holder]
 
 Other contributors:
 \itemize{
@@ -28,6 +28,7 @@ Other contributors:
   \item Clara Jégousse \email{cat3@hi.is} [contributor]
   \item Hui Chen \email{huichen@zju.edu.cn} [contributor]
   \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
+  \item Winston Chang (staticimports.R) [contributor, copyright holder]
 }
 
 }
