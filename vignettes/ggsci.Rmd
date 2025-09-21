@@ -162,27 +162,15 @@ summarized in the table below.
 We will use scatterplots with smooth curves, and bar plots to demonstrate
 the discrete color palettes in ggsci.
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library("ggsci")
 library("ggplot2")
 library("gridExtra")
+```
 
-data("diamonds")
-
-p1 <- ggplot(
-  subset(diamonds, carat >= 2.2),
-  aes(x = table, y = price, colour = cut)
-) +
-  geom_point(alpha = 0.7) +
-  geom_smooth(method = "loess", alpha = 0.05, linewidth = 1, span = 1) +
-  theme_bw()
-
-p2 <- ggplot(
-  subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-  aes(x = depth, fill = cut)
-) +
-  geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-  theme_bw()
+```{r}
+p1 <- example_scatterplot()
+p2 <- example_barplot()
 ```
 
 ### NPG
