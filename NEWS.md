@@ -1,3 +1,13 @@
+# ggsci 3.2.0.9000
+
+## Improvements
+
+- Add `example_scatterplot()` and `example_barplot()` to simplify
+  discrete scale examples in documentation. This reduces boilerplate code
+  and makes it easier to maintain the examples.
+  Also improves graphical appearance of the examples by using a minimalist
+  theme with alternative data subsets.
+
 # ggsci 3.2.0
 
 ## New features

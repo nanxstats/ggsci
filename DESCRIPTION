@@ -1,7 +1,7 @@
 Package: ggsci
 Type: Package
 Title: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'
-Version: 3.2.0
+Version: 3.2.0.9000
 Authors@R: c(
     person("Nan", "Xiao", email = "me@nanx.me", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0002-0250-5673")),
@@ -23,6 +23,7 @@ Depends:
 Imports:
     ggplot2 (>= 2.0.0),
     grDevices,
+    rlang,
     scales
 Suggests:
     gridExtra,
@@ -31,5 +32,5 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Encoding: UTF-8
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
