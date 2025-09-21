@@ -65,25 +65,8 @@ pal_cosmic <- function(
 #' @rdname scale_cosmic
 #'
 #' @examples
-#' library("ggplot2")
-#' data("diamonds")
-#'
-#' ggplot(
-#'   subset(diamonds, carat >= 2.2),
-#'   aes(x = table, y = price, colour = cut)
-#' ) +
-#'   geom_point(alpha = 0.7) +
-#'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() +
-#'   scale_color_cosmic()
-#'
-#' ggplot(
-#'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-#'   aes(x = depth, fill = cut)
-#' ) +
-#'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() +
-#'   scale_fill_cosmic()
+#' example_scatterplot() + scale_color_cosmic()
+#' example_barplot() + scale_fill_cosmic()
 scale_color_cosmic <- function(
     palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
     alpha = 1, ...) {

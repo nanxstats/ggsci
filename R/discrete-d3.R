@@ -61,23 +61,8 @@ pal_d3 <- function(palette = c("category10", "category20", "category20b", "categ
 #' @rdname scale_d3
 #'
 #' @examples
-#' library("ggplot2")
-#' data("diamonds")
-#'
-#' p1 <- ggplot(
-#'   subset(diamonds, carat >= 2.2),
-#'   aes(x = table, y = price, colour = cut)
-#' ) +
-#'   geom_point(alpha = 0.7) +
-#'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw()
-#'
-#' p2 <- ggplot(
-#'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-#'   aes(x = depth, fill = cut)
-#' ) +
-#'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw()
+#' p1 <- example_scatterplot()
+#' p2 <- example_barplot()
 #'
 #' p1 + scale_color_d3()
 #' p2 + scale_fill_d3()

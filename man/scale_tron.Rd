@@ -26,30 +26,18 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 See \code{\link[=pal_tron]{pal_tron()}} for details.
 }
 \examples{
-library("ggplot2")
-data("diamonds")
-
-ggplot(
-  subset(diamonds, carat >= 2.2),
-  aes(x = table, y = price, colour = cut)
-) +
-  geom_point(alpha = 0.7) +
-  geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-  theme_dark() +
-  theme(
-    panel.background = element_rect(fill = "#2D2D2D"),
-    legend.key = element_rect(fill = "#2D2D2D")
+example_scatterplot() +
+  ggplot2::theme_dark() +
+  ggplot2::theme(
+    panel.background = ggplot2::element_rect(fill = "#2D2D2D"),
+    legend.key = ggplot2::element_rect(fill = "#2D2D2D")
   ) +
   scale_color_tron()
 
-ggplot(
-  subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-  aes(x = depth, fill = cut)
-) +
-  geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-  theme_dark() +
-  theme(
-    panel.background = element_rect(fill = "#2D2D2D")
+example_barplot() +
+  ggplot2::theme_dark() +
+  ggplot2::theme(
+    panel.background = ggplot2::element_rect(fill = "#2D2D2D")
   ) +
   scale_fill_tron()
 }

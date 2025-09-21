@@ -26,25 +26,8 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 See \code{\link[=pal_lancet]{pal_lancet()}} for details.
 }
 \examples{
-library("ggplot2")
-data("diamonds")
-
-ggplot(
-  subset(diamonds, carat >= 2.2),
-  aes(x = table, y = price, colour = cut)
-) +
-  geom_point(alpha = 0.7) +
-  geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-  theme_bw() +
-  scale_color_lancet()
-
-ggplot(
-  subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
-  aes(x = depth, fill = cut)
-) +
-  geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-  theme_bw() +
-  scale_fill_lancet()
+example_scatterplot() + scale_color_lancet()
+example_barplot() + scale_fill_lancet()
 }
 \author{
 Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
