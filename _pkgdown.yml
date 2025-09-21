@@ -66,6 +66,12 @@ reference:
       - scale_color_observable
       - scale_colour_observable
       - scale_fill_observable
+  - title: "Primer"
+    contents:
+      - pal_primer
+      - scale_color_primer
+      - scale_colour_primer
+      - scale_fill_primer
   - title: "LocusZoom"
     contents:
       - pal_locuszoom

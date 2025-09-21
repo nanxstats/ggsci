@@ -151,6 +151,27 @@ ggsci_db$"observable"$"observable10" <- c(
   "Gray" = "#9498A0"
 )
 
+# Primer data visualization color palette ----
+ggsci_db$"primer"$"default" <- c(
+  "Blue" = "#006EDB",
+  "Orange" = "#EB670F",
+  "Red" = "#DF0C24",
+  "Teal" = "#179B9B",
+  "Green" = "#30A147",
+  "Purple" = "#894CEB",
+  "Yellow" = "#B88700",
+  "Pink" = "#CE2C85",
+  "Brown" = "#856D4C",
+  "Lime" = "#527A29",
+  "Coral" = "#D43511",
+  "Pine" = "#167E53",
+  "Auburn" = "#9D615C",
+  "Olive" = "#64762D",
+  "Plum" = "#A830E8",
+  "Lemon" = "#866E04",
+  "Gray" = "#808FA3"
+)
+
 # Color palette from IGV ----
 ggsci_db$"igv"$"default" <- c(
   "chr1" = "#5050FF", "chr2" = "#CE3D32", "chr3" = "#749B58",
