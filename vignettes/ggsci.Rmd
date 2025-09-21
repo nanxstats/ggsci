@@ -87,6 +87,9 @@ summarized in the table below.
 | Observable      | `scale_color_observable()`   | `"observable10"`               | `pal_observable()`   |
 |                 | `scale_fill_observable()`    |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Primer          | `scale_color_primer()`       | `"default"`                    | `pal_primer()`       |
+|                 | `scale_fill_primer()`        |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |
 |                 | `scale_fill_locuszoom()`     |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -285,6 +288,17 @@ is the default categorical colors scheme used by Observable.
 p1_observable <- p1 + scale_color_observable()
 p2_observable <- p2 + scale_fill_observable()
 grid.arrange(p1_observable, p2_observable, ncol = 2)
+```
+
+### Primer
+
+The Primer palette follows the data visualization colors from [GitHub's Primer
+design system](https://primer.style/product/ui-patterns/data-visualization/).
+
+```{r}
+p1_primer <- p1 + scale_color_primer()
+p2_primer <- p2 + scale_fill_primer()
+grid.arrange(p1_primer, p2_primer, ncol = 2)
 ```
 
 ### LocusZoom

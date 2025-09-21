@@ -1,12 +1,17 @@
 # ggsci 3.2.0.9000
 
+## New features
+
+- Add the Primer palette in `scale_color_primer()`
+  and `scale_fill_primer()` (#62).
+
 ## Improvements
 
 - Add `example_scatterplot()` and `example_barplot()` to simplify
   discrete scale examples in documentation. This reduces boilerplate code
   and makes it easier to maintain the examples.
   Also improves graphical appearance of the examples by using a minimalist
-  theme with alternative data subsets.
+  theme with alternative data subsets (#61).
 
 # ggsci 3.2.0
 
