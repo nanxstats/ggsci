@@ -160,3 +160,7 @@ reference:
       - scale_color_tw3
       - scale_colour_tw3
       - scale_fill_tw3
+  - title: "Example plots"
+    contents:
+      - example_scatterplot
+      - example_barplot
