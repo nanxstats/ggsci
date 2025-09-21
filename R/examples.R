@@ -31,7 +31,8 @@ example_scatterplot <- function() {
     ggplot2::theme_minimal() +
     ggplot2::theme(
       axis.title.x = ggplot2::element_blank(),
-      axis.title.y = ggplot2::element_blank()
+      axis.title.y = ggplot2::element_blank(),
+      panel.grid.minor = ggplot2::element_blank()
     )
 }
 
@@ -48,5 +49,6 @@ example_barplot <- function() {
       axis.title.x = ggplot2::element_blank(),
       axis.title.y = ggplot2::element_blank(),
       panel.grid.major.x = ggplot2::element_blank(),
+      panel.grid.minor.y = ggplot2::element_blank()
     )
 }
