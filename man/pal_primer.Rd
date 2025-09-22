@@ -4,11 +4,11 @@
 \alias{pal_primer}
 \title{Primer design system palette}
 \usage{
-pal_primer(palette = c("default"), alpha = 1)
+pal_primer(palette = c("mark17"), alpha = 1)
 }
 \arguments{
 \item{palette}{Palette type.
-Currently there is one available option: \code{"default"}
+Currently there is one available option: \code{"mark17"}
 (17-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].
@@ -19,8 +19,8 @@ The Primer design system data visualization palette.
 }
 \examples{
 library("scales")
-show_col(pal_primer("default")(17))
-show_col(pal_primer("default", alpha = 0.6)(17))
+show_col(pal_primer("mark17")(17))
+show_col(pal_primer("mark17", alpha = 0.6)(17))
 }
 \references{
 GitHub (2024). "Primer data visualization colors."

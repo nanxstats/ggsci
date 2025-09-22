@@ -6,15 +6,15 @@
 \alias{scale_fill_primer}
 \title{Primer color scales}
 \usage{
-scale_color_primer(palette = c("default"), alpha = 1, ...)
+scale_color_primer(palette = c("mark17"), alpha = 1, ...)
 
-scale_colour_primer(palette = c("default"), alpha = 1, ...)
+scale_colour_primer(palette = c("mark17"), alpha = 1, ...)
 
-scale_fill_primer(palette = c("default"), alpha = 1, ...)
+scale_fill_primer(palette = c("mark17"), alpha = 1, ...)
 }
 \arguments{
 \item{palette}{Palette type.
-Currently there is one available option: \code{"default"}
+Currently there is one available option: \code{"mark17"}
 (17-color palette).}
 
 \item{alpha}{Transparency level, a real number in (0, 1].

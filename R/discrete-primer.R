@@ -3,7 +3,7 @@
 #' The Primer design system data visualization palette.
 #'
 #' @param palette Palette type.
-#'   Currently there is one available option: `"default"`
+#'   Currently there is one available option: `"mark17"`
 #'   (17-color palette).
 #' @param alpha Transparency level, a real number in (0, 1].
 #'   See `alpha` in [grDevices::rgb()] for details.
@@ -21,9 +21,9 @@
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_primer("default")(17))
-#' show_col(pal_primer("default", alpha = 0.6)(17))
-pal_primer <- function(palette = c("default"), alpha = 1) {
+#' show_col(pal_primer("mark17")(17))
+#' show_col(pal_primer("mark17", alpha = 0.6)(17))
+pal_primer <- function(palette = c("mark17"), alpha = 1) {
   palette <- match.arg(palette)
 
   if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
@@ -61,7 +61,7 @@ pal_primer <- function(palette = c("default"), alpha = 1) {
 #' @examples
 #' example_scatterplot() + scale_color_primer()
 #' example_barplot() + scale_fill_primer()
-scale_color_primer <- function(palette = c("default"), alpha = 1, ...) {
+scale_color_primer <- function(palette = c("mark17"), alpha = 1, ...) {
   palette <- match.arg(palette)
   if (is_ggplot2_350()) {
     discrete_scale("colour", palette = pal_primer(palette, alpha), ...)
@@ -77,7 +77,7 @@ scale_colour_primer <- scale_color_primer
 #' @export scale_fill_primer
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_primer
-scale_fill_primer <- function(palette = c("default"), alpha = 1, ...) {
+scale_fill_primer <- function(palette = c("mark17"), alpha = 1, ...) {
   palette <- match.arg(palette)
   if (is_ggplot2_350()) {
     discrete_scale("fill", palette = pal_primer(palette, alpha), ...)
