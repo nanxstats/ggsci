@@ -15,6 +15,11 @@
   Also improves graphical appearance of the examples by using a minimalist
   theme with alternative data subsets (#61).
 
+## Maintenance
+
+- Refactor the logo generation script from an R script to a shell script
+  and move it into `tools/` (#66).
+
 # ggsci 3.2.0
 
 ## New features
