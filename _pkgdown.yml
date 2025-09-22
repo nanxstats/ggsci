@@ -72,6 +72,12 @@ reference:
       - scale_color_primer
       - scale_colour_primer
       - scale_fill_primer
+  - title: "Atlassian"
+    contents:
+      - pal_atlassian
+      - scale_color_atlassian
+      - scale_colour_atlassian
+      - scale_fill_atlassian
   - title: "LocusZoom"
     contents:
       - pal_locuszoom
