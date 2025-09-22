@@ -87,7 +87,7 @@ summarized in the table below.
 | Observable      | `scale_color_observable()`   | `"observable10"`               | `pal_observable()`   |
 |                 | `scale_fill_observable()`    |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
-| Primer          | `scale_color_primer()`       | `"default"`                    | `pal_primer()`       |
+| Primer          | `scale_color_primer()`       | `"mark17"`                     | `pal_primer()`       |
 |                 | `scale_fill_primer()`        |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
 | LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |

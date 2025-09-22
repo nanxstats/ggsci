@@ -152,7 +152,7 @@ ggsci_db$"observable"$"observable10" <- c(
 )
 
 # Primer data visualization color palette ----
-ggsci_db$"primer"$"default" <- c(
+ggsci_db$"primer"$"mark17" <- c(
   "Blue" = "#006EDB",
   "Orange" = "#EB670F",
   "Red" = "#DF0C24",
