@@ -2,8 +2,10 @@
 
 ## New features
 
-- Add the Primer palette in `scale_color_primer()`
-  and `scale_fill_primer()` (#62).
+- Add the Primer design system (from GitHub) palette in `scale_color_primer()`
+  and `scale_fill_primer()` (#62, #63).
+- Add the Atlassian Design System palette in `scale_color_atlassian()`
+  and `scale_fill_atlassian()` (#64).
 
 ## Improvements
 
