@@ -1,4 +1,5 @@
 AAAS
+Atlassian
 BMJ
 Bioinformatics
 CMD
@@ -22,6 +23,7 @@ Morty
 NEJM
 NPG
 ORCID
+Pettiross
 Pruim
 RStudio
 SSL
@@ -41,4 +43,5 @@ js
 pandoc
 pngquant
 ragg
-viridis
+roxygen
+staticimports
