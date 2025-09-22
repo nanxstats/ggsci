@@ -154,6 +154,14 @@ p2_primer <- p2 + scale_fill_primer()
 grid.arrange(p1_primer, p2_primer, ncol = 2)
 ```
 
+### Atlassian
+
+```{r, ggsci-atlassian}
+p1_atlassian <- p1 + scale_color_atlassian()
+p2_atlassian <- p2 + scale_fill_atlassian()
+grid.arrange(p1_atlassian, p2_atlassian, ncol = 2)
+```
+
 ### LocusZoom
 
 ```{r, ggsci-locuszoom}
