@@ -16,7 +16,7 @@
 #' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
-#' GitHub (2024). "Primer data visualization colors."
+#' GitHub (2025). "Primer data visualization colors."
 #' <https://primer.style/product/ui-patterns/data-visualization/>
 #'
 #' @examples
@@ -53,7 +53,7 @@ pal_primer <- function(palette = c("mark17"), alpha = 1) {
 #' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
-#' GitHub (2024). "Primer data visualization colors."
+#' GitHub (2025). "Primer data visualization colors."
 #' <https://primer.style/product/ui-patterns/data-visualization/>
 #'
 #' @rdname scale_primer

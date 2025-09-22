@@ -90,6 +90,9 @@ summarized in the table below.
 | Primer          | `scale_color_primer()`       | `"mark17"`                     | `pal_primer()`       |
 |                 | `scale_fill_primer()`        |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Atlassian       | `scale_color_atlassian()`    | `"categorical8"`               | `pal_atlassian()`    |
+|                 | `scale_fill_atlassian()`     |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |
 |                 | `scale_fill_locuszoom()`     |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -299,6 +302,17 @@ design system](https://primer.style/product/ui-patterns/data-visualization/).
 p1_primer <- p1 + scale_color_primer()
 p2_primer <- p2 + scale_fill_primer()
 grid.arrange(p1_primer, p2_primer, ncol = 2)
+```
+
+### Atlassian
+
+The palette follows the categorical chart colors from [Atlassian
+Design System](https://atlassian.design/foundations/color-new/data-visualization-color).
+
+```{r}
+p1_atlassian <- p1 + scale_color_atlassian()
+p2_atlassian <- p2 + scale_fill_atlassian()
+grid.arrange(p1_atlassian, p2_atlassian, ncol = 2)
 ```
 
 ### LocusZoom
