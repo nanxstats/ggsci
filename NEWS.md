@@ -15,6 +15,11 @@
   Also improves graphical appearance of the examples by using a minimalist
   theme with alternative data subsets (#61).
 
+## Maintenance
+
+- Refactor the logo generation script from an R script to a shell script
+  and move it into `tools/` (#66).
+
 # ggsci 3.2.0
 
 ## New features
@@ -71,7 +76,7 @@
   [customizing color selection and ordering in a palette](https://nanx.me/ggsci/articles/ggsci-faq.html#customize-color-ordering-in-a-palette)
   with self-defined color scale functions (#23).
 - Fix "lost braces" check notes on r-devel by using Unicode characters
-  ([a91faf1](https://github.com/nanxstats/ggsci/commit/a91faf183ae44fe43355283c173a1e2de70de6d2)).
+  (nanxstats/ggsci@a91faf1).
 
 # ggsci 3.0.0
 
