@@ -30,7 +30,7 @@ example_scatterplot() + scale_color_primer()
 example_barplot() + scale_fill_primer()
 }
 \references{
-GitHub (2024). "Primer data visualization colors."
+GitHub (2025). "Primer data visualization colors."
 \url{https://primer.style/product/ui-patterns/data-visualization/}
 }
 \author{

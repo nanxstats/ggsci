@@ -23,7 +23,7 @@ show_col(pal_primer("default")(17))
 show_col(pal_primer("default", alpha = 0.6)(17))
 }
 \references{
-GitHub (2024). "Primer data visualization colors."
+GitHub (2025). "Primer data visualization colors."
 \url{https://primer.style/product/ui-patterns/data-visualization/}
 }
 \author{
