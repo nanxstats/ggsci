@@ -28,6 +28,7 @@ Other contributors:
   \item Clara Jégousse \email{cat3@hi.is} [contributor]
   \item Hui Chen \email{huichen@zju.edu.cn} [contributor]
   \item Miaozhu Li \email{miaozhu.li@duke.edu} [contributor]
+  \item iTerm2-Color-Schemes contributors (iTerm2-Color-Schemes project) [contributor, copyright holder]
   \item Winston Chang (staticimports.R) [contributor, copyright holder]
 }
 
