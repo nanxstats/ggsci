@@ -78,6 +78,13 @@ reference:
       - scale_color_atlassian
       - scale_colour_atlassian
       - scale_fill_atlassian
+  - title: "iTerm"
+    contents:
+      - iterm_palettes
+      - pal_iterm
+      - scale_color_iterm
+      - scale_colour_iterm
+      - scale_fill_iterm
   - title: "LocusZoom"
     contents:
       - pal_locuszoom
