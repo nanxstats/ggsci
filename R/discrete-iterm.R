@@ -1,6 +1,6 @@
 #' iTerm color palettes
 #'
-#' ANSI terminal color palettes sourced from the iTerm2-Color-Schemes project.
+#' ANSI terminal color palettes sourced from the iterm2-color-schemes project.
 #' Each theme provides normal and bright variants.
 #'
 #' @param palette Palette name. See [iterm_palettes()] for available options.
@@ -14,7 +14,7 @@
 #' @importFrom scales manual_pal
 #'
 #' @references
-#' iTerm2-Color-Schemes: <https://github.com/mbadolato/iTerm2-Color-Schemes>
+#' <https://github.com/mbadolato/iTerm2-Color-Schemes>
 #'
 #' @examples
 #' library("scales")

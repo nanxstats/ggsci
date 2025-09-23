@@ -19,7 +19,7 @@ pal_iterm(
 See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 }
 \description{
-ANSI terminal color palettes sourced from the iTerm2-Color-Schemes project.
+ANSI terminal color palettes sourced from the iterm2-color-schemes project.
 Each theme provides normal and bright variants.
 }
 \examples{
@@ -28,5 +28,5 @@ show_col(pal_iterm("Rose Pine")(6))
 show_col(pal_iterm("Rose Pine", variant = "bright", alpha = 0.7)(6))
 }
 \references{
-iTerm2-Color-Schemes: \url{https://github.com/mbadolato/iTerm2-Color-Schemes}
+\url{https://github.com/mbadolato/iTerm2-Color-Schemes}
 }
