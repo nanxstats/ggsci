@@ -162,6 +162,14 @@ p2_atlassian <- p2 + scale_fill_atlassian()
 grid.arrange(p1_atlassian, p2_atlassian, ncol = 2)
 ```
 
+### iTerm
+
+```{r, ggsci-iterm}
+p1_iterm <- p1 + scale_color_iterm("Rose Pine")
+p2_iterm <- p2 + scale_fill_iterm("Rose Pine")
+grid.arrange(p1_iterm, p2_iterm, ncol = 2)
+```
+
 ### LocusZoom
 
 ```{r, ggsci-locuszoom}

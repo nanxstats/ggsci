@@ -9,7 +9,10 @@ Authors@R: c(
     person("Clara", "Jégousse", email = "cat3@hi.is", role = "ctb"),
     person("Hui", "Chen", email = "huichen@zju.edu.cn", role = "ctb"),
     person("Miaozhu", "Li", email = "miaozhu.li@duke.edu", role = "ctb"),
-    person("Winston", "Chang", role = c("ctb", "cph"), comment = "staticimports.R")
+    person("iTerm2-Color-Schemes contributors", role = c("ctb", "cph"),
+           comment = "iTerm2-Color-Schemes project"),
+    person("Winston", "Chang", role = c("ctb", "cph"),
+           comment = "staticimports.R")
     )
 Maintainer: Nan Xiao <me@nanx.me>
 Description: A collection of 'ggplot2' color palettes inspired by

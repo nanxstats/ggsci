@@ -83,6 +83,10 @@ open with `vignette("ggsci")` in R) for a quick-start guide.
 
 <img src="man/figures/README-ggsci-atlassian-1.png" width="100%" style="display: block; margin: auto;" />
 
+### iTerm
+
+<img src="man/figures/README-ggsci-iterm-1.png" width="100%" style="display: block; margin: auto;" />
+
 ### LocusZoom
 
 <img src="man/figures/README-ggsci-locuszoom-1.png" width="100%" style="display: block; margin: auto;" />

@@ -6,6 +6,7 @@
   and `scale_fill_primer()` (#62, #63).
 - Add the Atlassian Design System palette in `scale_color_atlassian()`
   and `scale_fill_atlassian()` (#64).
+- Add 400+ iTerm palettes in `scale_color_iterm()` and `scale_fill_iterm()` (#67).
 
 ## Improvements
 
