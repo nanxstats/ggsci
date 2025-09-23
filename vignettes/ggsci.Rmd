@@ -93,6 +93,9 @@ summarized in the table below.
 | Atlassian       | `scale_color_atlassian()`    | `"categorical8"`               | `pal_atlassian()`    |
 |                 | `scale_fill_atlassian()`     |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| iTerm           | `scale_color_iterm()`        | `iterm_palettes()`             | `pal_iterm()`        |
+|                 | `scale_fill_iterm()`         |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | LocusZoom       | `scale_color_locuszoom()`    | `"default"`                    | `pal_locuszoom()`    |
 |                 | `scale_fill_locuszoom()`     |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -313,6 +316,19 @@ Design System](https://atlassian.design/foundations/color-new/data-visualization
 p1_atlassian <- p1 + scale_color_atlassian()
 p2_atlassian <- p2 + scale_fill_atlassian()
 grid.arrange(p1_atlassian, p2_atlassian, ncol = 2)
+```
+
+### iTerm
+
+These palettes are sourced from the iterm2-color-schemes project,
+which includes 400+ color schemes (list them with `iterm_palettes()`).
+Each scheme provides six categorical colors with two possible variants:
+`"normal"` and `"bright"`.
+
+```{r}
+p1_iterm <- p1 + scale_color_iterm("Rose Pine")
+p2_iterm <- p2 + scale_fill_iterm("Rose Pine")
+grid.arrange(p1_iterm, p2_iterm, ncol = 2)
 ```
 
 ### LocusZoom
