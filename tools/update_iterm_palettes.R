@@ -97,7 +97,7 @@ header_lines <- c(
   "#'",
   "#' @examples",
   "#' iterm_palettes()",
-  "iterm_palettes <- function () {",
+  "iterm_palettes <- function() {",
   "  c(",
   paste0('    "', theme_names, '"', collapse = ",\n"),
   "  )",

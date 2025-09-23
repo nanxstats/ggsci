@@ -9,7 +9,7 @@
 #'
 #' @examples
 #' iterm_palettes()
-iterm_palettes <- function () {
+iterm_palettes <- function() {
   c(
     "0x96f",
     "12-bit Rainbow",
