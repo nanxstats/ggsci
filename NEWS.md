@@ -1,4 +1,4 @@
-# ggsci 3.2.0.9000
+# ggsci 4.0.0
 
 ## New features
 
@@ -20,6 +20,7 @@
 
 - Refactor the logo generation script from an R script to a shell script
   and move it into `tools/` (#66).
+- Use standard static imports workflow (#58).
 
 # ggsci 3.2.0
 
