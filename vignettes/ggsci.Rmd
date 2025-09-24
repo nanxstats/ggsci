@@ -325,6 +325,10 @@ which includes 400+ color schemes (list them with `iterm_palettes()`).
 Each scheme provides six categorical colors with two possible variants:
 `"normal"` and `"bright"`.
 
+You can preview these color palettes in ggsci on a dedicated microsite:
+<https://nanx.me/ggsci-iterm/>. It renders example plots for all palettes
+on a single page for fast visual comparison.
+
 ```{r}
 p1_iterm <- p1 + scale_color_iterm("Rose Pine")
 p2_iterm <- p2 + scale_fill_iterm("Rose Pine")
