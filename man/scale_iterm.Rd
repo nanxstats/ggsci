@@ -40,6 +40,10 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 \description{
 See \code{\link[=pal_iterm]{pal_iterm()}} for details.
 }
+\details{
+Preview all available iTerm color palettes in ggsci:
+\url{https://nanx.me/ggsci-iterm/}.
+}
 \examples{
 example_scatterplot() + scale_color_iterm("Rose Pine")
 example_barplot() + scale_fill_iterm("Rose Pine")

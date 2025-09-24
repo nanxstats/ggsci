@@ -22,6 +22,10 @@ See \code{alpha} in \code{\link[grDevices:rgb]{grDevices::rgb()}} for details.}
 ANSI terminal color palettes sourced from the iterm2-color-schemes project.
 Each theme provides normal and bright variants.
 }
+\details{
+Preview all available iTerm color palettes in ggsci:
+\url{https://nanx.me/ggsci-iterm/}.
+}
 \examples{
 library("scales")
 show_col(pal_iterm("Rose Pine")(6))

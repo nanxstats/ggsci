@@ -3,6 +3,10 @@
 #' ANSI terminal color palettes sourced from the iterm2-color-schemes project.
 #' Each theme provides normal and bright variants.
 #'
+#' @details
+#' Preview all available iTerm color palettes in ggsci:
+#' <https://nanx.me/ggsci-iterm/>.
+#'
 #' @param palette Palette name. See [iterm_palettes()] for available options.
 #' @param variant Variant of the palette. One of `"normal"`, `"bright"`.
 #' @param alpha Transparency level, a real number in (0, 1].
@@ -40,6 +44,10 @@ pal_iterm <- function(palette = iterm_palettes(), variant = c("normal", "bright"
 #' iTerm color scales
 #'
 #' See [pal_iterm()] for details.
+#'
+#' @details
+#' Preview all available iTerm color palettes in ggsci:
+#' <https://nanx.me/ggsci-iterm/>.
 #'
 #' @inheritParams pal_iterm
 #' @param ... Additional parameters for [ggplot2::discrete_scale()].
