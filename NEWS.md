@@ -1,3 +1,23 @@
+# ggsci 4.1.0
+
+## Improvements
+
+- Synchronize the iTerm color palettes with upstream (#72).
+
+  This update adds 8 new palettes to `iterm_palettes()`: Hot Dog Stand
+  variations, Matte Black, Poimandres variations, and Selenized Black.
+  These palettes are now usable by `pal_iterm()`, `scale_color_iterm()`,
+  and `scale_fill_iterm()`.
+
+  Additionally, the color values for 40+ existing iTerm palettes have been
+  updated to match the latest upstream color specifications.
+
+## Documentation
+
+- Add the [ggsci iterm palettes microsite](https://nanx.me/ggsci-iterm/) link
+  to `vignette("ggsci")` (#70). This microsite helps users preview all iTerm
+  color palettes available in ggsci.
+
 # ggsci 4.0.0
 
 ## New features
