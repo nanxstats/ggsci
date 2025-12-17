@@ -65,6 +65,7 @@ iterm_palettes <- function() {
     "Bluloco Light",
     "Borland",
     "Box",
+    "branch",
     "Breadog",
     "Breeze",
     "Bright Lights",
@@ -295,12 +296,15 @@ iterm_palettes <- function() {
     "Night Owlish Light",
     "Nightfox",
     "Niji",
+    "No Clown Fiesta Light",
+    "No Clown Fiesta",
     "Nocturnal Winter",
     "Nord Light",
     "Nord Wave",
     "Nord",
     "Nordfox",
     "Novel",
+    "novmbr",
     "Nvim Dark",
     "Nvim Light",
     "Obsidian",
@@ -308,12 +312,14 @@ iterm_palettes <- function() {
     "Oceanic Material",
     "Oceanic Next",
     "Ollie",
+    "One Dark Two",
     "One Double Dark",
     "One Double Light",
     "One Half Dark",
     "One Half Light",
     "Operator Mono Dark",
     "Overnight Slumber",
+    "owl",
     "Oxocarbon",
     "Pale Night Hc",
     "Pandora",
@@ -418,6 +424,7 @@ iterm_palettes <- function() {
     "Tomorrow Night",
     "Tomorrow",
     "Toy Chest",
+    "traffic",
     "Treehouse",
     "Twilight",
     "Ubuntu",
@@ -425,6 +432,7 @@ iterm_palettes <- function() {
     "Ultra Violent",
     "Under The Sea",
     "Unikitty",
+    "urban",
     "Urple",
     "Vague",
     "Vaughn",
@@ -1429,6 +1437,24 @@ ggsci_db_iterm$"Box"$"bright" <- c(
   "Cyan" = "#14FFFF",
   "Green" = "#23FD00",
   "Magenta" = "#FD28FF"
+)
+
+ggsci_db_iterm$"branch"$"normal" <- c(
+  "Blue" = "#3B8E8C",
+  "Yellow" = "#D29B5A",
+  "Red" = "#C2562D",
+  "Cyan" = "#639A90",
+  "Green" = "#96A65E",
+  "Magenta" = "#C47E5B"
+)
+
+ggsci_db_iterm$"branch"$"bright" <- c(
+  "Blue" = "#3B8E8C",
+  "Yellow" = "#D29B5A",
+  "Red" = "#C2562D",
+  "Cyan" = "#639A90",
+  "Green" = "#96A65E",
+  "Magenta" = "#C47E5B"
 )
 
 ggsci_db_iterm$"Breadog"$"normal" <- c(
@@ -5571,6 +5597,42 @@ ggsci_db_iterm$"Niji"$"bright" <- c(
   "Magenta" = "#FFA2ED"
 )
 
+ggsci_db_iterm$"No Clown Fiesta Light"$"normal" <- c(
+  "Blue" = "#8BA1BF",
+  "Yellow" = "#B89058",
+  "Red" = "#874E42",
+  "Cyan" = "#3E5F66",
+  "Green" = "#677940",
+  "Magenta" = "#AA759F"
+)
+
+ggsci_db_iterm$"No Clown Fiesta Light"$"bright" <- c(
+  "Blue" = "#93A2AB",
+  "Yellow" = "#B89058",
+  "Red" = "#637786",
+  "Cyan" = "#99AB93",
+  "Green" = "#677940",
+  "Magenta" = "#AA759F"
+)
+
+ggsci_db_iterm$"No Clown Fiesta"$"normal" <- c(
+  "Blue" = "#BAD7FF",
+  "Yellow" = "#F4BF75",
+  "Red" = "#B46958",
+  "Cyan" = "#88AFA2",
+  "Green" = "#90A959",
+  "Magenta" = "#AA759F"
+)
+
+ggsci_db_iterm$"No Clown Fiesta"$"bright" <- c(
+  "Blue" = "#BAD7FF",
+  "Yellow" = "#F4BF75",
+  "Red" = "#7E97AB",
+  "Cyan" = "#88AFA2",
+  "Green" = "#90A959",
+  "Magenta" = "#AA759F"
+)
+
 ggsci_db_iterm$"Nocturnal Winter"$"normal" <- c(
   "Blue" = "#3182E0",
   "Yellow" = "#F5F17A",
@@ -5677,6 +5739,24 @@ ggsci_db_iterm$"Novel"$"bright" <- c(
   "Cyan" = "#0087CC",
   "Green" = "#009600",
   "Magenta" = "#CC00CC"
+)
+
+ggsci_db_iterm$"novmbr"$"normal" <- c(
+  "Blue" = "#2F7D7C",
+  "Yellow" = "#CCA75F",
+  "Red" = "#9F6434",
+  "Cyan" = "#52877F",
+  "Green" = "#9DAC5F",
+  "Magenta" = "#B5896E"
+)
+
+ggsci_db_iterm$"novmbr"$"bright" <- c(
+  "Blue" = "#2F7D7C",
+  "Yellow" = "#CCA75F",
+  "Red" = "#9F6434",
+  "Cyan" = "#52877F",
+  "Green" = "#9DAC5F",
+  "Magenta" = "#B5896E"
 )
 
 ggsci_db_iterm$"Nvim Dark"$"normal" <- c(
@@ -5805,6 +5885,24 @@ ggsci_db_iterm$"Ollie"$"bright" <- c(
   "Magenta" = "#FFC21D"
 )
 
+ggsci_db_iterm$"One Dark Two"$"normal" <- c(
+  "Blue" = "#71B9F4",
+  "Yellow" = "#EAC786",
+  "Red" = "#E27881",
+  "Cyan" = "#62BAC6",
+  "Green" = "#98C379",
+  "Magenta" = "#C88BDA"
+)
+
+ggsci_db_iterm$"One Dark Two"$"bright" <- c(
+  "Blue" = "#8DC7F6",
+  "Yellow" = "#EDCF97",
+  "Red" = "#E68991",
+  "Cyan" = "#78C4CE",
+  "Green" = "#A8CC8E",
+  "Magenta" = "#D3A2E2"
+)
+
 ggsci_db_iterm$"One Double Dark"$"normal" <- c(
   "Blue" = "#3FB1F5",
   "Yellow" = "#ECBE70",
@@ -5911,6 +6009,24 @@ ggsci_db_iterm$"Overnight Slumber"$"bright" <- c(
   "Cyan" = "#FFA7C4",
   "Green" = "#85CC95",
   "Magenta" = "#C792EB"
+)
+
+ggsci_db_iterm$"owl"$"normal" <- c(
+  "Blue" = "#656565",
+  "Yellow" = "#CACACA",
+  "Red" = "#5A5A5A",
+  "Cyan" = "#7F7F7F",
+  "Green" = "#989898",
+  "Magenta" = "#B1B1B1"
+)
+
+ggsci_db_iterm$"owl"$"bright" <- c(
+  "Blue" = "#656565",
+  "Yellow" = "#CACACA",
+  "Red" = "#DA5B2C",
+  "Cyan" = "#7F7F7F",
+  "Green" = "#989898",
+  "Magenta" = "#B1B1B1"
 )
 
 ggsci_db_iterm$"Oxocarbon"$"normal" <- c(
@@ -7785,6 +7901,24 @@ ggsci_db_iterm$"Toy Chest"$"bright" <- c(
   "Magenta" = "#AE6BDC"
 )
 
+ggsci_db_iterm$"traffic"$"normal" <- c(
+  "Blue" = "#515E67",
+  "Yellow" = "#C79E84",
+  "Red" = "#934E46",
+  "Cyan" = "#5C6F7D",
+  "Green" = "#637268",
+  "Magenta" = "#715F5E"
+)
+
+ggsci_db_iterm$"traffic"$"bright" <- c(
+  "Blue" = "#515E67",
+  "Yellow" = "#C79E84",
+  "Red" = "#934E46",
+  "Cyan" = "#5C6F7D",
+  "Green" = "#637270",
+  "Magenta" = "#715F5E"
+)
+
 ggsci_db_iterm$"Treehouse"$"normal" <- c(
   "Blue" = "#58859A",
   "Yellow" = "#AA820C",
@@ -7909,6 +8043,24 @@ ggsci_db_iterm$"Unikitty"$"bright" <- c(
   "Cyan" = "#93FFEF",
   "Green" = "#D3FFAF",
   "Magenta" = "#FFEFFF"
+)
+
+ggsci_db_iterm$"urban"$"normal" <- c(
+  "Blue" = "#615772",
+  "Yellow" = "#AE835A",
+  "Red" = "#87404F",
+  "Cyan" = "#625464",
+  "Green" = "#74934E",
+  "Magenta" = "#854B64"
+)
+
+ggsci_db_iterm$"urban"$"bright" <- c(
+  "Blue" = "#615772",
+  "Yellow" = "#AE835A",
+  "Red" = "#87404F",
+  "Cyan" = "#625464",
+  "Green" = "#74934E",
+  "Magenta" = "#854B64"
 )
 
 ggsci_db_iterm$"Urple"$"normal" <- c(
