@@ -2,7 +2,7 @@
 
 ## Improvements
 
-- Synchronize the iTerm color palettes with upstream.
+- Synchronize the iTerm color palettes with upstream (#75).
 
   This update adds 8 new palettes to `iterm_palettes()`: branch,
   No Clown Fiesta variations, novmbr, One Dark Two, owl, traffic, and urban.
