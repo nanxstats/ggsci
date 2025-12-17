@@ -45,11 +45,12 @@
 #' show_col(pal_tw3("rose")(10))
 #' show_col(pal_tw3("rose", n = 30, alpha = 0.6, reverse = TRUE)(30))
 rgb_tw3 <- function(
-    palette = c(
-      "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
-      "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
-      "indigo", "violet", "purple", "fuchsia", "pink", "rose"
-    ), n = 10, alpha = 1, reverse = FALSE) {
+  palette = c(
+    "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
+    "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
+    "indigo", "violet", "purple", "fuchsia", "pink", "rose"
+  ), n = 10, alpha = 1, reverse = FALSE
+) {
   palette <- match.arg(palette)
 
   if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
@@ -84,11 +85,12 @@ rgb_tw3 <- function(
 #' show_col(pal_tw3("rose")(10))
 #' show_col(pal_tw3("rose", n = 30, alpha = 0.6, reverse = TRUE)(30))
 pal_tw3 <- function(
-    palette = c(
-      "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
-      "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
-      "indigo", "violet", "purple", "fuchsia", "pink", "rose"
-    ), n = 10, alpha = 1, reverse = FALSE) {
+  palette = c(
+    "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
+    "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
+    "indigo", "violet", "purple", "fuchsia", "pink", "rose"
+  ), n = 10, alpha = 1, reverse = FALSE
+) {
   palette <- match.arg(palette)
 
   alpha_cols <- rgb_tw3(palette, n, alpha, reverse)
@@ -129,11 +131,12 @@ pal_tw3 <- function(
 #'   theme_bw() +
 #'   scale_fill_tw3("slate")
 scale_color_tw3 <- function(
-    palette = c(
-      "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
-      "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
-      "indigo", "violet", "purple", "fuchsia", "pink", "rose"
-    ), alpha = 1, reverse = FALSE, ...) {
+  palette = c(
+    "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
+    "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
+    "indigo", "violet", "purple", "fuchsia", "pink", "rose"
+  ), alpha = 1, reverse = FALSE, ...
+) {
   palette <- match.arg(palette)
   scale_color_gradientn(
     colours = rgb_tw3(
@@ -152,11 +155,12 @@ scale_colour_tw3 <- scale_color_tw3
 #' @importFrom ggplot2 scale_fill_gradientn
 #' @rdname scale_tw3
 scale_fill_tw3 <- function(
-    palette = c(
-      "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
-      "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
-      "indigo", "violet", "purple", "fuchsia", "pink", "rose"
-    ), alpha = 1, reverse = FALSE, ...) {
+  palette = c(
+    "slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber",
+    "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue",
+    "indigo", "violet", "purple", "fuchsia", "pink", "rose"
+  ), alpha = 1, reverse = FALSE, ...
+) {
   palette <- match.arg(palette)
   scale_fill_gradientn(
     colours = rgb_tw3(
