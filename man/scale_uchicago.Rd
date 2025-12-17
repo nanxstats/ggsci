@@ -43,7 +43,7 @@ p1 + scale_color_uchicago(palette = "dark")
 p2 + scale_fill_uchicago(palette = "dark")
 }
 \references{
-\url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+\url{https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf}
 }
 \author{
 Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}
