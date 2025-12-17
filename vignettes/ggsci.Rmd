@@ -384,7 +384,7 @@ grid.arrange(p1_cosmic_signature, p2_cosmic_signature, ncol = 2)
 ### UChicago
 
 The UChicago palette is based on
-[the colors](https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf)
+[the colors](https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf)
 used by the University of Chicago.
 There are three palette types (`default`, `light`, `dark`) available.
 

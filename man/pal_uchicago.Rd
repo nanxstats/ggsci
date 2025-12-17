@@ -28,7 +28,7 @@ show_col(pal_uchicago("light")(9))
 show_col(pal_uchicago("dark")(9))
 }
 \references{
-\url{https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf}
+\url{https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf}
 }
 \author{
 Nan Xiao | \email{me@nanx.me} | \url{https://nanx.me}

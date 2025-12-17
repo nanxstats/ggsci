@@ -18,7 +18,7 @@
 #' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
-#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
+#' <https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf>
 #'
 #' @examples
 #' library("scales")
@@ -55,7 +55,7 @@ pal_uchicago <- function(palette = c("default", "light", "dark"), alpha = 1) {
 #' @author Nan Xiao | \email{me@nanx.me} | <https://nanx.me>
 #'
 #' @references
-#' <https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
+#' <https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf>
 #'
 #' @rdname scale_uchicago
 #'
