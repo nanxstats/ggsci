@@ -2,6 +2,8 @@
 
 ## ggsci 4.2.0
 
+CRAN release: 2025-12-17
+
 ### Improvements
 
 - Synchronize the iTerm color palettes with upstream
