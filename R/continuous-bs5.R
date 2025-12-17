@@ -34,10 +34,11 @@
 #' show_col(pal_bs5("indigo")(10))
 #' show_col(pal_bs5("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 rgb_bs5 <- function(
-    palette = c(
-      "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
-      "green", "teal", "cyan", "gray"
-    ), n = 10, alpha = 1, reverse = FALSE) {
+  palette = c(
+    "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
+    "green", "teal", "cyan", "gray"
+  ), n = 10, alpha = 1, reverse = FALSE
+) {
   palette <- match.arg(palette)
 
   if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
@@ -72,10 +73,11 @@ rgb_bs5 <- function(
 #' show_col(pal_bs5("indigo")(10))
 #' show_col(pal_bs5("indigo", n = 30, alpha = 0.6, reverse = TRUE)(30))
 pal_bs5 <- function(
-    palette = c(
-      "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
-      "green", "teal", "cyan", "gray"
-    ), n = 10, alpha = 1, reverse = FALSE) {
+  palette = c(
+    "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
+    "green", "teal", "cyan", "gray"
+  ), n = 10, alpha = 1, reverse = FALSE
+) {
   palette <- match.arg(palette)
 
   alpha_cols <- rgb_bs5(palette, n, alpha, reverse)
@@ -116,10 +118,11 @@ pal_bs5 <- function(
 #'   theme_bw() +
 #'   scale_fill_bs5("teal")
 scale_color_bs5 <- function(
-    palette = c(
-      "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
-      "green", "teal", "cyan", "gray"
-    ), alpha = 1, reverse = FALSE, ...) {
+  palette = c(
+    "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
+    "green", "teal", "cyan", "gray"
+  ), alpha = 1, reverse = FALSE, ...
+) {
   palette <- match.arg(palette)
   scale_color_gradientn(
     colours = rgb_bs5(
@@ -138,10 +141,11 @@ scale_colour_bs5 <- scale_color_bs5
 #' @importFrom ggplot2 scale_fill_gradientn
 #' @rdname scale_bs5
 scale_fill_bs5 <- function(
-    palette = c(
-      "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
-      "green", "teal", "cyan", "gray"
-    ), alpha = 1, reverse = FALSE, ...) {
+  palette = c(
+    "blue", "indigo", "purple", "pink", "red", "orange", "yellow",
+    "green", "teal", "cyan", "gray"
+  ), alpha = 1, reverse = FALSE, ...
+) {
   palette <- match.arg(palette)
   scale_fill_gradientn(
     colours = rgb_bs5(

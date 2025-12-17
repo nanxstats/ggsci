@@ -31,8 +31,9 @@
 #' show_col(pal_cosmic("signature_substitutions")(6))
 #' show_col(pal_cosmic("signature_substitutions", alpha = 0.6)(6))
 pal_cosmic <- function(
-    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-    alpha = 1) {
+  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+  alpha = 1
+) {
   palette <- match.arg(palette)
 
   if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
@@ -68,8 +69,9 @@ pal_cosmic <- function(
 #' example_scatterplot() + scale_color_cosmic()
 #' example_barplot() + scale_fill_cosmic()
 scale_color_cosmic <- function(
-    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-    alpha = 1, ...) {
+  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+  alpha = 1, ...
+) {
   palette <- match.arg(palette)
   if (is_ggplot2_350()) {
     discrete_scale("colour", palette = pal_cosmic(palette, alpha), ...)
@@ -86,8 +88,9 @@ scale_colour_cosmic <- scale_color_cosmic
 #' @importFrom ggplot2 discrete_scale
 #' @rdname scale_cosmic
 scale_fill_cosmic <- function(
-    palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
-    alpha = 1, ...) {
+  palette = c("hallmarks_light", "hallmarks_dark", "signature_substitutions"),
+  alpha = 1, ...
+) {
   palette <- match.arg(palette)
   if (is_ggplot2_350()) {
     discrete_scale("fill", palette = pal_cosmic(palette, alpha), ...)
