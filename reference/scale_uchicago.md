@@ -38,7 +38,7 @@ scale_fill_uchicago(palette = c("default", "light", "dark"), alpha = 1, ...)
 
 ## References
 
-<https://news.uchicago.edu/sites/default/files/attachments/_uchicago.identity.guidelines.pdf>
+<https://news.uchicago.edu/sites/default/files/UCM_UniversityIdentityGuidelines_2-2020.pdf>
 
 ## Author
 

@@ -4,7 +4,8 @@
 
 ### Improvements
 
-- Synchronize the iTerm color palettes with upstream.
+- Synchronize the iTerm color palettes with upstream
+  ([\#75](https://github.com/nanxstats/ggsci/issues/75)).
 
   This update adds 8 new palettes to
   [`iterm_palettes()`](https://nanx.me/ggsci/reference/iterm_palettes.md):
