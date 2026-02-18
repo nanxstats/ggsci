@@ -22,6 +22,8 @@ iterm_palettes <- function() {
     "Adwaita Dark",
     "Adwaita",
     "Afterglow",
+    "Aizen Dark",
+    "Aizen Light",
     "Alabaster",
     "Alien Blood",
     "Andromeda",
@@ -74,8 +76,6 @@ iterm_palettes <- function() {
     "Builtin Dark",
     "Builtin Light",
     "Builtin Pastel Dark",
-    "Builtin Solarized Dark",
-    "Builtin Solarized Light",
     "Builtin Tango Dark",
     "Builtin Tango Light",
     "C64",
@@ -235,8 +235,13 @@ iterm_palettes <- function() {
     "JetBrains Darcula",
     "Jubi",
     "Kanagawa Dragon",
+    "Kanagawa Lotus",
     "Kanagawa Wave",
     "Kanagawabones",
+    "Kanso Ink",
+    "Kanso Mist",
+    "Kanso Pearl",
+    "Kanso Zen",
     "Kibble",
     "Kitty Default",
     "Kitty Low Contrast",
@@ -270,6 +275,10 @@ iterm_palettes <- function() {
     "Midnight In Mojave",
     "Mirage",
     "Misterioso",
+    "Modus Operandi Tinted",
+    "Modus Operandi",
+    "Modus Vivendi Tinted",
+    "Modus Vivendi",
     "Molokai",
     "Mona Lisa",
     "Monokai Classic",
@@ -317,6 +326,8 @@ iterm_palettes <- function() {
     "One Double Light",
     "One Half Dark",
     "One Half Light",
+    "Onenord Light",
+    "Onenord",
     "Operator Mono Dark",
     "Overnight Slumber",
     "owl",
@@ -397,6 +408,7 @@ iterm_palettes <- function() {
     "Subliminal",
     "Sugarplum",
     "Sundried",
+    "Sunset Drive",
     "Symfonic",
     "Synthwave Alpha",
     "Synthwave Everything",
@@ -663,6 +675,42 @@ ggsci_db_iterm$"Afterglow"$"bright" <- c(
   "Cyan" = "#7DD6CF",
   "Green" = "#7E8E50",
   "Magenta" = "#9F4E85"
+)
+
+ggsci_db_iterm$"Aizen Dark"$"normal" <- c(
+  "Blue" = "#84B4F8",
+  "Yellow" = "#F5DEA4",
+  "Red" = "#F08898",
+  "Cyan" = "#90DCD0",
+  "Green" = "#A4E09C",
+  "Magenta" = "#C8A2F4"
+)
+
+ggsci_db_iterm$"Aizen Dark"$"bright" <- c(
+  "Blue" = "#84B4F8",
+  "Yellow" = "#F5DEA4",
+  "Red" = "#F08898",
+  "Cyan" = "#90DCD0",
+  "Green" = "#A4E09C",
+  "Magenta" = "#C8A2F4"
+)
+
+ggsci_db_iterm$"Aizen Light"$"normal" <- c(
+  "Blue" = "#1C64F2",
+  "Yellow" = "#DD8C1A",
+  "Red" = "#D00C36",
+  "Cyan" = "#159096",
+  "Green" = "#3E9E28",
+  "Magenta" = "#8636EC"
+)
+
+ggsci_db_iterm$"Aizen Light"$"bright" <- c(
+  "Blue" = "#1C64F2",
+  "Yellow" = "#DD8C1A",
+  "Red" = "#D00C36",
+  "Cyan" = "#159096",
+  "Green" = "#3E9E28",
+  "Magenta" = "#8636EC"
 )
 
 ggsci_db_iterm$"Alabaster"$"normal" <- c(
@@ -1599,42 +1647,6 @@ ggsci_db_iterm$"Builtin Pastel Dark"$"bright" <- c(
   "Cyan" = "#DFDFFE",
   "Green" = "#CEFFAC",
   "Magenta" = "#FF9CFE"
-)
-
-ggsci_db_iterm$"Builtin Solarized Dark"$"normal" <- c(
-  "Blue" = "#268BD2",
-  "Yellow" = "#B58900",
-  "Red" = "#DC322F",
-  "Cyan" = "#2AA198",
-  "Green" = "#859900",
-  "Magenta" = "#D33682"
-)
-
-ggsci_db_iterm$"Builtin Solarized Dark"$"bright" <- c(
-  "Blue" = "#839496",
-  "Yellow" = "#657B83",
-  "Red" = "#CB4B16",
-  "Cyan" = "#93A1A1",
-  "Green" = "#586E75",
-  "Magenta" = "#6C71C4"
-)
-
-ggsci_db_iterm$"Builtin Solarized Light"$"normal" <- c(
-  "Blue" = "#268BD2",
-  "Yellow" = "#B58900",
-  "Red" = "#DC322F",
-  "Cyan" = "#2AA198",
-  "Green" = "#859900",
-  "Magenta" = "#D33682"
-)
-
-ggsci_db_iterm$"Builtin Solarized Light"$"bright" <- c(
-  "Blue" = "#839496",
-  "Yellow" = "#657B83",
-  "Red" = "#CB4B16",
-  "Cyan" = "#93A1A1",
-  "Green" = "#586E75",
-  "Magenta" = "#6C71C4"
 )
 
 ggsci_db_iterm$"Builtin Tango Dark"$"normal" <- c(
@@ -4499,6 +4511,24 @@ ggsci_db_iterm$"Kanagawa Dragon"$"bright" <- c(
   "Magenta" = "#938AA9"
 )
 
+ggsci_db_iterm$"Kanagawa Lotus"$"normal" <- c(
+  "Blue" = "#4D699B",
+  "Yellow" = "#77713F",
+  "Red" = "#C84053",
+  "Cyan" = "#597B75",
+  "Green" = "#6F894E",
+  "Magenta" = "#B35B79"
+)
+
+ggsci_db_iterm$"Kanagawa Lotus"$"bright" <- c(
+  "Blue" = "#6693BF",
+  "Yellow" = "#836F4A",
+  "Red" = "#D7474B",
+  "Cyan" = "#5E857A",
+  "Green" = "#6E915F",
+  "Magenta" = "#624C83"
+)
+
 ggsci_db_iterm$"Kanagawa Wave"$"normal" <- c(
   "Blue" = "#7E9CD8",
   "Yellow" = "#C0A36E",
@@ -4533,6 +4563,78 @@ ggsci_db_iterm$"Kanagawabones"$"bright" <- c(
   "Cyan" = "#7BC2DF",
   "Green" = "#9EC967",
   "Magenta" = "#A98FD2"
+)
+
+ggsci_db_iterm$"Kanso Ink"$"normal" <- c(
+  "Blue" = "#8BA4B0",
+  "Yellow" = "#C4B28A",
+  "Red" = "#C4746E",
+  "Cyan" = "#8EA4A2",
+  "Green" = "#8A9A7B",
+  "Magenta" = "#A292A3"
+)
+
+ggsci_db_iterm$"Kanso Ink"$"bright" <- c(
+  "Blue" = "#7FB4CA",
+  "Yellow" = "#E6C384",
+  "Red" = "#E46876",
+  "Cyan" = "#7AA89F",
+  "Green" = "#87A987",
+  "Magenta" = "#938AA9"
+)
+
+ggsci_db_iterm$"Kanso Mist"$"normal" <- c(
+  "Blue" = "#8BA4B0",
+  "Yellow" = "#C4B28A",
+  "Red" = "#C4746E",
+  "Cyan" = "#8EA4A2",
+  "Green" = "#8A9A7B",
+  "Magenta" = "#A292A3"
+)
+
+ggsci_db_iterm$"Kanso Mist"$"bright" <- c(
+  "Blue" = "#7FB4CA",
+  "Yellow" = "#E6C384",
+  "Red" = "#E46876",
+  "Cyan" = "#7AA89F",
+  "Green" = "#87A987",
+  "Magenta" = "#938AA9"
+)
+
+ggsci_db_iterm$"Kanso Pearl"$"normal" <- c(
+  "Blue" = "#4D699B",
+  "Yellow" = "#77713F",
+  "Red" = "#C84053",
+  "Cyan" = "#597B75",
+  "Green" = "#6F894E",
+  "Magenta" = "#B35B79"
+)
+
+ggsci_db_iterm$"Kanso Pearl"$"bright" <- c(
+  "Blue" = "#6693BF",
+  "Yellow" = "#836F4A",
+  "Red" = "#D7474B",
+  "Cyan" = "#5E857A",
+  "Green" = "#6E915F",
+  "Magenta" = "#624C83"
+)
+
+ggsci_db_iterm$"Kanso Zen"$"normal" <- c(
+  "Blue" = "#8BA4B0",
+  "Yellow" = "#C4B28A",
+  "Red" = "#C4746E",
+  "Cyan" = "#8EA4A2",
+  "Green" = "#8A9A7B",
+  "Magenta" = "#A292A3"
+)
+
+ggsci_db_iterm$"Kanso Zen"$"bright" <- c(
+  "Blue" = "#7FB4CA",
+  "Yellow" = "#E6C384",
+  "Red" = "#E46876",
+  "Cyan" = "#7AA89F",
+  "Green" = "#87A987",
+  "Magenta" = "#938AA9"
 )
 
 ggsci_db_iterm$"Kibble"$"normal" <- c(
@@ -5127,6 +5229,78 @@ ggsci_db_iterm$"Misterioso"$"bright" <- c(
   "Cyan" = "#00EDE1",
   "Green" = "#74CD68",
   "Magenta" = "#FF37FF"
+)
+
+ggsci_db_iterm$"Modus Operandi Tinted"$"normal" <- c(
+  "Blue" = "#0031A9",
+  "Yellow" = "#6F5500",
+  "Red" = "#A60000",
+  "Cyan" = "#005E8B",
+  "Green" = "#006800",
+  "Magenta" = "#721045"
+)
+
+ggsci_db_iterm$"Modus Operandi Tinted"$"bright" <- c(
+  "Blue" = "#3548CF",
+  "Yellow" = "#884900",
+  "Red" = "#972500",
+  "Cyan" = "#005F5F",
+  "Green" = "#00663F",
+  "Magenta" = "#531AB6"
+)
+
+ggsci_db_iterm$"Modus Operandi"$"normal" <- c(
+  "Blue" = "#0031A9",
+  "Yellow" = "#6F5500",
+  "Red" = "#A60000",
+  "Cyan" = "#005E8B",
+  "Green" = "#006800",
+  "Magenta" = "#721045"
+)
+
+ggsci_db_iterm$"Modus Operandi"$"bright" <- c(
+  "Blue" = "#3548CF",
+  "Yellow" = "#884900",
+  "Red" = "#972500",
+  "Cyan" = "#005F5F",
+  "Green" = "#00663F",
+  "Magenta" = "#531AB6"
+)
+
+ggsci_db_iterm$"Modus Vivendi Tinted"$"normal" <- c(
+  "Blue" = "#2FAFFF",
+  "Yellow" = "#D0BC00",
+  "Red" = "#FF5F59",
+  "Cyan" = "#00D3D0",
+  "Green" = "#44BC44",
+  "Magenta" = "#FEACD0"
+)
+
+ggsci_db_iterm$"Modus Vivendi Tinted"$"bright" <- c(
+  "Blue" = "#79A8FF",
+  "Yellow" = "#FEC43F",
+  "Red" = "#FF6B55",
+  "Cyan" = "#6AE4B9",
+  "Green" = "#00C06F",
+  "Magenta" = "#B6A0FF"
+)
+
+ggsci_db_iterm$"Modus Vivendi"$"normal" <- c(
+  "Blue" = "#2FAFFF",
+  "Yellow" = "#D0BC00",
+  "Red" = "#FF5F59",
+  "Cyan" = "#00D3D0",
+  "Green" = "#44BC44",
+  "Magenta" = "#FEACD0"
+)
+
+ggsci_db_iterm$"Modus Vivendi"$"bright" <- c(
+  "Blue" = "#79A8FF",
+  "Yellow" = "#FEC43F",
+  "Red" = "#FF7F9F",
+  "Cyan" = "#6AE4B9",
+  "Green" = "#00C06F",
+  "Magenta" = "#B6A0FF"
 )
 
 ggsci_db_iterm$"Molokai"$"normal" <- c(
@@ -5973,6 +6147,42 @@ ggsci_db_iterm$"One Half Light"$"bright" <- c(
   "Cyan" = "#56B6C2",
   "Green" = "#98C379",
   "Magenta" = "#C678DD"
+)
+
+ggsci_db_iterm$"Onenord Light"$"normal" <- c(
+  "Blue" = "#3879C5",
+  "Yellow" = "#EE5E25",
+  "Red" = "#CB4F53",
+  "Cyan" = "#3EA1AD",
+  "Green" = "#48A53D",
+  "Magenta" = "#9F4ACA"
+)
+
+ggsci_db_iterm$"Onenord Light"$"bright" <- c(
+  "Blue" = "#1B40A6",
+  "Yellow" = "#BA793E",
+  "Red" = "#D16366",
+  "Cyan" = "#8FBCBB",
+  "Green" = "#5F9E9D",
+  "Magenta" = "#9665AF"
+)
+
+ggsci_db_iterm$"Onenord"$"normal" <- c(
+  "Blue" = "#81A1C1",
+  "Yellow" = "#EBCB8B",
+  "Red" = "#E06C75",
+  "Cyan" = "#88C0D0",
+  "Green" = "#9EC183",
+  "Magenta" = "#B988B0"
+)
+
+ggsci_db_iterm$"Onenord"$"bright" <- c(
+  "Blue" = "#81A1C1",
+  "Yellow" = "#EBCB8B",
+  "Red" = "#E06C75",
+  "Cyan" = "#8FBCBB",
+  "Green" = "#9EC183",
+  "Magenta" = "#B988B0"
 )
 
 ggsci_db_iterm$"Operator Mono Dark"$"normal" <- c(
@@ -7413,6 +7623,24 @@ ggsci_db_iterm$"Sundried"$"bright" <- c(
   "Cyan" = "#FAD484",
   "Green" = "#128C21",
   "Magenta" = "#FD8AA1"
+)
+
+ggsci_db_iterm$"Sunset Drive"$"normal" <- c(
+  "Blue" = "#00A4FF",
+  "Yellow" = "#FFE900",
+  "Red" = "#FF0063",
+  "Cyan" = "#00FFED",
+  "Green" = "#00F992",
+  "Magenta" = "#FF57FD"
+)
+
+ggsci_db_iterm$"Sunset Drive"$"bright" <- c(
+  "Blue" = "#3EA0FF",
+  "Yellow" = "#FFFF68",
+  "Red" = "#FF948B",
+  "Cyan" = "#38FFFF",
+  "Green" = "#00FCB9",
+  "Magenta" = "#FF93FF"
 )
 
 ggsci_db_iterm$"Symfonic"$"normal" <- c(
