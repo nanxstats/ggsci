@@ -1,3 +1,19 @@
+# ggsci 4.3.0
+
+## Improvements
+
+- Synchronize the iTerm color palettes with upstream (#79).
+
+  This update adds 36 new palettes to `iterm_palettes()`: Aizen variations,
+  Cursor Light, Dalton Dark, Dogxi Misty, Kanagawa Lotus, Kanso variations,
+  Modus variations, Monospace variations, Onenord variations, Pierre
+  variations, SeedFlip variations, and Sunset Drive. These palettes are now
+  usable by `pal_iterm()`, `scale_color_iterm()`, and `scale_fill_iterm()`.
+
+  Additionally, the color values for Cursor Dark have been updated to match
+  the latest upstream color specifications, and the Builtin Solarized Dark
+  and Light palettes have been removed.
+
 # ggsci 4.2.0
 
 ## Improvements
