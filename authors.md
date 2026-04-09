@@ -25,14 +25,14 @@
 Source:
 [`DESCRIPTION`](https://github.com/nanxstats/ggsci/blob/master/DESCRIPTION)
 
-Xiao N (2025). *ggsci: Scientific Journal and Sci-Fi Themed Color
+Xiao N (2026). *ggsci: Scientific Journal and Sci-Fi Themed Color
 Palettes for 'ggplot2'*. R package version 4.2.0,
 <https://nanx.me/ggsci/>.
 
     @Manual{,
       title = {ggsci: Scientific Journal and Sci-Fi Themed Color Palettes for 'ggplot2'},
       author = {Nan Xiao},
-      year = {2025},
+      year = {2026},
       note = {R package version 4.2.0},
       url = {https://nanx.me/ggsci/},
     }
