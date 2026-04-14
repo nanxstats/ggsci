@@ -295,8 +295,8 @@ The Gephi palette adapts the generative categorical palette engine from
 Unlike fixed categorical palettes, these scales generate visually distinct
 colors for the number of categories needed by a plot. Named preset filters are
 available via `gephi_palettes()`. For reproducible output, call `set.seed()`
-before creating the palette or scale; use `withr::with_seed()` if you want to
-contain RNG side effects.
+before generating colors or, for ggplot2 scales, before building or printing
+the plot; use `withr::with_seed()` if you want to contain RNG side effects.
 
 ```{r}
 set.seed(42)
