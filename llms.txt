@@ -60,6 +60,10 @@ in R) for a quick-start guide.
 
 ![](reference/figures/README-ggsci-d3-1.png)
 
+### Gephi
+
+![](reference/figures/README-ggsci-gephi-1.png)
+
 ### Observable
 
 ![](reference/figures/README-ggsci-observable-1.png)
@@ -226,6 +230,17 @@ this project, you agree to abide by its terms.
   [`scale_colour_d3()`](https://nanx.me/ggsci/reference/scale_d3.md)
   [`scale_fill_d3()`](https://nanx.me/ggsci/reference/scale_d3.md) :
   D3.js color scales
+
+## Gephi
+
+- [`gephi_palettes()`](https://nanx.me/ggsci/reference/gephi_palettes.md)
+  : Gephi generative palette names
+- [`pal_gephi()`](https://nanx.me/ggsci/reference/pal_gephi.md) : Gephi
+  color palettes
+- [`scale_color_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  [`scale_colour_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  [`scale_fill_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  : Gephi color scales
 
 ## Observable
 

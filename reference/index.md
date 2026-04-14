@@ -81,6 +81,17 @@
   [`scale_fill_d3()`](https://nanx.me/ggsci/reference/scale_d3.md) :
   D3.js color scales
 
+## Gephi
+
+- [`gephi_palettes()`](https://nanx.me/ggsci/reference/gephi_palettes.md)
+  : Gephi generative palette names
+- [`pal_gephi()`](https://nanx.me/ggsci/reference/pal_gephi.md) : Gephi
+  color palettes
+- [`scale_color_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  [`scale_colour_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  [`scale_fill_gephi()`](https://nanx.me/ggsci/reference/scale_gephi.md)
+  : Gephi color scales
+
 ## Observable
 
 - [`pal_observable()`](https://nanx.me/ggsci/reference/pal_observable.md)

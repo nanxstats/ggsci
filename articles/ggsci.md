@@ -160,6 +160,30 @@ grid.arrange(p1_d3, p2_d3, ncol = 2)
 
 ![](ggsci_files/figure-html/unnamed-chunk-12-1.png)
 
+### Gephi
+
+The Gephi palette adapts the generative categorical palette engine from
+[Gephi](https://gephi.org/), the Java-based network visualization
+software. Unlike fixed categorical palettes, these scales generate
+visually distinct colors for the number of categories needed by a plot.
+Named preset filters are available via
+[`gephi_palettes()`](https://nanx.me/ggsci/reference/gephi_palettes.md).
+For reproducible output, call
+[`set.seed()`](https://rdrr.io/r/base/Random.html) before generating
+colors or, for ggplot2 scales, before building or printing the plot
+(evaluation); use
+[`withr::with_seed()`](https://withr.r-lib.org/reference/with_seed.html)
+if you want to isolate the RNG side effects.
+
+``` r
+p1_gephi <- p1 + scale_color_gephi("default")
+p2_gephi <- p2 + scale_fill_gephi("default")
+set.seed(42)
+grid.arrange(p1_gephi, p2_gephi, ncol = 2)
+```
+
+![](ggsci_files/figure-html/unnamed-chunk-13-1.png)
+
 ### Observable
 
 The [Observable 10
@@ -172,7 +196,7 @@ p2_observable <- p2 + scale_fill_observable()
 grid.arrange(p1_observable, p2_observable, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-13-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-14-1.png)
 
 ### Primer
 
@@ -186,7 +210,7 @@ p2_primer <- p2 + scale_fill_primer()
 grid.arrange(p1_primer, p2_primer, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-14-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-15-1.png)
 
 ### Atlassian
 
@@ -199,7 +223,7 @@ p2_atlassian <- p2 + scale_fill_atlassian()
 grid.arrange(p1_atlassian, p2_atlassian, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-15-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-16-1.png)
 
 ### iTerm
 
@@ -219,7 +243,7 @@ p2_iterm <- p2 + scale_fill_iterm("Rose Pine")
 grid.arrange(p1_iterm, p2_iterm, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-16-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-17-1.png)
 
 ### LocusZoom
 
@@ -232,7 +256,7 @@ p2_locuszoom <- p2 + scale_fill_locuszoom()
 grid.arrange(p1_locuszoom, p2_locuszoom, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-17-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-18-1.png)
 
 ### IGV
 
@@ -246,7 +270,7 @@ p2_igv_default <- p2 + scale_fill_igv()
 grid.arrange(p1_igv_default, p2_igv_default, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-18-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-19-1.png)
 
 ### COSMIC
 
@@ -260,7 +284,7 @@ p2_cosmic_hallmarks_light <- p2 + scale_fill_cosmic("hallmarks_light")
 grid.arrange(p1_cosmic_hallmarks_light, p2_cosmic_hallmarks_light, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-19-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-20-1.png)
 
 ``` r
 p1_cosmic_hallmarks_dark <- p1 + scale_color_cosmic("hallmarks_dark")
@@ -268,7 +292,7 @@ p2_cosmic_hallmarks_dark <- p2 + scale_fill_cosmic("hallmarks_dark")
 grid.arrange(p1_cosmic_hallmarks_dark, p2_cosmic_hallmarks_dark, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-20-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-21-1.png)
 
 ``` r
 p1_cosmic_signature <- p1 + scale_color_cosmic("signature_substitutions")
@@ -276,7 +300,7 @@ p2_cosmic_signature <- p2 + scale_fill_cosmic("signature_substitutions")
 grid.arrange(p1_cosmic_signature, p2_cosmic_signature, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-21-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-22-1.png)
 
 ### UChicago
 
@@ -291,7 +315,7 @@ p2_uchicago <- p2 + scale_fill_uchicago()
 grid.arrange(p1_uchicago, p2_uchicago, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-22-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-23-1.png)
 
 ### Star Trek
 
@@ -303,7 +327,7 @@ p2_startrek <- p2 + scale_fill_startrek()
 grid.arrange(p1_startrek, p2_startrek, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-23-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-24-1.png)
 
 ### Tron Legacy
 
@@ -323,7 +347,7 @@ p2_tron <- p2 + theme_dark() + theme(
 grid.arrange(p1_tron, p2_tron, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-24-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-25-1.png)
 
 ### Futurama
 
@@ -335,7 +359,7 @@ p2_futurama <- p2 + scale_fill_futurama()
 grid.arrange(p1_futurama, p2_futurama, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-25-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-26-1.png)
 
 ### Rick and Morty
 
@@ -348,7 +372,7 @@ p2_rickandmorty <- p2 + scale_fill_rickandmorty()
 grid.arrange(p1_rickandmorty, p2_rickandmorty, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-26-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-27-1.png)
 
 ### The Simpsons
 
@@ -361,7 +385,7 @@ p2_simpsons <- p2 + scale_fill_simpsons()
 grid.arrange(p1_simpsons, p2_simpsons, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-27-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-28-1.png)
 
 ### Flat UI
 
@@ -374,7 +398,7 @@ p2_flatui <- p2 + scale_fill_flatui()
 grid.arrange(p1_flatui, p2_flatui, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-28-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-29-1.png)
 
 ### Frontiers
 
@@ -386,7 +410,7 @@ p2_frontiers <- p2 + scale_fill_frontiers()
 grid.arrange(p1_frontiers, p2_frontiers, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-29-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-30-1.png)
 
 ## Continuous color palettes
 
@@ -458,7 +482,7 @@ p3_gsea_inv <- p3 + scale_fill_gsea(reverse = TRUE)
 grid.arrange(p3_gsea, p3_gsea_inv, ncol = 2)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-32-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-33-1.png)
 
 ### Bootstrap 5
 
@@ -477,7 +501,7 @@ grid.arrange(
 )
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-33-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-34-1.png)
 
 ### Material Design
 
@@ -500,7 +524,7 @@ grid.arrange(
 )
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-34-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-35-1.png)
 
 ### Tailwind CSS
 
@@ -524,7 +548,7 @@ grid.arrange(
 )
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-35-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-36-1.png)
 
 From the figure above, we can see that even though an identical matrix
 was visualized by all plots, some palettes are more preferable than the
@@ -546,7 +570,7 @@ mypal
 scales::show_col(mypal)
 ```
 
-![](ggsci_files/figure-html/unnamed-chunk-36-1.png)
+![](ggsci_files/figure-html/unnamed-chunk-37-1.png)
 
 You will be able to use the generated hex color codes for such graphics
 systems accordingly. The transparent level of the entire palette is

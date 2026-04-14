@@ -60,6 +60,10 @@ in R) for a quick-start guide.
 
 ![](reference/figures/README-ggsci-d3-1.png)
 
+### Gephi
+
+![](reference/figures/README-ggsci-gephi-1.png)
+
 ### Observable
 
 ![](reference/figures/README-ggsci-observable-1.png)

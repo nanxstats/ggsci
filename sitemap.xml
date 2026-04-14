@@ -10,6 +10,7 @@
 <url><loc>https://nanx.me/ggsci/index.html</loc></url>
 <url><loc>https://nanx.me/ggsci/news/index.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/example_plots.html</loc></url>
+<url><loc>https://nanx.me/ggsci/reference/gephi_palettes.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/ggsci-package.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/index.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/iterm_palettes.html</loc></url>
@@ -22,6 +23,7 @@
 <url><loc>https://nanx.me/ggsci/reference/pal_flatui.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/pal_frontiers.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/pal_futurama.html</loc></url>
+<url><loc>https://nanx.me/ggsci/reference/pal_gephi.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/pal_gsea.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/pal_igv.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/pal_iterm.html</loc></url>
@@ -54,6 +56,7 @@
 <url><loc>https://nanx.me/ggsci/reference/scale_flatui.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/scale_frontiers.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/scale_futurama.html</loc></url>
+<url><loc>https://nanx.me/ggsci/reference/scale_gephi.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/scale_gsea.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/scale_igv.html</loc></url>
 <url><loc>https://nanx.me/ggsci/reference/scale_iterm.html</loc></url>
