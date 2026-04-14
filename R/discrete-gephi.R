@@ -18,9 +18,9 @@ gephi_palettes <- function() {
 #'
 #' @details
 #' The Gephi palette generator uses the current R random number state directly.
-#' Call [base::set.seed()] before creating a palette or scale if you need
-#' reproducible results. To isolate RNG side effects, consider
-#' `withr::with_seed()`.
+#' If you need reproducible results, call [base::set.seed()] before creating
+#' a palette or evaluating the scale. To isolate RNG side effects, consider
+#' using `withr::with_seed()`.
 #'
 #' @param palette Palette type. See [gephi_palettes()] for available options.
 #' @param alpha Transparency level, a real number in (0, 1].
@@ -32,8 +32,8 @@ gephi_palettes <- function() {
 #'
 #' @examples
 #' library("scales")
-#' show_col(pal_gephi("default")(10))
 #' set.seed(42)
+#' show_col(pal_gephi("default")(10))
 #' show_col(pal_gephi("fancy_light")(20))
 pal_gephi <- function(palette = gephi_palettes(), alpha = 1) {
   palette <- match.arg(palette)
@@ -75,7 +75,6 @@ pal_gephi <- function(palette = gephi_palettes(), alpha = 1) {
 #' @examples
 #' set.seed(42)
 #' example_scatterplot() + scale_color_gephi()
-#' set.seed(42)
 #' example_barplot() + scale_fill_gephi("fancy_light")
 scale_color_gephi <- function(palette = gephi_palettes(), alpha = 1, ...) {
   palette <- match.arg(palette)

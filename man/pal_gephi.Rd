@@ -19,13 +19,13 @@ arbitrary number of categories.
 }
 \details{
 The Gephi palette generator uses the current R random number state directly.
-Call \code{\link[base:Random]{base::set.seed()}} before creating a palette or scale if you need
-reproducible results. To isolate RNG side effects, consider
-\code{withr::with_seed()}.
+If you need reproducible results, call \code{\link[base:Random]{base::set.seed()}} before creating
+a palette or evaluating the scale. To isolate RNG side effects, consider
+using \code{withr::with_seed()}.
 }
 \examples{
 library("scales")
-show_col(pal_gephi("default")(10))
 set.seed(42)
+show_col(pal_gephi("default")(10))
 show_col(pal_gephi("fancy_light")(20))
 }

@@ -26,6 +26,5 @@ See \code{\link[=pal_gephi]{pal_gephi()}} for details.
 \examples{
 set.seed(42)
 example_scatterplot() + scale_color_gephi()
-set.seed(42)
 example_barplot() + scale_fill_gephi("fancy_light")
 }

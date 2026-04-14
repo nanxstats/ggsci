@@ -296,13 +296,13 @@ Unlike fixed categorical palettes, these scales generate visually distinct
 colors for the number of categories needed by a plot. Named preset filters are
 available via `gephi_palettes()`. For reproducible output, call `set.seed()`
 before generating colors or, for ggplot2 scales, before building or printing
-the plot; use `withr::with_seed()` if you want to contain RNG side effects.
+the plot (evaluation); use `withr::with_seed()` if you want to isolate the
+RNG side effects.
 
 ```{r}
-set.seed(42)
 p1_gephi <- p1 + scale_color_gephi("default")
-set.seed(42)
 p2_gephi <- p2 + scale_fill_gephi("default")
+set.seed(42)
 grid.arrange(p1_gephi, p2_gephi, ncol = 2)
 ```
 
