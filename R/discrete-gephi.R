@@ -158,7 +158,7 @@ gephi_generate_palette <- function(colors_count, quality, filter) {
       if (any(assigned) && gephi_check_color(candidate_k_mean, filter)) {
         k_means[j, ] <- candidate_k_mean
       } else if (nrow(free_color_samples) > 0L) {
-        k_means[j, ] <- color_samples[gephi_closest_sample(free_color_samples, candidate_k_mean), ]
+        k_means[j, ] <- free_color_samples[gephi_closest_sample(free_color_samples, candidate_k_mean), ]
       } else {
         k_means[j, ] <- color_samples[gephi_closest_sample(color_samples, candidate_k_mean), ]
       }
