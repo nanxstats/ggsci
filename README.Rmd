@@ -138,6 +138,16 @@ p2_d3 <- p2 + scale_fill_d3()
 grid.arrange(p1_d3, p2_d3, ncol = 2)
 ```
 
+### Gephi
+
+```{r, ggsci-gephi}
+set.seed(1)
+p1_gephi <- p1 + scale_color_gephi("default")
+set.seed(1)
+p2_gephi <- p2 + scale_fill_gephi("default")
+grid.arrange(p1_gephi, p2_gephi, ncol = 2)
+```
+
 ### Observable
 
 ```{r, ggsci-observable}
