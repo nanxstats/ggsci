@@ -137,6 +137,27 @@ ggsci_db$"d3"$"category20c" <- c(
   "Snuff" = "#DADAEB", "Alto" = "#D9D9D9"
 )
 
+# Gephi generative palette presets ----
+ggsci_db$"gephi" <- list(
+  "default" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 3, lmin = 0, lmax = 1.5),
+  "fancy_light" = c(hmin = 0, hmax = 360, cmin = 0.4, cmax = 1.2, lmin = 1, lmax = 1.5),
+  "fancy_dark" = c(hmin = 0, hmax = 360, cmin = 0.2, cmax = 1.2, lmin = 0.1, lmax = 0.6),
+  "shades" = c(hmin = 0, hmax = 240, cmin = 0, cmax = 0.4, lmin = 0, lmax = 1.5),
+  "tarnish" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 0.4, lmin = 0.4, lmax = 1.1),
+  "pastel" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 0.9, lmin = 1, lmax = 1.5),
+  "pimp" = c(hmin = 0, hmax = 360, cmin = 0.9, cmax = 3, lmin = 0.4, lmax = 1),
+  "intense" = c(hmin = 0, hmax = 360, cmin = 0.6, cmax = 3, lmin = 0.2, lmax = 1.1),
+  "fluo" = c(hmin = 0, hmax = 300, cmin = 1, cmax = 3, lmin = 1.1, lmax = 1.5),
+  "red_roses" = c(hmin = 330, hmax = 20, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5),
+  "ochre_sand" = c(hmin = 20, hmax = 60, cmin = 0.3, cmax = 1.6, lmin = 0.5, lmax = 1.5),
+  "yellow_lime" = c(hmin = 60, hmax = 90, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5),
+  "green_mint" = c(hmin = 90, hmax = 150, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5),
+  "ice_cube" = c(hmin = 150, hmax = 200, cmin = 0, cmax = 3, lmin = 0.5, lmax = 1.5),
+  "blue_ocean" = c(hmin = 220, hmax = 260, cmin = 0.2, cmax = 2.5, lmin = 0, lmax = 0.8),
+  "indigo_night" = c(hmin = 260, hmax = 290, cmin = 1.2, cmax = 3, lmin = 0.5, lmax = 1.5),
+  "purple_wine" = c(hmin = 290, hmax = 330, cmin = 0, cmax = 3, lmin = 0, lmax = 0.6)
+)
+
 # Observable 10 color palette ----
 ggsci_db$"observable"$"observable10" <- c(
   "Blue" = "#4269D0",

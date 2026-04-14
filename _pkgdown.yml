@@ -60,6 +60,13 @@ reference:
       - scale_color_d3
       - scale_colour_d3
       - scale_fill_d3
+  - title: "Gephi"
+    contents:
+      - gephi_palettes
+      - pal_gephi
+      - scale_color_gephi
+      - scale_colour_gephi
+      - scale_fill_gephi
   - title: "Observable"
     contents:
       - pal_observable

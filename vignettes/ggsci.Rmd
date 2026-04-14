@@ -84,6 +84,9 @@ summarized in the table below.
 |                 |                              | `"category20b"`                |                      |
 |                 |                              | `"category20c"`                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
+| Gephi           | `scale_color_gephi()`        | `gephi_palettes()`             | `pal_gephi()`        |
+|                 | `scale_fill_gephi()`         |                                |                      |
++-----------------+------------------------------+--------------------------------+----------------------+
 | Observable      | `scale_color_observable()`   | `"observable10"`               | `pal_observable()`   |
 |                 | `scale_fill_observable()`    |                                |                      |
 +-----------------+------------------------------+--------------------------------+----------------------+
@@ -283,6 +286,24 @@ There are four palette types (`category10`, `category20`,
 p1_d3 <- p1 + scale_color_d3()
 p2_d3 <- p2 + scale_fill_d3()
 grid.arrange(p1_d3, p2_d3, ncol = 2)
+```
+
+### Gephi
+
+The Gephi palette adapts the generative categorical palette engine from
+[Gephi](https://gephi.org/), the Java-based network visualization software.
+Unlike fixed categorical palettes, these scales generate visually distinct
+colors for the number of categories needed by a plot. Named preset filters are
+available via `gephi_palettes()`. For reproducible output, call `set.seed()`
+before generating colors or, for ggplot2 scales, before building or printing
+the plot (evaluation); use `withr::with_seed()` if you want to isolate the
+RNG side effects.
+
+```{r}
+p1_gephi <- p1 + scale_color_gephi("default")
+p2_gephi <- p2 + scale_fill_gephi("default")
+set.seed(42)
+grid.arrange(p1_gephi, p2_gephi, ncol = 2)
 ```
 
 ### Observable
