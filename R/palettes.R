@@ -137,6 +137,106 @@ ggsci_db$"d3"$"category20c" <- c(
   "Snuff" = "#DADAEB", "Alto" = "#D9D9D9"
 )
 
+# Gephi generative palette presets ----
+ggsci_db$"gephi" <- list(
+  "presets" = list(
+    "default" = list(
+      "label" = "Default",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 3, lmin = 0, lmax = 1.5)
+    ),
+    "fancy_light" = list(
+      "label" = "Fancy (light background)",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0.4, cmax = 1.2, lmin = 1, lmax = 1.5)
+    ),
+    "fancy_dark" = list(
+      "label" = "Fancy (dark background)",
+      "dark" = TRUE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0.2, cmax = 1.2, lmin = 0.1, lmax = 0.6)
+    ),
+    "shades" = list(
+      "label" = "Shades",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 240, cmin = 0, cmax = 0.4, lmin = 0, lmax = 1.5)
+    ),
+    "tarnish" = list(
+      "label" = "Tarnish",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 0.4, lmin = 0.4, lmax = 1.1)
+    ),
+    "pastel" = list(
+      "label" = "Pastel",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0, cmax = 0.9, lmin = 1, lmax = 1.5)
+    ),
+    "pimp" = list(
+      "label" = "Pimp",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0.9, cmax = 3, lmin = 0.4, lmax = 1)
+    ),
+    "intense" = list(
+      "label" = "Intense",
+      "dark" = FALSE,
+      "filter" = c(hmin = 0, hmax = 360, cmin = 0.6, cmax = 3, lmin = 0.2, lmax = 1.1)
+    ),
+    "fluo" = list(
+      "label" = "Fluo",
+      "dark" = TRUE,
+      "filter" = c(hmin = 0, hmax = 300, cmin = 1, cmax = 3, lmin = 1.1, lmax = 1.5)
+    ),
+    "red_roses" = list(
+      "label" = "Red Roses",
+      "dark" = TRUE,
+      "filter" = c(hmin = 330, hmax = 20, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5)
+    ),
+    "ochre_sand" = list(
+      "label" = "Ochre Sand",
+      "dark" = TRUE,
+      "filter" = c(hmin = 20, hmax = 60, cmin = 0.3, cmax = 1.6, lmin = 0.5, lmax = 1.5)
+    ),
+    "yellow_lime" = list(
+      "label" = "Yellow Lime",
+      "dark" = TRUE,
+      "filter" = c(hmin = 60, hmax = 90, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5)
+    ),
+    "green_mint" = list(
+      "label" = "Green Mint",
+      "dark" = TRUE,
+      "filter" = c(hmin = 90, hmax = 150, cmin = 0.3, cmax = 3, lmin = 0.5, lmax = 1.5)
+    ),
+    "ice_cube" = list(
+      "label" = "Ice Cube",
+      "dark" = TRUE,
+      "filter" = c(hmin = 150, hmax = 200, cmin = 0, cmax = 3, lmin = 0.5, lmax = 1.5)
+    ),
+    "blue_ocean" = list(
+      "label" = "Blue Ocean",
+      "dark" = TRUE,
+      "filter" = c(hmin = 220, hmax = 260, cmin = 0.2, cmax = 2.5, lmin = 0, lmax = 0.8)
+    ),
+    "indigo_night" = list(
+      "label" = "Indigo Night",
+      "dark" = TRUE,
+      "filter" = c(hmin = 260, hmax = 290, cmin = 1.2, cmax = 3, lmin = 0.5, lmax = 1.5)
+    ),
+    "purple_wine" = list(
+      "label" = "Purple Wine",
+      "dark" = TRUE,
+      "filter" = c(hmin = 290, hmax = 330, cmin = 0, cmax = 3, lmin = 0, lmax = 0.6)
+    )
+  ),
+  "fixed" = list(
+    "2" = c("gephi.1" = "#F1087B", "gephi.2" = "#5FA5FD"),
+    "3" = c("gephi.1" = "#06BB1B", "gephi.2" = "#E72094", "gephi.3" = "#D3A207"),
+    "4" = c("gephi.1" = "#9183E2", "gephi.2" = "#E7663B", "gephi.3" = "#67A030", "gephi.4" = "#E558B2"),
+    "5" = c("gephi.1" = "#F05252", "gephi.2" = "#62A131", "gephi.3" = "#8985E1", "gephi.4" = "#E25BBD", "gephi.5" = "#D87823"),
+    "6" = c("gephi.1" = "#C9821C", "gephi.2" = "#7D77CE", "gephi.3" = "#69C73F", "gephi.4" = "#D44443", "gephi.5" = "#CE51A9", "gephi.6" = "#5D8D2B"),
+    "7" = c("gephi.1" = "#D06D20", "gephi.2" = "#C364D7", "gephi.3" = "#59BF42", "gephi.4" = "#D4404A", "gephi.5" = "#6E7ACA", "gephi.6" = "#CA4B93", "gephi.7" = "#7E9321"),
+    "8" = c("gephi.1" = "#6E7ACA", "gephi.2" = "#5BC344", "gephi.3" = "#D64E2B", "gephi.4" = "#C94992", "gephi.5" = "#C78A1C", "gephi.6" = "#C465D6", "gephi.7" = "#D14058", "gephi.8" = "#699025")
+  )
+)
+
 # Observable 10 color palette ----
 ggsci_db$"observable"$"observable10" <- c(
   "Blue" = "#4269D0",
