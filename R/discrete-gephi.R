@@ -7,7 +7,7 @@
 #' @examples
 #' gephi_palettes()
 gephi_palettes <- function() {
-  names(ggsci_db$"gephi"$"presets")
+  names(ggsci_db$"gephi")
 }
 
 #' Gephi color palettes
@@ -40,7 +40,7 @@ pal_gephi <- function(palette = gephi_palettes(), alpha = 1) {
 
   if (alpha > 1L || alpha <= 0L) stop("alpha must be in (0, 1]")
 
-  filter <- ggsci_db$"gephi"$"presets"[[palette]]$"filter"
+  filter <- ggsci_db$"gephi"[[palette]]
 
   function(n) {
     n <- as.integer(n)[1L]
@@ -247,20 +247,27 @@ gephi_check_color <- function(lab, filter) {
   rgb <- gephi_lab_to_rgb(lab)
   hcl <- gephi_lab_to_hcl(lab)
 
-  hue_ok <- if (filter[1L] < filter[2L]) {
-    hcl[1L] >= filter[1L] && hcl[1L] <= filter[2L]
+  hmin <- filter[["hmin"]]
+  hmax <- filter[["hmax"]]
+  cmin <- filter[["cmin"]]
+  cmax <- filter[["cmax"]]
+  lmin <- filter[["lmin"]]
+  lmax <- filter[["lmax"]]
+
+  hue_ok <- if (hmin < hmax) {
+    hcl[1L] >= hmin && hcl[1L] <= hmax
   } else {
-    hcl[1L] >= filter[1L] || hcl[1L] <= filter[2L]
+    hcl[1L] >= hmin || hcl[1L] <= hmax
   }
 
   !anyNA(rgb) &&
     all(rgb >= 0) &&
     all(rgb < 256) &&
     hue_ok &&
-    hcl[2L] >= filter[3L] &&
-    hcl[2L] <= filter[4L] &&
-    hcl[3L] >= filter[5L] &&
-    hcl[3L] <= filter[6L]
+    hcl[2L] >= cmin &&
+    hcl[2L] <= cmax &&
+    hcl[3L] >= lmin &&
+    hcl[3L] <= lmax
 }
 
 gephi_lab_to_hex <- function(lab) {
