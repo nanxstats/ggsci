@@ -107,7 +107,7 @@ grid.arrange(p1_jama, p2_jama, ncol = 2)
 ### BMJ
 
 The BMJ palette is from the [BMJ living style
-guide](https://technology.bmj.com/living-style-guide/colour.html):
+guide](https://github.com/BMJ-Ltd/living-style-guide):
 
 ``` r
 p1_bmj <- p1 + scale_color_bmj()

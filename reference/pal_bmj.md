@@ -23,7 +23,7 @@ pal_bmj(palette = c("default"), alpha = 1)
 
 ## References
 
-<https://technology.bmj.com/living-style-guide/colour.html>
+<https://github.com/BMJ-Ltd/living-style-guide>
 
 ## Author
 
