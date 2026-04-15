@@ -30,7 +30,7 @@ example_scatterplot() + scale_color_bmj()
 example_barplot() + scale_fill_bmj()
 }
 \references{
-\url{https://technology.bmj.com/living-style-guide/colour.html}
+\url{https://github.com/BMJ-Ltd/living-style-guide}
 }
 \author{
 Hui Chen | \email{huichen@zju.edu.cn}

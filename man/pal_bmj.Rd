@@ -23,7 +23,7 @@ show_col(pal_bmj("default")(9))
 show_col(pal_bmj("default", alpha = 0.6)(9))
 }
 \references{
-\url{https://technology.bmj.com/living-style-guide/colour.html}
+\url{https://github.com/BMJ-Ltd/living-style-guide}
 }
 \author{
 Hui Chen | \email{huichen@zju.edu.cn}
