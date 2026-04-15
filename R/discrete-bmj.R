@@ -16,7 +16,7 @@
 #' @author Hui Chen | \email{huichen@zju.edu.cn}
 #'
 #' @references
-#' <https://technology.bmj.com/living-style-guide/colour.html>
+#' <https://github.com/BMJ-Ltd/living-style-guide>
 #'
 #' @examples
 #' library("scales")
@@ -54,7 +54,7 @@ pal_bmj <- function(palette = c("default"), alpha = 1) {
 #' @rdname scale_bmj
 #'
 #' @references
-#' <https://technology.bmj.com/living-style-guide/colour.html>
+#' <https://github.com/BMJ-Ltd/living-style-guide>
 #'
 #' @examples
 #' example_scatterplot() + scale_color_bmj()
