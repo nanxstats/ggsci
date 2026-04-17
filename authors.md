@@ -23,7 +23,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/nanxstats/ggsci/blob/v5.0.0/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/nanxstats/ggsci/blob/master/DESCRIPTION)
 
 Xiao N (2026). *ggsci: Scientific Journal and Sci-Fi Themed Color
 Palettes for 'ggplot2'*. R package version 5.0.0,
