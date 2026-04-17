@@ -1,3 +1,16 @@
+# ggsci 5.0.0
+
+## New features
+
+- Add Gephi generative discrete color scales for an arbitrary number of
+  categories via `gephi_palettes()`, `pal_gephi()`, `scale_color_gephi()`,
+  and `scale_fill_gephi()` (#82).
+
+  This adds 17 presets adapted from Gephi's palette engine to generate
+  visually distinct category colors on demand. Since the generator respects
+  R's current random number state, call `set.seed()` before plot evaluation
+  for reproducible results.
+
 # ggsci 4.3.0
 
 ## Improvements
