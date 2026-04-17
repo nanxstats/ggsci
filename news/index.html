@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">ggsci</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">4.3.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">5.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,16 @@
       <small>Source: <a href="https://github.com/nanxstats/ggsci/blob/master/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="5.0.0" id="ggsci-500">ggsci 5.0.0<a class="anchor" aria-label="anchor" href="#ggsci-500"></a></h2>
+<div class="section level3">
+<h3 id="new-features-5-0-0">New features<a class="anchor" aria-label="anchor" href="#new-features-5-0-0"></a></h3>
+<ul><li>
+<p>Add Gephi generative discrete color scales for an arbitrary number of categories via <code><a href="../reference/gephi_palettes.html">gephi_palettes()</a></code>, <code><a href="../reference/pal_gephi.html">pal_gephi()</a></code>, <code><a href="../reference/scale_gephi.html">scale_color_gephi()</a></code>, and <code><a href="../reference/scale_gephi.html">scale_fill_gephi()</a></code> (<a href="https://github.com/nanxstats/ggsci/issues/82" class="external-link">#82</a>).</p>
+<p>This adds 17 presets adapted from Gephi’s palette engine to generate visually distinct category colors on demand. Since the generator respects R’s current random number state, call <code><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed()</a></code> before plot evaluation for reproducible results.</p>
+</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="4.3.0" id="ggsci-430">ggsci 4.3.0<a class="anchor" aria-label="anchor" href="#ggsci-430"></a></h2><p class="text-muted">CRAN release: 2026-04-09</p>
 <div class="section level3">
