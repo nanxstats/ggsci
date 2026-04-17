@@ -2,6 +2,8 @@
 
 ## ggsci 5.0.0
 
+CRAN release: 2026-04-17
+
 ### New features
 
 - Add Gephi generative discrete color scales for an arbitrary number of
