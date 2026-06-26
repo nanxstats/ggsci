@@ -1,5 +1,43 @@
 # Changelog
 
+## ggsci 5.1.0
+
+### Improvements
+
+- Synchronize the iTerm color palettes with upstream
+  ([\#86](https://github.com/nanxstats/ggsci/issues/86)).
+
+  This update adds 66 new palettes to
+  [`iterm_palettes()`](https://nanx.me/ggsci/reference/iterm_palettes.md):
+  Aardvark Ink, Atlas Ragnarok, Aura Dark, base16-icy, Claude
+  variations, Clear variations, Cool Night, cyberpunk-icy, Electron
+  Highlighter Day, Emerald Synth, Everforest variations, Gleam
+  variations, JetCalm Light, Karasu variations, Karma variations, Keys
+  Ocean Sunset variations, Klein Void, London variations, Mesila One,
+  Monokai SublimeText, Moonwalk, Neon Purple, Oxide, Patina variations,
+  Sandstone variations, Sauber, Sequoia variations, Serendipity
+  variations, Shokunin, Squintless, Sumi variations, Token variations,
+  and Trapped in Amber. These palettes are now usable by
+  [`pal_iterm()`](https://nanx.me/ggsci/reference/pal_iterm.md),
+  [`scale_color_iterm()`](https://nanx.me/ggsci/reference/scale_iterm.md),
+  and
+  [`scale_fill_iterm()`](https://nanx.me/ggsci/reference/scale_iterm.md).
+
+  Additionally, the color values for Adwaita, the Catppuccin palettes,
+  and Electron Highlighter have been updated to match the latest
+  upstream color specifications.
+
+### Documentation
+
+- Fix the GenePattern HeatMapImage documentation link used by
+  [`rgb_gsea()`](https://nanx.me/ggsci/reference/rgb_gsea.md)
+  ([\#89](https://github.com/nanxstats/ggsci/issues/89)).
+
+### Maintenance
+
+- Update GitHub Actions workflows to use the latest upstream versions
+  ([\#87](https://github.com/nanxstats/ggsci/issues/87)).
+
 ## ggsci 5.0.0
 
 CRAN release: 2026-04-17
