@@ -17,6 +17,7 @@ a simple solution is setting the two global options
 `ggplot2.discrete.colour` and `ggplot2.discrete.fill`. For example:
 
 ``` r
+
 library("ggplot2")
 
 p <- ggplot(mpg, aes(displ, hwy, colour = factor(cyl), fill = factor(cyl))) +
@@ -50,6 +51,7 @@ palette in ggsci by using the following function that returns a custom
 color scale function. This method is flexible and encourages code reuse.
 
 ``` r
+
 #' Define a custom color scale
 #'
 #' @param pal Name of the color palette, as part of the
@@ -82,6 +84,7 @@ scale_color_custom <- function(pal, palette, n, order, alpha = 1) {
 Use `scale_color_custom()` in an example:
 
 ``` r
+
 library(ggplot2)
 library(ggsci)
 

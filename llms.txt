@@ -9,12 +9,14 @@ movies, and TV shows.
 You can install ggsci from CRAN:
 
 ``` r
+
 install.packages("ggsci")
 ```
 
 Or try the development version on GitHub:
 
 ``` r
+
 remotes::install_github("nanxstats/ggsci")
 ```
 
