@@ -24,7 +24,7 @@ heatmaps plotted by GSEA GenePattern.
 }
 \note{
 The 12 base colors used in this palette are derived from the
-\href{https://modulerepository.genepattern.org/gpModuleRepository/download/prod/module/?file=/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf}{HeatMapImage documentation}.
+\href{https://github.com/genepattern/GenePatternModuleCatalog/blob/main/modules/HeatMapImage/broad.mit.edu\%3Acancer.software.genepattern.module.analysis/00032/6/HeatMapImage.zip}{HeatMapImage documentation}.
 }
 \examples{
 library("scales")
