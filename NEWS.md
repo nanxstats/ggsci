@@ -1,3 +1,32 @@
+# ggsci 5.1.0
+
+## Improvements
+
+- Synchronize the iTerm color palettes with upstream (#86).
+
+  This update adds 66 new palettes to `iterm_palettes()`: Aardvark Ink,
+  Atlas Ragnarok, Aura Dark, base16-icy, Claude variations, Clear variations,
+  Cool Night, cyberpunk-icy, Electron Highlighter Day, Emerald Synth,
+  Everforest variations, Gleam variations, JetCalm Light, Karasu variations,
+  Karma variations, Keys Ocean Sunset variations, Klein Void, London
+  variations, Mesila One, Monokai SublimeText, Moonwalk, Neon Purple, Oxide,
+  Patina variations, Sandstone variations, Sauber, Sequoia variations,
+  Serendipity variations, Shokunin, Squintless, Sumi variations, Token
+  variations, and Trapped in Amber. These palettes are now usable by
+  `pal_iterm()`, `scale_color_iterm()`, and `scale_fill_iterm()`.
+
+  Additionally, the color values for Adwaita, the Catppuccin palettes, and
+  Electron Highlighter have been updated to match the latest upstream color
+  specifications.
+
+## Documentation
+
+- Fix the GenePattern HeatMapImage documentation link used by `rgb_gsea()` (#89).
+
+## Maintenance
+
+- Update GitHub Actions workflows to use the latest upstream versions (#87).
+
 # ggsci 5.0.0
 
 ## New features
