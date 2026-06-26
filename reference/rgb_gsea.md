@@ -34,7 +34,7 @@ rgb_gsea(palette = c("default"), n = 12, alpha = 1, reverse = FALSE)
 
 The 12 base colors used in this palette are derived from the
 [HeatMapImage
-documentation](https://modulerepository.genepattern.org/gpModuleRepository/download/prod/module/?file=/HeatMapImage/broad.mit.edu:cancer.software.genepattern.module.analysis/00032/6/HeatMapImage.pdf).
+documentation](https://github.com/genepattern/GenePatternModuleCatalog/blob/main/modules/HeatMapImage/broad.mit.edu%3Acancer.software.genepattern.module.analysis/00032/6/HeatMapImage.zip).
 
 ## Author
 

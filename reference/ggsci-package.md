@@ -19,6 +19,11 @@ Useful links:
 **Maintainer**: Nan Xiao <me@nanx.me>
 ([ORCID](https://orcid.org/0000-0002-0250-5673)) \[copyright holder\]
 
+Authors:
+
+- Nan Xiao <me@nanx.me> ([ORCID](https://orcid.org/0000-0002-0250-5673))
+  \[copyright holder\]
+
 Other contributors:
 
 - Joshua Cook <joshuacook0023@gmail.com> \[contributor\]
