@@ -142,6 +142,15 @@ in R) for a quick-start guide.
 
 ![](reference/figures/README-ggsci-tw3-1.png)
 
+## Related projects
+
+ggsci is also available in other programming languages:
+
+- [py-ggsci](https://github.com/nanxstats/py-ggsci) - ggsci color
+  palettes for plotnine in Python.
+- [ggsci-rs](https://github.com/nanxstats/ggsci-rs) - ggsci color
+  palettes for Rust, Ratatui, and ggsql.
+
 ## Contribute
 
 To contribute to this project, please take a look at the [Contributing
