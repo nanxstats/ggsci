@@ -1,5 +1,34 @@
 # Changelog
 
+## ggsci 5.2.0
+
+### Improvements
+
+- Synchronize the iTerm color palettes with upstream
+  ([\#92](https://github.com/nanxstats/ggsci/issues/92)).
+
+  This update adds 50 new palettes to
+  [`iterm_palettes()`](https://nanx.me/ggsci/reference/iterm_palettes.md):
+  Acid Lime, Amber CRT Retro, Aubade, Cassette Tape, Citrus Ink, CRT
+  Amber, datum variations, Daybreak, Driftwood, Eclipse, Forge Ember,
+  Frostbyte, Graphite, Green Phosphor CRT, JetBrains Islands Dark,
+  Letterpress, Matcha Zen, Miami Heat, Midnight Arcade, Modus Operandi
+  and Modus Vivendi color vision deficiency variations, Nebula Drift,
+  Noctis variations, Opaline, Outrun Electric, Oxblood, Patina,
+  Porcelain, Prism, Purple Portal, Pyrokai variations, Terminal Green
+  1999, Vaporwave Sunset, Velvet Court, Verdigris, and Y2K Chrome. These
+  palettes are now usable by
+  [`pal_iterm()`](https://nanx.me/ggsci/reference/pal_iterm.md),
+  [`scale_color_iterm()`](https://nanx.me/ggsci/reference/scale_iterm.md),
+  and
+  [`scale_fill_iterm()`](https://nanx.me/ggsci/reference/scale_iterm.md).
+
+### Documentation
+
+- Add a related projects section to the README with links to the Python
+  and Rust ports of ggsci
+  ([\#91](https://github.com/nanxstats/ggsci/issues/91)).
+
 ## ggsci 5.1.0
 
 CRAN release: 2026-06-26
